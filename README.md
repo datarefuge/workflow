@@ -24,7 +24,7 @@ Keep in mind two things when looking at the spreadsheet:
 
 ****
 
-- Yes, if is crawlable, nominate it:  go to chrome extension (__link), if that doesn't work then boomarklet for seeding (link)
+- Yes, if is crawlable, nominate it:  go to chrome extension (https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok), if that doesn't work then boomarklet for seeding (http://digital2.library.unt.edu/nomination/eth2016/about/)
   - Fill out that you seeded (Column __)
   - Fill out that link is done (Column __)
 - Kind of crawlable (FTP, mixed content, big data sets): follow steps for yes and no
@@ -119,7 +119,6 @@ You will need python and pip in order for this to work.
 
 ```
 pip install awscli
-
 ```
 
 Get your access keys from the system administrator for the s3 bucket. You should have two access keys, an "Access key ID" and a "Secret access key"
@@ -128,7 +127,6 @@ Get your access keys from the system administrator for the s3 bucket. You should
 
 ```
 aws configure
-
 ```
 
 The script will ask for a few things:
@@ -138,7 +136,6 @@ AWS Access Key ID [None]:
 AWS Secret Access Key [None]: 
 Default region name [None]: 
 Default output format [None]: 
-
 ```
 
 Enter your two aws access keys
@@ -155,7 +152,6 @@ You should see a list of files, such as:
 2017-01-12 16:38:44  713031680 CentOS-7-x86_64-Minimal-1611.iso
 2017-01-12 18:35:20     104065 Linear_Bone_13.stl
 2017-01-12 16:25:00         21 index.html
-
 ```
 
 ------
@@ -178,7 +174,7 @@ aws s3 cp [file name]  s3://ckanholding
 
 - Create new record in CKan
 
-- Follow metadata schema spreadsheet (link)
+- Follow metadata schema spreadsheet (https://docs.google.com/spreadsheets/d/12JAleU6eF4wgu0hIlQ5efoOUCsZjT-UkRxwAofVZp6c/edit#gid=1879921913)
 
 - Go to original url (Column) to gather the rest of the metadata facts needed to populate the fields in the metadata mapping form
 
