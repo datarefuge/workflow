@@ -8,9 +8,9 @@ Before you start make sure to read:
 
 
 
+**NOTE THAT THE COLUMNS REFERED TO IN THIS DOCUMENT, UNLESS OTHERWISE NOTED COME FROM THIS SPREADSHEET.** https://docs.google.com/spreadsheets/d/1nevyzpc-vwoK6krngEASPJS5_ngrOwD2qYUPxLVesrg/edit
 
-
-# RESEARCH(Green)
+# RESEARCH (Green Cell Headers)
 
 First pick a link in the spreadsheet to evaluate. 
 
@@ -37,7 +37,7 @@ Keep in mind two things when looking at the spreadsheet:
 
 
 
-# HARVESTING(Purple)
+# HARVESTING (Purple Cell Headers)
 
 Check out a URL on a google sheet 
 
@@ -53,7 +53,7 @@ Package as [uuid.zip] and [uuid.json]
 
 Mark as Harvested google sheet
 
-# BAGGING(Red)
+# BAGGING (Red Cell Headers)
 
 - Check out a package (Column )
 - Data comes from thumbdrive
@@ -106,7 +106,7 @@ Mark as Harvested google sheet
 
 - Put the zip file onto a thumb drive and give to an uploader
 
-# UPLOADING(Yellow)
+# UPLOADING (Yellow Cell Headers)
 
 - Claim you the link you are uploading (Column)
 - Follow the instructions below:
@@ -166,7 +166,7 @@ aws s3 cp --recursive [folder name]  s3://ckanholding
 aws s3 cp [file name]  s3://ckanholding
 ```
 
-# METADATA(Blue)
+# METADATA(Blue Cell Headers)
 
 - Get thumbdrive from uploader 
 
