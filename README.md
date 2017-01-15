@@ -5,9 +5,12 @@
   can be automatically captured by the Internet Archive webcrawler (about which
   more
   [here](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
-  and [here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit).
+  and
+  [here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit).
   URLs judged to be possibly crawlable are "nominated" (equivalently, "seeded")
-  using our [Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok) or
+  using our
+  [Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok)
+  or
   [bookmarklet](http://digital2.library.unt.edu/nomination/eth2016/about/).
   This sorting is only provisional: when in doubt seeders mark a URL as possibly
   *not* crawlable, and these URLs populate a spreadsheet.
@@ -21,13 +24,18 @@
   some metadata, and upload it into an Amazon S3 bucket.
 * The *Metadata* team creates a CKan record for this S3 resource.
 
-**NOTE THAT THE COLUMNS REFERED TO IN THIS DOCUMENT, UNLESS OTHERWISE NOTED COME FROM THIS SPREADSHEET.** https://docs.google.com/spreadsheets/d/1nevyzpc-vwoK6krngEASPJS5_ngrOwD2qYUPxLVesrg/edit
+**NOTE THAT THE COLUMNS REFERED TO IN THIS DOCUMENT, UNLESS OTHERWISE NOTED COME FROM [THIS SPREADSHEET](https://docs.google.com/spreadsheets/d/1nevyzpc-vwoK6krngEASPJS5_ngrOwD2qYUPxLVesrg/edit).**
+
+## SEEDERS AND SORTERS
+
+TO DO
 
 # RESEARCH (Green Cell Headers)
 
 First pick a link in the spreadsheet to evaluate. 
 
-Fill in your name in Column __ to claim your link so there are no duplicate researching efforts. 
+Fill in your name in Column __ to claim ("check out") your link so there are no
+duplicate researching efforts.
 
 Keep in mind two things when looking at the spreadsheet: 
 
