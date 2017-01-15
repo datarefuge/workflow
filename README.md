@@ -6,7 +6,7 @@
   more
   [here](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
   and
-  [here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit).
+  [here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)).
   URLs judged to be possibly crawlable are "nominated" (equivalently, "seeded")
   using our
   [Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok)
@@ -53,10 +53,11 @@ technical notes for answering this:
   should be manually captured anyway.
 - Files types like ZIP, PDF, Excel, etc. are crawlable if they are linked.
 - The crawler can only follow HTTP links that appear directly in the DOM at load
-  time. If links are added by Javascript or require submitting a form, they are
+  time. (That is, they should appear as `<a href ...>` tags in the page source.)
+  If links are added by Javascript or require submitting a form, they are
   not crawlable.
 - The crawler does not tolerate web frames (but it straightforward to inspect
-  a page to obtain the content in the frame directly).
+  a page to obtain the content in the frame directly, and then nominate *that*).
 - The crawler recently added the ability to crawl FTP, but we will not rely on
   this; we will treat resources served over FTP as uncrawlable.
 
