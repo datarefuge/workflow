@@ -144,7 +144,7 @@ Press enter for the default output format and region name (you don't need to hav
 
 **Run:**
 
-`aws s3 ls ckanholding`
+`aws s3 ls nameofbucket`
 
 You should see a list of files, such as:
 
@@ -161,9 +161,9 @@ You should see a list of files, such as:
 **To upload a file or folder to the s3 bucket:**
 
 ```
-aws s3 cp --recursive [folder name]  s3://ckanholding
+aws s3 cp --recursive [folder name]  s3://nameofbucket
 
-aws s3 cp [file name]  s3://ckanholding
+aws s3 cp [file name]  s3://nameofbucket
 ```
 
 # METADATA(Blue Cell Headers)
