@@ -1,12 +1,25 @@
-Before you start make sure to read: 
+# Overview
 
-
-
-1)https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit
-
-2)https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit
-
-
+* The *Seeders and Sorters* team canvases the resources of a given government
+  agency, identifying important URLs. They sort them by whether their data
+  can be automatically captured by the Internet Archive webcrawler (about which
+  more
+  [here](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
+  and [here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit).
+  URLs judged to be possibly crawlable are "nominated" (equivalently, "seeded")
+  using our [Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok) or
+  [bookmarklet](http://digital2.library.unt.edu/nomination/eth2016/about/).
+  This sorting is only provisional: when in doubt seeders mark a URL as possibly
+  *not* crawlable, and these URLs populate a spreadsheet.
+* The *Researchers* evaluate each entry in the spreadsheet to confirm whether
+  it is indeed not automatically crawlable by the Internet Archive and, if so,
+  how the data might be accessed.
+* The *Havesters* download uncrawlable data. Often is it easiest for the person
+  who researched an entry to also harvest it, obtaining technical assistance
+  from fellow researchers/harvesters as needed.
+* The *Baggers* package the downloaded data into a bagit file, which includes
+  some metadata, and upload it into an Amazon S3 bucket.
+* The *Metadata* team creates a CKan record for this S3 resource.
 
 **NOTE THAT THE COLUMNS REFERED TO IN THIS DOCUMENT, UNLESS OTHERWISE NOTED COME FROM THIS SPREADSHEET.** https://docs.google.com/spreadsheets/d/1nevyzpc-vwoK6krngEASPJS5_ngrOwD2qYUPxLVesrg/edit
 
