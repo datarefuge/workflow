@@ -1,5 +1,13 @@
 # Overview
 
+This document describes the process that a site goes through from the time it has been identified by a seeder & sorter as "uncrawlable" until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves four distinct stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security. 
+
+
+
+
+
+
+
 * The *Seeders and Sorters* team canvases the resources of a given government
   agency, identifying important URLs. They sort them by whether their data
   can be automatically captured by the Internet Archive webcrawler (about which
