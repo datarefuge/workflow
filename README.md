@@ -30,7 +30,7 @@
 
 TO DO
 
-# RESEARCH (Green Cell Headers)
+# RESEARCH (BLUE Cell Headers, Columns L-R)
 
 First pick a link in the spreadsheet to evaluate. 
 
@@ -84,7 +84,7 @@ entries in the spreadsheet, and ensure that you aren't harvesting a subdirectory
 if you can harvest the entire directory. Often, data underlying dozens of pages
 or multiple "access portal" apps is also available as one structured data file.
 
-# HARVESTING (Purple Cell Headers)
+# HARVESTING (PURPLE Cell Headers, Columns S-X)
 
 Check out a URL on a google sheet 
 
@@ -100,10 +100,10 @@ Package as [uuid.zip] and [uuid.json]
 
 Mark as Harvested google sheet
 
-# BAGGING (Red Cell Headers)
+# BAGGING (ORANGE Cell Headers, Columns Y-AA)
 
-- Check out a package (Column )
-- Data comes from thumbdrive
+- Check out a package (Column Y)
+- Data comes from S3 Bucket
 - Take folder and create metadata folder for Json template. 
 - Label the json file and the folder where the json folder where it is located with the uuid.
 - The json should 
@@ -213,9 +213,9 @@ aws s3 cp --recursive [folder name]  s3://nameofbucket
 aws s3 cp [file name]  s3://nameofbucket
 ```
 
-# METADATA(Blue Cell Headers)
+# METADATA (GREEN Cell Headers, Columns AB-AD)
 
-- Get thumbdrive from uploader 
+- Get data from CKAN S3 Bucket
 
 - Checkout metadata link for file (column)
 
