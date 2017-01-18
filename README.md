@@ -1,41 +1,88 @@
-Before you start make sure to read: 
+# Overview
 
+* The *Seeders and Sorters* team canvases the resources of a given government
+  agency, identifying important URLs. They sort them by whether their data
+  can be automatically captured by the Internet Archive webcrawler (about which
+  more
+  [here](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
+  and
+  [here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)).
+  URLs judged to be possibly crawlable are "nominated" (equivalently, "seeded")
+  using our
+  [Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok)
+  or
+  [bookmarklet](http://digital2.library.unt.edu/nomination/eth2016/about/).
+  This sorting is only provisional: when in doubt seeders mark a URL as possibly
+  *not* crawlable, and these URLs populate a spreadsheet.
+* The *Researchers* evaluate each entry in the spreadsheet to confirm whether
+  it is indeed not automatically crawlable by the Internet Archive and, if so,
+  how the data might be accessed.
+* The *Havesters* download uncrawlable data. Often is it easiest for the person
+  who researched an entry to also harvest it, obtaining technical assistance
+  from fellow researchers/harvesters as needed.
+* The *Baggers* package the downloaded data into a bagit file, which includes
+  some metadata, and upload it into an Amazon S3 bucket.
+* The *Metadata* team creates a CKan record for this S3 resource.
 
+**NOTE THAT THE COLUMNS REFERED TO IN THIS DOCUMENT, UNLESS OTHERWISE NOTED COME FROM [THIS SPREADSHEET](https://docs.google.com/spreadsheets/d/1nevyzpc-vwoK6krngEASPJS5_ngrOwD2qYUPxLVesrg/edit).**
 
-1)https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit
+## SEEDERS AND SORTERS
 
-2)https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit
-
-
-
-**NOTE THAT THE COLUMNS REFERED TO IN THIS DOCUMENT, UNLESS OTHERWISE NOTED COME FROM THIS SPREADSHEET.** https://docs.google.com/spreadsheets/d/1nevyzpc-vwoK6krngEASPJS5_ngrOwD2qYUPxLVesrg/edit
+TO DO
 
 # RESEARCH (Green Cell Headers)
 
 First pick a link in the spreadsheet to evaluate. 
 
-Fill in your name in Column __ to claim your link so there are no duplicate researching efforts. 
+Fill in your name in Column __ to claim ("check out") your link so there are no
+duplicate researching efforts.
 
 Keep in mind two things when looking at the spreadsheet: 
 
 
 
-### <u>**Is the data actually actually crawlable?**</u>
+### Is the data actually actually crawlable?
 
-****
+Again, see [here](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
+and
+[here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)
+for a mostly non-techincal introduction to the crawler. Some additional
+technical notes for answering this:
 
-- Yes, if is crawlable, nominate it:  go to chrome extension (https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok), if that doesn't work then boomarklet for seeding (http://digital2.library.unt.edu/nomination/eth2016/about/)
+- There is no specific file size cutoff on what is crawlable, but large files
+  should be manually captured anyway.
+- Files types like ZIP, PDF, Excel, etc. are crawlable if they are linked.
+- The crawler can only follow HTTP links that appear directly in the DOM at load
+  time. (That is, they should appear as `<a href ...>` tags in the page source.)
+  If links are added by Javascript or require submitting a form, they are
+  not crawlable.
+- The crawler does not tolerate web frames (but it straightforward to inspect
+  a page to obtain the content in the frame directly, and then nominate *that*).
+- The crawler recently added the ability to crawl FTP, but we will not rely on
+  this; we will treat resources served over FTP as uncrawlable.
+
+What to do in each case:
+
+- YES: If the URL is crawlable or you locate a crawlable URL that accesses the
+  underlying dataset:
+  - Nominate it: use our
+    [Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok),
+    and if that doesn't work then use the
+    [bookmarklet](http://digital2.library.unt.edu/nomination/eth2016/about/)
   - Fill out that you seeded (Column __)
   - Fill out that link is done (Column __)
-- Kind of crawlable (FTP, mixed content, big data sets): follow steps for yes and no
-  - *While we understand that this may mean duplicate sets of data in the ckan, that is not a concern. We are ensuring that the data is fully preserved and accessible. 
-- No, search agency websites and data.gov for dataset entry points for your dataset collection   
+- NO: If it is confirmed not crawlable:
+  - Search agency websites and data.gov for dataset entry points for your dataset collection   
   - Add harvastable data url to spreadsheet (Column ), REALLY IMPORTANT! 
   - Learn what actual datasets look like in terms of format  (SQL, FTP, ZIP, PDF Collections, etc.), size,  what you found, etc. (Column )
+- YES AND NO: for example, FTP address, mixed content, big data sets:
+  - Nominate it anyway, but folow the steps for uncrawlable content above.
+  - *While we understand that this may mean duplicate sets of data in the ckan, that is not a concern. We are ensuring that the data is fully preserved and accessible.*
 
-***<u>Keep in mind Look for related rows and ensure that you aren't harvesting a sub directory if you can harvest the entire directory.</u>*****
-
-
+Try to understand what data sets are underlying the web pages. Look for related
+entries in the spreadsheet, and ensure that you aren't harvesting a subdirectory
+if you can harvest the entire directory. Often, data underlying dozens of pages
+or multiple "access portal" apps is also available as one structured data file.
 
 # HARVESTING (Purple Cell Headers)
 
