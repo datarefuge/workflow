@@ -1,6 +1,6 @@
 # Overview
 
-This document describes the process that a site goes through from the time it has been identified by a seeder & sorter as "uncrawlable" until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves four distinct stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security. 
+This document describes the process that a site goes through from the time it has been identified by a [seeder & sorter](https://github.com/datarefugephilly/workflow/blob/master/seednsort.md) as "uncrawlable" until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves four distinct stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security. 
 
 
 
@@ -8,7 +8,7 @@ This document describes the process that a site goes through from the time it ha
 
 
 
-* The *Seeders and Sorters* team canvases the resources of a given government
+* The *[Seeders and Sorters](seednsort.md)* team canvases the resources of a given government
   agency, identifying important URLs. They sort them by whether their data
   can be automatically captured by the Internet Archive webcrawler (about which
   more
@@ -27,9 +27,8 @@ This document describes the process that a site goes through from the time it ha
   how the data might be accessed.
 * The *Havesters* download uncrawlable data. Often is it easiest for the person
   who researched an entry to also harvest it, obtaining technical assistance
-  from fellow researchers/harvesters as needed.
-* The *Baggers* package the downloaded data into a bagit file, which includes
-  some metadata, and upload it into an Amazon S3 bucket.
+  from fellow researchers/harvesters as needed. At the end of the harvesting process, this data is uploaded to a temporary storage location. 
+* The *Baggers* do quality assurance on the work of the harvesters to make sure that a second pair of eyes has passed over each dataset, and that everything a researcher would need to understand the data is present. They then package the data into a bagit file, which includes some metadata, and move it into an Amazon S3 bucket where it will be accessible from ckan.
 * The *Metadata* team creates a CKan record for this S3 resource.
 
 **NOTE THAT THE COLUMNS REFERED TO IN THIS DOCUMENT, UNLESS OTHERWISE NOTED COME FROM [THIS SPREADSHEET](https://docs.google.com/spreadsheets/d/1nevyzpc-vwoK6krngEASPJS5_ngrOwD2qYUPxLVesrg/edit).**
@@ -92,7 +91,7 @@ entries in the spreadsheet, and ensure that you aren't harvesting a subdirectory
 if you can harvest the entire directory. Often, data underlying dozens of pages
 or multiple "access portal" apps is also available as one structured data file.
 
-# HARVESTING (PURPLE Cell Headers, Columns S-X)
+# HARVESTING 
 
 Check out a URL on a google sheet 
 
@@ -108,7 +107,7 @@ Package as [uuid.zip] and [uuid.json]
 
 Mark as Harvested google sheet
 
-# BAGGING (ORANGE Cell Headers, Columns Y-AA)
+# BAGGING 
 
 - Check out a package (Column Y)
 - Data comes from S3 Bucket
