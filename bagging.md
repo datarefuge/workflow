@@ -1,11 +1,11 @@
-# BAGGING 
+# BAGGING
 
-- **Check out a URL for baggin**
+- **Check out a URL for bagging from the spreadsheet**
 - Data comes from S3 Bucket
 - Spot check to ensure
-- Take folder and create metadata folder for Json template. 
-- Label the json file and the folder where the json folder where it is located with the uuid.
-- The json should 
+- Take folder and create metadata folder for Json template.
+- Label the json file and the folder where the json folder where it is located with the entry's UUID (see column ).
+- The json should use the following format:
 
 ```
 {
@@ -26,21 +26,21 @@
   }
 ```
 
-- Make sure to save as a .json file.
+- Make sure to save this as a .json file.
 
-- Copy the metadata file into folder where the package is 
+- Copy the metadata file into folder where the package is
 
-- Run python command line script which creates the bag 
+- Run python command line script which creates the bag
 
   - [Python script to make a bag (command line)]: https://github.com/LibraryOfCongress/bagit-python
 
     ****
 
   ```
-  bagit.py --contact-name 'John Kunze' /directory/to/bag
+  bagit.py --contact-name '[your name]' /directory/to/bag
   ```
 
-- You should be left with a metadata file and four seperate bagit files 
+- You should be left with a 'data' folder (which contains the downloaded content and metadata file) and four separate bagit files
 
   - bag-info.txt
   - bagit.txt
@@ -48,7 +48,6 @@
   - tagmanifest-md5.txt
   - data  (package of stuff)
 
-- Zip this entire bagit file, data file, plus four txt files listed 
+- Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID
 
 - Put the zip file onto a thumb drive and give to an uploader
-
