@@ -46,7 +46,6 @@
   - bagit.txt
   - manifest-md5.txt
   - tagmanifest-md5.txt
-  - data  (package of stuff)
 
 - Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID
 
