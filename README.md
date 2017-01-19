@@ -24,7 +24,10 @@ This document describes the process that a url/dataset goes through from the tim
 **The [Baggers](bagging.md)**
 - do quality assurance on the work of the harvesters to make sure that a second pair of eyes has passed over each dataset
 - ensre that everything a researcher would need to understand the data is present
-- package the data into a bagit file, which includes some metadata, and move it into an Amazon S3 bucket where it will be accessible from ckan
+- package the data into a bagit file, which includes basic technical metadata
+
+**The [Uploaders](uploaders.md)**
+- take finished bag-it file and upload to S3 instance
 
 **The [Metadata](metadata.md) team**
 - creates a CKan record for this S3 resource
