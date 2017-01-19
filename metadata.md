@@ -25,7 +25,7 @@
   - Click "Next: Add Data" at the bottom of the CKAN form
   - Click "Link" and enter the URL to the bag in S3
   - Click "Finish"
-  - Test the link you just created by clicking it, and verifying that it is beginning to download. 
+  - Test that the link you just created work by clicking it, and verifying that the file begins to download. 
     - Note that you don't need to finish downloading it again.
 
 - **Let everyone know you are done **
