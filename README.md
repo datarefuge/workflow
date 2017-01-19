@@ -8,16 +8,16 @@ This document describes the process that a url/dataset goes through from the tim
 
 
 
-*The [Seeders and Sorters](seednsort.md) *
+**The [Seeders and Sorters](seednsort.md)**
 - canvas the resources of a given government agency, identifying important URLs. 
 - Sort them by whether their data can be automatically captured by the Internet Archive webcrawler 
 - Nominate urls for the internet archive if they are crawlable and mark them as "uncrawlable" if they're not.
 
-*The [Researchers](research.md) *
+**The [Researchers](research.md)**
 - evaluate a url to see if it is indeed crawlable
 - make a plan for how the data might be accessed.
   
-*The [Harvesters](harvesting.md)*
+**The [Harvesters](harvesting.md)**
 - download uncrawlable data. Often is it easiest for the person who researched an entry to also harvest it, obtaining technical assistance
   from fellow researchers/harvesters as needed. 
   Create brief metadata json file and notes for the next steps
