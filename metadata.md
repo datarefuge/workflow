@@ -14,12 +14,12 @@
   - When it is downloaded, unzip it 
   - Spot check some of the files (make sure they open and look normal, i.e., not garbled)
 
-- Create new record in CKan 
+- Create new record in CKAN 
   - Click "Add Dataset"
   - Start entering metadata following the metadata schema spreadsheet (https://docs.google.com/spreadsheets/d/12JAleU6eF4wgu0hIlQ5efoOUCsZjT-UkRxwAofVZp6c/edit#gid=1879921913)
   - To decide what value to enter in each field:
-    - Open Json file that is in the bag you have downloaded; it contains some of the metadata you need
-    - Go to the original location of the item (on the federal agency website), to find more more facts about the item
+    - Open JSON file that is in the bag you have downloaded; it contains some of the metadata you need
+    - Go to the original location of the item (on the federal agency website), to find more more facts about the item such as     description, title of the dataset, etc.
     
 - Linking the CKAN record to the bag:
   - Click "Next: Add Data" at the bottom of the CKAN form
