@@ -2,7 +2,7 @@
 
 - **Check out a URL for bagging from the spreadsheet**
 - Data comes from S3 Bucket
-- Spot check to ensure
+- Spot check to ensure the UUID and downloaded materials match to the selected spreadsheet row
 - Take folder and create metadata folder for Json template.
 - Label the json file and the folder where the json folder where it is located with the entry's UUID (see column ).
 - The json should use the following format:
