@@ -5,6 +5,7 @@ This document describes the process that a url/dataset goes through from the tim
 
 
 ## [Before you begin](advance-work.md)
+- Get account credentials and go over workflow. 
 
 
 
