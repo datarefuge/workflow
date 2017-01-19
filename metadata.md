@@ -1,8 +1,17 @@
-# METADATA
+# CKAN/METADATA
 
-- **Checkout metadata link for file**
+- At the beginning of the session: ask the session organizer for a CKAN account, and log in at https://www.datarefuge.org/
 
-- Create new record in CKan (instructions on getting a ckan account, etc)
+- In spreadsheet list, locate an item that has been bagged and uploaded and it ready for the CKAN/metadata step
+
+- Claim it by entering your slack name in the Metadata cell
+
+- QA step: Click on URL for the bag in S3 and download it, then unzip it and spot check some of the files
+
+- Create new record in CKan 
+
+- Open the Json file 
+
 
 - Follow metadata schema spreadsheet (https://docs.google.com/spreadsheets/d/12JAleU6eF4wgu0hIlQ5efoOUCsZjT-UkRxwAofVZp6c/edit#gid=1879921913)
 
