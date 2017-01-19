@@ -1,15 +1,18 @@
 # HARVESTING 
 
-Check out a URL on a google sheet 
+**Check out a URL**
 
-Link identification - method of identification 
+**THIS WOULD BE A GREAT PLACE FOR SOMEONE TO PROVIDE LINKS AND INFO TO THE VARIOUS REPOS AND DOCS ALL OVER THAT DESCRIBE THIS PROCESS. I FEEL LIKE I'VE LOST TRACK**
 
-List of URLS 
+* get the data
+ * Link identification - method of identification 
+ * List of URLS 
+ * WGet loop —> consumes list with 4 second delay between each download so we don't get kicked out  —> data directory 
 
-WGet loop —> consumes list with 4 second delay between each download so we don't get kicked out  —> data directory 
+* Write metadata. Json with as much info as possible. **ANOTER PLACE THAT COULD USE MORE INFO**
 
-Write metadata. Json with as much info as possible
+* Package as [uuid.zip] and [uuid.json] 
 
-Package as [uuid.zip] and [uuid.json] 
+* **Upload to staging area (needs more info from b5, or link to someone who can give you an invite in)**
+* **Check in data to signal to baggers that the data is there**
 
-Mark as Harvested google sheet
