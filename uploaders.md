@@ -19,7 +19,7 @@
   ```
   
 - Recording that the upload took place  
-  - In the "Uncrawlable Content" spreadsheet list, locate the bag you just uploaded and enter your slack name in the "Uploaded by" cell
+  - In the "Uncrawlable Content" spreadsheet list, locate the bag you just uploaded and enter your slack name in the "Uploading to S3" cell
 
 - Verification step 
  - In the "Uncrawlable Content" spreadsheet, click on S3 URL for the bag  
