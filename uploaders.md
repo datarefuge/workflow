@@ -28,5 +28,5 @@
  - Spot check some of the files (make sure they open and look normal, i.e., are not garbled)
      
 - Finishing up
-  - Once you are certain that the zipfile was uploaded successfully, delete the it from the thumbdrive 
+  - Once you are certain that the Zip file was uploaded successfully, delete the it from the thumbdrive 
   - Put the thumbdrive in the stack of available thumbdrives for Harvesters
