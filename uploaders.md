@@ -3,7 +3,14 @@
 - At the beginning of the session 
   - If you have been designated as an Uploader, ask the event organizer to set you up with
     - The S3 login credentials
-    - The software needed to upload a file to S3 through the command line
+    - The software needed to upload a file to S3 from your laptop through the command line
+      - The basic commands needed for that are:
+      ```
+      pip install awscli	
+      aws configure	
+      aws s3 ls [eventS3Folder]
+      ```
+      - If you need more help to run these commands, please talk to the event organizer
   
 - Claiming a bag for upload 
   - Baggers will bring you thumbdrives containing bags
