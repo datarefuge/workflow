@@ -12,7 +12,7 @@ Seeders and Sorters will use the EDGI subprimer systems ([found here](https://en
 - canvassing the resources of a given government agency, identifying important URLs.
 - Idntifying whether those URL's [can be crawled by the Internet Archive's webcrawler](./what-heritrix-does.md)
     - If URL's are crawlable, nominate them to the EOT crawl using the [EDGI Nomination Tool](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok?hl=en)
-    - If they are not crawlable, add them to the "uncrawlable" spreadsheet, generating a UUID for this dataset **NOTE: THIS PROCESS IS CURRENTLY UNDOCUMENTED. WHAT WAS USED IN PHILLY FOR THIS?**
+    - If they are not crawlable, add them to the "uncrawlable" spreadsheet, generating a UUID for this dataset.  the web-based tool [UUID Generator](https://www.uuidgenerator.net) can generate individual or multiple UUID's.
 
 ### 2. Research
 Resarchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable. [Research.md](research.md) describes this process in more detail. 
