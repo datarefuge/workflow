@@ -17,10 +17,10 @@ Seeders and Sorters will use the EDGI subprimer systems ([found here](https://en
 ### 2. Research
 Resarchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable. [Research.md](research.md) describes this process in more detail. 
 
-*Often this step is incorporated into either "Seeding and Sorting" or "Harvesting".
+*Often this step is incorporated into either "Seeding and Sorting" or "Harvesting".*
 
 ### 3. [Harvesting](harvesting-toolkit)
-Harvesters take the "uncrawlable" data and try to figure out how to capture it. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks. Harvesters should see the included [Harvesting Toolkit](./harvesting-toolkit) for more details and tools. **Group Leaders should familiarize themselves with this process before the start of the event.
+Harvesters take the "uncrawlable" data and try to figure out how to capture it. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks. Harvesters should see the included [Harvesting Toolkit](./harvesting-toolkit) for more details and tools. **Group Leaders should familiarize themselves with this process before the start of the event.**
 
 ### 4. [Bagging](bagging.md)
 - do quality assurance on the work of the harvesters to make sure that a second pair of eyes has passed over each dataset
