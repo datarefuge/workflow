@@ -25,7 +25,7 @@ This document describes the process that a url/dataset goes through from the tim
 
 **The [Baggers](bagging.md)**
 - do quality assurance on the work of the harvesters to make sure that a second pair of eyes has passed over each dataset
-- ensre that everything a researcher would need to understand the data is present
+- ensure that everything a researcher would need to understand the data is present
 - package the data into a bagit file, which includes basic technical metadata
 
 **The [Uploaders](uploaders.md)**
