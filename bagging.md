@@ -36,8 +36,8 @@
   "Name of package creator": "Mallick Hossain and Ben Goldman"
   }
 ```
-  - Make sure to save this as a .json file.
-  - Copy the metadata file into folder where the package is
+    - Make sure to save this as a .json file.
+    - Copy the metadata file into folder where the package is
 
 - Creating the bag
   - Run python command line script which creates the bag
