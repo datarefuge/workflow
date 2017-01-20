@@ -47,7 +47,15 @@ What to do in each case:
   - Nominate it anyway, but folow the steps for uncrawlable content above.
   - *While we understand that this may mean duplicate sets of data in the ckan, that is not a concern. We are ensuring that the data is fully preserved and accessible.*
 
+If you have found harvestable data then:
+
 Try to understand what data sets are underlying the web pages. Look for related
 entries in the spreadsheet, and ensure that you aren't harvesting a subdirectory
 if you can harvest the entire directory. Often, data underlying dozens of pages
 or multiple "access portal" apps is also available as one structured data file.
+
+Add your suggested url for harvesting the data. 
+
+Describe what formats (SQL, FTP, ZIP, PDF Collections, etc.), size, and details about what you found, including any recommendations for the harvesters.
+
+Search for related URLS in the pipeline that might would be covered by the same approach so as not to duplicate work.
