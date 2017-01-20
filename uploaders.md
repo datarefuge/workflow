@@ -14,7 +14,9 @@
   - Plug the thumbdrive into your laptop and check its content
   - There should be a single Zip file on it: that's the bag
   - upload it using the command
+  ```
   aws s3 cp [sourceFile] s3://[eventS3Folder]
+  ```
   
 - Recording that the upload took place  
   - In the "Uncrawlable Content" spreadsheet list, locate the bag you just uploaded and enter your slack name in the "Uploaded by" cell
