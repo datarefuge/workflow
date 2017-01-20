@@ -1,11 +1,22 @@
 # BAGGING
 
-- **Check out a URL for bagging from the spreadsheet**
-- Data comes from Harvesters
-- Spot check to ensure the UUID and downloaded materials match to the selected spreadsheet row
-- Take folder and create metadata folder for Json template.
-- Label the json file and the folder where the json folder where it is located with the entry's UUID (see column ).
-- The json should use the following format:
+- At the beginning of the session
+  - Get set up with Python and the Python script to make a bag at the command line https://github.com/LibraryOfCongress/bagit-python
+
+- Claiming an item for bagging 
+  - Harvesters will bring you thumbdrives containing datasets
+  - Grab one of those thumbdrive to process it
+  - Note that the Bagger(s) should make sure that all thumbdrives deposited by Harvesters are carefully arranged into a small queue while waiting to be processed, and are clearly distinguished from the thumbdrives that are ready for the next step (upload). This will avoid confusions.
+  - Look at the content of the thumbdrive on your laptop and locate the corresponding UUID in the "Uncrawlable Content" spreadsheet list
+  - Enter your slack name in the "Bagging" cell for that row.
+
+- QA: spot check to ensure the UUID and downloaded materials match to the spreadsheet row
+  - Ensure that everything a researcher would need to understand the data is present
+
+- Creating the Json file
+  - Take folder and create metadata folder for Json template.
+  - Label the json file and the folder where it is located with the entry's UUID (see column "Unique ID").
+  - The json should use the following format:
 
 ```
 {
@@ -25,28 +36,25 @@
   "Name of package creator": "Mallick Hossain and Ben Goldman"
   }
 ```
-
 - Make sure to save this as a .json file.
-
 - Copy the metadata file into folder where the package is
 
-- Run python command line script which creates the bag
+- Creating the bag
+  - Run python command line script which creates the bag
 
-  - [Python script to make a bag (command line)]: https://github.com/LibraryOfCongress/bagit-python
-
-    ****
 
   ```
   bagit.py --contact-name '[your name]' /directory/to/bag
   ```
 
-- You should be left with a 'data' folder (which contains the downloaded content and metadata file) and four separate bagit files
+  - You should be left with a 'data' folder (which contains the downloaded content and metadata file) and four separate bagit files
+    - bag-info.txt
+    - bagit.txt
+    - manifest-md5.txt
+    - tagmanifest-md5.txt
 
-  - bag-info.txt
-  - bagit.txt
-  - manifest-md5.txt
-  - tagmanifest-md5.txt
-
-- Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID
-
-- Put the zip file onto a thumb drive and give to an uploader
+- Creating the Zip file and finishing up
+  - Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID
+  - In the end, only the zip file should be present on the thumb drive and all other files should be deleted
+    - Note that there should be no more than 1 zip per thumbdrive to avoid confusions
+  - Give the thubdrive to an uploader
