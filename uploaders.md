@@ -15,7 +15,7 @@
 - Claiming a bag for upload 
   - Baggers will bring you thumbdrives containing bags
   - Grab one of those thumbdrive to upload it to S3
-  - Note that the Uploader(s) should make sure that all thumbdrives deposited by baggers are carefully arranged into a small queue while waiting to be uploaded, and are clearly distinguished from the thumbdrived that have already been processed. This will avoid confusions. 
+  - Note that the Uploader(s) should make sure that all thumbdrives deposited by Baggers are carefully arranged into a small queue while waiting to be uploaded, and are clearly distinguished from the thumbdrives that have already been processed. This will avoid confusions. 
 
 - Uploading the file
   - Plug the thumbdrive into your laptop and check its content
