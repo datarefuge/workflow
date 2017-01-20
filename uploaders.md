@@ -24,6 +24,7 @@
   ```
   aws s3 cp [sourceFile] s3://[eventS3Folder]
   ```
+  - Note: If the file you are trying to upload is beyond 5 Gigs, you need to use an alternate uploading method. Please talk to the event organizer.
   
 - Recording that the upload took place  
   - In the "Uncrawlable Content" spreadsheet list, locate the bag you just uploaded and enter your slack name in the "Uploading to S3" cell
