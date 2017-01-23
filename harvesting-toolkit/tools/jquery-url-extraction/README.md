@@ -6,20 +6,20 @@ The goal of this guide is to arrive a text file, with each line containing a url
 
 ### Overview:
 
-We're going to be loading [jquery][http://api.jquery.com] into the page, using it to isolate a list of links for download. The general steps we're going to take:
+We're going to be loading [jQuery](http://api.jquery.com) into the page, using it to isolate a list of links for download. The general steps we're going to take:
 
-1. Open the console & load jquery
+1. Open the console & load jQuery
 2. Use jQuery to construct a list of links in the console
 3. Copy that list to a text file
 4. Feed the text file to the wget-loop tool
 
 ### 1. Open the console & load jquery
-Start by opening the console, it's often easiest to "inspect element" on a particular link you'd like to start with. You should see 
+Start by opening the console, it's often easiest to "inspect element" on a particular link you'd like to start with. You should see
 
-From there, open the jquery.js file in this folder in a text editior. You'll see one very long line of code, copy that line, and paste it into the console, then hit enter. you should see "true" appear in the console, this indicates that jquery has been loaded into the page. If you get an error, make sure you've copied the entire line.
+From there, open the jquery.js file in this folder in a text editor. You'll see one very long line of code, copy that line, and paste it into the console, then hit enter. you should see "true" appear in the console, this indicates that jquery has been loaded into the page. If you get an error, make sure you've copied the entire line.
 
 ### 2. Use jQuery to construct a list of links in the console
-Here's the part where you'll need to exercise a bit of judgement. We're going to build a jquery [selection][] that isolates all of the links to data files on the page. Because pages use different HTML, each solution may be a bit different. As an example (and a great place to start), this command would select every link on the page:
+Here's the part where you'll need to exercise a bit of judgement. We're going to build a jQuery [selection](https://learn.jquery.com/using-jquery-core/selecting-elements/) that isolates all of the links to data files on the page. Because pages use different HTML, each solution may be a bit different. As an example (and a great place to start), this command would select every link on the page:
 
 	$("a")
 
@@ -61,7 +61,7 @@ Take your time assembling the list of urls. Moving slowly & thinking about each 
 Now that you have a list of one url per line, the last step is to decide between *absolute* or *relative* urls
 
 #### Absolute vs. Relative urls
-In your list you may encounter links that don't have a protocol string in their name (a protocol string is the ````http://``` bit). It may look something like this:
+In your list you may encounter links that don't have a protocol string in their name (a protocol string is the ```http://``` bit). It may look something like this:
 
 	/electricity/data/eia412/f412sch203.xls
 
@@ -69,7 +69,7 @@ This is a *relative* url, meaning it's relative to the page it was loaded on. Wh
 
 	http://www.eia.gov/electricity/data/eia412/
 
-When you click a link who's ```href``` attribute is ```/electricity/data/eia412/f412sch203.xls```, the browser generates this url:
+When you click a link whose ```href``` attribute is ```/electricity/data/eia412/f412sch203.xls```, the browser generates this url:
 
 	http://www.eia.gov/electricity/data/eia412/f412sch203.xls
 
@@ -83,7 +83,7 @@ The browser would have generated this url:
 
 The difference is the first ```/``` in the link's href attribute. a slash at the beginning of a link means "start with the base url and add the href" (in this case: ```http://www.eia.gov```), no slash means "add the href to the current url" (in this case, the current url is: ```http://www.eia.gov/electricity/data/eia412/```). This creates a problem for our text file, as there is no browser to do the interpretation for us, so we need to be explicit.
 
-In your text file, you'll need to decide between absolute or relative urls. Either is fine, but **all links in the text file must be either absolute or relative**. We can't mix between them. It's easiest to just go with whichever is more prevelant in your list. If you're seeing mainly absolute urls, make them all absolute.
+In your text file, you'll need to decide between absolute or relative urls. Either is fine, but **all links in the text file must be either absolute or relative**. We can't mix between them. It's easiest to just go with whichever is more prevalent in your list. If you're seeing mainly absolute urls, make them all absolute.
 
 If you use relative urls, be sure to set the "url.txt" file to be url you'd like to add to the beginning of the list. Looking at the wget-loop download script, it shows that for each line in the paths.txt file, it adds whatever's in the url.txt file to the line. so if the url.txt file is blank, it will add nothing to the line.
 
