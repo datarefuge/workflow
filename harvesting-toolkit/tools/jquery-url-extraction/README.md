@@ -21,34 +21,34 @@ From there, open the jquery.js file in this folder in a text editor. You'll see 
 ### 2. Use jQuery to construct a list of links in the console
 Here's the part where you'll need to exercise a bit of judgement. We're going to build a jQuery [selection](https://learn.jquery.com/using-jquery-core/selecting-elements/) that isolates all of the links to data files on the page. Because pages use different HTML, each solution may be a bit different. As an example (and a great place to start), this command would select every link on the page:
 
-	$("a")
+	> $("a")
 
 Try pasting that line into the console & hitting enter. In plain english, this command says "select every a tag on the page". The command returns a jquery *selection*, which is an array of html tags. It's worth having a look at the output, and you'll probably see a long list of tags, many of which don't link to the "data". Running a selector for every "a" (link tag) means that links for navigation, copyright links, social media links, etc.  will be included. Often it's best to scope the selection to a more relevant part of the page. In the example case, looking at the html in the inspector showed that all of the data tags were inside of a ```<div class="simpletable" >```, so we can scope the selection like this:
 
-	$(".simpletable a")
+	> $(".simpletable a")
 
 What this is saying is "select every a tag that is a decendant of the css class simpletable". Looking at the list, it's a neat list of all the zip files on the page.
 
 This updated selectino is close, but what we're after is a list of urls, not a jQuery selection. Urls' are stored in an ```<a>``` tag's ```href``` attribute, so we'll have to run a few more commands to pull the urls from the selection of a tags. The first thing we'll do is declare an array that will hold our results (Copy this line into the console & hit enter):
 
-	var links = [];
+	> var links = [];
 
 And now we will run the selection, and for each link in the list, we'll "push" the a tag's ```href``` attribute (the url) onto the links array. Be sure to change the ```".simpletable a"``` part to match the selection you've built.
 
-	$(".simpletable a").each(function(){ links.push($(this).attr("href")); })
+	> $(".simpletable a").each(function(){ links.push($(this).attr("href")); })
 
 
 ### 3. Copy that list to a text file
 
 Now that we have a list of links, it's time to get this list out of the browser and into a text editor. If you are using using chrome, this is a one liner. Type the following into the console & hit enter:
 
-	copy(links)
+	> copy(links)
 
 That will copy the links array to your clipboard.
 
 If you are using another browser, This will output a big list of all the links:
 
-	JSON.stringify(links)
+	> JSON.stringify(links)
 
 Run that, hit enter and copy the output.
 
