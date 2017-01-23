@@ -14,7 +14,9 @@ We're going to be loading [jQuery](http://api.jquery.com) into the page, using i
 4. Feed the text file to the wget-loop tool
 
 ### 1. Open the console & load jquery
-Start by opening the console, it's often easiest to "inspect element" on a particular link you'd like to start with. You should see
+Start by opening the console, it's often easiest to "inspect element" on a particular link you'd like to start with. You should see:
+
+	>
 
 From there, open the jquery.js file in this folder in a text editor. You'll see one very long line of code, copy that line, and paste it into the console, then hit enter. you should see "true" appear in the console, this indicates that jquery has been loaded into the page. If you get an error, make sure you've copied the entire line.
 
