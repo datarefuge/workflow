@@ -12,11 +12,11 @@ This package includes a general purpose toolkit for archiving open data.
 ## 1. Claiming a dataset to harvest
 
 - You will work on datasets that were confirmed as unscrawlable by Researchers.
-- Go to the Unscrawlable spreadsheet, and look for a dataset that has the status "Researcher status indicator" = Closed. Claim it by entering your slack handle with the status "Open" and today's date in the cell "Researcher status indicator" in Researcher section, for instance:
+- Go to the Uncrawlable spreadsheet, and look for a dataset that has the status "Researcher status indicator" = Closed. Claim it by entering your slack handle with the status "Open" and today's date in the cell "Researcher status indicator" in Researcher section, for instance:
 ```
 @khdelphine open 1/22/2017
 ```
-- Note that the Unscralable spreadsheet is the starting and ending point for the collective archiving efforts. Many people will be working from this shared worksheet, so it's important to report all your work in the spreadsheet and update the status cell that shows that you have claimed a URL or are done working on it.
+- Note that the Uncrawlable spreadsheet is the starting and ending point for the collective archiving efforts. Many people will be working from this shared worksheet, so it's important to report all your work in the spreadsheet and update the status cell that shows that you have claimed a URL or are done working on it.
 
 ## URL vs ID
 The url (in cell "Original URL")  is the link to examine, the id is a canonical id we'll use to connect the url with the data in question. The id will have been generated already by the researchers -- don't worry about that for now. 
