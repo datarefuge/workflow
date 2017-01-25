@@ -29,6 +29,7 @@ __license__ = 'Public domain'
 import http
 import json
 import os
+import plac
 import re
 import requests
 import sys
@@ -36,16 +37,139 @@ from time import sleep
 from urllib.request import urlopen
 from urllib.parse import urlparse
 
-if len(sys.argv) < 2:
-    print('Missing argument: file containing list of URLs to check')
-    sys.exit(1)
+
+# Command line interface
+# ......................................................................
 
-failures_file  = sys.argv[2] if len(sys.argv) > 2 else None
-successes_file = sys.argv[3] if len(sys.argv) > 3 else None
+def main(file=None, okay=None, miss=None, quiet=False, *args):
+    # Check for valid arguments.
+    if file and args:
+        raise ValueError("Can't supply both input file and URLs on command line")
+    elif not file and not args:
+        raise ValueError('No input file and no URLs given -- nothing to do')
+    elif file and not os.path.exists(file):
+        raise ValueError('File "{}" not found'.format(file))
+    # Let's do this thing.
+    run(file, args, okay, miss, quiet)
+
+# Plac annotations for main function arguments.
+# Argument annotations are: (help, kind, abbrev, type, choices, metavar).
+# Plac automatically adds a -h argument for help, so no need to do it here.
+#
+main.__annotations__ = dict(
+    file  = ('input file to read for URLs to check',      'option', 'f'),
+    okay  = ('output file to write URLs found in IA',     'option', 'o'),
+    miss  = ('output file to write URLs missing from IA', 'option', 'm'),
+    quiet = ('quiet -- do not echo every check',          'flag',   'q'),
+    args  = '(optional) URLs on the command line',
+)
 
 
-# Utility functions
+# Main functions
 # ......................................................................
+
+def run(input_file, urls, found_file, notfound_file, quiet=False):
+    successes = []
+    failures  = []
+
+    if input_file:
+        with open(input_file, encoding="utf-8") as f:
+            for line in f:
+                url = line.strip()
+                if '/' not in url:             # Skip non-URLs
+                    continue
+                (found, result) = check(url, quiet)
+                if found:
+                    successes.append(result)
+                else:
+                    failures.append(url)
+    else:
+        for url in urls:
+            (found, result) = check(url, quiet)
+            if found:
+                successes.append(result)
+            else:
+                failures.append(url)
+
+    if not quiet and (successes or failures):
+        msg('-'*70)
+    if successes:
+        if found_file:
+            with open(found_file, 'w') as out:
+                count = 0
+                for entry in successes:
+                    out.write(entry[0])
+                    out.write(',')
+                    out.write(entry[1])
+                    out.write(',')
+                    out.write(entry[2])
+                    out.write('\n')
+                    count += 1
+            if not quiet:
+                msg('{} successes written to file "{}"'.format(count, found_file))
+        else:
+            msg('{} URLs found in IA'.format(len(successes)))
+    elif not quiet:
+        if found_file:
+            msg('No successes -- {} not written'.format(found_file))
+        else:
+            msg('No successes')
+    if failures:
+        if notfound_file:
+            with open(notfound_file, 'w') as out:
+                count = 0
+                for url in failures:
+                    out.write(url)
+                    out.write('\n')
+                    count += 1
+            if not quiet:
+                msg('{} failures written to file "{}"'.format(count, notfound_file))
+        else:
+            msg('{} URLs not found in IA'.format(len(failures)))
+    elif not quiet:
+        if notfound_file:
+            msg('No failures -- {} not written'.format(notfound_file))
+        else:
+            msg('No failures')
+
+
+# Utilities
+# ......................................................................
+
+def check(given_url, quiet=False):
+    final_url = get_final_url(given_url)
+    if not final_url:
+        if not quiet:
+            msg('Could not access {} -- skipping'.format(given_url))
+        return (False, given_url)
+    url = 'http://archive.org/wayback/available?url=' + final_url
+    try:
+        response = urlopen(url)
+        data = json.loads(response.read().decode('utf-8'))
+        if data['archived_snapshots']:
+            archive_info = data['archived_snapshots']
+            if 'closest' not in archive_info:
+                if not quiet:
+                    msg('Got unexpected result for {}'.format(given_url))
+                return (False, given_url)
+            ts = archive_info['closest']['timestamp']
+            status = archive_info['closest']['status']
+            ia_url = archive_info['closest']['url']
+            if not quiet:
+                if int(status) > 300:
+                    msg('*** abnormal status {} for {}'.format(status, given_url))
+                else:
+                    msg('Found: {}'.format(ts, given_url))
+            return (True, (ts, given_url, ia_url))
+        else:
+            if not quiet:
+                msg('Not found: {}'.format(given_url))
+            return (False, given_url)
+    except Exception as e:
+        msg('Unable to check {}'.format(given_url))
+        msg(e)
+        return (False, given_url)
+
 
 def get_final_url(url):
     try:
@@ -76,90 +200,10 @@ def msg(text):
     print(text, flush=True)
 
 
-# Main loop
+# Entry point
 # ......................................................................
 
-successes = []
-failures  = []
-delay     = 0
+def cli_interface():
+    plac.call(main)
 
-msg('Starting.')
-msg('Reading URLs from file "{}"'.format(sys.argv[1]))
-if failures_file:
-    msg('Writing failures to file "{}"'.format(failures_file))
-else:
-    msg('Not writing failures to a file')
-if successes_file:
-    msg('Writing successes to file "{}"'.format(successes_file))
-else:
-    msg('Not writing successes to a file')
-msg('Using a delay of {}'.format(delay))
-msg('')
-
-with open(sys.argv[1], encoding="utf-8") as f:
-    for i, line in enumerate(f):
-        line = line.strip()
-        if '/' not in line:             # Check blank lines.
-            continue
-        final_url = get_final_url(line)
-        if not final_url:
-            msg('Could not access {} -- skipping'.format(line))
-            continue
-        url = 'http://archive.org/wayback/available?url=' + final_url
-        try:
-            response = urlopen(url)
-            data = json.loads(response.read().decode('utf-8'))
-            i = i + 1                   # Start line numbering at 1.
-            if data['archived_snapshots']:
-                archive_info = data['archived_snapshots']
-                if 'closest' not in archive_info:
-                    msg('Got unexpected result for {}'.format(line))
-                    failures.append(line)
-                    continue
-                ts = archive_info['closest']['timestamp']
-                status = archive_info['closest']['status']
-                ia_url = archive_info['closest']['url']
-                successes.append((ts, line, ia_url))
-                if int(status) > 300:
-                    msg('[{}] {} -- abnormal status {}'.format(i, line, status))
-                else:
-                    msg('[{}] {} -- archived {}'.format(i, line, ts))
-            else:
-                msg('[{}] {} -- not archived'.format(i, line))
-                failures.append(line)
-        except Exception as e:
-            msg('Unable to check {}'.format(line))
-            msg(e)
-    if type(delay) == int and delay > 0:
-        sleep(delay)
-
-
-msg('Done.')
-
-if successes_file:
-    if successes:
-        msg('-'*70)
-        with open(successes_file, 'w') as out:
-            for entry in successes:
-                out.write(entry[0])
-                out.write(',')
-                out.write(entry[1])
-                out.write(',')
-                out.write(entry[2])
-                out.write('\n')
-        msg('Successes written to file "{}"'.format(successes_file))
-else:
-    msg('No successes -- {} not written'.format(successes_file))
-
-if failures:
-    msg('-'*70)
-    if failures_file:
-        with open(failures_file, 'w') as out:
-            for url in failures:
-                out.write(url)
-                out.write('\n')
-        msg('Failures written to file "{}"'.format(failures_file))
-    else:
-        msg('The following URLs were not found or produced unexpected results:')
-        for url in failures:
-            msg(url)
+cli_interface()
