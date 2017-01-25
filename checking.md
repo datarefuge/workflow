@@ -11,7 +11,7 @@
 
 - Claiming a dataset for the checking step 
   - You will work on datasets that were harvested by Harvesters. 
-  - Go to the Unscrawlable spreadsheet, and look for a dataset that has the status "Harvester status indicator" = Closed
+  - Go to the Uncrawlable spreadsheet, and look for a dataset that has the status "Harvester status indicator" = Closed
   - Claim it by entering your slack handle with the status "Open" and today's date in the cell "Checker status indicator" in Checker section, for instance: 
   ```
   @khdelphine open 1/22/2017
