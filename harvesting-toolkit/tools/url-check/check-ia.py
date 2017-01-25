@@ -3,7 +3,7 @@
 check-ia.py: check if a given URL is in the Internet Archive.
 
 Usage:
-   checkia.py urlfile [failuresfile] [successesfile]
+   check-ia.py urlfile [failuresfile] [successesfile]
 
 This uses the Wayback Machine API to test if a given URL is in IA.  It will
 iterate over the URLs in a given file and check each one individually, then
@@ -21,7 +21,7 @@ Wayback Machine API description: https://archive.org/help/wayback_api.php
 
 '''
 
-__version__ = 0.11
+__version__ = '0.11'
 __author__  = 'Michael Hucka <mhucka@caltech.edu>'
 __email__   = 'mhucka@caltech.edu'
 __license__ = 'Public domain'
