@@ -2,8 +2,8 @@
 
 ## Claiming a dataset to harvest
 
-- You will work on datasets that were listed as unscrawlable by Seeders.
-- Go to the Unscrawlable spreadsheet, and look for a dataset whose cell "Researcher status indicator" is empty. This means that no one is working on this dataset yet. Claim it by entering your slack handle with the status "Open" and today's date in the cell "Researcher status indicator" in Researcher section, for instance:
+- You will work on datasets that were listed as uncrawlable by Seeders.
+- Go to the Uncrawlable spreadsheet, and look for a dataset whose cell "Researcher status indicator" is empty. This means that no one is working on this dataset yet. Claim it by entering your slack handle with the status "Open" and today's date in the cell "Researcher status indicator" in Researcher section, for instance:
 ```
 @khdelphine open 1/22/2017
 ```
