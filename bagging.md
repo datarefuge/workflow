@@ -7,23 +7,21 @@
     - Credentials and other details will be provided by the organizers.
   - Contact your DataRescue guide, if you need any assistance.
 
-- Claiming a dataset for bagging 
-  - You will work on datasets that were last handled by Checkers. 
-  - Go to the Unscrawlable spreadsheet, and look for a dataset that has the status "Checker status indicator" = Closed
-  - Claim it by entering your slack handle with the status "Open" and today's date in the cell "Bagger status indicator" in Bagger section, for instance: 
+- Claiming a dataset for bagging
+  - You will work on datasets that were last handled by Checkers.
+  - Go to the Uncrawlable spreadsheet, and look for a dataset that has the status "Checker status indicator" = Closed
+  - Claim it by entering your slack handle with the status "Open" and today's date in the cell "Bagger status indicator" in Bagger section, for instance:
   ```
   @khdelphine open 1/22/2017
   ```
-  
+
 - Downloading & opening the dataset
-  - Go to the URL containing the zipped dataset (in cell "URL from upload of zip", in the Harvester section) 
+  - Go to the URL containing the zipped dataset (in cell "URL from upload of zip", in the Harvester section)
   - Download the zip file to your laptop, and unzip it.
   - Quality assurance: spot check to ensure the UUID and downloaded materials match to the spreadsheet row
-  
-- Creating the Json file
-  - Take folder and create metadata folder for Json template.
-  - Label the json file and the folder where it is located with the entry's UUID (see column "Unique ID").
-  - The json should use the following format:
+
+- Confirm content of Json file
+  - The json should match the information from the Harvester and use the following format:
 
   ```
   {
@@ -43,8 +41,8 @@
     "Name of package creator": "Mallick Hossain and Ben Goldman"
     }
   ```
-  - Make sure to save this as a .json file.
-  - Copy the metadata file into folder where the package is
+  - If you make any changes, make sure to save this as a .json file.
+  - Confirm that the json file is within the package with the dataset(s)
 
 - Creating the bag
   - Run python command line script which creates the bag
@@ -59,7 +57,7 @@
     - manifest-md5.txt
     - tagmanifest-md5.txt
 
-- Creating the Zip file and uploading it 
+- Creating the Zip file and uploading it
   - Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID
   - Upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/
     - Note that files beyond 5 Gigs cannot be uploaded through this method
@@ -67,15 +65,14 @@
   - Enter URL in cell "Bag URL"
       - The syntax will be "[UrlStub]/[UUID].zip
       - The UrlStub for your DataRescue group will be provided by your DataRescue guide
-    
+
 - Quality assurance and finishing up
-  - To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop. 
+  - To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop.
   - Unzip it, open it and spot check to make sure that the bag looks well formed and the files seem valid.
-  - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Bagger status indicator", for instance: 
+  - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Bagger status indicator", for instance:
   ```
   @khdelphine closed 1/22/2017
   ```
-    - If ever a day or more passed since you originally claimed the item, update the date to today's date. 
+    - If ever a day or more passed since you originally claimed the item, update the date to today's date.
     - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, someone else can claim it in your place and start working on it
       - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
-    
