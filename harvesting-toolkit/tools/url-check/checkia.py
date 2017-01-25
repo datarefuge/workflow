@@ -1,23 +1,30 @@
 #!/usr/bin/env python3
-# 2017-01-18 <mhucka@caltech.edu>
-# Version 0.10
-#
-# Usage:
-#    checkia.py urlfile [failuresfile] [successesfile]
-#
-# This uses the Wayback Machine API to test if a given URL is in IA.  It will
-# iterate over the URLs in a given file and check each one individually, then
-# print success or failure.  If given an optional 2nd command line argument,
-# a file name, it will write the failures to that file at the end.  If an
-# optional 3rd argument is given, it should be the name of another file to
-# which the successes are written.
-#
-# In order to account for possible redirections, it first queries the original
-# URL.  This means every URL will cause a hit to the original source location
-# as well as the Wayback Machine's API server.
-#
-# Further reading:
-# Wayback Machine API description: https://archive.org/help/wayback_api.php
+'''
+check-ia.py: check if a given URL is in the Internet Archive.
+
+Usage:
+   checkia.py urlfile [failuresfile] [successesfile]
+
+This uses the Wayback Machine API to test if a given URL is in IA.  It will
+iterate over the URLs in a given file and check each one individually, then
+print success or failure.  If given an optional 2nd command line argument,
+a file name, it will write the failures to that file at the end.  If an
+optional 3rd argument is given, it should be the name of another file to
+which the successes are written.
+
+In order to account for possible redirections, it first queries the original
+URL.  This means every URL will cause a hit to the original source location
+as well as the Wayback Machine's API server.
+
+Further reading:
+Wayback Machine API description: https://archive.org/help/wayback_api.php
+
+'''
+
+__version__ = 0.11
+__author__  = 'Michael Hucka <mhucka@caltech.edu>'
+__email__   = 'mhucka@caltech.edu'
+__license__ = 'Public domain'
 
 import http
 import json
