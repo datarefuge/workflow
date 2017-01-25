@@ -4,8 +4,8 @@ This package includes a general purpose toolkit for archiving open data.
 
 ## Getting set up as a Data Harvester
 - Talk to your DataRescue guide to make sure you can become a Data Harvester.
-- Get set up with the app http://drp-upload.herokuapp.com/
-   - This include getting an account for the app and getting the account ok'd by the DataRescue guide.
+- Get set up with the application http://drp-upload.herokuapp.com/
+   - Credentials and other details will be provided by the organizers.
 - Data Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and thje workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
 - Contact your DataRescue guide, if you need any assistance.
 

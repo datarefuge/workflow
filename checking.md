@@ -5,8 +5,8 @@
 - Getting set up as a Checker
   - Talk to your DataRescue guide to make sure you can become a Checker.
     - In general, Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.
-  - Get set up wit the app http://drp-upload.herokuapp.com/
-    - This include getting an account for the app and getting the account ok'd by the DataRescue guide.
+  - Get set up wit the application http://drp-upload-checker.herokuapp.com
+    - Credentials and other details will be provided by the organizers.
   - Contact your DataRescue guide, if you need any assistance.
 
 - Claiming a dataset for the checking step 

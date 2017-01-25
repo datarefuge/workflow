@@ -9,12 +9,7 @@ We are so glad that you are participating in this project!
 
 ## Plan Overview
 ### 1. [Seeders/Sorters](seednsort.md)
-Seeders and Sorters will use the EDGI subprimer systems ([found here](https://envirodatagov.org/agency-forecasts/)), or a similar set of resources, to identify important/at risk data. Individual events should set up spreadsheets or other tools in which search efforts can be recorded. The work of this group includes:
-
-- Canvassing the resources of a given government agency, identifying important URLs.
-- Identifying whether those URL's [can be crawled by the Internet Archive's webcrawler](./what-heritrix-does.md)
-    - If URL's are crawlable, nominate them to the EOT crawl using the [EDGI Nomination Tool](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok?hl=en)
-    - If they are not crawlable, add them to the "Uncrawlable" spreadsheet, generating a UUID for this dataset.  the web-based tool [UUID Generator](https://www.uuidgenerator.net) can generate individual or multiple UUID's.
+Seeders and Sorters canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders/Sorters nominate them to the End-of-Term (EOT) project, otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
 
 ### 2. [Researchers](research.md)
 Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable). [Research.md](research.md) describes this process in more detail. 

@@ -3,8 +3,8 @@
 - Getting set up as a Bagger
   - Talk to your DataRescue guide to make sure you can become a Bagger.
   - Get set up with Python and the Python script to make a bag at the command line https://github.com/LibraryOfCongress/bagit-python
-  - Get set up wit the app http://drp-upload-bagger.herokuapp.com/
-    - This include getting an account for the app and getting the account ok'd by the DataRescue guide.
+  - Get set up with the uploader application http://drp-upload-bagger.herokuapp.com
+    - Credentials and other details will be provided by the organizers.
   - Contact your DataRescue guide, if you need any assistance.
 
 - Claiming a dataset for bagging 
