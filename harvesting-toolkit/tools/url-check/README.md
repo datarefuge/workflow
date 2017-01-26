@@ -7,7 +7,17 @@ check-ia
 
 *Repository*:   [https://github.com/datarefugephilly/workflow/harvesting-toolkit/tools/url-check](https://github.com/datarefugephilly/workflow/harvesting-toolkit/tools/url-check)
 
+*Version*:      1.0
+
 ----
+
+Installation and configuration
+------------------------------
+
+This program is written in Python 3.  It offers a command-line interface.  It should run in any Python environment, although it has only been tested under Mac OS X 10.10 and CentOS Linux.
+
+This program depends on numerous Python modules; most should be normally found in a typical Python installation, but some may need to be installed specially from (e.g.) [PyPi](https://pypi.python.org) using whatever Python package installer you use for your environment.
+
 
 Usage
 -----
