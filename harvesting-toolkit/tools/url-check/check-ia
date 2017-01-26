@@ -27,14 +27,12 @@ __email__   = 'mhucka@caltech.edu'
 __license__ = 'Public domain'
 
 import colorama
-import http
 import json
 import os
 import plac
 import re
 import requests
 import sys
-from time import sleep
 from urllib.request import urlopen
 from urllib.parse import urlparse
 
