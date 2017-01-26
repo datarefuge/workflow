@@ -3,11 +3,11 @@ check-ia
 
 `check-ia` check if given URLs have been archived in the [Internet Archive](https://archive.org).  It uses the Wayback Machine's [network API](https://archive.org/help/wayback_api.php) to perform the checks.
 
-----
 *Author*:       [Michael Hucka](http://www.cds.caltech.edu/~mhucka)
 
-*Repository*:   [https://github.com/mhucka/rsmirror](https://github.com/mhucka/rsmirror)
+*Repository*:   [https://github.com/datarefugephilly/workflow/harvesting-toolkit/tools/url-check](https://github.com/datarefugephilly/workflow/harvesting-toolkit/tools/url-check)
 
+----
 
 Usage
 -----
