@@ -131,13 +131,13 @@ It's worth using some judgement here. If a "script" you used includes an entire 
 During the process you may feel inclined to clean things up, add structure to the data, etc. Avoid temptation. Your finished archive will be hashed so we can compare it later for changes, and it's important that we archive original, unmodified content.
 
 ## 6. Uploading the data
-- Zip the all the files pertaining to your dataset, so that you have a resulting zip fileu
+- Zip the all the files pertaining to your dataset, so that you have a resulting zip file.
 - Upload the Zip file using the application http://drp-upload.herokuapp.com/
    - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
    -  Note that files beyond 5 Gigs cannot be uploaded through this method
      - Please talk to your DataRescue guide, if you have a larger file
  - Quality assurance:
-   - To ensure that the zip file was uploaded successfully, go to the URL and download it back to your laptop.
+   - To ensure that the zip file was uploaded successfully, go to the URL and download it back to your computer.
    - Unzip it, open it and spot check to make sure that all the files are there and seem valid.
 - Re-uploading: if you found a problem in your first zip (e.g., you realized you missed a file) and would like to upload an improved one, that's ok. Just proceed as you did for the first upload.
 
