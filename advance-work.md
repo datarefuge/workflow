@@ -46,7 +46,7 @@ Make sure you have a few thumb drives to handle very large data sets (above 5 Gi
 
 A designated Spreadsheet Minder needs to keep an eye on the Unscrawlable spreadsheet. The Spreadsheet Minder's tasks include:
 - Generating enough universal unique ID (UUIDs) ahead of time, and cutting and pasting them in the UUID column (in the spreadsheet's empty rows). They will allow new URLs being added to the spreadsheet to be immediately associated with a UUID.
- -  The web-based tool [UUID Generator](https://www.uuidgenerator.net) can generate individual or multiple UUIDs.
+ -  The web-based tool [UUID generator](https://www.browserling.com/tools/random-uuid) can generate individual or multiple UUIDs.
 - While participants are doing active work and adding information to the spreadsheet, keeping an eye on it, making sure that everything looks in good order.
 - Making sure the spreadsheet remains stocked with enough new UUIDS, as more URLs get added by participants. 
 

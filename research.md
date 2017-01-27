@@ -60,7 +60,7 @@ Try to understand what data sets are underlying the web pages. Look for related 
 
 Add your suggested url for harvesting the data in the "Harvestable data" cell in the Researcher section of the spreadsheet. Also add other information in the spreadsheet that could help the Harvester, such as information about format (SQL, FTP, ZIP, PDF Collections, etc.), size, details about what you found, recommended approach, etc.
 
-Search for related URLS in the pipeline that might would be covered by the same approach so as not to duplicate work.
+Search for related URLS in the spreadsheet that might be covered by the same approach so as not to duplicate work.
 
 ## Finishing up
 - In the Uncrawlable spreadsheet, briefly describe the method used for harvesting in cell "Method Used" in Harvester section

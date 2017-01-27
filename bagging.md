@@ -60,6 +60,7 @@
 - Creating the Zip file and uploading it
   - Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID
   - Upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/
+    - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
     - Note that files beyond 5 Gigs cannot be uploaded through this method
       - Please talk to your DataRescue guide, if you have a larger file
   - Enter URL in cell "Bag URL"
