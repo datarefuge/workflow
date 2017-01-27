@@ -130,6 +130,7 @@ During the process you may feel inclined to clean things up, add structure to th
 ## 6. Uploading the data
 - Zip the all the files pertaining to your dataset, so that you have a resulting zip fileu
 - Upload the Zip file using the application http://drp-upload.herokuapp.com/
+   - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
    -  Note that files beyond 5 Gigs cannot be uploaded through this method
      - Please talk to your DataRescue guide, if you have a larger file
  - Quality assurance: 
