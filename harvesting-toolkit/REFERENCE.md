@@ -14,6 +14,10 @@ Then, in shell:
 youtube-dl -o '%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' -f 'bestvideo[height<=480]+bestaudio/best[height<=480]' --yes-playlist https://www.youtube.com/user/USEPAgov/playlists
 ```
 
+### Browsing via Selenium
+
+See this gist [gist](https://gist.github.com/grosscol/6f0cef8236e2099166bd343a414fcdd0)
+
 ## Resources
 
 - [jq](https://stedolan.github.io/jq/) for parsing JSON

@@ -1,6 +1,6 @@
 # Harvesting Toolkit
 
-This package includes a general purpose toolkit for archiving open data. 
+This package includes a general purpose toolkit for archiving open data. We have [quick snippets and code examples]() as well as [helpful tools]() for quick reference.
 
 ## Getting set up as a Data Harvester
 - Talk to your DataRescue guide to make sure you can become a Data Harvester.
@@ -19,7 +19,7 @@ This package includes a general purpose toolkit for archiving open data.
 - Note that the Uncrawlable spreadsheet is the starting and ending point for the collective archiving efforts. Many people will be working from this shared worksheet, so it's important to report all your work in the spreadsheet and update the status cell that shows that you have claimed a URL or are done working on it.
 
 ## URL vs ID
-The url (in cell "Original URL")  is the link to examine, the id is a canonical id we'll use to connect the url with the data in question. The id will have been generated already by the researchers -- don't worry about that for now. 
+The url (in cell "Original URL")  is the link to examine, the id is a canonical id we'll use to connect the url with the data in question. The id will have been generated already by the researchers -- don't worry about that for now.
 
 ## 2a. Classify Source Type & archivability
 Before doing anything, take a minute to understand what you're looking at. It's usually best to have a quick check of the url to confirm that this data in fact not crawlable. Often as part of the harvesting team, you'll be the first person with a higher level of technical knowledge to review the url in question.
@@ -66,7 +66,7 @@ The goal is to pass this finalized folder off for ["bagging"](example/DAFD2E80-9
 
 #### [id].html file
 The first thing you'll want to create is a html copy of the page in question. The html file gives the archive a snapshot of the page at the time of archiving which we can use to monitor for changing data in the future, and corrobrate the provenance of the archive itself. We can also use the .html in conjunction with the scripts you'll include in the tools directory to replicate the archive in the future. To generate the html file, navigate to your new folder in a terminal window and run the following command:
-	
+
 	wget -O DAFD2E80-965F-4989-8A77-843DE716D899.html  http://www.eia.gov/electricity/data/eia412/
 
 You'll replace ```DAFD2E80-965F-4989-8A77-843DE716D899.html``` with the id + .html, and the url with the one you're looking at.
@@ -80,22 +80,23 @@ Your method for doing this will depend on the shape and size of the data you're 
 ### 4a. Identify Data Links & acquire them in a wget loop
 If you encounter a page that links to lots of data (for example a "downloads" page), this approach may well work. It's important to only use this approach when you encounter *data*, for example pdf's, .zip archives, .csv datasets, etc.
 
-The tricky part of this approach is generating a list of urls to download from the page. If you're skilled with using scripts in combination with html-parsers (for example python's wonderful [beautiful-soup package](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start)), go for it. Otherwise, we've included the [jquery-url-extraction guide](tools/jquery-url-extraction)], which has the advantage of working within a browser and can operate on a page that has been modified by javascript. 
+The tricky part of this approach is generating a list of urls to download from the page. If you're skilled with using scripts in combination with html-parsers (for example python's wonderful [beautiful-soup package](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start)), go for it. Otherwise, we've included the [jquery-url-extraction guide](tools/jquery-url-extraction)], which has the advantage of working within a browser and can operate on a page that has been modified by javascript.
 
 Our example dataset uses jquery-url, [leveraging that tool to generate a list of urls to feed the wget loop](tools/jquery-url-extraction/README.md).
 
 ### 4b. Identify Data Links & acquire them via WARCFactory
 
-For search results from large document sets, you may need to do more sophisticated "scraping" and "crawling" -- again, check out tools built at previous events such as the [EIS WARC archiver](https://github.com/edgi-govdata-archiving/eis-WARC-archiver) or the [EPA Search Utils](https://github.com/edgi-govdata-archiving/epa-search-utils) for ideas on how to proceed. 
-
+For search results from large document sets, you may need to do more sophisticated "scraping" and "crawling" -- again, check out tools built at previous events such as the [EIS WARC archiver](https://github.com/edgi-govdata-archiving/eis-WARC-archiver) or the [EPA Search Utils](https://github.com/edgi-govdata-archiving/epa-search-utils) for ideas on how to proceed.
 
 ### 4c. FTP download
-Government datasets are often stored on FTP. It's pretty easy to crawl these FTP sites with a simple Python script. Have a look at [download_ftp_tree.py](tools/ftp/download_ftp_tree.py) as an example. Note thatteh Internet Archive is doing an FTP crawl, so another option (especially if the dataset is large) would be to nominate this as a seed (though FTP seeds should be nominated **seperately** from http seeds).
+Government datasets are often stored on FTP. It's pretty easy to crawl these FTP sites with a simple Python script. Have a look at [download_ftp_tree.py](tools/ftp/download_ftp_tree.py) as an example. Note thatteh Internet Archive is doing an FTP crawl, so another option (especially if the dataset is large) would be to nominate this as a seed (though FTP seeds should be nominated **separately** from http seeds).
 
 ### 4d. API scrape / Custom Solution
+
 If you encounter an api, chances are you'll have to build some sort of custom solution, or investigate a social angle. For example: asking someone with greater access for a database dump.
 
 ## 5. Write [id].json metadata, add /tools
+
 From there you'll want to fill out the metadata.json, copy any scripts and tools you used into the /tools directory. It may seem strange to copy code multiple times, but this can help later to reconstruct the archiving process for further refinement later on.
 
 It's worth using some judgement here. If a "script" you used includes an entire copy of JAVA, or some suite beyond a simple script, it may be better to document your process in a file and leave that in the tools directory instead.
@@ -110,19 +111,18 @@ During the process you may feel inclined to clean things up, add structure to th
 - Upload the Zip file using the application http://drp-upload.herokuapp.com/
    -  Note that files beyond 5 Gigs cannot be uploaded through this method
      - Please talk to your DataRescue guide, if you have a larger file
- - Quality assurance: 
-   - To ensure that the zip file was uploaded successfully, go to the URL and download it back to your laptop. 
+ - Quality assurance:
+   - To ensure that the zip file was uploaded successfully, go to the URL and download it back to your laptop.
    - Unzip it, open it and spot check to make sure that all the files are there and seem valid.
 - Re-uploading: if you found a problem in your first zip (e.g., you realized you missed a file) and would like to upload an improved one, that's ok. Just proceed as you did for the first upload.
-  
+
 ## 7. Finishing up
 - In the Uncrawlable spreadsheet, briefly describe the method used for harvesting in cell "Method Used" in Harvester section
-- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Harvester status indicator", for instance: 
+- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Harvester status indicator", for instance:
   ```
   @khdelphine closed 1/22/2017
   ```
-  - If ever a day or more passed since you originally claimed the item, update the date to today's date. 
+  - If ever a day or more passed since you originally claimed the item, update the date to today's date.
   - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, someone else can claim it in your place and start working on it
     - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
 - You're done! Stand up, do a happy dance, and move on to the next url!
-
