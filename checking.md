@@ -5,7 +5,7 @@
 - Getting set up as a Checker
   - Talk to your DataRescue guide to make sure you can become a Checker.
     - In general, Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.
-  - Get set up wit the application http://drp-upload-checker.herokuapp.com
+  - Get set up with the application http://drp-upload-checker.herokuapp.com
     - Credentials and other details will be provided by the organizers.
   - Contact your DataRescue guide, if you need any assistance.
 
@@ -33,6 +33,7 @@
  
 - Re-uploading
   - If you have made any changes to the dataset, zip the all the files and re-upload the resulting single zip file, using the application http://drp-upload.herokuapp.com/
+    - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
     -  Note that files beyond 5 Gigs cannot be uploaded through this method
       - Please talk to your DataRescue guide, if you have a larger file
   - Quality assurance: 
