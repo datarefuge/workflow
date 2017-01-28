@@ -1,6 +1,6 @@
 # Harvesting Toolkit
 
-This package includes a general purpose toolkit for archiving open data. We have [quick snippets and code examples]() as well as [helpful tools]() for quick reference.
+This package includes a general purpose toolkit for archiving open data. We have [quick snippets and code examples](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) as well as [helpful tools](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) for quick reference.
 
 ## Getting set up as a Data Harvester
 - Talk to your DataRescue guide to make sure you can become a Data Harvester.
