@@ -1,6 +1,7 @@
 # Harvesting Toolkit
 
-This package includes a general purpose toolkit for archiving open data.
+This package includes a general purpose toolkit for archiving open data. We have [quick snippets and code examples](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) as well as [helpful tools](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) for quick reference.
+
 
 ## Getting set up as a Data Harvester
 - Talk to your DataRescue guide to make sure you can become a Data Harvester.
@@ -88,14 +89,15 @@ Our example dataset uses jquery-url, [leveraging that tool to generate a list of
 
 For search results from large document sets, you may need to do more sophisticated "scraping" and "crawling" -- again, check out tools built at previous events such as the [EIS WARC archiver](https://github.com/edgi-govdata-archiving/eis-WARC-archiver) or the [EPA Search Utils](https://github.com/edgi-govdata-archiving/epa-search-utils) for ideas on how to proceed.
 
-
 ### 4c. FTP download
-Government datasets are often stored on FTP. It's pretty easy to crawl these FTP sites with a simple Python script. Have a look at [download_ftp_tree.py](tools/ftp/download_ftp_tree.py) as an example. Note thatteh Internet Archive is doing an FTP crawl, so another option (especially if the dataset is large) would be to nominate this as a seed (though FTP seeds should be nominated **seperately** from http seeds).
+Government datasets are often stored on FTP. It's pretty easy to crawl these FTP sites with a simple Python script. Have a look at [download_ftp_tree.py](tools/ftp/download_ftp_tree.py) as an example. Note thatteh Internet Archive is doing an FTP crawl, so another option (especially if the dataset is large) would be to nominate this as a seed (though FTP seeds should be nominated **separately** from http seeds).
 
 ### 4d. API scrape / Custom Solution
+
 If you encounter an api, chances are you'll have to build some sort of custom solution, or investigate a social angle. For example: asking someone with greater access for a database dump.
 
 ## 5. Write [id].json metadata, add /tools
+
 From there you'll want to fill out the metadata.json. Use the template below as a guide.
 
 - The json should match the information from the Harvester and use the following format:
@@ -137,7 +139,9 @@ During the process you may feel inclined to clean things up, add structure to th
    -  Note that files beyond 5 Gigs cannot be uploaded through this method
      - Please talk to your DataRescue guide, if you have a larger file
  - Quality assurance:
+
    - To ensure that the zip file was uploaded successfully, go to the URL and download it back to your computer.
+
    - Unzip it, open it and spot check to make sure that all the files are there and seem valid.
 - Re-uploading: if you found a problem in your first zip (e.g., you realized you missed a file) and would like to upload an improved one, that's ok. Just proceed as you did for the first upload.
 
