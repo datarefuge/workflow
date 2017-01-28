@@ -1,6 +1,6 @@
 # DataRescue Workflow -- Overview
 
-This document describes the workflow our coalition use for the **Data Rescue project**, both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified by a [seeder & sorter](seednsort.md) as "uncrawlable", until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several distinct stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
+This document describes the workflow our coalition uses for the **Data Rescue project**, both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified by a [seeder & sorter](seednsort.md) as "uncrawlable", until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) CKAN data catalog. The process involves several distinct stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
 
 ## Before you begin
 We are so glad that you are participating in this project!
@@ -28,7 +28,7 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
 
 
 ### 7. [Describers](metadata.md)
-- Creates a CKan record for this S3 resource
+- Creates a CKAN record for this S3 resource
 - Links bag, makes public
 
 ## Partners
