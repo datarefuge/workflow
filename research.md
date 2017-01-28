@@ -13,7 +13,7 @@
 ## Evaluating the data
 Go to the URL, and start inspecting the content.
 
-## Is the data actually actually crawlable?
+## Is the data actually crawlable?
 
 Again, see [here](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
 and
@@ -35,7 +35,7 @@ technical notes for answering this:
 
 What to do in each case:
 
-- YES: If the URL is crawlable or you locate a crawlable URL that accesses the
+- **YES**: If the URL is crawlable or you locate a crawlable URL that accesses the
   underlying dataset:
   - Nominate it: use our
     [Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok),
@@ -44,25 +44,21 @@ What to do in each case:
   - Fill out the cell "Can it be crawled?" = "yes" in Researcher section of the spreadsheet
   - Fill out that you seeded (Cell "Seeded?" in Researcher section of the spreadsheet)
   - Fill out that link is done (Cell "Done" at the very end of the spreadsheet)
-- NO: If it is confirmed not crawlable:
+- **NO**: If it is confirmed not crawlable:
    - Fill out the cell "Can it be crawled?" = "no" in  Researcher section of the spreadsheet
   - Search agency websites and data.gov for dataset entry points for your dataset collection   
   - Add harvastable data url to spreadsheet (Column ), REALLY IMPORTANT!
   - Learn what actual datasets look like in terms of format  (SQL, FTP, ZIP, PDF Collections, etc.), size,  what you found, etc. (Column )
-- YES AND NO: for example, FTP address, mixed content, big data sets:
+- **YES AND NO**: for example, FTP address, mixed content, big data sets:
    - Fill out the cell "Can it be crawled?" = "yes & no" in Researcher section of the spreadsheet
   - Nominate it anyway, but follow the steps for uncrawlable content below.
   - *While we understand that this may mean duplicate sets of data in the ckan, that is not a concern. We are ensuring that the data is fully preserved and accessible.*
 
 If you have found harvestable data then:
 
-Try to understand what data sets are underlying the web pages. Look for related
-entries in the spreadsheet, and ensure that you aren't harvesting a subdirectory
-if you can harvest the entire directory. Often, data underlying dozens of pages
-or multiple "access portal" apps is also available as one structured data file.
+Try to understand what data sets are underlying the web pages. Look for related entries in the spreadsheet, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.
 
-Add your suggested url for harvesting the data in the "Harvestable data" cell in the Researcher section of the spreadsheet.
-Also add other information in the spreadsheet that could help the Harvester, such as information about format (SQL, FTP, ZIP, PDF Collections, etc.), size, details about what you found, recommended approach, etc.
+Add your suggested url for harvesting the data in the "Harvestable data" cell in the Researcher section of the spreadsheet. Also add other information in the spreadsheet that could help the Harvester, such as information about format (SQL, FTP, ZIP, PDF Collections, etc.), size, details about what you found, recommended approach, etc.
 
 Search for related URLS in the spreadsheet that might be covered by the same approach so as not to duplicate work.
 
