@@ -23,7 +23,7 @@ Seeders and Sorters canvass the resources of a given government agency, identify
 ### 2. [Researchers](research.md)
 Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable). [Research.md](research.md) describes this process in more detail. 
 
-*We recommend that the Researchers work directly with the Harvesters (see below), as much communication is needed between the two.*
+*We recommend that a Researcher work directly with a Harvesters(see below) as a pair, as much communication is needed between the two. In some cases In some case, one person will fulfill both roles at the same time.*
 
 ### 3. [Harvesters](harvesting-toolkit)
 Harvesters take the "uncrawlable" data and try to figure out how to capture it. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks. Harvesters should see the included [Harvesting Toolkit](./harvesting-toolkit) for more details and tools. 
