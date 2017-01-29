@@ -4,7 +4,7 @@
 
 - Getting set up as a Checker
   - Apply to become a Checker 
-    - By filling out this form 
+    - By asking your DataRescue guide or by filling out [this form](XXX) 
     - Skills recommended: in general, Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.
     - Note that a Gmail email address is required to apply.
   - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
