@@ -1,11 +1,16 @@
 # DataRescue Workflow -- Overview
 
-This document describes the workflow our coalition uses for the **Data Rescue project**, both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified by a [seeder & sorter](seednsort.md) as "uncrawlable", until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) CKAN data catalog. The process involves several distinct stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
+This document describes the workflow we use for the [DataRefuge project](http://www.ppehlab.org/), both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified by a [seeder & sorter](https://github.com/datarefugephilly/workflow/blob/master/seednsort.md) as "uncrawlable" until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several distinct stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
 
 ## Before you begin
 We are so glad that you are participating in this project!
-- If you are an event organizer: learn about [what you need to do to prepare the event](advance-work.md).
-- If you are a regular participant: get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and go over the workflow corresponding to your role. 
+### [If you are an overall Coordinator](coordinator-work.md)
+- Learn about some of the work overall coordinators do, including the role of the Spreadsheet Minder, [here](coordinator-work.md)
+### [If you are an Event Organizer](coordinator-work.md) 
+- Learn about what you need to do to prepare the event [here](advance-work.md).
+### If you are a regular participant 
+- Get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and make sure you have access to the key documents and spreadsheets needed to do the work. The Event/Remote organizers will tell you how proceed to do all this. 
+- Go over the workflow documentation below, in particular the pages corresponding to your role.
 
 ## Plan Overview
 ### 1. [Seeders/Sorters](seednsort.md)
@@ -14,7 +19,7 @@ Seeders and Sorters canvass the resources of a given government agency, identify
 ### 2. [Researchers](research.md)
 Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable). [Research.md](research.md) describes this process in more detail. 
 
-*Often this step is incorporated into either "Seeding and Sorting" or "Harvesting".*
+*We recommend that the Researchers work directly with the Harvesters (see below), as much communication is needed between the two.*
 
 ### 3. [Harvesters](harvesting-toolkit)
 Harvesters take the "uncrawlable" data and try to figure out how to capture it. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks. Harvesters should see the included [Harvesting Toolkit](./harvesting-toolkit) for more details and tools. 
