@@ -16,7 +16,7 @@ This package includes a general purpose toolkit for archiving open data. We have
   - Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
   - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
-    - Or post  questions on Slack in the Harvesters channel.
+    - Or post  questions on Slack in the Researchers/Harvesters channel.
 
 
 ## 1. Claiming a dataset to harvest
@@ -149,7 +149,7 @@ During the process you may feel inclined to clean things up, add structure to th
 - Upload the Zip file using the application http://drp-upload.herokuapp.com/
    - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
    -  Note that files beyond 5 Gigs cannot be uploaded through this method
-     - Please talk to your DataRescue guide/post on Slack in Checkers channel, if you have a larger file
+     - Please talk to your DataRescue guide/post on Slack in Researchers/Harvesters channel, if you have a larger file
    - The application will return the url of the uploaded file. Enter it in the Uncrawlable spreadsheet in cell "URL from upload of zip" 
 - Quality assurance:
    - To ensure that the zip file was uploaded successfully, go to the URL and download it back to your computer.
@@ -166,3 +166,4 @@ During the process you may feel inclined to clean things up, add structure to th
     - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
       - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
 
+- You're done! Move on to the next URL!
