@@ -10,6 +10,13 @@
   - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
     - Or post questions on Slack in the Researchers/Harvesters channel.
+    
+## Researchers and Harvesters:
+- Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
+- For instance they could work in pairs or in small groups. 
+  - In some cases, a single person might be both a Researcher and a Harvester.
+- Note that in the Uncrawlable Action spreadsheet, Researchers and Harvesters share the same tab.
+- As a Researcher, make sure to check out the [Harvesters documentation](harvesting-toolkit) to familiarize yourself with their role.
 
 ## Claiming a dataset to harvest
 
