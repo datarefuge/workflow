@@ -51,7 +51,7 @@
   
 - Finishing up
   - In the Uncrawlable spreadsheet, briefly describe any change you have made in cell "Any Changes?" 
-  - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Checker status indicator", for instance: 
+  - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance: 
   ```
   @khdelphine Closed 1/22/2017
   ```
