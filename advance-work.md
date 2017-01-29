@@ -62,4 +62,6 @@ Before starting, your team should go through the following steps.
 ## Other supplies
 Make sure you have a few thumb drives to handle very large data sets (above 5 Gigs).
 
-
+## After the event
+- Participants might want to continue the work started at the event remotely
+- This should be possible, as our workflow is meant to function in-person as well as remotely
