@@ -8,7 +8,7 @@ We are so glad that you are participating in this project!
 **[If you are an overall Coordinator](coordinator-work.md)**:
 - See the description of some of the work overall coordinators do, including the role of the Spreadsheet Minder, [here](coordinator-work.md)
 
-**[If you are an Event Organizer](coordinator-work.md)**:
+**[If you are an Event Organizer](advance-work.md)**:
 - Learn about what you need to do to prepare the event [here](advance-work.md).
 
 **If you are a regular participant**: 
