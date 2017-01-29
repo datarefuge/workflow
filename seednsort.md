@@ -23,4 +23,4 @@ The Seeders/Sorters team will use the EDGI subprimer systems ([found here](https
   - In the spreadsheet is automatically associated with a universal unique identifyer (UUID) that was generated in advance.
 
 ## Not sure?
- - This sorting is only provisional: when in doubt seeders mark a URL as possibly not crawlable, and these URLs populate a spreadsheet.
+ - This sorting is only provisional: when in doubt seeders nominate the URL **and** mark it as possibly not crawlable.
