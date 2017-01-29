@@ -4,7 +4,8 @@
   - Apply to become a Describer 
     - By asking your DataRescue guide or by filling out [this form](XXX)
     - Skills recommended: in general, Describers need to have a good handle on metadata practices 
-      - Note that a Gmail email address is required to apply.
+    - Note that a Gmail email address is required to apply.
+    - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [Trust and archival best practices](XXX) for more information).
   - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
  - Test that you can get into the ckan instance at https://www.datarefuge.org/ with the credentials provided
    - Verify that you have write access to the Describers tab in the Uncrawlable spreadsheet
