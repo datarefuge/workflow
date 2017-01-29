@@ -2,7 +2,7 @@
 
 This document describes the workflow we use for the [DataRefuge project](http://www.ppehlab.org/), both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified by a [seeder & sorter](https://github.com/datarefugephilly/workflow/blob/master/seednsort.md) as "uncrawlable" until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several distinct stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
 
-Before you begin
+## Before you begin
 We are so glad that you are participating in this project!
 
 **[If you are an overall Coordinator](coordinator-work.md)**
