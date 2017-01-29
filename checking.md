@@ -7,6 +7,7 @@
     - By asking your DataRescue guide or by filling out [this form](XXX) 
     - Skills recommended: in general, Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.
     - Note that a Gmail email address is required to apply.
+    - Note also that you should be willing to have your real name be associated with the datasets, as a way to ensure that the data has been archived in a way that is trustworthy (see [Trust and archival best practices](XXX) for more information). 
   - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
   - Test the Uploader application http://drp-upload.herokuapp.com with the credentials provided
     - Make sure to select the right event in the dropdown
