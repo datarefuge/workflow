@@ -23,7 +23,7 @@ This package includes a general purpose toolkit for archiving open data. We have
 
  - You will work on datasets that were confirmed as unscrawlable by Researchers.
 - Go to the Uncrawlable spreadsheet, click the Researchers/Harvesters tab, and look for a dataset to harvest
-    - Available datasets are the ones whose cell "Researchers/Harvesters Status Indicator" is empty
+    - Available datasets are the ones whose cell "Harvesters Status Indicator" is empty
     - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
   - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
   ```
