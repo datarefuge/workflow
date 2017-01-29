@@ -15,6 +15,7 @@ We are so glad that you are participating in this project!
 - Get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and make sure you have access to the key documents and spreadsheets needed to do the work. The Event/Remote organizers will tell you how proceed to do all this. 
 - Go over the workflow documentation below, in particular the pages corresponding to your role.
 
+**********************
 ## Plan Overview
 ### 1. [Seeders/Sorters](seednsort.md)
 Seeders and Sorters canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders/Sorters nominate them to the End-of-Term (EOT) project, otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
@@ -39,5 +40,6 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
 - Creates a CKAN record for this S3 resource
 - Links bag, makes public
 
+**********************
 ## Partners
 Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. Thanks particularly to [EDGI](https://envirodatagov.org/) and [Date Refuge](http://www.ppehlab.org/datarefuge/) for their leadershp, and to our numerous supporters for their hard work.
