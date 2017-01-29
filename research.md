@@ -62,14 +62,14 @@ What to do in each case:
    - Fill out the cell "Can it be crawled?" = "no" in  Researcher section of the spreadsheet
   - Search agency websites and data.gov for dataset entry points for your dataset collection   
       - Tips: Try to understand what data sets are underlying the web pages. Look for related entries in the spreadsheet, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.
-  - Add your suggested url for harvesting the data  to spreadsheet (in cell "Harvestable Data"), REALLY IMPORTANT!
+  - Add your suggested url for harvesting the data to spreadsheet (in cell "Harvestable Data"), REALLY IMPORTANT!
   -  Also add other information in the spreadsheet that could help the Harvester, such as information about format (SQL, FTP, ZIP, PDF Collections, etc.), size, details about what you found, recommended approach, etc. 
+  - Search for related URLS in the spreadsheet that might be covered by the same approach so as not to duplicate work.
 - **YES AND NO**: for example, FTP address, mixed content, big data sets:
    - Fill out the cell "Can it be crawled?" = "yes & no" in Researcher section of the spreadsheet
   - Nominate it anyway, but follow the steps for uncrawlable content above.
-  - *While we understand that this may mean duplicate sets of data in the ckan, that is not a concern. We are ensuring that the data is fully preserved and accessible.*
+  - *While we understand that this may result in some dataset duplication, that is not a concern. We are ensuring that the data is fully preserved and accessible.*
 
-Search for related URLS in the spreadsheet that might be covered by the same approach so as not to duplicate work.
 
 ## Finishing up
 - In the Uncrawlable spreadsheet, briefly describe and action taken and the approach recommenderd for harvesting 
