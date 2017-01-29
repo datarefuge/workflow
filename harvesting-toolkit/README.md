@@ -3,24 +3,36 @@
 This package includes a general purpose toolkit for archiving open data. We have [quick snippets and code examples](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) as well as [helpful tools](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) for quick reference.
 
 
-## Getting set up as a Data Harvester
-- Talk to your DataRescue guide to make sure you can become a Data Harvester.
-- Get set up with the application http://drp-upload.herokuapp.com/
-   - Credentials and other details will be provided by the organizers.
-- Data Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and thje workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
-- Contact your DataRescue guide, if you need any assistance.
+## Getting set up as a Harvester
+  - Apply to become a Harvester 
+    - By asking your DataRescue guide or by filling out [this form](XXX) 
+    - Skills recommended: in general, Harvesters need to have some tech skills and a good understanding of harvesting goals.
+    - Note that a Gmail email address is required to apply.
+  - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
+  - Test the Uploader application http://drp-upload.herokuapp.com with the credentials provided
+    - Make sure to select the right event in the dropdown
+  - Verify that you have write access to the Researchers/Harvesters tab in the Uncrawlable spreadsheet
+  - You might also need to have some other software and utilities set up on your computer, depending on the harvested methods you will use.
+  - Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
+  - If you need any assistance:
+    - Talk to your DataRescue Guide if you are at an in-person event
+    - Or post  questions on Slack in the Harvesters channel.
+
 
 ## 1. Claiming a dataset to harvest
 
-- You will work on datasets that were confirmed as unscrawlable by Researchers.
-- Go to the Uncrawlable spreadsheet, and look for a dataset that has the status "Researcher status indicator" = Closed. Claim it by entering your slack handle with the status "Open" and today's date in the cell "Researcher status indicator" in Researcher section, for instance:
-```
-@khdelphine open 1/22/2017
-```
+ - You will work on datasets that were confirmed as unscrawlable by Researchers.
+- Go to the Uncrawlable spreadsheet, click the Researchers/Harvesters tab, and look for a dataset to harvest
+    - Available datasets are the ones whose cell "Researchers/Harvesters Status Indicator" is empty
+    - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
+  - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
+  ```
+  @khdelphine Open 1/22/2017
+  ```
 - Note that the Uncrawlable spreadsheet is the starting and ending point for the collective archiving efforts. Many people will be working from this shared worksheet, so it's important to report all your work in the spreadsheet and update the status cell that shows that you have claimed a URL or are done working on it.
 
 ## URL vs ID
-The url (in cell "Original URL")  is the link to examine, the id is a canonical id we'll use to connect the url with the data in question. The id will have been generated already by the researchers -- don't worry about that for now.
+The url (in cell "Original URL")  is the link to examine, the id is a canonical id we'll use to connect the url with the data in question. The id will have been generated already by the DataRefuge organizers -- don't worry about that for now.
 
 ## 2a. Classify Source Type & archivability
 Before doing anything, take a minute to understand what you're looking at. It's usually best to have a quick check of the url to confirm that this data in fact not crawlable. Often as part of the harvesting team, you'll be the first person with a higher level of technical knowledge to review the url in question.
@@ -147,11 +159,11 @@ During the process you may feel inclined to clean things up, add structure to th
 
 ## 7. Finishing up
 - In the Uncrawlable spreadsheet, briefly describe the method used for harvesting in cell "Method Used" in Harvester section
-- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Harvester status indicator", for instance:
+- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance: 
   ```
-  @khdelphine closed 1/22/2017
+  @khdelphine Closed 1/22/2017
   ```
-  - If ever a day or more passed since you originally claimed the item, update the date to today's date.
-  - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, someone else can claim it in your place and start working on it
-    - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
-- You're done! Stand up, do a happy dance, and move on to the next url!
+    - If ever a day or more passed  since you originally claimed the item, update the date to today's date. 
+    - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
+      - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
+
