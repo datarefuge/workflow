@@ -5,13 +5,13 @@ This document describes the workflow we use for the [DataRefuge project](http://
 ## Before you begin
 We are so glad that you are participating in this project!
 
-**[If you are an overall Coordinator](coordinator-work.md)**
+**[If you are an overall Coordinator](coordinator-work.md)**:
 - Learn about some of the work overall coordinators do, including the role of the Spreadsheet Minder, [here](coordinator-work.md)
 
-**[If you are an Event Organizer](coordinator-work.md)**
+**[If you are an Event Organizer](coordinator-work.md)**:
 - Learn about what you need to do to prepare the event [here](advance-work.md).
 
-**If you are a regular participant** 
+**If you are a regular participant**: 
 - Get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and make sure you have access to the key documents and spreadsheets needed to do the work. The Event/Remote organizers will tell you how proceed to do all this. 
 - Go over the workflow documentation below, in particular the pages corresponding to your role.
 
