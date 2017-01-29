@@ -3,19 +3,19 @@
 ## Getting set up as a Researcher
  - Apply to become a Researcher 
     - By asking your DataRescue guide or by filling out [this form](XXX) 
-    - Skills recommended: in general, Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets. Ideally they would understand how federal data is organized (e.g. where are the "master" datasets vs. the derived partial views of those datasets.
+    - Skills recommended: in general, Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets. Ideally they would understand how federal data is organized (e.g. where the "master" datasets are vs. the derived partial views of those datasets.
     - Note that a Gmail email address is required to apply.
-  - Credentials, Uncrawlable spreadsheet URL, slack invite, and other details will be provided once your application is approved.
+  - Uncrawlable spreadsheet URL, slack invite, and other details will be provided once your application is approved.
   - Verify that you have write access to the Researchers/Harvesters tab in the Uncrawlable spreadsheet
   - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
-    - Or post  questions on Slack in the Researchers/Harvesters channel.
+    - Or post questions on Slack in the Researchers/Harvesters channel.
 
 ## Claiming a dataset to harvest
 
 - Researchers work on datasets that were listed as uncrawlable by Seeders.
 - Go to the Uncrawlable spreadsheet, click the Researchers/Harvesters tab, and look for a dataset to harvest
-  - Available datasets are the ones whose cell "Researchers/Harvesters Status Indicator" is empty
+  - Available datasets are the ones whose cell "Researchers Status Indicator" is empty
   - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
     - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
     ```
@@ -72,8 +72,7 @@ What to do in each case:
 
 
 ## Finishing up
-- In the Uncrawlable spreadsheet, briefly describe and action taken and the approach recommenderd for harvesting 
-- Change the status to "Closed" in the cell "Current Status", for instance: 
+- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance: 
   ```
   @khdelphine Closed 1/22/2017
   ```
