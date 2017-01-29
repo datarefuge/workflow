@@ -80,11 +80,11 @@
 - Quality assurance and finishing up
   - To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop.
   - Unzip it, open it and spot check to make sure that the bag looks well formed and the files seem valid.
-  - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Bagger status indicator", for instance:
+  - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance:
   ```
   @khdelphine Closed 1/22/2017
   ```
-  
+    - If ever a day or more passed since you originally claimed the item, update the date to today's date.
     - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
       - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
       
