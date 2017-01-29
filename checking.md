@@ -9,6 +9,7 @@
     - Note that a Gmail email address is required to apply.
   - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
   - Test the Uploader application http://drp-upload.herokuapp.com with the credentials provided
+    - Make sure to select the right event in the dropdown
   - Verify that you have write access to the Checkers tab in the Uncrawlable spreadsheet
   - If you need any assistance:
       - Talk to your DataRescue Guide if you are at an in-person event
