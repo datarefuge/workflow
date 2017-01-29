@@ -2,8 +2,8 @@
 
 - Getting set up as a Bagger
   - Apply to become a Bagger 
-    - By filling out [this form](xxx) 
-    - Skills recommended: in general, Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.
+    - By asking your DataRescue guide or by filling out [this form](XXX)
+    - Skills recommended: in general, Baggers need to have some tech skills and a good understanding of harvesting goals.
     - Note that a Gmail email address is required to apply.
   - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
   - Test the Uploader application http://drp-upload-bagger.herokuapp.com with the credentials provided
