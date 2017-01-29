@@ -41,7 +41,7 @@
  
 - Re-uploading
   - If you have made any changes to the dataset, zip the all the files and upload the new resulting zip file, using the application http://drp-upload.herokuapp.com/
-    - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
+     - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
     -  Note that files beyond 5 Gigs cannot be uploaded through this method
       - Please talk to your DataRescue guide/post on Slack in Checkers channel, if you have a larger file
     - The file you uploaded has now replaced the old version, and it is available at the same url (in cell "URL from upload of zip")
