@@ -8,15 +8,22 @@ This package includes a general purpose toolkit for archiving open data. We have
     - By asking your DataRescue guide or by filling out [this form](XXX) 
     - Skills recommended: in general, Harvesters need to have some tech skills and a good understanding of harvesting goals.
     - Note that a Gmail email address is required to apply.
-  - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
+  - Credentials, slack invite, Uncrawlable Action spreadsheet URL, and other details will be provided once your application is approved.
   - Test the Uploader application http://drp-upload.herokuapp.com with the credentials provided
     - Make sure to select the right event in the dropdown
-  - Verify that you have write access to the Researchers/Harvesters tab in the Uncrawlable spreadsheet
+  - Verify that you have write access to the Researchers/Harvesters tab in the Uncrawlable Action spreadsheet
   - You might also need to have some other software and utilities set up on your computer, depending on the harvested methods you will use.
   - Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
   - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
     - Or post  questions on Slack in the Researchers/Harvesters channel.
+
+## Researchers and Harvesters:
+- Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
+- For instance they could work in pairs or in small groups. 
+  - In some cases, a single person might be both a Researcher and a Harvester.
+- Note that in the Uncrawlable Action spreadsheet, Researchers and Harvesters share the same tab.
+- As a Harvester, make sure to check out the [Researchers documentation](research.md) to familiarize yourself with their role.
 
 
 ## 1. Claiming a dataset to harvest
