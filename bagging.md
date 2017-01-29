@@ -1,22 +1,31 @@
 # Baggers
 
 - Getting set up as a Bagger
-  - Talk to your DataRescue guide to make sure you can become a Bagger.
+  - Apply to become a Bagger 
+    - By filling out [this form](xxx) 
+    - Skills recommended: in general, Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.
+    - Note that a Gmail email address is required to apply.
+  - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
+  - Test the Uploader application http://drp-upload-bagger.herokuapp.com with the credentials provided
+      - Make sure to select the right event in the dropdown
+  - Verify that you have write access to the Baggers tab in the Uncrawlable spreadsheet
   - Get set up with Python and the Python script to make a bag at the command line https://github.com/LibraryOfCongress/bagit-python
-  - Get set up with the uploader application http://drp-upload-bagger.herokuapp.com
-    - Credentials and other details will be provided by the organizers.
-  - Contact your DataRescue guide, if you need any assistance.
-
+  - If you need any assistance:
+      - Talk to your DataRescue Guide if you are at an in-person event
+      - Or post  questions on Slack in the Baggers channel.
+  
 - Claiming a dataset for bagging
-  - You will work on datasets that were last handled by Checkers.
-  - Go to the Uncrawlable spreadsheet, and look for a dataset that has the status "Checker status indicator" = Closed
-  - Claim it by entering your slack handle with the status "Open" and today's date in the cell "Bagger status indicator" in Bagger section, for instance:
+  - You will work on datasets that were harvested by Checkers. 
+  - Go to the Uncrawlable spreadsheet, click the Baggers tab, and look for a dataset to check
+    - Available datasets are the ones whose cell "Baggers Status Indicator" is empty
+    - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
+  - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
   ```
-  @khdelphine open 1/22/2017
+  @khdelphine Open 1/22/2017
   ```
 
 - Downloading & opening the dataset
-  - Go to the URL containing the zipped dataset (in cell "URL from upload of zip", in the Harvester section)
+  - Go to the URL containing the zipped dataset (provided in cell "URL from upload of zip") 
   - Download the zip file to your laptop, and unzip it.
   - Quality assurance: spot check to ensure the UUID and downloaded materials match to the spreadsheet row
 
@@ -62,18 +71,20 @@
   - Upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/
     - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
     - Note that files beyond 5 Gigs cannot be uploaded through this method
-      - Please talk to your DataRescue guide, if you have a larger file
+      - Please talk to your DataRescue guide/post on Slack in Baggers channel, if you have a larger file
   - Enter URL in cell "Bag URL"
+    - The application will return the location URL for your zip file. 
       - The syntax will be "[UrlStub]/[UUID].zip
-      - The UrlStub for your DataRescue group will be provided by your DataRescue guide
+      - Paste URL in Uncrawlable spreadsheet (in "Bag URL" cell)        
 
 - Quality assurance and finishing up
   - To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop.
   - Unzip it, open it and spot check to make sure that the bag looks well formed and the files seem valid.
   - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Bagger status indicator", for instance:
   ```
-  @khdelphine closed 1/22/2017
+  @khdelphine Closed 1/22/2017
   ```
-    - If ever a day or more passed since you originally claimed the item, update the date to today's date.
-    - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, someone else can claim it in your place and start working on it
+  
+    - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
       - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
+      
