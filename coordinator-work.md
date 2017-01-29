@@ -31,11 +31,19 @@ DataRefuge Coordinators help facilitate the DataRefuge project and the developme
   - The Chrome Extension used by the Seeders automatically populate a separate spreadsheet. 
   - We have found that keeping that spreadsheet separate helps with the workflow
 
+## How each Uncrawlable Action spreadsheet is populated
+- It will include URLs coming from two main sources:
+   - URLs that were nominated by Seeders at a previous DataRescue event
+   - URLs that were identified througth the Union of Concerned Scientists survey, which asked the scientific community to list the most vulnerable and important data currently on accessible through federal websites.
+ 
 ## Spreadsheet Minder
 - A Spreadsheet Minder (or Spreadsheet Minder Team) is in charge with managing the Uncrawlable Index and Action spreadsheets
 - Here are the task they are responsible for:
-  - Prepare new Uncrawlable Action spreadsheets by moving URLs from the Seeders spreadsheet into new Uncrawlable Action spreadsheets.
+  - Prepare new Uncrawlable Action spreadsheets by moving URLs from the Seeders spreadsheet and the Survey into new Uncrawlable Action spreadsheets.
   - Generate UUIDs and add them to the Uncrawlable Action spreadsheets, making sure that each URL has a UUID
+  - Add the name of the event (in the "Event Name" cell)
+  - Add a rough importance rating (in the "Importance" cell) 
+    - E.g., a URL coming from the Survey would automatically get a high importance rating
   - Keep an eye on all spreadsheets making sure that everything is in order.
   - Regularly take snapshots of each spreadsheet in case an problem occurs and the content of a spreadsheet needs to get recovered
   - Use the Index spreadsheet to track overall progress (ratio Done / Not Done) and to help with deduplication efforts
