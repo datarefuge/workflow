@@ -1,7 +1,6 @@
 # Describers: Ckan/Metadata
 
 - Getting set up as a Describer
-- Getting set up as a Describer
   - Apply to become a Describer 
     - By asking your DataRescue guide or by filling out [this form](XXX)
     - Skills recommended: in general, Describers need to have a good handle on metadata practices 
