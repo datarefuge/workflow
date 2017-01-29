@@ -149,11 +149,10 @@ During the process you may feel inclined to clean things up, add structure to th
 - Upload the Zip file using the application http://drp-upload.herokuapp.com/
    - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
    -  Note that files beyond 5 Gigs cannot be uploaded through this method
-     - Please talk to your DataRescue guide, if you have a larger file
- - Quality assurance:
-
+     - Please talk to your DataRescue guide/post on Slack in Checkers channel, if you have a larger file
+   - The application will return the url of the uploaded file. Enter it in the Uncrawlable spreadsheet in cell "URL from upload of zip" 
+- Quality assurance:
    - To ensure that the zip file was uploaded successfully, go to the URL and download it back to your computer.
-
    - Unzip it, open it and spot check to make sure that all the files are there and seem valid.
 - Re-uploading: if you found a problem in your first zip (e.g., you realized you missed a file) and would like to upload an improved one, that's ok. Just proceed as you did for the first upload.
 
