@@ -7,7 +7,7 @@ This package includes a general purpose toolkit for archiving open data. We have
   - Apply to become a Harvester 
     - By asking your DataRescue guide or by filling out [this form](XXX) 
     - Skills recommended: in general, Harvesters need to have some tech skills and a good understanding of harvesting goals.
-    - Note that a Gmail email address is required to apply.
+    - Note that an email address is required to apply.
   - Credentials, slack invite, Uncrawlable Action spreadsheet URL, and other details will be provided once your application is approved.
   - Test the Uploader application http://drp-upload.herokuapp.com with the credentials provided
     - Make sure to select the right event in the dropdown
