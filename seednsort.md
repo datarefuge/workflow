@@ -21,6 +21,7 @@ The Seeders/Sorters team will use the EDGI subprimer systems ([found here](https
 ## Uncrawlable URLs
  - If URL is judged not crawlable, add it to the "Uncrawlable" spreadsheet through the Chrome Extension.
   - In the spreadsheet is automatically associated with a universal unique identifyer (UUID) that was generated in advance.
+  - You can check whether the page or some files are rendered using the Internet Archive's [Wayback Machine Chrome Extension](https://chrome.google.com/webstore/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak)
 
 ## Not sure?
- - This sorting is only provisional: when in doubt seeders mark a URL as possibly not crawlable, and these URLs populate a spreadsheet.
+ - This sorting is only provisional: when in doubt seeders nominate the URL **and** mark it as possibly not crawlable.

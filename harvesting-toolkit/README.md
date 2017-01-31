@@ -3,24 +3,43 @@
 This package includes a general purpose toolkit for archiving open data. We have [quick snippets and code examples](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) as well as [helpful tools](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) for quick reference.
 
 
-## Getting set up as a Data Harvester
-- Talk to your DataRescue guide to make sure you can become a Data Harvester.
-- Get set up with the application http://drp-upload.herokuapp.com/
-   - Credentials and other details will be provided by the organizers.
-- Data Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and thje workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
-- Contact your DataRescue guide, if you need any assistance.
+## Getting set up as a Harvester
+  - Apply to become a Harvester 
+    - By asking your DataRescue guide or by filling out [this form](XXX) 
+    - Skills recommended: in general, Harvesters need to have some tech skills and a good understanding of harvesting goals.
+    - Note that an email address is required to apply.
+  - Credentials, slack invite, Uncrawlable Action spreadsheet URL, and other details will be provided once your application is approved.
+  - Test the Uploader application http://drp-upload.herokuapp.com with the credentials provided
+    - Make sure to select the right event in the dropdown
+  - Verify that you have write access to the Researchers/Harvesters tab in the Uncrawlable Action spreadsheet
+  - You might also need to have some other software and utilities set up on your computer, depending on the harvested methods you will use.
+  - Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
+  - If you need any assistance:
+    - Talk to your DataRescue Guide if you are at an in-person event
+    - Or post  questions on Slack in the Researchers/Harvesters channel.
+
+## Researchers and Harvesters:
+- Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
+- For instance they could work in pairs or in small groups. 
+  - In some cases, a single person might be both a Researcher and a Harvester.
+- Note that in the Uncrawlable Action spreadsheet, Researchers and Harvesters share the same tab.
+- As a Harvester, make sure to check out the [Researchers documentation](research.md) to familiarize yourself with their role.
+
 
 ## 1. Claiming a dataset to harvest
 
-- You will work on datasets that were confirmed as unscrawlable by Researchers.
-- Go to the Uncrawlable spreadsheet, and look for a dataset that has the status "Researcher status indicator" = Closed. Claim it by entering your slack handle with the status "Open" and today's date in the cell "Researcher status indicator" in Researcher section, for instance:
-```
-@khdelphine open 1/22/2017
-```
+ - You will work on datasets that were confirmed as unscrawlable by Researchers.
+- Go to the Uncrawlable spreadsheet, click the Researchers/Harvesters tab, and look for a dataset to harvest
+    - Available datasets are the ones whose cell "Harvesters Status Indicator" is empty
+    - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
+  - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
+  ```
+  @khdelphine Open 1/22/2017
+  ```
 - Note that the Uncrawlable spreadsheet is the starting and ending point for the collective archiving efforts. Many people will be working from this shared worksheet, so it's important to report all your work in the spreadsheet and update the status cell that shows that you have claimed a URL or are done working on it.
 
 ## URL vs ID
-The url (in cell "Original URL")  is the link to examine, the id is a canonical id we'll use to connect the url with the data in question. The id will have been generated already by the researchers -- don't worry about that for now.
+The url (in cell "Original URL")  is the link to examine, the ID is a canonical ID we'll use to connect the url with the data in question. The ID will have been generated already by the DataRefuge organizers -- don't worry about that for now.
 
 ## 2a. Classify Source Type & archivability
 Before doing anything, take a minute to understand what you're looking at. It's usually best to have a quick check of the url to confirm that this data in fact not crawlable. Often as part of the harvesting team, you'll be the first person with a higher level of technical knowledge to review the url in question.
@@ -56,9 +75,9 @@ Before starting it's best to get a directory going for the data you're going to 
 
 Each row in the above is:
 
-	A directory named by the spreadsheet id
-		├── a .html "web archive" file of the url for future reference, named with the id
-		├── a .json metadata file that contains relevant metadata, named with the id
+	A directory named by the spreadsheet ID
+		├── a .html "web archive" file of the url for future reference, named with the ID
+		├── a .json metadata file that contains relevant metadata, named with the ID
 		├── a /tools directory to include any scripts, notes & files used to acquire the data
 		└── a /data directory that contains the data in question
 
@@ -70,7 +89,7 @@ The first thing you'll want to create is a html copy of the page in question. Th
 
 	wget -O DAFD2E80-965F-4989-8A77-843DE716D899.html  http://www.eia.gov/electricity/data/eia412/
 
-You'll replace ```DAFD2E80-965F-4989-8A77-843DE716D899.html``` with the id + .html, and the url with the one you're looking at.
+You'll replace ```DAFD2E80-965F-4989-8A77-843DE716D899.html``` with the ID + .html, and the url with the one you're looking at.
 
 #### [id].json file
 The json file is one you'll create by hand to create a machine readable record of the archive. This file contains vital data, including the url that was archived, and date of archiving. The [id.json readme](docs/id-json.md) goes into much more detail.
@@ -137,21 +156,21 @@ During the process you may feel inclined to clean things up, add structure to th
 - Upload the Zip file using the application http://drp-upload.herokuapp.com/
    - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
    -  Note that files beyond 5 Gigs cannot be uploaded through this method
-     - Please talk to your DataRescue guide, if you have a larger file
- - Quality assurance:
-
+     - Please talk to your DataRescue guide/post on Slack in Researchers/Harvesters channel, if you have a larger file
+   - The application will return the url of the uploaded file. Enter it in the Uncrawlable spreadsheet in cell "URL from upload of zip" 
+- Quality assurance:
    - To ensure that the zip file was uploaded successfully, go to the URL and download it back to your computer.
-
    - Unzip it, open it and spot check to make sure that all the files are there and seem valid.
 - Re-uploading: if you found a problem in your first zip (e.g., you realized you missed a file) and would like to upload an improved one, that's ok. Just proceed as you did for the first upload.
 
 ## 7. Finishing up
 - In the Uncrawlable spreadsheet, briefly describe the method used for harvesting in cell "Method Used" in Harvester section
-- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Harvester status indicator", for instance:
+- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance: 
   ```
-  @khdelphine closed 1/22/2017
+  @khdelphine Closed 1/22/2017
   ```
-  - If ever a day or more passed since you originally claimed the item, update the date to today's date.
-  - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, someone else can claim it in your place and start working on it
-    - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
-- You're done! Stand up, do a happy dance, and move on to the next url!
+    - If ever a day or more passed  since you originally claimed the item, update the date to today's date. 
+    - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
+      - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
+
+- You're done! Move on to the next URL!

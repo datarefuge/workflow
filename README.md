@@ -4,9 +4,18 @@ This document describes the workflow we use for the [DataRefuge project](http://
 
 ## Before you begin
 We are so glad that you are participating in this project!
-- If you are an event organizer: learn about [what you need to do to prepare the event](advance-work.md).
-- If you are a regular participant: get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and go over the workflow corresponding to your role. 
 
+**[If you are an overall Coordinator](coordinator-work.md)**:
+- See the description of some of the work overall coordinators do, including the role of the Spreadsheet Minder, [here](coordinator-work.md)
+
+**[If you are an Event Organizer](advance-work.md)**:
+- Learn about what you need to do to prepare the event [here](advance-work.md).
+
+**If you are a regular participant**: 
+- Get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and make sure you have access to the key documents and spreadsheets needed to do the work. The Event/Remote organizers will tell you how proceed to do all this. 
+- Go over the workflow documentation below, in particular the pages corresponding to your role.
+
+**********************
 ## Plan Overview
 ### 1. [Seeders/Sorters](seednsort.md)
 Seeders and Sorters canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders/Sorters nominate them to the End-of-Term (EOT) project, otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
@@ -14,7 +23,7 @@ Seeders and Sorters canvass the resources of a given government agency, identify
 ### 2. [Researchers](research.md)
 Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable). [Research.md](research.md) describes this process in more detail. 
 
-*Often this step is incorporated into either "Seeding and Sorting" or "Harvesting".*
+*We recommend that a Researchers and Harvesters (see below) work together in pairs, as much communication is needed between the two roles. In some case, one same person will fulfill both roles.*
 
 ### 3. [Harvesters](harvesting-toolkit)
 Harvesters take the "uncrawlable" data and try to figure out how to capture it. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks. Harvesters should see the included [Harvesting Toolkit](./harvesting-toolkit) for more details and tools. 
@@ -30,4 +39,8 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
 ### 7. [Describers](metadata.md)
 - Creates a CKAN record for this S3 resource
 - Links bag, makes public
+
+**********************
+## Partners
+Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. Thanks particularly to [EDGI](https://envirodatagov.org/) and [Date Refuge](http://www.ppehlab.org/datarefuge/) for their leadershp, and to our numerous supporters for their hard work.
 
