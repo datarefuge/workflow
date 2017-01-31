@@ -30,15 +30,12 @@
     ```
 - You will find the URL you are about to evaluate in the "Original URL" cell.
 
-
 ## Evaluating the data
 Go to the URL, and start inspecting the content.
 
 ## Is the data actually crawlable?
-
 Again, see [here](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
-and
-[here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)
+and [here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)
 for a mostly non-technical introduction to the crawler. Some additional
 technical notes for answering this:
 
