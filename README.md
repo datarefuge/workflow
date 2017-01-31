@@ -42,5 +42,5 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
 
 **********************
 ## Partners
-Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. Thanks particularly to [EDGI](https://envirodatagov.org/) and [Date Refuge](http://www.ppehlab.org/datarefuge/) for their leadershp, and to our numerous supporters for their hard work.
+Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. [DateRefuge](http://www.ppehlab.org/datarefuge/) thanks [EDGI](https://envirodatagov.org/) in particular for their contributions, and to our numerous supporters for their hard work. See more of our institutional partners on our [home page](http://www.ppehlab.org/datarefuge#partners).
 
