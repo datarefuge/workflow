@@ -38,7 +38,6 @@ Again, see [here](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wx
 and [here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)
 for a mostly non-technical introduction to the crawler. Some additional
 technical notes for answering this:
-
 - There is no specific file size cutoff on what is crawlable, but large files
   should be manually captured anyway.
 - Files types like ZIP, PDF, Excel, etc. are crawlable if they are linked.
