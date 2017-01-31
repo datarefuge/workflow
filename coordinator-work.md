@@ -1,6 +1,3 @@
-********************
-**NOTE: I am not sure I understand the subtleties of exactly who does what between EDGI and DataRefuge, so if I misstated something, please be lenient. (khdelphine)**
-********************
 
 While DataRefuge/DataRescue strives to be a distributed effort, there is need for a certain level of coordination to make sure there is no effort duplication between events. We are not going to cover all the tasks that Coordinators tackle in this document; instead we will focus on specific tasks that will help all project participants better understand the overall workflow.
 
