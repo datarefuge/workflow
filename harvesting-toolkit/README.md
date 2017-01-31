@@ -39,7 +39,7 @@ This package includes a general purpose toolkit for archiving open data. We have
 - Note that the Uncrawlable spreadsheet is the starting and ending point for the collective archiving efforts. Many people will be working from this shared worksheet, so it's important to report all your work in the spreadsheet and update the status cell that shows that you have claimed a URL or are done working on it.
 
 ## URL vs ID
-The url (in cell "Original URL")  is the link to examine, the id is a canonical id we'll use to connect the url with the data in question. The id will have been generated already by the DataRefuge organizers -- don't worry about that for now.
+The url (in cell "Original URL")  is the link to examine, the ID is a canonical ID we'll use to connect the url with the data in question. The ID will have been generated already by the DataRefuge organizers -- don't worry about that for now.
 
 ## 2a. Classify Source Type & archivability
 Before doing anything, take a minute to understand what you're looking at. It's usually best to have a quick check of the url to confirm that this data in fact not crawlable. Often as part of the harvesting team, you'll be the first person with a higher level of technical knowledge to review the url in question.
@@ -75,9 +75,9 @@ Before starting it's best to get a directory going for the data you're going to 
 
 Each row in the above is:
 
-	A directory named by the spreadsheet id
-		├── a .html "web archive" file of the url for future reference, named with the id
-		├── a .json metadata file that contains relevant metadata, named with the id
+	A directory named by the spreadsheet ID
+		├── a .html "web archive" file of the url for future reference, named with the ID
+		├── a .json metadata file that contains relevant metadata, named with the ID
 		├── a /tools directory to include any scripts, notes & files used to acquire the data
 		└── a /data directory that contains the data in question
 
@@ -89,7 +89,7 @@ The first thing you'll want to create is a html copy of the page in question. Th
 
 	wget -O DAFD2E80-965F-4989-8A77-843DE716D899.html  http://www.eia.gov/electricity/data/eia412/
 
-You'll replace ```DAFD2E80-965F-4989-8A77-843DE716D899.html``` with the id + .html, and the url with the one you're looking at.
+You'll replace ```DAFD2E80-965F-4989-8A77-843DE716D899.html``` with the ID + .html, and the url with the one you're looking at.
 
 #### [id].json file
 The json file is one you'll create by hand to create a machine readable record of the archive. This file contains vital data, including the url that was archived, and date of archiving. The [id.json readme](docs/id-json.md) goes into much more detail.
