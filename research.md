@@ -4,7 +4,7 @@
  - Apply to become a Researcher 
     - By asking your DataRescue guide or by filling out [this form](XXX) 
     - Skills recommended: in general, Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets. Ideally they would understand how federal data is organized (e.g. where the "master" datasets are vs. the derived partial views of those datasets.
-    - Note that a Gmail email address is required to apply.
+    - Note that an email address is required to apply.
   - Uncrawlable spreadsheet URL, slack invite, and other details will be provided once your application is approved.
   - Verify that you have write access to the Researchers/Harvesters tab in the Uncrawlable spreadsheet
   - If you need any assistance:
