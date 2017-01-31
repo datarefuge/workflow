@@ -1,4 +1,4 @@
-# Describers: Ckan/Metadata
+# Describers: CKAN/Metadata
 
 - Getting set up as a Describer
   - Apply to become a Describer 
@@ -7,7 +7,7 @@
     - Note that a Gmail email address is required to apply.
     - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [Trust and archival best practices](XXX) for more information).
   - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
- - Test that you can get into the ckan instance at https://www.datarefuge.org/ with the credentials provided
+ - Test that you can get into the CKAN instance at https://www.datarefuge.org/ with the credentials provided
    - Verify that you have write access to the Describers tab in the Uncrawlable spreadsheet
   - If you need any assistance:
       - Talk to your DataRescue Guide if you are at an in-person event
@@ -29,15 +29,15 @@
   - When it is downloaded, unzip it 
   - Spot check some of the files (make sure they open and look normal, i.e., not garbled)
 
-- Create new record in ckan
-  - Click "Add Dataset" in [ckan](https://www.datarefuge.org/)
+- Create new record in CKAN
+  - Click "Add Dataset" in [CKAN](https://www.datarefuge.org/)
   - Start entering metadata following the metadata schema spreadsheet (https://docs.google.com/spreadsheets/d/12JAleU6eF4wgu0hIlQ5efoOUCsZjT-UkRxwAofVZp6c/edit#gid=1879921913)
   - To decide what value to enter in each field:
     - Open JSON file that is in the bag you have downloaded; it contains some of the metadata you need
     - Go to the original location of the item on the federal agency website, to find more more facts about the item such as description, title of the dataset, etc. (See "Original URL" cell in Unscrawlable spreadsheet.)
     
-- Linking the ckan record to the bag:
-  - Click "Next: Add Data" at the bottom of the ckan form
+- Linking the CKAN record to the bag:
+  - Click "Next: Add Data" at the bottom of the CKAN form
   - Click "Link" and enter the Bag URL in the text field
   - Click "Finish"
   - Test that the link you just created work by clicking it, and verifying that the file begins to download. 
