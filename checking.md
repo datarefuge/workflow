@@ -32,8 +32,7 @@
 
 - Checking for completeness and meaningfulness
   - Your role is to inspect the dataset and make sure that it is complete.
-  - You also need to check that the dataset is *meaningful* 
-    - That is: "will the bag make sense to a scientist"? 
+  - You also need to check that the dataset is *meaningful*, that is: "will the bag make sense to a scientist"? 
     - For instance, if a dataset is composed of a spreadsheet without any accompanying key or explanation of what the data represents, it might be completely impossible for a scientist to use it.
    
 - Adding missing items
@@ -43,7 +42,7 @@
 - Re-uploading
   - If you have made any changes to the dataset, zip the all the files and upload the new resulting zip file, using the application http://drp-upload.herokuapp.com/
      - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
-    -  Note that files beyond 5 Gigs cannot be uploaded through this method
+    - Note that files beyond 5 Gigs cannot be uploaded through this method
       - Please talk to your DataRescue guide/post on Slack in Checkers channel, if you have a larger file
     - The file you uploaded has now replaced the old version, and it is available at the same url (in cell "URL from upload of zip")
   - Quality assurance: 
