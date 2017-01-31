@@ -34,7 +34,7 @@
   - Start entering metadata following the metadata schema spreadsheet (https://docs.google.com/spreadsheets/d/12JAleU6eF4wgu0hIlQ5efoOUCsZjT-UkRxwAofVZp6c/edit#gid=1879921913)
   - To decide what value to enter in each field:
     - Open JSON file that is in the bag you have downloaded; it contains some of the metadata you need
-    - Go to the original location of the item on the federal agency website, to find more more facts about the item such as     description, title of the dataset, etc. (See "Original URL" cell in Unscrawlable spreadsheet.)
+    - Go to the original location of the item on the federal agency website, to find more more facts about the item such as description, title of the dataset, etc. (See "Original URL" cell in Unscrawlable spreadsheet.)
     
 - Linking the ckan record to the bag:
   - Click "Next: Add Data" at the bottom of the ckan form
