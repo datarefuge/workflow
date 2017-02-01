@@ -58,16 +58,15 @@ What to do in each case:
     [Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok),
     and if that doesn't work then use the
     [bookmarklet](http://digital2.library.unt.edu/nomination/eth2016/about/)
-  - Fill out the cell "Can it be crawled?" = "yes" in Uncrawlable spreadsheet)
-  - Fill out that you seeded (Cell "Seeded?" in Uncrawlable spreadsheet)
-  - Fill out that link is done (Cell "Done" at the very end of the spreadsheet)
-- **NO**: If it is confirmed not crawlable:
+  - Fill out the cell "Can it be crawled?" = "yes" in Uncrawlable spreadsheet
+  - Fill out cell "Seeded?" = "yes" and tell what URL you seeded. 
+ - **NO**: If it is confirmed not crawlable:
    - Fill out the cell "Can it be crawled?" = "no" in  Researcher section of the spreadsheet
   - Search agency websites and data.gov for dataset entry points for your dataset collection   
       - Tips: Try to understand what data sets are underlying the web pages. Look for related entries in the spreadsheet, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.
   - Add your suggested url for harvesting the data to spreadsheet (in cell "Harvestable Data"), REALLY IMPORTANT!
   -  Also add other information in the spreadsheet that could help the Harvester, such as information about format (SQL, FTP, ZIP, PDF Collections, etc.), size, details about what you found, recommended approach, etc. 
-  - Search for related URLS in the spreadsheet that might be covered by the same approach so as not to duplicate work.
+  - Search for related URLS in the spreadsheet that might be covered by the same approach so as not to duplicate work (in cell "URL duplicate UUID").
 - **YES AND NO**: for example, FTP address, mixed content, big data sets:
    - Fill out the cell "Can it be crawled?" = "yes & no" in Researcher section of the spreadsheet
   - Nominate it anyway, but follow the steps for uncrawlable content above.
