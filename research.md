@@ -1,15 +1,18 @@
 # RESEARCH
 
+## What do Researchers do?
+Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested.
+
 ## Getting set up as a Researcher
  - Apply to become a Researcher 
-    - By asking your DataRescue guide or by filling out [this form](XXX) 
+    - By asking your DataRescue guide or by filling out [this form](Link coming soon) 
     - Skills recommended: in general, Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets. Ideally they would understand how federal data is organized (e.g. where the "master" datasets are vs. the derived partial views of those datasets.
     - Note that an email address is required to apply.
   - Uncrawlable spreadsheet URL, slack invite, and other details will be provided once your application is approved.
   - Verify that you have write access to the Researchers/Harvesters tab in the Uncrawlable spreadsheet
   - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
-    - Or post questions on Slack in the Researchers/Harvesters channel.
+    - Or post questions on Slack in the #Researchers/Harvesters channel.
     
 ## Researchers and Harvesters
 - Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
@@ -22,7 +25,7 @@
 
 - Researchers work on datasets that were listed as uncrawlable by Seeders.
 - Go to the Uncrawlable spreadsheet, click the Researchers/Harvesters tab, and look for a dataset to harvest
-  - Available datasets are the ones whose cell "Researchers Status Indicator" is empty
+  - Available datasets are the ones whose cell "Researcher Handle" is empty
   - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
     - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
     ```
@@ -58,16 +61,15 @@ What to do in each case:
     [Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok),
     and if that doesn't work then use the
     [bookmarklet](http://digital2.library.unt.edu/nomination/eth2016/about/)
-  - Fill out the cell "Can it be crawled?" = "yes" in Uncrawlable spreadsheet)
-  - Fill out that you seeded (Cell "Seeded?" in Uncrawlable spreadsheet)
-  - Fill out that link is done (Cell "Done" at the very end of the spreadsheet)
-- **NO**: If it is confirmed not crawlable:
+  - Fill out the cell "Can it be crawled?" = "yes" in Uncrawlable spreadsheet
+  - Fill out cell "Seeded?" = "yes" and tell what URL you seeded. 
+ - **NO**: If it is confirmed not crawlable:
    - Fill out the cell "Can it be crawled?" = "no" in  Researcher section of the spreadsheet
   - Search agency websites and data.gov for dataset entry points for your dataset collection   
       - Tips: Try to understand what data sets are underlying the web pages. Look for related entries in the spreadsheet, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.
   - Add your suggested url for harvesting the data to spreadsheet (in cell "Harvestable Data"), REALLY IMPORTANT!
   -  Also add other information in the spreadsheet that could help the Harvester, such as information about format (SQL, FTP, ZIP, PDF Collections, etc.), size, details about what you found, recommended approach, etc. 
-  - Search for related URLS in the spreadsheet that might be covered by the same approach so as not to duplicate work.
+  - Search for related URLS in the spreadsheet that might be covered by the same approach so as not to duplicate work (in cell "URL duplicate UUID").
 - **YES AND NO**: for example, FTP address, mixed content, big data sets:
    - Fill out the cell "Can it be crawled?" = "yes & no" in Researcher section of the spreadsheet
   - Nominate it anyway, but follow the steps for uncrawlable content above.
@@ -75,11 +77,11 @@ What to do in each case:
 
 
 ## Finishing up
-- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance: 
+- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Researcher: Current Status", for instance: 
   ```
   @khdelphine Closed 1/22/2017
   ```
-    - If ever a day or more passed  since you originally claimed the item, update the date to today's date. 
+    - If ever a day or more passed since you originally claimed the item, update the date to today's date. 
     - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
       - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
       

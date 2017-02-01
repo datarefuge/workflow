@@ -1,5 +1,6 @@
 ## Seeding and Sorting Overview
 
+## What do Seeders/Sorters do?
 Seeders and Sorters canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders/Sorters nominate them to the End-of-Term (EOT) project, otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
 
 ## Choosing the website

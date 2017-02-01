@@ -2,10 +2,25 @@
 
 This package includes a general purpose toolkit for archiving open data. We have [quick snippets and code examples](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) as well as [helpful tools](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) for quick reference.
 
+## What do Harvesters do?
+Harvesters take the "uncrawlable" data and try to figure out how to actully capture it based on the recommendations of the Researchers. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks.
 
+## Important notes
+
+- **Researchers and Harvesters**
+  - Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
+  - For instance they could work in pairs or in small groups. 
+    - In some cases, a single person might be both a Researcher and a Harvester.
+  - Note that in the Uncrawlable Action spreadsheet, Researchers and Harvesters share the same tab.
+  - As a Harvester, make sure to check out the [Researchers documentation](research.md) to familiarize yourself with their role.
+
+- **The notion of "meaningful dataset"**
+  - Your role is to harvest datasets that are complete and *meaningful*. By meaningful we mean: "will the bag make sense to a scientist"? 
+  - For instance, if a dataset is composed of a spreadsheet without any accompanying key or explanation of what the data represents, it might be completely impossible for a scientist to use it.
+  
 ## Getting set up as a Harvester
   - Apply to become a Harvester 
-    - By asking your DataRescue guide or by filling out [this form](XXX) 
+    - By asking your DataRescue guide or by filling out [this form](Link coming soon) 
     - Skills recommended: in general, Harvesters need to have some tech skills and a good understanding of harvesting goals.
     - Note that an email address is required to apply.
   - Credentials, slack invite, Uncrawlable Action spreadsheet URL, and other details will be provided once your application is approved.
@@ -16,21 +31,13 @@ This package includes a general purpose toolkit for archiving open data. We have
   - Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
   - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
-    - Or post  questions on Slack in the Researchers/Harvesters channel.
-
-## Researchers and Harvesters:
-- Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
-- For instance they could work in pairs or in small groups. 
-  - In some cases, a single person might be both a Researcher and a Harvester.
-- Note that in the Uncrawlable Action spreadsheet, Researchers and Harvesters share the same tab.
-- As a Harvester, make sure to check out the [Researchers documentation](research.md) to familiarize yourself with their role.
-
+    - Or post  questions on Slack in the #Researchers/Harvesters channel.
 
 ## 1. Claiming a dataset to harvest
 
  - You will work on datasets that were confirmed as unscrawlable by Researchers.
 - Go to the Uncrawlable spreadsheet, click the Researchers/Harvesters tab, and look for a dataset to harvest
-    - Available datasets are the ones whose cell "Harvesters Status Indicator" is empty
+    - Available datasets are the ones (1) whose cell "Harvester handle" is empty, (2) that have been marked as crawlable=no (or yes&no) by the Researcher, and (3) have been marked as "Researcher: Current Status" = "Closed".
     - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
   - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
   ```
@@ -38,8 +45,8 @@ This package includes a general purpose toolkit for archiving open data. We have
   ```
 - Note that the Uncrawlable spreadsheet is the starting and ending point for the collective archiving efforts. Many people will be working from this shared worksheet, so it's important to report all your work in the spreadsheet and update the status cell that shows that you have claimed a URL or are done working on it.
 
-## URL vs ID
-The url (in cell "Original URL")  is the link to examine, the ID is a canonical ID we'll use to connect the url with the data in question. The ID will have been generated already by the DataRefuge organizers -- don't worry about that for now.
+## URL vs UUID
+The url (in cell "Original URL")  is the link to examine, the UUID (in cell "UUID") is a canonical ID we'll use to connect the url with the data in question. The UUID will have been generated already by the DataRefuge organizers. UUID stands for Universal Unique Identifier. 
 
 ## 2a. Classify Source Type & archivability
 Before doing anything, take a minute to understand what you're looking at. It's usually best to have a quick check of the url to confirm that this data in fact not crawlable. Often as part of the harvesting team, you'll be the first person with a higher level of technical knowledge to review the url in question.
@@ -167,8 +174,8 @@ During the process you may feel inclined to clean things up, add structure to th
 - Re-uploading: if you found a problem in your first zip (e.g., you realized you missed a file) and would like to upload an improved one, that's ok. Just proceed as you did for the first upload.
 
 ## 7. Finishing up
-- In the Uncrawlable spreadsheet, briefly describe the method used for harvesting in cell "Method Used" in Harvester section
-- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance: 
+- In the Uncrawlable spreadsheet, fill out all cells in Harvester section to document your actions. 
+- In the Uncrawlable spreadsheet, change cell "Harvester: Current Status" to "Closed", for instance: 
   ```
   @khdelphine Closed 1/22/2017
   ```

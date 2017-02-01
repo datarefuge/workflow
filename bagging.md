@@ -1,31 +1,34 @@
 # Baggers
 
-- Getting set up as a Bagger
+## What do Baggers do?
+Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.
+
+## Getting set up as a Bagger
   - Apply to become a Bagger 
-    - By asking your DataRescue guide or by filling out [this form](XXX)
+    - By asking your DataRescue guide or by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform)
     - Skills recommended: in general, Baggers need to have some tech skills and a good understanding of harvesting goals.
-    - Note that a Gmail email address is required to apply.
-    - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [Trust and archival best practices](XXX) for more information).
+    - Note that an email address is required to apply.
+    - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [Trust and archival best practices](Link coming soon) for more information).
   - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
   - Test the Uploader application http://drp-upload-bagger.herokuapp.com with the credentials provided
       - Make sure to select the right event in the dropdown
-  - Verify that you have write access to the Baggers tab in the Uncrawlable spreadsheet
+  - Verify that you have write access to the #Baggers tab in the Uncrawlable spreadsheet
   - Get set up with Python and the Python script to make a bag at the command line https://github.com/LibraryOfCongress/bagit-python
   - If you need any assistance:
       - Talk to your DataRescue Guide if you are at an in-person event
-      - Or post  questions on Slack in the Baggers channel.
+      - Or post questions on Slack in the #Baggers channel.
   
-- Claiming a dataset for bagging
+## Claiming a dataset for bagging
   - You will work on datasets that were harvested by Checkers. 
   - Go to the Uncrawlable spreadsheet, click the Baggers tab, and look for a dataset to check
-    - Available datasets are the ones whose cell "Baggers Status Indicator" is empty
+    - Available datasets are the ones whose cell "Baggers Handle" is empty
     - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
   - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
   ```
   @khdelphine Open 1/22/2017
   ```
 
-- Downloading & opening the dataset
+## Downloading & opening the dataset
   - Go to the URL containing the zipped dataset (provided in cell "URL from upload of zip") 
   - Download the zip file to your laptop, and unzip it.
   - Quality assurance: spot check to ensure the UUID and downloaded materials match to the spreadsheet row
@@ -67,20 +70,21 @@
     - manifest-md5.txt
     - tagmanifest-md5.txt
 
-- Creating the Zip file and uploading it
+## Creating the Zip file and uploading it
   - Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID
   - Upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/
     - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
     - Note that files beyond 5 Gigs cannot be uploaded through this method
       - Please talk to your DataRescue guide/post on Slack in Baggers channel, if you have a larger file
-  - Enter URL in cell "Bag URL"
+  - Enter URL in cell "Bag URL" in Uncrawlable spreadsheet
     - The application will return the location URL for your zip file. 
-      - The syntax will be "[UrlStub]/[UUID].zip
-      - Paste URL in Uncrawlable spreadsheet (in "Bag URL" cell)        
+    - The syntax will be "[UrlStub]/[UUID].zip
+  - Enter file size in cell "Size of bag"
 
-- Quality assurance and finishing up
+## Quality assurance and finishing up
   - To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop.
   - Unzip it, open it and spot check to make sure that the bag looks well formed and the files seem valid.
+  - In the Uncrawlable spreadsheet, make sure you document all the actions you have taken by filling out all the cells.
   - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance:
   ```
   @khdelphine Closed 1/22/2017

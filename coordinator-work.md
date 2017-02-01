@@ -41,16 +41,16 @@ DataRefuge Coordinators help facilitate the DataRefuge project and the developme
 - A Spreadsheet Minder (or Spreadsheet Minder Team) is in charge with managing the Uncrawlable Index and Action spreadsheets
 - Here are the task they are responsible for:
   - Prepare new Uncrawlable Action spreadsheets by moving URLs from the Seeders spreadsheet and the Survey into new Uncrawlable Action spreadsheets.
-  - Generate UUIDs and add them to the Uncrawlable Action spreadsheets, making sure that each URL has a UUID
-  - Add the name of the event (in the "Event Name" cell)
-  - Add a rough importance rating (in the "Importance" cell) 
+  - Generate UUIDs (see "UUID generation" below) and add them to the Uncrawlable Action spreadsheets, making sure that each URL has a UUID
+   - Add a rough importance rating (in the "Importance" cell) 
     - E.g., a URL coming from the Survey would automatically get a high importance rating
+  - Add the name of the event (in the "Event Name" cell)
   - Keep an eye on all spreadsheets making sure that everything is in order.
   - Regularly take snapshots of each spreadsheet in case an problem occurs and the content of a spreadsheet needs to get recovered
   - Use the Index spreadsheet to track overall progress (ratio Done / Not Done) and to help with deduplication efforts
  
 ## UUID generation
-- UUIDs are "universal unique ID" 
+- UUIDs are "universal unique IDs" 
 - Each URL listed in an Uncrawlable spreadsheet is assigned one UUID (in cell "UUID").
 - Generating enough (UUIDs) ahead of time, and cutting and pasting them in the UUID column (in the spreadsheet's empty rows). 
 - The web-based tool [UUID generator](https://www.browserling.com/tools/random-uuid) can generate individual or multiple UUIDs.
