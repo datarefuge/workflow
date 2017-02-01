@@ -5,7 +5,7 @@ This package includes a general purpose toolkit for archiving open data. We have
 
 ## Getting set up as a Harvester
   - Apply to become a Harvester 
-    - By asking your DataRescue guide or by filling out [this form](XXX) 
+    - By asking your DataRescue guide or by filling out [this form](Link coming soon) 
     - Skills recommended: in general, Harvesters need to have some tech skills and a good understanding of harvesting goals.
     - Note that an email address is required to apply.
   - Credentials, slack invite, Uncrawlable Action spreadsheet URL, and other details will be provided once your application is approved.
@@ -16,7 +16,7 @@ This package includes a general purpose toolkit for archiving open data. We have
   - Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
   - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
-    - Or post  questions on Slack in the Researchers/Harvesters channel.
+    - Or post  questions on Slack in the #Researchers/Harvesters channel.
 
 ## Researchers and Harvesters:
 - Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
