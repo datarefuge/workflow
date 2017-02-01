@@ -20,7 +20,7 @@
 - Claiming a dataset for the checking step 
   - You will work on datasets that were harvested by Harvesters. 
   - Go to the Uncrawlable spreadsheet, click the Checkers tab, and look for a dataset to check
-    - Available datasets are the ones whose cell "Checker Status Indicator" is empty
+    - Available datasets are the ones whose cell "Checker Handle" is empty
     - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
   - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
   ```
@@ -51,7 +51,7 @@
     - Unzip it, open it and spot check to make sure that all the files are there and seem valid.
   
 - Finishing up
-  - In the Uncrawlable spreadsheet, briefly describe any change you have made in cell "Any Changes?" 
+  - In the Uncrawlable spreadsheet, briefly describe any change you have made in cell "Any Changes?", and answer yes or no in cell "Files in  UUID.zip are all good?" 
   - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance: 
   ```
   @khdelphine Closed 1/22/2017
