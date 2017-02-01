@@ -12,6 +12,7 @@
   - Test the Uploader application http://drp-upload.herokuapp.com with the credentials provided
     - Make sure to select the right event in the dropdown
   - Verify that you have write access to the Checkers tab in the Uncrawlable spreadsheet
+  - You might also need to have some other software and utilities set up on your computer, depending methods you will use, when needing to harvest supplemental materials to add to a dataset.
   - If you need any assistance:
       - Talk to your DataRescue Guide if you are at an in-person event
       - Or post  questions on Slack in the #Checkers channel.
