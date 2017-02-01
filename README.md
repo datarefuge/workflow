@@ -32,14 +32,11 @@ Harvesters take the "uncrawlable" data and try to figure out how to actully capt
 Checkers inspect a harvested dataset and make sure that it is complete. The main question the checkers need to answer is "will the bag make sense to a scientist"? Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.
 
 ### 5. [Baggers](bagging.md)
-- Do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet
-- Package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.
+Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.
 
 
 ### 7. [Describers](metadata.md)
-- Creates a CKAN record for this S3 resource
-- Links bag, makes public
-
+Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public
 **********************
 ## Partners
 Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. [DateRefuge](http://www.ppehlab.org/datarefuge/) thanks [EDGI](https://envirodatagov.org/) in particular for their contributions, and to our numerous supporters for their hard work. See more of our institutional partners on our [home page](http://www.ppehlab.org/datarefuge#partners).
