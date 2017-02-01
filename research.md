@@ -1,5 +1,8 @@
 # RESEARCH
 
+## What do Researchers do?
+Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested.
+
 ## Getting set up as a Researcher
  - Apply to become a Researcher 
     - By asking your DataRescue guide or by filling out [this form](Link coming soon) 
