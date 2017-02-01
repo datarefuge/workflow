@@ -22,14 +22,14 @@ Harvesters take the "uncrawlable" data and try to figure out how to actully capt
 
 ## Important notes
 
-- Researchers and Harvesters
+- **Researchers and Harvesters**
   - Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
   - For instance they could work in pairs or in small groups. 
     - In some cases, a single person might be both a Researcher and a Harvester.
   - Note that in the Uncrawlable Action spreadsheet, Researchers and Harvesters share the same tab.
   - As a Harvester, make sure to check out the [Researchers documentation](research.md) to familiarize yourself with their role.
 
-- The notion of *meaningful dataset*
+- **The notion of "meaningful dataset"**
   - Your role is to harvest datasets that are complete and *meaningful*. By meaningful we mean: "will the bag make sense to a scientist"? 
   - For instance, if a dataset is composed of a spreadsheet without any accompanying key or explanation of what the data represents, it might be completely impossible for a scientist to use it.
 
