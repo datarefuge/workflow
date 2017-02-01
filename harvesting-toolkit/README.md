@@ -30,7 +30,7 @@ This package includes a general purpose toolkit for archiving open data. We have
 
  - You will work on datasets that were confirmed as unscrawlable by Researchers.
 - Go to the Uncrawlable spreadsheet, click the Researchers/Harvesters tab, and look for a dataset to harvest
-    - Available datasets are the ones whose cell "Harvesters Status Indicator" is empty
+    - Available datasets are the ones (1) whose cell "Harvester handle" is empty, (2) that have been marked as crawlable=no (or yes&no) by the Researcher, and (3) have been marked as "Researcher: Current Status" = "Closed".
     - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
   - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
   ```
@@ -167,8 +167,8 @@ During the process you may feel inclined to clean things up, add structure to th
 - Re-uploading: if you found a problem in your first zip (e.g., you realized you missed a file) and would like to upload an improved one, that's ok. Just proceed as you did for the first upload.
 
 ## 7. Finishing up
-- In the Uncrawlable spreadsheet, briefly describe the method used for harvesting in cell "Method Used" in Harvester section
-- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance: 
+- In the Uncrawlable spreadsheet, fill out all cells in Harvester section to document your actions. 
+- In the Uncrawlable spreadsheet, change cell "Harvester: Current Status" to "Closed", for instance: 
   ```
   @khdelphine Closed 1/22/2017
   ```
