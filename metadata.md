@@ -16,7 +16,7 @@
 - Claiming a bag
   - You will work on datasets that were last checked by Checkers. 
   - Go to the Uncrawlable spreadsheet, click the Describers tab, and look for a dataset to describe
-    - Available datasets are the ones whose cell "Describer Status Indicator" is empty
+    - Available datasets are the ones whose cell "Describer Handle" is empty
     - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
   - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
   ```
@@ -46,7 +46,8 @@
 - Finishing up
   - In the Uncrawlable spreadsheet, add URL to the ckan record in cell "ckan record URL"
     - The syntax will be "https://www.datarefuge.org//dataset/[datasetNameGeneratedByCkan]
-   - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance: 
+  - In the Uncrawlable spreadsheet, make sure you document all the actions you have taken by filling out all the cells.
+  - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance: 
   ```
   @khdelphine Closed 1/22/2017
   ```
