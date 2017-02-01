@@ -1,8 +1,7 @@
 # Describers: CKAN/Metadata
 
-## What do Describers do
-- They creates a descriptive record in the [DataRefuge CKAN repository](http://datarefuge.org) for each bag
-- They links the record to the bag, and make the record public
+## What do Describers do?
+Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public
 
 ## Getting set up as a Describer
   - Apply to become a Describer 
