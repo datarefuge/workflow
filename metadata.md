@@ -2,16 +2,16 @@
 
 - Getting set up as a Describer
   - Apply to become a Describer 
-    - By asking your DataRescue guide or by filling out [this form](XXX)
+    - By asking your DataRescue guide or by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/1vaMq-o0dBe6imYeDJY6-7h7h0SotXKFw2k_elC0rNMw)
     - Skills recommended: in general, Describers need to have a good handle on metadata practices 
     - Note that a Gmail email address is required to apply.
-    - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [Trust and archival best practices](XXX) for more information).
+    - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [Trust and archival best practices](Link coming soon) for more information).
   - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
  - Test that you can get into the CKAN instance at https://www.datarefuge.org/ with the credentials provided
    - Verify that you have write access to the Describers tab in the Uncrawlable spreadsheet
   - If you need any assistance:
       - Talk to your DataRescue Guide if you are at an in-person event
-      - Or post questions on Slack in the Describers channel.
+      - Or post questions on Slack in the #Describers channel.
 
 - Claiming a bag
   - You will work on datasets that were last checked by Checkers. 
