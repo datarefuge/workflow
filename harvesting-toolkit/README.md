@@ -38,8 +38,8 @@ This package includes a general purpose toolkit for archiving open data. We have
   ```
 - Note that the Uncrawlable spreadsheet is the starting and ending point for the collective archiving efforts. Many people will be working from this shared worksheet, so it's important to report all your work in the spreadsheet and update the status cell that shows that you have claimed a URL or are done working on it.
 
-## URL vs ID
-The url (in cell "Original URL")  is the link to examine, the ID is a canonical ID we'll use to connect the url with the data in question. The ID will have been generated already by the DataRefuge organizers -- don't worry about that for now.
+## URL vs UUID
+The url (in cell "Original URL")  is the link to examine, the UUID (in cell "UUID") is a canonical ID we'll use to connect the url with the data in question. The UUID will have been generated already by the DataRefuge organizers. UUID stands for Universal Unique Identifier. 
 
 ## 2a. Classify Source Type & archivability
 Before doing anything, take a minute to understand what you're looking at. It's usually best to have a quick check of the url to confirm that this data in fact not crawlable. Often as part of the harvesting team, you'll be the first person with a higher level of technical knowledge to review the url in question.
