@@ -26,7 +26,7 @@ Researchers inspect the "uncrawlable" list to confirm that seeders' assessments 
 *We recommend that a Researchers and Harvesters (see below) work together in pairs, as much communication is needed between the two roles. In some case, one same person will fulfill both roles.*
 
 ### 3. [Harvesters](harvesting-toolkit)
-Harvesters take the "uncrawlable" data and try to figure out how to capture it. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks. Harvesters should see the included [Harvesting Toolkit](./harvesting-toolkit) for more details and tools. 
+Harvesters take the "uncrawlable" data and try to figure out how to actully capture it based on the recommendations of the Researchers.  This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks. Harvesters should see the included [Harvesting Toolkit](./harvesting-toolkit) for more details and tools. 
 
 ### 4. [Checkers](checking.md)
 Checkers inspect a harvested dataset and make sure that it is complete. The main question the checkers need to answer is "will the bag make sense to a scientist"? Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.
