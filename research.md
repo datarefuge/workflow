@@ -22,7 +22,7 @@
 
 - Researchers work on datasets that were listed as uncrawlable by Seeders.
 - Go to the Uncrawlable spreadsheet, click the Researchers/Harvesters tab, and look for a dataset to harvest
-  - Available datasets are the ones whose cell "Researchers Status Indicator" is empty
+  - Available datasets are the ones whose cell "Researcher Handle" is empty
   - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
     - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
     ```
@@ -74,11 +74,11 @@ What to do in each case:
 
 
 ## Finishing up
-- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance: 
+- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Researcher: Current Status", for instance: 
   ```
   @khdelphine Closed 1/22/2017
   ```
-    - If ever a day or more passed  since you originally claimed the item, update the date to today's date. 
+    - If ever a day or more passed since you originally claimed the item, update the date to today's date. 
     - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
       - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
       
