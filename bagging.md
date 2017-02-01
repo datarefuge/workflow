@@ -1,6 +1,10 @@
 # Baggers
 
-- Getting set up as a Bagger
+## What do Baggers do?
+- They do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet
+- They package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.
+
+## Getting set up as a Bagger
   - Apply to become a Bagger 
     - By asking your DataRescue guide or by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform)
     - Skills recommended: in general, Baggers need to have some tech skills and a good understanding of harvesting goals.
@@ -15,7 +19,7 @@
       - Talk to your DataRescue Guide if you are at an in-person event
       - Or post questions on Slack in the #Baggers channel.
   
-- Claiming a dataset for bagging
+## Claiming a dataset for bagging
   - You will work on datasets that were harvested by Checkers. 
   - Go to the Uncrawlable spreadsheet, click the Baggers tab, and look for a dataset to check
     - Available datasets are the ones whose cell "Baggers Handle" is empty
@@ -25,7 +29,7 @@
   @khdelphine Open 1/22/2017
   ```
 
-- Downloading & opening the dataset
+## Downloading & opening the dataset
   - Go to the URL containing the zipped dataset (provided in cell "URL from upload of zip") 
   - Download the zip file to your laptop, and unzip it.
   - Quality assurance: spot check to ensure the UUID and downloaded materials match to the spreadsheet row
@@ -67,7 +71,7 @@
     - manifest-md5.txt
     - tagmanifest-md5.txt
 
-- Creating the Zip file and uploading it
+## Creating the Zip file and uploading it
   - Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID
   - Upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/
     - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
@@ -78,7 +82,7 @@
     - The syntax will be "[UrlStub]/[UUID].zip
   - Enter file size in cell "Size of bag"
 
-- Quality assurance and finishing up
+## Quality assurance and finishing up
   - To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop.
   - Unzip it, open it and spot check to make sure that the bag looks well formed and the files seem valid.
   - In the Uncrawlable spreadsheet, make sure you document all the actions you have taken by filling out all the cells.
