@@ -2,14 +2,14 @@
 
 - Getting set up as a Bagger
   - Apply to become a Bagger 
-    - By asking your DataRescue guide or by filling out [this form](XXX)
+    - By asking your DataRescue guide or by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/1vaMq-o0dBe6imYeDJY6-7h7h0SotXKFw2k_elC0rNMw)
     - Skills recommended: in general, Baggers need to have some tech skills and a good understanding of harvesting goals.
     - Note that a Gmail email address is required to apply.
-    - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [Trust and archival best practices](XXX) for more information).
+    - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [Trust and archival best practices](Link coming soon) for more information).
   - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
   - Test the Uploader application http://drp-upload-bagger.herokuapp.com with the credentials provided
       - Make sure to select the right event in the dropdown
-  - Verify that you have write access to the Baggers tab in the Uncrawlable spreadsheet
+  - Verify that you have write access to the #Baggers tab in the Uncrawlable spreadsheet
   - Get set up with Python and the Python script to make a bag at the command line https://github.com/LibraryOfCongress/bagit-python
   - If you need any assistance:
       - Talk to your DataRescue Guide if you are at an in-person event
