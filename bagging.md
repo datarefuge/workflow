@@ -18,7 +18,7 @@
 - Claiming a dataset for bagging
   - You will work on datasets that were harvested by Checkers. 
   - Go to the Uncrawlable spreadsheet, click the Baggers tab, and look for a dataset to check
-    - Available datasets are the ones whose cell "Baggers Status Indicator" is empty
+    - Available datasets are the ones whose cell "Baggers Handle" is empty
     - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
   - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
   ```
@@ -73,14 +73,15 @@
     - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
     - Note that files beyond 5 Gigs cannot be uploaded through this method
       - Please talk to your DataRescue guide/post on Slack in Baggers channel, if you have a larger file
-  - Enter URL in cell "Bag URL"
+  - Enter URL in cell "Bag URL" in Uncrawlable spreadsheet
     - The application will return the location URL for your zip file. 
-      - The syntax will be "[UrlStub]/[UUID].zip
-      - Paste URL in Uncrawlable spreadsheet (in "Bag URL" cell)        
+    - The syntax will be "[UrlStub]/[UUID].zip
+  - Enter file size in cell "Size of bag"
 
 - Quality assurance and finishing up
   - To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop.
   - Unzip it, open it and spot check to make sure that the bag looks well formed and the files seem valid.
+  - In the Uncrawlable spreadsheet, make sure you document all the actions you have taken by filling out all the cells.
   - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance:
   ```
   @khdelphine Closed 1/22/2017
