@@ -4,7 +4,7 @@
   - Apply to become a Describer 
     - By asking your DataRescue guide or by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform)
     - Skills recommended: in general, Describers need to have a good handle on metadata practices 
-    - Note that a Gmail email address is required to apply.
+    - Note that an email address is required to apply.
     - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [Trust and archival best practices](Link coming soon) for more information).
   - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
  - Test that you can get into the CKAN instance at https://www.datarefuge.org/ with the credentials provided
