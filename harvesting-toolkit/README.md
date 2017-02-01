@@ -2,6 +2,8 @@
 
 This package includes a general purpose toolkit for archiving open data. We have [quick snippets and code examples](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) as well as [helpful tools](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) for quick reference.
 
+## What do Harvesters do?
+Harvesters take the "uncrawlable" data and try to figure out how to actully capture it based on the recommendation of the Researchers. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks.
 
 ## Getting set up as a Harvester
   - Apply to become a Harvester 
