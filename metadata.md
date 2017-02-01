@@ -2,7 +2,7 @@
 
 - Getting set up as a Describer
   - Apply to become a Describer 
-    - By asking your DataRescue guide or by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/1vaMq-o0dBe6imYeDJY6-7h7h0SotXKFw2k_elC0rNMw)
+    - By asking your DataRescue guide or by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform)
     - Skills recommended: in general, Describers need to have a good handle on metadata practices 
     - Note that a Gmail email address is required to apply.
     - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [Trust and archival best practices](Link coming soon) for more information).
