@@ -14,7 +14,7 @@
   - Verify that you have write access to the Checkers tab in the Uncrawlable spreadsheet
   - If you need any assistance:
       - Talk to your DataRescue Guide if you are at an in-person event
-      - Or post  questions on Slack in the Checkers channel.
+      - Or post  questions on Slack in the #Checkers channel.
 
 - Claiming a dataset for the checking step 
   - You will work on datasets that were harvested by Harvesters. 
