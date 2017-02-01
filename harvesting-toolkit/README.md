@@ -113,10 +113,10 @@ Government datasets are often stored on FTP. It's pretty easy to crawl these FTP
 
 ### 4d. API scrape / Custom Solution
 
-If you encounter an api, chances are you'll have to build some sort of custom solution, or investigate a social angle. For example: asking someone with greater access for a database dump.
+If you encounter an API, chances are you'll have to build some sort of custom solution, or investigate a social angle. For example: asking someone with greater access for a database dump.
 
 ### 4e. Automated Full Browser
-The last resort of harvesting should be to drive it with a full web browser.  It is slower than other approaches such as wget, curl, or a headless browser.  Addiionally, it's prone to issues where the resuling page is saved before it's done loading.  There is a ruby example in [tools/example-hacks/watir.rb](tools/example-hacks/watir.rb)
+The last resort of harvesting should be to drive it with a full web browser. It is slower than other approaches such as `wget`, `curl`, or a headless browser. Additionally, this implementation is prone to issues where the resulting page is saved before it's done loading. There is a ruby example in [tools/example-hacks/watir.rb](tools/example-hacks/watir.rb).
 
 ## 5. Write [id].json metadata, add /tools
 
