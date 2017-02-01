@@ -21,7 +21,7 @@ We are so glad that you are participating in this project!
 Seeders and Sorters canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders/Sorters nominate them to the End-of-Term (EOT) project, otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
 
 ### 2. [Researchers](research.md)
-Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable). [Research.md](research.md) describes this process in more detail. 
+Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested. [Research.md](research.md) describes this process in more detail. 
 
 *We recommend that a Researchers and Harvesters (see below) work together in pairs, as much communication is needed between the two roles. In some case, one same person will fulfill both roles.*
 
