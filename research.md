@@ -2,14 +2,14 @@
 
 ## Getting set up as a Researcher
  - Apply to become a Researcher 
-    - By asking your DataRescue guide or by filling out [this form](XXX) 
+    - By asking your DataRescue guide or by filling out [this form](Link coming soon) 
     - Skills recommended: in general, Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets. Ideally they would understand how federal data is organized (e.g. where the "master" datasets are vs. the derived partial views of those datasets.
     - Note that an email address is required to apply.
   - Uncrawlable spreadsheet URL, slack invite, and other details will be provided once your application is approved.
   - Verify that you have write access to the Researchers/Harvesters tab in the Uncrawlable spreadsheet
   - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
-    - Or post questions on Slack in the Researchers/Harvesters channel.
+    - Or post questions on Slack in the #Researchers/Harvesters channel.
     
 ## Researchers and Harvesters
 - Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
