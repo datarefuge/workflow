@@ -42,9 +42,9 @@ DataRefuge Coordinators help facilitate the DataRefuge project and the developme
 - Here are the task they are responsible for:
   - Prepare new Uncrawlable Action spreadsheets by moving URLs from the Seeders spreadsheet and the Survey into new Uncrawlable Action spreadsheets.
   - Generate UUIDs (see "UUID generation" below) and add them to the Uncrawlable Action spreadsheets, making sure that each URL has a UUID
-  - Add the name of the event (in the "Event Name" cell)
-  - Add a rough importance rating (in the "Importance" cell) 
+   - Add a rough importance rating (in the "Importance" cell) 
     - E.g., a URL coming from the Survey would automatically get a high importance rating
+  - Add the name of the event (in the "Event Name" cell)
   - Keep an eye on all spreadsheets making sure that everything is in order.
   - Regularly take snapshots of each spreadsheet in case an problem occurs and the content of a spreadsheet needs to get recovered
   - Use the Index spreadsheet to track overall progress (ratio Done / Not Done) and to help with deduplication efforts
