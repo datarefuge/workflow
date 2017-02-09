@@ -19,34 +19,28 @@ Harvesters take the "uncrawlable" data and try to figure out how to actually cap
   - For instance, if a dataset is composed of a spreadsheet without any accompanying key or explanation of what the data represents, it might be completely impossible for a scientist to use it.
   
 ## Getting set up as a Harvester
-  - Apply to become a Harvester 
-    - By asking your DataRescue guide or by filling out [this form](Link coming soon) 
-    - Skills recommended: in general, Harvesters need to have some tech skills and a good understanding of harvesting goals.
-    - Note that an email address is required to apply.
-  - Credentials, slack invite, Uncrawlable Action spreadsheet URL, and other details will be provided once your application is approved.
-  - Test the Uploader application http://drp-upload.herokuapp.com with the credentials provided
-    - Make sure to select the right event in the dropdown
-  - Verify that you have write access to the Researchers/Harvesters tab in the Uncrawlable Action spreadsheet
-  - You might also need to have some other software and utilities set up on your computer, depending on the harvested methods you will use.
-  - Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
+- Skills recommended for this role: in general, Harvesters need to have some tech skills and a good understanding of harvesting goals.
+- The organizers of the event (in-person or remote) will tell you how to volunteer for the Harvester role, either through slack or a form. 
+	- As a result, they will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
+	- Click the invite link, and choose a user name and a password.
+- Make sure you have an account on the DataRefuge slack where people share expertise and answer each other's questions.
+	- Ask your event organizer to send you an invite 
+- You might also need to have some other software and utilities set up on your computer, depending on the harvested methods you will use.
+- Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
   - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
     - Or post  questions on Slack in the #Researchers/Harvesters channel.
 
 ## 1. Claiming a dataset to harvest
 
- - You will work on datasets that were confirmed as unscrawlable by Researchers.
-- Go to the Uncrawlable spreadsheet, click the Researchers/Harvesters tab, and look for a dataset to harvest
-    - Available datasets are the ones (1) whose cell "Harvester handle" is empty, (2) that have been marked as crawlable=no (or yes&no) by the Researcher, and (3) have been marked as "Researcher: Current Status" = "Closed".
-    - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
-  - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
-  ```
-  @khdelphine Open 1/22/2017
-  ```
-- Note that the Uncrawlable spreadsheet is the starting and ending point for the collective archiving efforts. Many people will be working from this shared worksheet, so it's important to report all your work in the spreadsheet and update the status cell that shows that you have claimed a URL or are done working on it.
+- You will work on datasets that were confirmed as unscrawlable by Researchers.
+- Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `HARVEST`, all the URLs listed are ready to be harvested
+    - Available URLs are the ones that have not been checked out by someone else, that is, do not have someone's name in the User column.
+- Click an available URL, and click `Check out this URL`. It is now ready for you to work on, no one else can do anything to it while you have it checked out. 
+- While you go through the harvesting process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.
 
-## URL vs UUID
-The url (in cell "Original URL")  is the link to examine, the UUID (in cell "UUID") is a canonical ID we'll use to connect the url with the data in question. The UUID will have been generated already by the DataRefuge organizers. UUID stands for Universal Unique Identifier. 
+## Note: URL vs UUID
+The `URL` is the link to examine, and the `UUID` is a canonical ID we'll use to connect the url with the data in question. The UUID will have been generated already by the DataRefuge organizers. UUID stands for Universal Unique Identifier. 
 
 ## 2a. Classify Source Type & archivability
 Before doing anything, take a minute to understand what you're looking at. It's usually best to have a quick check of the url to confirm that this data in fact not crawlable. Often as part of the harvesting team, you'll be the first person with a higher level of technical knowledge to review the url in question.
@@ -163,24 +157,20 @@ During the process you may feel inclined to clean things up, add structure to th
 
 ## 6. Uploading the data
 - Zip the all the files pertaining to your dataset, so that you have a resulting zip file.
-- Upload the Zip file using the application http://drp-upload.herokuapp.com/
-   - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
-   -  Note that files beyond 5 Gigs cannot be uploaded through this method
+- Upload the Zip file by clicking `Upload` in the Archivers app, and selecting `Choose File`
+     -  Note that files beyond 5 Gigs cannot be uploaded through this method
      - Please talk to your DataRescue guide/post on Slack in Researchers/Harvesters channel, if you have a larger file
-   - The application will return the url of the uploaded file. Enter it in the Uncrawlable spreadsheet in cell "URL from upload of zip" 
-- Quality assurance:
+  <!--- IT WOULD BE NICE TO STILL HAVE THAT STEP: Quality assurance:
    - To ensure that the zip file was uploaded successfully, go to the URL and download it back to your computer.
    - Unzip it, open it and spot check to make sure that all the files are there and seem valid.
-- Re-uploading: if you found a problem in your first zip (e.g., you realized you missed a file) and would like to upload an improved one, that's ok. Just proceed as you did for the first upload.
+- Re-uploading: if you found a problem in your first zip (e.g., you realized you missed a file) and would like to upload an improved one, that's ok. Just proceed as you did for the first upload.-->
 
 ## 7. Finishing up
-- In the Uncrawlable spreadsheet, fill out all cells in Harvester section to document your actions. 
-- In the Uncrawlable spreadsheet, change cell "Harvester: Current Status" to "Closed", for instance: 
-  ```
-  @khdelphine Closed 1/22/2017
-  ```
-    - If ever a day or more passed  since you originally claimed the item, update the date to today's date. 
+- In the Archivers app, make sure to fill out as much information as possible to document your work and click `Save`
+- Check the Harvest checkbox (on the right-hand side) to mark that step as completed. 
+- Click `Check in URL`, to release it and allow someone else to work on the next step. 
+<!-- HOW DOES THIS PROCESS WORK NOW?    - If ever a day or more passed  since you originally claimed the item, update the date to today's date. 
     - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
-      - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
+      - This will avoid datasets being stuck in the middle of the workflow and not being finalized.-->
 
 - You're done! Move on to the next URL!
