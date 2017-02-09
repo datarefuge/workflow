@@ -42,8 +42,8 @@ Before starting, your team should go through the following steps.
 ## S3 storage
 - While the file storage process is streamlined and "invisible" to the event participants, as an organizer you should still make sure that the storage has been set up properly for your event.
 - Talk to the DataRefuge organizers about this.
-<!--
-- You need two S3 "buckets" (i.e., directories) for your harvested files.  
+
+<!-- - You need two S3 "buckets" (i.e., directories) for your harvested files.  
  - The Harvesters will upload the files they harvest to the first bucket ("pre-bag" bucket)
   - In some cases, the Checkers will also upload improved versions of the files to the same pre-bag bucket
  - The Baggers will turn those files into bags and upload the bags to the second bucket ("bag" bucket)
@@ -53,8 +53,7 @@ Before starting, your team should go through the following steps.
  - One person at the event should be designated as the S3 System Administrator and will have direct access to the S3 buckets for the event. The S3 Sys Admin should be someone with advanced technical skills and will be responsible for 2 things:
   - Upload very large sets (beyond 5 Gigs) through an alternate method (provided by DataRefuge)
   - Keep the buckets cleaned up and organized. 
-- Note that large files Uploaders need not be coders, but they should have a little experience working in command line, and computers with python 2.7.
--->
+- Note that large files Uploaders need not be coders, but they should have a little experience working in command line, and computers with python 2.7.-->
   
 ## Credentials
 - The Researchers/Harvesters/Checkers/Baggers need to have an account on the [Archivers app](http://www.archivers.space/) 
