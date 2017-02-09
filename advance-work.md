@@ -31,7 +31,7 @@ Before starting, your team should go through the following steps.
 - You need to make sure that:
   - Your event is listed in the app.
   - All the event participants who need it have access to the app (see Credentials section below)
-    - And that they "join" your event inside the app 
+  
 
 ## Crawl vs. Harvest: storage needs 
 - The main triage point of the workflow is whether a URL can be automatically crawled, for instance by the Internet Archive, or whether it  needs to be manually harvested. 
@@ -57,6 +57,8 @@ Before starting, your team should go through the following steps.
   
 ## Credentials
 - The Researchers/Harvesters/Checkers/Baggers need to have an account on the [Archivers app](http://www.archivers.space/) 
+  - You will need to generate invites for each one [within the app](http://www.archivers.space/invites/new), and paste the URL generated in a slack Direct Message or an email.
+  - Each participant invited will automatically "belong" to your event in the app.
 - Checkers and Baggers need to be given explicit privileges in the app to have access to the Checking (i.e. "Finalize") and Bagging sections. 
 - Seeders/Sorters do not need access to the Archivers app.
 <!--  - The Describers (Ckan/Metadata folks) need **credentials for [ckan](https://www.datarefuge.org/)**. -->
