@@ -24,7 +24,7 @@ Researchers inspect the "uncrawlable" list to confirm that seeders' assessments 
 - Researchers work on datasets that were listed as uncrawlable by Seeders.
 - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `RESEARCH`, all the URLs listed are ready to be researched
     - Available URLs are the ones that have not been checked out by someone else, that is, do not have someone's name in the User column.
-- Click an available URL, and click `Check out this URL`. It is now ready for you to work on, no one else can do anything to it while you have it checked out. 
+- Select an available URL and click its UUID, then click `Check out this URL`. It is now ready for you to work on, no one else can do anything to it while you have it checked out. 
 - While you go through the research process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.
 
 ## Note: URL vs UUID
