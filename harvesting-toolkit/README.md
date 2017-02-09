@@ -65,7 +65,8 @@ If the dataset you're looking at is quite large -- say, more than 1000 documents
 
 ## 3. Generate HTML, JSON & Directory
 
-Before starting it's best to get a directory going for the data you're going to archive. You will be in charge of creating and collecting this structure for each link that's deemed uncrawlable. Using the example from step 1, the structure of the archive will look like so:
+To get started click `Download Zip Starter`, which will download an empty Zip archive structure for the data you are about to harvest.
+The structure looks like this:
 
 	DAFD2E80-965F-4989-8A77-843DE716D899
 		├── DAFD2E80-965F-4989-8A77-843DE716D899.html
@@ -82,14 +83,17 @@ Each row in the above is:
 		└── a /data directory that contains the data in question
 
 
-The goal is to pass this finalized folder off for ["bagging"](example/DAFD2E80-965F-4989-8A77-843DE716D899/DAFD2E80-965F-4989-8A77-843DE716D899.json). We repeatedly use the ID so that we can programmatically work through this data later. It is important that the ID be copied *exactly*, with no leading or trailing spaces, and honoring case-sensitivity.
+### UUID 
+The goal is to pass this finalized folder off for ["bagging"](example/DAFD2E80-965F-4989-8A77-843DE716D899/DAFD2E80-965F-4989-8A77-843DE716D899.json). We repeatedly use the UUID so that we can programmatically work through this data later. It is important that the ID be copied *exactly* wherever it appears, with no leading or trailing spaces, and honoring case-sensitivity.
 
 #### [id].html file
-The first thing you'll want to create is a html copy of the page in question. The html file gives the archive a snapshot of the page at the time of archiving which we can use to monitor for changing data in the future, and corrobrate the provenance of the archive itself. We can also use the .html in conjunction with the scripts you'll include in the tools directory to replicate the archive in the future. To generate the html file, navigate to your new folder in a terminal window and run the following command:
+The zip starter archive will automatically include a copy of the page corresponding to the URL. The html file gives the archive a snapshot of the page at the time of archiving which we can use to monitor for changing data in the future, and corrobrate the provenance of the archive itself. We can also use the .html in conjunction with the scripts you'll include in the tools directory to replicate the archive in the future. 
+
+<!--To generate the html file, navigate to your new folder in a terminal window and run the following command:
 
 	wget -O DAFD2E80-965F-4989-8A77-843DE716D899.html  http://www.eia.gov/electricity/data/eia412/
 
-You'll replace ```DAFD2E80-965F-4989-8A77-843DE716D899.html``` with the ID + .html, and the url with the one you're looking at.
+You'll replace ```DAFD2E80-965F-4989-8A77-843DE716D899.html``` with the ID + .html, and the url with the one you're looking at.-->
 
 #### [id].json file
 The json file is one you'll create by hand to create a machine readable record of the archive. This file contains vital data, including the url that was archived, and date of archiving. The [id.json readme](docs/id-json.md) goes into much more detail.
@@ -155,9 +159,9 @@ It's worth using some judgement here. If a "script" you used includes an entire 
 During the process you may feel inclined to clean things up, add structure to the data, etc. Avoid temptation. Your finished archive will be hashed so we can compare it later for changes, and it's important that we archive original, unmodified content.
 
 ## 6. Uploading the data
-- Zip the all the files pertaining to your dataset, so that you have a resulting zip file.
-- Upload the Zip file by clicking `Upload` in the Archivers app, and selecting `Choose File`
-     -  Note that files beyond 5 Gigs cannot be uploaded through this method
+- Zip the all the files pertaining to your dataset within the zip started archive structure. 
+- Upload the zip file by clicking `Upload` in the Archivers app, and selecting `Choose File`
+     - Note that files beyond 5 Gigs cannot be uploaded through this method
      - Please talk to your DataRescue guide/post on Slack in Researchers/Harvesters channel, if you have a larger file
   <!--- IT WOULD BE NICE TO STILL HAVE THAT STEP: Quality assurance:
    - To ensure that the zip file was uploaded successfully, go to the URL and download it back to your computer.
