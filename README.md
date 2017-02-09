@@ -35,7 +35,7 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
 Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.
 
 ### 7. Describers
-<1--[Describers](metadata.md)-->
+<!--[Describers](metadata.md)-->
 Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public
 **Note: This role is currently being redeveloped and is not currently active.**
 
