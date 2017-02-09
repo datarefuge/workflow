@@ -34,7 +34,7 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
 ### 5. [Baggers](bagging.md)
 Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.
 
-### 7. Describers
+### 6. Describers
 <!--[Describers](metadata.md)-->
 
 **Note: This role is currently being redeveloped and is not currently active.**
