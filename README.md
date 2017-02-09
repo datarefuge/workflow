@@ -5,8 +5,8 @@ This document describes the workflow we use for Data Rescue activites as develop
 ## Before you begin
 We are so glad that you are participating in this project!
 
-**[If you are an overall Coordinator](coordinator-work.md)**:
-- See the description of some of the work overall coordinators do [here](coordinator-work.md)
+<!--**[If you are an overall Coordinator](coordinator-work.md)**:
+- See the description of some of the work overall coordinators do [here](coordinator-work.md)-->
 
 **[If you are an Event Organizer](advance-work.md)**:
 - Learn about what you need to do to prepare the event [here](advance-work.md).
