@@ -5,14 +5,14 @@ This document describes the workflow we use for Data Rescue activites as develop
 ## Before you begin
 We are so glad that you are participating in this project!
 
-**[If you are an overall Coordinator](coordinator-work.md)**:
-- See the description of some of the work overall coordinators do, including the role of the Spreadsheet Minder, [here](coordinator-work.md)
+<!--**[If you are an overall Coordinator](coordinator-work.md)**:
+- See the description of some of the work overall coordinators do [here](coordinator-work.md)-->
 
 **[If you are an Event Organizer](advance-work.md)**:
 - Learn about what you need to do to prepare the event [here](advance-work.md).
 
 **If you are a regular participant**: 
-- Get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and make sure you have access to the key documents and spreadsheets needed to do the work. The Event/Remote organizers will tell you how proceed to do all this. 
+- Get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and make sure you have access to the key documents and app needed to do the work. The Event/Remote organizers will tell you how proceed to do all this. 
 - Go over the workflow documentation below, in particular the pages corresponding to your role.
 
 **********************
@@ -34,9 +34,13 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
 ### 5. [Baggers](bagging.md)
 Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.
 
+### 7. Describers
+<!--[Describers](metadata.md)-->
 
-### 7. [Describers](metadata.md)
-Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public
+**Note: This role is currently being redeveloped and is not currently active.**
+
+Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public.
+
 **********************
 ## Partners
 Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. [DateRefuge](http://www.ppehlab.org/datarefuge/) thanks [EDGI](https://envirodatagov.org/) in particular for their contributions, and to our numerous supporters for their hard work. See more of our institutional partners on our [home page](http://www.ppehlab.org/datarefuge#partners).
