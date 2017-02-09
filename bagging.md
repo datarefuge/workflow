@@ -89,6 +89,7 @@ The `URL` is the link to examine, and the `UUID` is a canonical ID we'll use to 
 - To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop.
 - Unzip it, open it and spot check to make sure that the bag looks well formed and the files seem valid.
 
-- In the Archivers app, make sure to fill out as much information as possible to document your work and click `Save`
+- In the Archivers app, make sure to fill out as much information as possible to document your work.
 - Check the Bag checkbox (on the right-hand side) to mark that step as completed. 
+- Click `Save`.
 - Click `Check in URL`, to release it and allow someone else to work on the next step. 
