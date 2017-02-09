@@ -16,6 +16,8 @@ Before starting, your team should go through the following steps.
 - The event organizers and team leaders should schedule a call with DataRefuge to go over the process. 
 - The event organizers and team leaders for the Seeders and Sorters should also check in with EDGI folks for info about how to make sure that you're seeding and sorting effectively. 
 
+**Note that the Describers role is being redeveloped at the moment, so it is currently not enabled.**
+
 ## Primer and sub-primer documents
 - Make sure your event has its designated primer and sub-primer documents
 - Those are documents that will inform the work of the Seeders/Sorters at your event. They will tell them which website or website sections they should be focusing on for URL discovery. 
@@ -30,18 +32,18 @@ Before starting, your team should go through the following steps.
    
 - You need to make sure that:
   - Your event is listed in the app.
+    - Talk to the DataRefuge organizers about this.
   - All the event participants who need it have access to the app (see Credentials section below)
   
-
-## Crawl vs. Harvest: storage needs 
+## Crawl vs. Harvest: storage location 
 - The main triage point of the workflow is whether a URL can be automatically crawled, for instance by the Internet Archive, or whether it  needs to be manually harvested. 
 - The crawling process does not require any separate storage management, as the crawlable URLs are nominated to the Internet Archive, who will take care of the actual file storage after they have crawled the pages. See the [Seeders/Sorters documentation](seednsort.md) for more information on this process. 
- - The datasets harvested through the harvest process are stored on S3 storage managed directly by DataRefuge.
-   - Datasets uploaded through the Archivers app are automatically uploaded to S3
+- The datasets harvested through the harvest process and uploaded through are the Archivers app are stored on S3 storage managed by DataRefuge.
+- At this time there is no direct access to the files stored on S3 for security reason.
 
-## S3 storage
+<!--## S3 storage
 - While the file storage process is streamlined and "invisible" to the event participants, as an organizer you should still make sure that the storage has been set up properly for your event.
-- Talk to the DataRefuge organizers about this.
+- Talk to the DataRefuge organizers about this.-->
 
 <!-- - You need two S3 "buckets" (i.e., directories) for your harvested files.  
  - The Harvesters will upload the files they harvest to the first bucket ("pre-bag" bucket)
@@ -58,9 +60,9 @@ Before starting, your team should go through the following steps.
 ## Credentials
 - The Researchers/Harvesters/Checkers/Baggers need to have an account on the [Archivers app](http://www.archivers.space/) 
   - You will need to generate invites for each one [within the app](http://www.archivers.space/invites/new), and paste the URL generated in a slack Direct Message or an email.
-  - Each participant invited will automatically "belong" to your event in the app.
+  - Each participant invited will automatically "belongs" to your event in the app.
 - Checkers and Baggers need to be given explicit privileges in the app to have access to the Checking (i.e. "Finalize") and Bagging sections. 
-- Seeders/Sorters do not need access to the Archivers app.
+- Seeders/Sorters do not need access to the Archivers app. 
 <!--  - The Describers (Ckan/Metadata folks) need **credentials for [ckan](https://www.datarefuge.org/)**. -->
 <!--- The S3 System Administrator needs credentials for s3. -->
 
