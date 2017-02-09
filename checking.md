@@ -57,8 +57,9 @@ The `URL` is the link to examine, and the `UUID` is a canonical ID we'll use to 
     - Unzip it, open it and spot check to make sure that all the files are there and seem valid.
  
 ## Finishing up
-- In the Archivers app, make sure to fill out as much information as possible to document your work and click `Save`
+- In the Archivers app, make sure to fill out as much information as possible to document your work.
 - Check the Finalize checkbox (on the right-hand side) to mark that step as completed. 
+- Click `Save`.
 - Click `Check in URL`, to release it and allow someone else to work on the next step. 
 
 - You're done! Move on to the next URL! 
