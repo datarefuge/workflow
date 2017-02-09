@@ -4,12 +4,12 @@
 Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested.
 
 ## Getting set up as a Researcher
- - Skills recommended for this role: in general, Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets. Ideally they would understand how federal data is organized (e.g. where the "master" datasets are vs. the derived partial views of those datasets.
+- Skills recommended for this role: in general, Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets. Ideally they would understand how federal data is organized (e.g. where the "master" datasets are vs. the derived partial views of those datasets.
 - The organizers of the event (in-person or remote) will tell you how to volunteer for the Researcher role, either through slack or a form. 
-	- As a result, they will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
-	- Click the invite link, and choose a user name and a password.
+  - As a result, they will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
+  - Click the invite link, and choose a user name and a password.
 - Make sure you have an account on the DataRefuge slack where people share expertise and answer each other's questions.
-	- Ask your event organizer to send you an invite  
+  - Ask your event organizer to send you an invite  
 - If you need any assistance:
  - Talk to your DataRescue Guide if you are at an in-person event
  - Or post questions on Slack in the #Researchers/Harvesters channel.
@@ -18,7 +18,6 @@ Researchers inspect the "uncrawlable" list to confirm that seeders' assessments 
 - Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
 - For instance they could work in pairs or in small groups. 
   - In some cases, a single person might be both a Researcher and a Harvester.
-- Note that in the Uncrawlable Action spreadsheet, Researchers and Harvesters share the same tab.
 - As a Researcher, make sure to check out the [Harvesters documentation](harvesting-toolkit) to familiarize yourself with their role.
 
 ## Claiming a dataset to Research
@@ -64,10 +63,10 @@ What to do in each case:
  - **NO**: If it is confirmed not crawlable:
   <!-- Why don't we ask that any more? - Fill out the cell "Can it be crawled?" = "no" in  Researcher section of the spreadsheet-->
   - Search agency websites and data.gov for dataset entry points for your dataset collection   
-      - Tips: Try to understand what data sets are underlying the web pages. Look for related entries in the spreadsheet, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.
+      - Tips: Try to understand what data sets are underlying the web pages. Look for related entries in the Archivers app, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.
  <!-- - Add your suggested url for harvesting the data to spreadsheet (in cell "Harvestable Data"), REALLY IMPORTANT!-->
-  - Also add other information in the spreadsheet that could help the Harvester, such as information about format (SQL, FTP, ZIP, PDF Collections, etc.), size, details about what you found, recommended approach, etc. 
-  - Search for related URLS in the spreadsheet that might be covered by the same approach so as not to duplicate work (in `Link URL` field in Archivers app).
+  - Also add other information in the Archivers app that could help the Harvester, such as information about format (SQL, FTP, ZIP, PDF Collections, etc.), size, details about what you found, recommended approach, etc. 
+  - Search for related URLS in the Archivers app that might be covered by the same approach so as not to duplicate work, and list them in `Link URL` field.
 - **YES AND NO**: for example, FTP address, mixed content, big data sets:
  <!--  - Fill out the cell "Can it be crawled?" = "yes & no" in Researcher section of the spreadsheet-->
   - Nominate it anyway, but also follow the steps for uncrawlable content above.
