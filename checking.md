@@ -31,7 +31,7 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
 The `URL` is the link to examine, and the `UUID` is a canonical ID we'll use to connect the url with the data in question. The UUID will have been generated already by the DataRefuge organizers. UUID stands for Universal Unique Identifier. 
 
 
-**Note: the next few steps below need to be reviewed in light of the new app-driven workflow ** 
+**Note: the next few steps below need to be reviewed in light of the new app-driven workflow** 
 
 ## Downloading & opening the dataset
   - Go to the URL containing the zipped dataset (provided in cell "URL from upload of zip") 
