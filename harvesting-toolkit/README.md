@@ -35,7 +35,7 @@ Harvesters take the "uncrawlable" data and try to figure out how to actually cap
 - You will work on datasets that were confirmed as unscrawlable by Researchers.
 - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `HARVEST`, all the URLs listed are ready to be harvested
     - Available URLs are the ones that have not been checked out by someone else, that is, do not have someone's name in the User column.
-- Click an available URL, and click `Check out this URL`. It is now ready for you to work on, no one else can do anything to it while you have it checked out. 
+- Select an available URL and click its UUID, then click `Check out this URL`. It is now ready for you to work on, no one else can do anything to it while you have it checked out. 
 - While you go through the harvesting process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.
 
 ## Note: URL vs UUID
