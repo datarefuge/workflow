@@ -6,13 +6,13 @@ This document describes the workflow we use for Data Rescue activites as develop
 We are so glad that you are participating in this project!
 
 **[If you are an overall Coordinator](coordinator-work.md)**:
-- See the description of some of the work overall coordinators do, including the role of the Spreadsheet Minder, [here](coordinator-work.md)
+- See the description of some of the work overall coordinators do [here](coordinator-work.md)
 
 **[If you are an Event Organizer](advance-work.md)**:
 - Learn about what you need to do to prepare the event [here](advance-work.md).
 
 **If you are a regular participant**: 
-- Get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and make sure you have access to the key documents and spreadsheets needed to do the work. The Event/Remote organizers will tell you how proceed to do all this. 
+- Get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and make sure you have access to the key documents and app needed to do the work. The Event/Remote organizers will tell you how proceed to do all this. 
 - Go over the workflow documentation below, in particular the pages corresponding to your role.
 
 **********************
