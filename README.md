@@ -34,9 +34,11 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
 ### 5. [Baggers](bagging.md)
 Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.
 
-
-### 7. [Describers](metadata.md)
+### 7. Describers
+<1--[Describers](metadata.md)-->
 Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public
+**Note: This role is currently being redeveloped and is not currently active.**
+
 **********************
 ## Partners
 Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. [DateRefuge](http://www.ppehlab.org/datarefuge/) thanks [EDGI](https://envirodatagov.org/) in particular for their contributions, and to our numerous supporters for their hard work. See more of our institutional partners on our [home page](http://www.ppehlab.org/datarefuge#partners).
