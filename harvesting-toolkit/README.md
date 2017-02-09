@@ -167,7 +167,7 @@ During the process you may feel inclined to clean things up, add structure to th
 ## 7. Finishing up
 - In the Archivers app, make sure to fill out as much information as possible to document your work.
 - Check the Harvest checkbox (on the right-hand side) to mark that step as completed. 
-- Click Save.
+- Click `Save`.
 - Click `Check in URL`, to release it and allow someone else to work on the next step. 
 <!-- HOW DOES THIS PROCESS WORK NOW?    - If ever a day or more passed  since you originally claimed the item, update the date to today's date. 
     - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
