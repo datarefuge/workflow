@@ -21,21 +21,28 @@ Before starting, your team should go through the following steps.
 - Those are documents that will inform the work of the Seeders/Sorters at your event. They will tell them which website or website sections they should be focusing on for URL discovery. 
 - An EDGI coordinator will setup these documents for you.
 
-## Uncrawlable Action spreadsheet
-- Make sure your event also has its designated Uncrawlable Action spreadsheet. This is a spreadsheet listing a maximum of 500 URLs that have been identified as unscrawlable and will have to be harvested manually or semi-manually.
-  - A DataRefuge coordinator will prepare that spreadsheet for you so that it is ready to use on the day of the event.
-  - The spreadsheet will help keep track of which URLs have already been archived and which ones have not
-  - It will also help coordinate the work of different roles (Researchers, Harvesters, Checkers, Baggers, Describers) on each URL.
-- The spreadsheet will include URLs coming from two main sources:
+## Archivers app
+- The [Archivers app](http://www.archivers.space/) enables us to collectively keep track of all the archiving work being done.
+ - It will also help coordinate the work of different roles (Researchers, Harvesters, Checkers, Baggers, Describers) on each URL.
+- The app will include URLs coming from two main sources:
    - URLs that were nominated by Seeders at a previous DataRescue event, 
    - URLs that were identified througth the Union of Concerned Scientists survey, which asked the scientific community to list the most vulnerable and important data currently on accessible through federal websites. 
+   
+- You need to make sure that:
+  - Your event is listed in the app.
+  - All the event participants who need it have access to the app (see Credentials section below)
+    - And that they "join" your event inside the app 
 
 ## Crawl vs. Harvest: storage needs 
 - The main triage point of the workflow is whether a URL can be automatically crawled, for instance by the Internet Archive, or whether it  needs to be manually harvested. 
 - The crawling process does not require any separate storage management, as the crawlable URLs are nominated to the Internet Archive, who will take care of the actual file storage after they have crawled the pages. See the [Seeders/Sorters documentation](seednsort.md) for more information on this process. 
  - The datasets harvested through the harvest process are stored on S3 storage managed directly by DataRefuge.
+   - Datasets uploaded through the Archivers app are automatically uploaded to S3
 
 ## S3 storage
+- While the file storage process is streamlined and "invisible" to the event participants, as an organizer you should still make sure that the storage has been set up properly for your event.
+- Talk to the DataRefuge organizers about this.
+<!--
 - You need two S3 "buckets" (i.e., directories) for your harvested files.  
  - The Harvesters will upload the files they harvest to the first bucket ("pre-bag" bucket)
   - In some cases, the Checkers will also upload improved versions of the files to the same pre-bag bucket
@@ -47,17 +54,14 @@ Before starting, your team should go through the following steps.
   - Upload very large sets (beyond 5 Gigs) through an alternate method (provided by DataRefuge)
   - Keep the buckets cleaned up and organized. 
 - Note that large files Uploaders need not be coders, but they should have a little experience working in command line, and computers with python 2.7.
+-->
   
 ## Credentials
-- Specific roles need special credentials:
-  - The Harvesters/Checkers need **credentials for [their version of the uploader](http://drp-upload.herokuapp.com)**
-  - The Baggersneed **credentials for [their version of the uploader](http://drp-upload-bagger.herokuapp.com)**
-  - The Describers (Ckan/Metadata folks) need **credentials for [ckan](https://www.datarefuge.org/)**. 
-  - The S3 System Administrator needs **credentials for s3**. 
-- Access to the Unscrawlable spreadsheet:
-  - Each Checker/Bagger/Describer needs to be given write access to the tab corresponding to their role in the Unscrawlable Action spreadsheet
-  - The Researchers/Harvesters tab is accessible in free access
-  - Seeders/Sorters do not need access to the spreadsheet
+- The Researchers/Harvesters/Checkers/Baggers need to have an account on the [Archivers app](http://www.archivers.space/) 
+- Checkers and Baggers need to be given explicit privileges in the app to have access to the Checking (i.e. "Finalize") and Bagging sections. 
+- Seeders/Sorters do not need access to the Archivers app.
+<!--  - The Describers (Ckan/Metadata folks) need **credentials for [ckan](https://www.datarefuge.org/)**. -->
+<!--- The S3 System Administrator needs credentials for s3. -->
 
 ## Other supplies
 Make sure you have a few thumb drives to handle very large data sets (above 5 Gigs).
