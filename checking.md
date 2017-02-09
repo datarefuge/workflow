@@ -24,8 +24,12 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
   - You will work on datasets that were harvested by Harvesters. 
   - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `FINALIZE`, all the URLs listed are ready to be checked
     - Available URLs are the ones that have not been checked out by someone else, that is, do not have someone's name in the User column.
-- Click an available URL, and click `Check out this URL`. It is now ready for you to work on, no one else can do anything to it while you have it checked out. 
+- Select an available URL and click its UUID, then click `Check out this URL`. It is now ready for you to work on, no one else can do anything to it while you have it checked out. 
 - While you go through the checking process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.
+
+## Note: URL vs UUID
+The `URL` is the link to examine, and the `UUID` is a canonical ID we'll use to connect the url with the data in question. The UUID will have been generated already by the DataRefuge organizers. UUID stands for Universal Unique Identifier. 
+
 
 **Note: the next few steps below need to be reviewed in light of the new app-driven workflow ** 
 
