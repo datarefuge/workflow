@@ -63,10 +63,11 @@ What to do in each case:
  - **NO**: If it is confirmed not crawlable:
   <!-- Why don't we ask that any more? - Fill out the cell "Can it be crawled?" = "no" in  Researcher section of the spreadsheet-->
   - Search agency websites and data.gov for dataset entry points for your dataset collection   
-      - Tips: Try to understand what data sets are underlying the web pages. Look for related entries in the Archivers app, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.
+      - Tips: Try to understand what data sets are underlying the web pages. Look for related entries in the Archivers app, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file. 
+      - Make note of any better entry point in the `Recommended Approach`field, along with any other recommendations on how to proceed with this harvest.
  <!-- - Add your suggested url for harvesting the data to spreadsheet (in cell "Harvestable Data"), REALLY IMPORTANT!-->
-  - Also add other information in the Archivers app that could help the Harvester, such as information about format (SQL, FTP, ZIP, PDF Collections, etc.), size, details about what you found, recommended approach, etc. 
-  - Search for related URLS in the Archivers app that might be covered by the same approach so as not to duplicate work, and list them in `Link URL` field.
+  - Add other information that could help the Harvester, such as the format (SQL, FTP, ZIP, PDF Collections, etc.), approximate size, details about what you found, etc. 
+  - Search for related URLS that might already have been listed in the Archivers app that might be covered by the same approach, so as not to duplicate work. You can search for them in the `Link URL` field.
 - **YES AND NO**: for example, FTP address, mixed content, big data sets:
  <!--  - Fill out the cell "Can it be crawled?" = "yes & no" in Researcher section of the spreadsheet-->
   - Nominate it anyway, but also follow the steps for uncrawlable content above.
