@@ -4,29 +4,33 @@
 Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.
 
 ## Getting set up as a Bagger
-  - Apply to become a Bagger 
-    - By asking your DataRescue guide or by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform)
-    - Skills recommended: in general, Baggers need to have some tech skills and a good understanding of harvesting goals.
+- Skills recommended for this role: in general, Baggers need to have some tech skills and a good understanding of harvesting goals.
+- Apply to become a Bagger 
+   - By filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform) 
     - Note that an email address is required to apply.
     - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [guidelines on archival best practices for Data Refuge](http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody) for more information).
-  - Credentials, slack invite, Uncrawlable spreadsheet URL, and other details will be provided once your application is approved.
-  - Test the Uploader application http://drp-upload-bagger.herokuapp.com with the credentials provided
-      - Make sure to select the right event in the dropdown
-  - Verify that you have write access to the #Baggers tab in the Uncrawlable spreadsheet
-  - Get set up with Python and the Python script to make a bag at the command line https://github.com/LibraryOfCongress/bagit-python
-  - If you need any assistance:
-      - Talk to your DataRescue Guide if you are at an in-person event
-      - Or post questions on Slack in the #Baggers channel.
+- The organizers of the event (in-person or remote) will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
+	- Click the invite link, and choose a user name and a password.    
+- Make sure you have an account on the DataRefuge slack where people share expertise and answer each other's questions.
+	- Ask your event organizer to send you an invite 
+- Get set up with Python and the Python script to make a bag at the command line https://github.com/LibraryOfCongress/bagit-python
+- If you need any assistance:
+  - Talk to your DataRescue Guide if you are at an in-person event
+  - Or post questions on Slack in the #Baggers channel.
+  
+  
+## Note: URL vs UUID
+The `URL` is the link to examine, and the `UUID` is a canonical ID we'll use to connect the url with the data in question. The UUID will have been generated already by the DataRefuge organizers. UUID stands for Universal Unique Identifier. 
+
   
 ## Claiming a dataset for bagging
-  - You will work on datasets that were harvested by Checkers. 
-  - Go to the Uncrawlable spreadsheet, click the Baggers tab, and look for a dataset to check
-    - Available datasets are the ones whose cell "Baggers Handle" is empty
-    - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
-  - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
-  ```
-  @khdelphine Open 1/22/2017
-  ```
+- You will work on datasets that were harvested by Checkers.
+- Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `BAG`, all the URLs listed are ready to be bagged
+    - Available URLs are the ones that have not been checked out by someone else, that is, do not have someone's name in the User column.
+- Select an available URL and click its UUID, then click `Check out this URL`. It is now ready for you to work on, no one else can do anything to it while you have it checked out. 
+- While you go through the harvesting process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.
+
+**Note: the next few steps below need to be reviewed in light of the new app-driven workflow** 
 
 ## Downloading & opening the dataset
   - Go to the URL containing the zipped dataset (provided in cell "URL from upload of zip") 
@@ -82,14 +86,9 @@ Baggers do some quality assurance on the dataset to make sure the content is cor
   - Enter file size in cell "Size of bag"
 
 ## Quality assurance and finishing up
-  - To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop.
-  - Unzip it, open it and spot check to make sure that the bag looks well formed and the files seem valid.
-  - In the Uncrawlable spreadsheet, make sure you document all the actions you have taken by filling out all the cells.
-  - In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Current Status", for instance:
-  ```
-  @khdelphine Closed 1/22/2017
-  ```
-    - If ever a day or more passed since you originally claimed the item, update the date to today's date.
-    - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
-      - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
-      
+- To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop.
+- Unzip it, open it and spot check to make sure that the bag looks well formed and the files seem valid.
+
+- In the Archivers app, make sure to fill out as much information as possible to document your work and click `Save`
+- Check the Bag checkbox (on the right-hand side) to mark that step as completed. 
+- Click `Check in URL`, to release it and allow someone else to work on the next step. 
