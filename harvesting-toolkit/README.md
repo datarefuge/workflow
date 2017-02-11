@@ -11,7 +11,7 @@ Harvesters take the "uncrawlable" data and try to figure out how to actually cap
   - Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
   - For instance they could work in pairs or in small groups. 
     - In some cases, a single person might be both a Researcher and a Harvester.
-  - As a Harvester, make sure to check out the [Researchers documentation](research.md) to familiarize yourself with their role.
+  - As a Harvester, make sure to check out the [Researchers documentation](https://github.com/datarefuge/workflow/blob/master/research.md) to familiarize yourself with their role.
 
 - **The notion of "meaningful dataset"**
   - Your role is to harvest datasets that are complete and *meaningful*. By meaningful we mean: "will the bag make sense to a scientist"? 
