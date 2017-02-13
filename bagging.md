@@ -22,7 +22,6 @@ Baggers do some quality assurance on the dataset to make sure the content is cor
 ## Note: URL vs UUID
 The `URL` is the link to examine, and the `UUID` is a canonical ID we'll use to connect the url with the data in question. The UUID will have been generated already by the DataRefuge organizers. UUID stands for Universal Unique Identifier. 
 
-  
 ## Claiming a dataset for bagging
 - You will work on datasets that were harvested by Checkers.
 - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `BAG`: all the URLs listed are ready to be bagged
@@ -33,12 +32,9 @@ The `URL` is the link to examine, and the `UUID` is a canonical ID we'll use to 
 ## Note: URL vs UUID
 The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier. 
 
-**Note: the next few steps below need to be reviewed in light of the new app-driven workflow** 
-
 ## Downloading & opening the dataset
-  - Go to the URL containing the zipped dataset (provided in cell "URL from upload of zip") 
-  - Download the zip file to your laptop, and unzip it.
-  - Quality assurance: spot check to ensure the UUID and downloaded materials match to the spreadsheet row
+  - Download the zip file from the Archivers app to your laptop, and unzip it.
+  - Quality assurance: spot check to ensure the UUID and downloaded materials match
 
 - Confirm content of Json file
   - The json should match the information from the Harvester and use the following format:
@@ -83,10 +79,8 @@ The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID w
     - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
     - Note that files beyond 5 Gigs cannot be uploaded through this method
       - Please talk to your DataRescue guide/post on Slack in Baggers channel, if you have a larger file
-  - Enter URL in cell "Bag URL" in Uncrawlable spreadsheet
     - The application will return the location URL for your zip file. 
     - The syntax will be "[UrlStub]/[UUID].zip
-  - Enter file size in cell "Size of bag"
 
 ## Quality assurance and finishing up
 - To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop.
