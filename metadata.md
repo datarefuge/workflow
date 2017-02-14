@@ -21,7 +21,7 @@ Describers creates a descriptive record in the DataRefuge CKAN repository for ea
   - Or post questions on Slack in the #Describers channel.     
       
 ## Claiming a bag
-** Note: the Describe phase does not yet exist in the Archivers app.**
+**Note: the Describe phase does not yet exist in the Archivers app.**
   - You will work on datasets that were bagged by Baggers. 
   - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `DESCRIBE`: all the URLs listed are ready to be added to the CKAN instance
     - Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.
@@ -53,7 +53,7 @@ The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID w
     - Note that you don't need to finish downloading it again.
 
 ## Finishing up
-** Note: these features are not yet implemented in the Archivers app.**
+**Note: these features are not yet implemented in the Archivers app.**
 - In the Archivers app, add URL to the CKAN record in cell "CKAN record URL"
    - The syntax will be "https://www.datarefuge.org//dataset/[datasetNameGeneratedByCkan]
 - Check the Describe checkbox (on the right-hand side) to mark that step as completed. 
