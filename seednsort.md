@@ -8,7 +8,7 @@ The Seeders/Sorters team will use the [EDGI subprimers](https://envirodatagov.or
 
 ## Canvassing the website and evaluating content
 - Start exploring the website assigned, identifying important URLs.
-- Decide whether the data on a page or website subsection can be [automatically captured by the Internet Archive webcrawler](./what-heritrix-does.md).
+- Decide whether the data on a page or website subsection can be automatically captured by the Internet Archive webcrawler.
 - The best source of information about the seeding and sorting process is represented at [https://envirodatagov.org/](https://envirodatagov.org/), see:
   - [Understanding What the Internet Archive Webcrawler Does](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
   - [Seeding the Internet Archive’s Webcrawler](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)
