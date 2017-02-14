@@ -40,7 +40,7 @@ The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID w
   - Go to the original URL and check that the dataset is complete and accurate.
   - You also need to check that the dataset is meaningful, that is: "will the bag make sense to a scientist"?
 For instance, if a dataset is composed of a spreadsheet without any accompanying key or explanation of what the data represents, it might be completely impossible for a scientist to use it.
-  - Spot check to make sure the files open properly and are not faulty in any way
+  - Spot check to make sure the files open properly and are not faulty in any way.
 - Confirm content of Json file
   - The json should match the information from the Harvester and use the following format:
 
