@@ -84,9 +84,9 @@ The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID w
 - The application will return the location URL for your zip file. 
   - The syntax will be "[UrlStub]/[UUID].zip
   - Cut and paste that URL to the `Bag URL` field in the Archivers app.
- - Note that files beyond 5 Gigs should be uploaded at the command line using the `Generate Upload Token` option. 
+  - Note that files beyond 5 Gigs must be uploaded through the more advanced `Generate Upload Token` option. This will require using the aws command line interface.
   - Please talk to your DataRescue guide/post on Slack in Baggers channel, if you are having issues with this more advanced method.
-
+ 
 ## Quality assurance and finishing up
 - Fill out as much information as possible in the `Notes From Bagging` field  in the Archivers app, to document your work.
 - Check the checkbox that certifies this is a "well-checked bag"
