@@ -18,10 +18,6 @@ Baggers do some quality assurance on the dataset to make sure the content is cor
   - Talk to your DataRescue Guide if you are at an in-person event
   - Or post questions on Slack in the #Baggers channel.
   
-  
-## Note: URL vs UUID
-The `URL` is the link to examine, and the `UUID` is a canonical ID we'll use to connect the url with the data in question. The UUID will have been generated already by the DataRefuge organizers. UUID stands for Universal Unique Identifier. 
-
 ## Claiming a dataset for bagging
 - You will work on datasets that were harvested by Checkers.
 - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `BAG`: all the URLs listed are ready to be bagged
