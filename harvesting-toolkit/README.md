@@ -158,22 +158,15 @@ It's worth using some judgement here. If a "script" you used includes an entire 
 During the process you may feel inclined to clean things up, add structure to the data, etc. Avoid temptation. Your finished archive will be hashed so we can compare it later for changes, and it's important that we archive original, unmodified content.
 
 ## 6. Uploading the data
-- Zip the all the files pertaining to your dataset within the zip started archive structure. 
+- Zip the all the files pertaining to your dataset within the zip started archive structure and confirm that it is named with the original UUID
 - Upload the zip file by clicking `Upload` in the Archivers app, and selecting `Choose File`
-     - Note that files beyond 5 Gigs cannot be uploaded through this method
-     - Please talk to your DataRescue guide/post on Slack in Researchers/Harvesters channel, if you have a larger file
-  <!--- IT WOULD BE NICE TO STILL HAVE THAT STEP: Quality assurance:
-   - To ensure that the zip file was uploaded successfully, go to the URL and download it back to your computer.
-   - Unzip it, open it and spot check to make sure that all the files are there and seem valid.
-- Re-uploading: if you found a problem in your first zip (e.g., you realized you missed a file) and would like to upload an improved one, that's ok. Just proceed as you did for the first upload.-->
+- Note that files beyond 5 Gigs must be uploaded through the more advanced `Generate Upload Token` option. This will require using the aws command line interface.
+  - Please talk to your DataRescue guide/post on Slack in Baggers channel, if you are having issues with this more advanced method.
 
 ## 7. Finishing up
 - In the Archivers app, make sure to fill out as much information as possible to document your work.
 - Check the Harvest checkbox (on the right-hand side) to mark that step as completed. 
 - Click `Save`.
 - Click `Check in URL`, to release it and allow someone else to work on the next step. 
-<!-- HOW DOES THIS PROCESS WORK NOW?    - If ever a day or more passed  since you originally claimed the item, update the date to today's date. 
-    - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
-      - This will avoid datasets being stuck in the middle of the workflow and not being finalized.-->
 
 - You're done! Move on to the next URL!
