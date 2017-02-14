@@ -19,7 +19,7 @@ Baggers do some quality assurance on the dataset to make sure the content is cor
   - Or post questions on Slack in the #Baggers channel.
   
 ## Claiming a dataset for bagging
-- You will work on datasets that were harvested by Checkers.
+- You will work on datasets that were harvested by Harvesters.
 - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `BAG`: all the URLs listed are ready to be bagged
     - Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.
 - Select an available URL and click its UUID to get to the detailed view, then click `Check out this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out. 
