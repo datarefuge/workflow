@@ -32,10 +32,14 @@ The `URL` is the link to examine, and the `UUID` is a canonical ID we'll use to 
 ## Note: URL vs UUID
 The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier. 
 
-## Downloading & opening the dataset
-  - Download the zip file from the Archivers app to your laptop, and unzip it.
-  - Quality assurance: spot check to ensure the UUID and downloaded materials match
-
+## Downloading & opening the dataset 
+  - The zipped dataset that is ready to be bagged is under `Harvest Url / Location` in the the Archivers app. Download it to your laptop, and unzip it.
+  
+## Quality Assurance 
+- Confirm the harvested files: 
+  * Go to the original URL and check that the dataset is complete and accurate.
+  * This should include any files needed to make sense of the data (e.g., key or explanatory text).
+  * Spot check to make sure the files open properly and are not faulty in any way
 - Confirm content of Json file
   - The json should match the information from the Harvester and use the following format:
 
@@ -60,7 +64,7 @@ The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID w
   - If you make any changes, make sure to save this as a .json file.
   - Confirm that the json file is within the package with the dataset(s)
 
-- Creating the bag
+## Creating the bag
   - Run python command line script which creates the bag
 
   ```
@@ -74,19 +78,23 @@ The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID w
     - tagmanifest-md5.txt
 
 ## Creating the Zip file and uploading it
-  - Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID
-  - Upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/
-    - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
-    - Note that files beyond 5 Gigs cannot be uploaded through this method
-      - Please talk to your DataRescue guide/post on Slack in Baggers channel, if you have a larger file
-    - The application will return the location URL for your zip file. 
-    - The syntax will be "[UrlStub]/[UUID].zip
+- Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID
+- Upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/ using the user ID and password provided
+  - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
+  - Note that files beyond 5 Gigs cannot be uploaded through this method
+    - Please talk to your DataRescue guide/post on Slack in Baggers channel, if you have a larger file
+  - The application will return the location URL for your zip file. 
+  	- The syntax will be "[UrlStub]/[UUID].zip
+	- Cut and paste that URL to the `Bag URL` field in the Archivers app.
 
 ## Quality assurance and finishing up
+<!-- 
 - To ensure that the bag was uploaded successfully, go to the URL and download the bag back to your laptop.
 - Unzip it, open it and spot check to make sure that the bag looks well formed and the files seem valid.
+-->
 
-- In the Archivers app, make sure to fill out as much information as possible to document your work.
+- Fill out as much information as possible in the `Notes From Bagging` field  in the Archivers app, to document your work.
+- Check the checkbox that certifies this is a "well-checked bag"
 - Check the Bag checkbox (on the right-hand side) to mark that step as completed. 
 - Click `Save`.
 - Click `Check in URL`, to release it and allow someone else to work on the next step. 
