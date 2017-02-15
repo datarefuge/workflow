@@ -75,9 +75,9 @@ For instance, if a dataset is composed of a spreadsheet without any accompanying
     - tagmanifest-md5.txt
   - **It's very important that you do not move or open the bag once you have created it. This may create hidden files that could make the bag invalid later.**
   - Run the following python command lind script to do an initial validation of a bag.
- ```
- bagit.py --validate [directory/of/bag/to/validate]
- ```
+```
+bagit.py --validate [directory/of/bag/to/validate]
+```
   - If it comes back as valid, proceed to the next step of creating the zip file and uploading it. If it does not, make a note of the error, review your steps, and re-bag the file. If you continue to get invalid bags, please see a DataRescue guide or reach out to the #bagging Slack channel. 
 
 ## Creating the Zip file and uploading it
@@ -92,9 +92,9 @@ For instance, if a dataset is composed of a spreadsheet without any accompanying
  
 ## Quality assurance and finishing up
 - Once the zip file has been fully uploaded, download the bag back to your computer (use the URL provided by the Archiver App) and run the following python command line script for validation
- ```
- bagit.py --validate [directory/of/bag/to/validate]
- ```
+```
+bagit.py --validate [directory/of/bag/to/validate]
+```
 - If it comes back as valid, open the bag and spot-check to make sure everything looks the same as when you uploaded it. (This will not affect the validity of the bags already uploaded). If all seems right, proceed to the rest of the quality assurance steps. If it does not come back as valid, make a note of the error, review your steps, and re-bag the file. If you continue to get invalid bags, please see a DataRescue guide or reach out to the #bagging Slack channel. 
 - Fill out as much information as possible in the `Notes From Bagging` field in the Archivers app to document your work.
 - Check the checkbox that certifies this is a "well-checked bag"
