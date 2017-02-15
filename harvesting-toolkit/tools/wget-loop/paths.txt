@@ -1,2 +1,0 @@
-/electricity/data/eia412/f412sch203.xls
-/electricity/data/eia412/f412sch303.xls
