@@ -73,7 +73,7 @@ For instance, if a dataset is composed of a spreadsheet without any accompanying
     - bagit.txt
     - manifest-md5.txt
     - tagmanifest-md5.txt
-  - **IMPORTANT: It's very crucial that you do not move or open the bag once you have created it. This may create hidden files that could make the bag invalid later.**
+  - **IMPORTANT: It's crucial that you do not move or open the bag once you have created it. This may create hidden files that could make the bag invalid later.**
   - Run the following python command lind script to do an initial validation of a bag.
  
  ```
