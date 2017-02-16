@@ -1,6 +1,3 @@
-# Harvesting Toolkit
-
-This package includes a general purpose toolkit for archiving open data. We have [quick snippets and code examples](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) as well as [helpful tools](https://github.com/datarefugephilly/workflow/blob/master/harvesting-toolkit/REFERENCE.md) for quick reference.
 
 ## What do Harvesters do?
 Harvesters take the "uncrawlable" data and try to figure out how to actually capture it based on the recommendations of the Researchers. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks.
@@ -29,6 +26,9 @@ Harvesters take the "uncrawlable" data and try to figure out how to actually cap
   - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
     - Or post  questions on Slack in the #Researchers/Harvesters channel.
+
+# Harvesting Toolkit
+For in-depth information on tools and techniques to harvest open data, please check EDGI's extensive [toolkit](https://github.com/edgi-govdata-archiving/harvesting-tools).
 
 ## 1. Claiming a dataset to harvest
 - You will work on datasets that were confirmed as unscrawlable by Researchers.
