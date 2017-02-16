@@ -18,7 +18,7 @@ Researchers inspect the "uncrawlable" list to confirm that seeders' assessments 
 - Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
 - For instance they could work in pairs or in small groups. 
   - In some cases, a single person might be both a Researcher and a Harvester.
-- As a Researcher, make sure to check out the [Harvesters documentation](harvesting-toolkit) to familiarize yourself with their role.
+- As a Researcher, make sure to check out the [Harvesters documentation](harvesting.md) to familiarize yourself with their role.
 
 ## Claiming a dataset to Research
 - Researchers work on datasets that were listed as uncrawlable by Seeders.
