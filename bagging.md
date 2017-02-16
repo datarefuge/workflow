@@ -73,7 +73,7 @@ For instance, if a dataset is composed of a spreadsheet without any accompanying
     - bagit.txt
     - manifest-md5.txt
     - tagmanifest-md5.txt
-  - **It's very important that you do not move or open the bag once you have created it. This may create hidden files that could make the bag invalid later.**
+  - **IMPORTANT: It's very crucial that you do not move or open the bag once you have created it. This may create hidden files that could make the bag invalid later.**
   - Run the following python command lind script to do an initial validation of a bag.
  
  ```
@@ -84,7 +84,7 @@ For instance, if a dataset is composed of a spreadsheet without any accompanying
 
 ## Creating the Zip file and uploading it
 - Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID. 
-- Without moving the file, upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/ using the user ID and password provided
+- **Without moving the file**, upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/ using the user ID and password provided
   - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
 - The application will return the location URL for your zip file. 
   - The syntax will be "[UrlStub]/[UUID].zip
