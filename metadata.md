@@ -21,7 +21,7 @@ Describers creates a descriptive record in the DataRefuge CKAN repository for ea
   - Or post questions on Slack in the #Describers channel.     
       
 ## Claiming a bag
-**Note: the Describe phase does not yet exist in the Archivers app.**
+**Note: these features have not yet been implemented in the Archivers app. It should be there shortly.**
   - You will work on datasets that were bagged by Baggers. 
   - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `DESCRIBE`: all the URLs listed are ready to be added to the CKAN instance
     - Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.
@@ -31,31 +31,42 @@ Describers creates a descriptive record in the DataRefuge CKAN repository for ea
 The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier. 
 
 ## QA step 
-  - In the Archivers app click on the `Bag URL` in the Bag section.   
-  - The file should start downloading
-  - When it is downloaded, unzip it 
-  - Spot check some of the files (make sure they open and look normal, i.e., not garbled)
+- In the Archivers app click on the `Bag URL` in the Bag section.   
+- The file should start downloading
+- When it is downloaded, unzip it 
+- Spot check some of the files (make sure they open and look normal, i.e., not garbled)
 
 ## Create new record in CKAN
-**Note: this still need to be adapted to the new CKAN workflow.**
-
-  - Click "Add Dataset" in [CKAN](https://www.datarefuge.org/)
-  - Start entering metadata following the metadata schema spreadsheet (https://docs.google.com/spreadsheets/d/12JAleU6eF4wgu0hIlQ5efoOUCsZjT-UkRxwAofVZp6c/edit#gid=1879921913)
-  - To decide what value to enter in each field:
+- Go to [CKAN](https://www.datarefuge.org/) and click Organizations in the top menu
+- Choose the organization (i.e., federal agency) that your dataset belongs to, for instance: `NOAA`, and click it.
+- Click "Add Dataset"
+- Start entering metadata in the new record, following the metadata template below.  
+  - Title: title of dataset, e.g., "Form EIA-411 Data"
+  - Description: Usually copied and pasted description found on webpage
+  - Tags: basic descriptive keywords, e.g., "electric reliability", "electricity", "power systems"
+  - License:  choose value in dropdown
+  - Organization: choose value in dropdown, e.g., "United States Department of Energy"
+  - Visibility: select "Public"
+  - Source: URL where site is live, also in JSON, e.g., "http://www.eia.gov/electricity/data/eia411/"
+- To decide what value to enter in each field:
     - Open JSON file that is in the bag you have downloaded; it contains some of the metadata you need
-    - Go to the original location of the item on the federal agency website, to find more more facts about the item such as description, title of the dataset, etc. (See "Original URL" cell in Unscrawlable spreadsheet.)
+    - Go to the original location of the item on the federal agency website (found in the Json file), to find more more facts about the item such as description, title of the dataset, etc. 
+    	- Alternatively, you can also open the html file that should be included in the bag and is a copy of that original main page. 
     
 ## Linking the CKAN record to the bag:
   - Click "Next: Add Data" at the bottom of the CKAN form
-  - Click "Link" and enter the Bag URL in the text field
+  - Enter the following information:
+    - Link: Bag URL, e.g., "https://drp-upload-bagger.s3.amazonaws.com/remote/77DD634E-EBCE-412E-88B5-A02B0EF12AF6_2.zip"
+    - Name: filename, e.g., "77DD634E-EBCE-412E-88B5-A02B0EF12AF6_2.zip"
+    - Format: select "Zip"
   - Click "Finish"
   - Test that the link you just created work by clicking it, and verifying that the file begins to download. 
     - Note that you don't need to finish downloading it again.
 
 ## Finishing up
-**Note: these features are not yet implemented in the Archivers app.**
+**Note: these features have not yet been implemented in the Archivers app. It should be there shortly.**
 - In the Archivers app, add URL to the CKAN record in cell "CKAN record URL"
-   - The syntax will be "https://www.datarefuge.org//dataset/[datasetNameGeneratedByCkan]
+   - The syntax will be "https://www.datarefuge.org//dataset/[datasetNameGeneratedByCkan]"
 - Check the Describe checkbox (on the right-hand side) to mark that step as completed. 
 - Click `Save`.
 - Click `Check in URL`, to release it and allow someone else to work on the next step. 
