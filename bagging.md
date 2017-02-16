@@ -29,7 +29,14 @@ Baggers do some quality assurance on the dataset to make sure the content is cor
 The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier. 
 
 ## Downloading & opening the dataset 
-  - The zipped dataset that is ready to be bagged is under `Harvest Url / Location` in the the Archivers app. Download it to your laptop, and unzip it.
+  
+ - The zipped dataset that is ready to be bagged is under `Harvest Url / Location` in the the Archivers app. Download it to your laptop, and unzip it.
+ - Extra check: Is this URL truly ready to bag? 
+   - While everybody is doing their best to provide accurate information, occasionally a URL will be presented as "ready to bag", but, in fact, is not. Symptoms include:
+   	- There is no value in the "Harvest Url / Location" field
+	- There is a note in the Harvest section that seem to indicate that the harvest was only partially performed.
+   -> In either case, uncheck the "Harvest" checkbox, and add a note in the Harvest note, indicating that the URL does not seem ready for bagging and needs to be reviewed by a Harvester.
+ 
   
 ## Quality Assurance 
 - Confirm the harvested files: 
