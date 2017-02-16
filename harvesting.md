@@ -103,23 +103,23 @@ Your method for doing this will depend on the shape and size of the data you're 
 ### 4a. Identify Data Links & acquire them in a wget loop
 If you encounter a page that links to lots of data (for example a "downloads" page), this approach may well work. It's important to only use this approach when you encounter *data*, for example pdf's, .zip archives, .csv datasets, etc.
 
-The tricky part of this approach is generating a list of urls to download from the page. If you're skilled with using scripts in combination with html-parsers (for example python's wonderful [beautiful-soup package](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start)), go for it. Otherwise, we've included the [jquery-url-extraction guide](tools/jquery-url-extraction)], which has the advantage of working within a browser and can operate on a page that has been modified by javascript.
+The tricky part of this approach is generating a list of urls to download from the page. If you're skilled with using scripts in combination with html-parsers (for example python's wonderful [beautiful-soup package](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start)), go for it. Otherwise, we've included the [jquery-url-extraction guide](thttps://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/jquery-url-extraction)], which has the advantage of working within a browser and can operate on a page that has been modified by javascript.
 
-Our example dataset uses jquery-url, [leveraging that tool to generate a list of urls to feed the wget loop](tools/jquery-url-extraction/README.md).
+Our example dataset uses jquery-url, [leveraging that tool to generate a list of urls to feed the wget loop](https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/jquery-url-extraction/README.md).
 
 ### 4b. Identify Data Links & acquire them via WARCFactory
 
 For search results from large document sets, you may need to do more sophisticated "scraping" and "crawling" -- again, check out tools built at previous events such as the [EIS WARC archiver](https://github.com/edgi-govdata-archiving/eis-WARC-archiver) or the [EPA Search Utils](https://github.com/edgi-govdata-archiving/epa-search-utils) for ideas on how to proceed.
 
 ### 4c. FTP download
-Government datasets are often stored on FTP. It's pretty easy to crawl these FTP sites with a simple Python script. Have a look at [download_ftp_tree.py](tools/ftp/download_ftp_tree.py) as an example. Note that the Internet Archive is doing an FTP crawl, so another option (especially if the dataset is large) would be to nominate this as a seed (though FTP seeds should be nominated **separately** from http seeds).
+Government datasets are often stored on FTP. It's pretty easy to crawl these FTP sites with a simple Python script. Have a look at [download_ftp_tree.py](https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/ftp/download_ftp_tree.py) as an example. Note that the Internet Archive is doing an FTP crawl, so another option (especially if the dataset is large) would be to nominate this as a seed (though FTP seeds should be nominated **separately** from http seeds).
 
 ### 4d. API scrape / Custom Solution
 
 If you encounter an API, chances are you'll have to build some sort of custom solution, or investigate a social angle. For example: asking someone with greater access for a database dump.
 
 ### 4e. Automated Full Browser
-The last resort of harvesting should be to drive it with a full web browser. It is slower than other approaches such as `wget`, `curl`, or a headless browser. Additionally, this implementation is prone to issues where the resulting page is saved before it's done loading. There is a ruby example in [tools/example-hacks/watir.rb](tools/example-hacks/watir.rb).
+The last resort of harvesting should be to drive it with a full web browser. It is slower than other approaches such as `wget`, `curl`, or a headless browser. Additionally, this implementation is prone to issues where the resulting page is saved before it's done loading. There is a [ruby example](https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/ruby-watir-collect).
 
 ## 5. Write [id].json metadata, add /tools
 
