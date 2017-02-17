@@ -19,13 +19,13 @@ Harvesters take the "uncrawlable" data and try to figure out how to actually cap
 - The organizers of the event (in-person or remote) will tell you how to volunteer for the Harvester role, either through slack or a form. 
 	- As a result, they will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
 	- Click the invite link, and choose a user name and a password.
-- Make sure you have an account on the DataRefuge slack where people share expertise and answer each other's questions.
-	- Ask your event organizer to send you an invite 
+- Make sure you have an account on the DataRefuge slack (or other slack team recommended by your event organizers) This is where people share expertise and answer each other's questions.
+- Ask your event organizer to send you an invite 
 - You might also need to have some other software and utilities set up on your computer, depending on the harvested methods you will use.
 - Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
   - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
-    - Or post  questions on Slack in the #Researchers/Harvesters channel.
+    - Or post  questions on Slack in the #Researchers/Harvesters channel (or other channel recommended by your event organizers).
 
 # Harvesting Toolkit
 For in-depth information on tools and techniques to harvest open data, please check EDGI's extensive [toolkit](https://github.com/edgi-govdata-archiving/harvesting-tools).
