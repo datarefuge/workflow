@@ -95,7 +95,7 @@ The zip starter archive will automatically include a copy of the page correspond
 You'll replace ```DAFD2E80-965F-4989-8A77-843DE716D899.html``` with the ID + .html, and the url with the one you're looking at.-->
 
 #### [id].json file
-The json file is one you'll create by hand to create a machine readable record of the archive. This file contains vital data, including the url that was archived, and date of archiving. The [id.json readme](docs/id-json.md) goes into much more detail.
+The json file is one you'll create by hand to create a machine readable record of the archive. This file contains vital data, including the url that was archived, and date of archiving. The [id.json readme](https://github.com/edgi-govdata-archiving/workflow/blob/master/id-json.md) goes into much more detail.
 
 ## 4. Acquire the Data
 Your method for doing this will depend on the shape and size of the data you're dealing with. A few methods are described below.
