@@ -35,16 +35,21 @@ The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID w
 - The file should start downloading
 - When it is downloaded, unzip it 
 - Spot check some of the files (make sure they open and look normal, i.e., not garbled)
+- If the file fails QA:
+  - Basically, it needs to go back to Bagging. 
+  - Uncheck the Bagging checkbox
+  - And make a note in the Bagging note field, explaining in what way the bag failed QA and could a bagger please fix the issue. 
 
 ## Create new record in CKAN
 - Go to [CKAN](https://www.datarefuge.org/) and click Organizations in the top menu
 - Choose the organization (i.e., federal agency) that your dataset belongs to, for instance: `NOAA`, and click it.
+  - If the Organization you need does not exist yet, create it by clicking `Add Organization`
 - Click "Add Dataset"
 - Start entering metadata in the new record, following the metadata template below.  
   - Title: title of dataset, e.g., "Form EIA-411 Data"
   - Description: Usually copied and pasted description found on webpage
   - Tags: basic descriptive keywords, e.g., "electric reliability", "electricity", "power systems"
-  - License:  choose value in dropdown
+  - License:  choose value in dropdown. If there is no indicated license, select 'Other - Public Domain'
   - Organization: choose value in dropdown, e.g., "United States Department of Energy"
   - Visibility: select "Public"
   - Source: URL where site is live, also in JSON, e.g., "http://www.eia.gov/electricity/data/eia411/"
@@ -52,7 +57,17 @@ The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID w
     - Open JSON file that is in the bag you have downloaded; it contains some of the metadata you need
     - Go to the original location of the item on the federal agency website (found in the Json file), to find more more facts about the item such as description, title of the dataset, etc. 
     	- Alternatively, you can also open the html file that should be included in the bag and is a copy of that original main page. 
-    
+
+## Enhancing Existing Metadata
+These sites will help you obtain federally-sourced metadata that can be 
+- EPA
+	- https://www.epa.gov/enviro/facility-registry-service-frs
+	- https://edg.epa.gov/metadata/catalog/main/home.page
+- GCMD Keywords
+	- wiki.earthdata.nasa.gov/display/cmr/gcmd+keyword+access
+- ATRAC
+	- https://www.ncdc.noaa.gov/atrac/index.html
+
 ## Linking the CKAN record to the bag:
   - Click "Next: Add Data" at the bottom of the CKAN form
   - Enter the following information:
@@ -71,4 +86,7 @@ The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID w
 - Click `Save`.
 - Click `Check in URL`, to release it and allow someone else to work on the next step. 
 
-  
+## Tools possibly of use: JSON Viewers
+- http://www.jsoneditoronline.org/
+- http://jsonviewer.stack.hu/
+
