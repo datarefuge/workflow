@@ -23,7 +23,7 @@ Describers creates a descriptive record in the DataRefuge CKAN repository for ea
 ## Claiming a bag
 **Note: these features have not yet been implemented in the Archivers app. It should be there shortly.**
   - You will work on datasets that were bagged by Baggers. 
-  - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `DESCRIBE`: all the URLs listed are ready to be added to the CKAN instance
+  - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `DESCRIBE` [currently called `Done`, this needs to be changed]: all the URLs listed are ready to be added to the CKAN instance
     - Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.
 - Select an available URL and click its UUID to get to the detailed view, then click `Check out this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out. 
 
