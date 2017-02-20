@@ -31,7 +31,7 @@ Describers creates a descriptive record in the DataRefuge CKAN repository for ea
 The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier. 
 
 ## QA step 
-- In the Archivers app click on the `Bag URL` in the Bag section.   
+- In the Archivers app click on the `Bag URL` in the Bag section of your dataset.   
 - The file should start downloading
 - When it is downloaded, unzip it 
 - Spot check some of the files (make sure they open and look normal, i.e., not garbled)
@@ -59,14 +59,17 @@ The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID w
     	- Alternatively, you can also open the html file that should be included in the bag and is a copy of that original main page. 
 
 ## Enhancing Existing Metadata
-These sites will help you obtain federally-sourced metadata that can be 
+These sites will help you obtain federally-sourced metadata that can be added to the CKAN record for more accurate metadata:
 - EPA
 	- https://www.epa.gov/enviro/facility-registry-service-frs
 	- https://edg.epa.gov/metadata/catalog/main/home.page
+- (Add more organizations as we find their official metadata sources)
+	
+These sites are sources of scientific metadata standards to review when choosing keywords:	
 - GCMD Keywords
-	- wiki.earthdata.nasa.gov/display/cmr/gcmd+keyword+access
+	- wiki.earthdata.nasa.gov/display/cmr/gcmd+keyword+access - downloadable CSV files of the GCMD taxonomies 
 - ATRAC
-	- https://www.ncdc.noaa.gov/atrac/index.html
+	- https://www.ncdc.noaa.gov/atrac/index.html - this is a free tool to give access to geographic metadata standards including autopopulating thesauri (GCMD and others commonly used with climate data)
 
 ## Linking the CKAN record to the bag:
   - Click "Next: Add Data" at the bottom of the CKAN form
