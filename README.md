@@ -5,7 +5,7 @@ This document describes the [DataRescue workflow](https://datarefuge.github.io/w
 # Are you looking for the actual documentation?
 We are currently moving the documentation to a more user friendly format that will enable us to add screenshots, etc.
 
-While we are completing the move you can still find all the documentation in the original format [there](https://github.com/datarefuge/workflow/blob/master/docs/index.md)
+While we are completing the move you can still find all the documentation in the original format [there](https://github.com/datarefuge/workflow/blob/master/docs/index.md).
 
 ## Contributing to this Guide
 
