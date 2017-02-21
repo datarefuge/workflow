@@ -1,18 +1,24 @@
 ## What do Researchers do?
 
-Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested.
+Researchers review "uncrawlables" identified during [Seeding](seednsort.md), confirm the URL/dataset is indeed uncrawlable, and investigate how the dataset could be best harvested. Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets.
+
+<div class = "note">
+  <strong>Recommended Skills</strong> <br />  
+  Consider this path if you have a strong front end web experience and enjoy research. An understanding how federal data is organized (e.g. where "master" datasets are) would be valuable.
+</div>
+
+
 
 ## Getting set up as a Researcher
 
-- Skills recommended for this role: in general, Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets. Ideally they would understand how federal data is organized (e.g. where the "master" datasets are vs. the derived partial views of those datasets.
-- The organizers of the event (in-person or remote) will tell you how to volunteer for the Researcher role, either through slack or a form.
+- Event organizers (in-person or remote) will tell you how to volunteer for the Researcher role, either through slack or a form.
     - As a result, they will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
     - Click the invite link, and choose a user name and a password.
 - Make sure you have an account on the DataRefuge slack (or other slack team recommended by your event organizers) This is where people share expertise and answer each other's questions.
     - Ask your event organizer to send you an invite
 - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
-    - Or post questions on Slack in the #Researchers/Harvesters channel (or other channel recommended by your event organizers).
+    - Or post questions on Slack in the `#general` channel (or other channel recommended by your event organizers).
 
 ## Researchers and Harvesters
 

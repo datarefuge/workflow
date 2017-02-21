@@ -2,6 +2,11 @@
 
 Seeders and Sorters canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's web crawler. If the URLs are crawlable, the Seeders/Sorters nominate them to the End-of-Term (EOT) project, otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
 
+<div class = "note">
+  <strong>Recommended Skills</strong> <br />  
+  Consider this path if you’re comfortable browsing the web and have a great attention to detail. An understanding of how web pages are structured will help you with this task.
+</div>
+
 ## Choosing the website
 
 The Seeders/Sorters team will use the [EDGI subprimers](https://envirodatagov.org/agency-forecasts/), or a similar set of resources, to identify important/at risk data. Talk to the DataRescue organizers to learn more.
@@ -11,7 +16,7 @@ The Seeders/Sorters team will use the [EDGI subprimers](https://envirodatagov.or
 - Start exploring the website assigned, identifying important URLs.
 - Decide whether the data on a page or website subsection can be automatically captured by the Internet Archive web crawler.
 - The best source of information about the seeding and sorting process is represented at [envirodatagov.org](https://envirodatagov.org/), see:
-    - [Understanding What the Internet Archive Web Crawler Does](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
+      - [Understanding What the Internet Archive Web Crawler Does](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
     - [Seeding the Internet Archive’s Web Crawler](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)
 
 ### Crawlable URLs

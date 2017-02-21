@@ -2,6 +2,11 @@
 
 Checkers inspect a harvested dataset and make sure that it is complete. The main question the checkers need to answer is "will the bag make sense to a scientist"?
 
+<div class = "note">
+  <strong>Recommended Skills</strong> <br />  
+  Consider this path if you have data or web archiving experience, or have strong tech skills and an attention to detail.
+</div>
+
 ## Getting set up as a Checker
 
 - Skills recommended for this role: in general, Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.

@@ -1,8 +1,11 @@
-# Baggers
-
 ## What do Baggers do?
 
 Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.
+
+<div class = "note">
+  <strong>Recommended Skills</strong> <br />  
+  Consider this path if you have data or web archiving experience, or have strong tech skills and an attention to detail.
+</div>
 
 ## Getting set up as a Bagger
 

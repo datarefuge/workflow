@@ -2,6 +2,11 @@
 
 Harvesters take the "uncrawlable" data and try to figure out how to actually capture it based on the recommendations of the Researchers. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks.
 
+<div class = "note">
+  <strong>Recommended Skills</strong> <br />  
+  Consider this path if you're a skilled technologist with a programming language of your choice (e.g., Python, JavaScript, C, etc.), are comfortable with the command line (bash, shell, powershell), or experience working with structured data. Experience in front-end web development a plus.
+</div>
+
 ## Important notes
 
 - **Researchers and Harvesters**

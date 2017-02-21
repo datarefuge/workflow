@@ -2,6 +2,11 @@
 
 Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public
 
+<div class = "note">
+  <strong>Recommended Skills</strong> <br />  
+  Consider this path if you have experience working with scientific data (particularly climate or environmental data) or with creating metadata.
+</div>
+
 ## Getting set up as a Describer
 
 - Skills recommended for this role: in general, Describers need to have a good handle on metadata practices
