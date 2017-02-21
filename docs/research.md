@@ -1,18 +1,22 @@
 ## What do Researchers do?
 
-Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested.
+Researchers review "uncrawlables" identified during [Seeding](seednsort.md), confirm the URL/dataset is indeed uncrawlable, and investigate how the dataset could be best harvested. Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets.
+
+<div class = "note">
+  <strong>Recommended Skills</strong> <br />  
+  Consider this path if you have a strong front end web experience and enjoy research. An understanding how federal data is organized (e.g. where "master" datasets are) would be valuable.
+</div>
 
 ## Getting set up as a Researcher
 
-- Skills recommended for this role: in general, Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets. Ideally they would understand how federal data is organized (e.g. where the "master" datasets are vs. the derived partial views of those datasets.
-- The organizers of the event (in-person or remote) will tell you how to volunteer for the Researcher role, either through slack or a form.
+- Event organizers (in-person or remote) will tell you how to volunteer for the Researcher role, either through slack or a form.
     - As a result, they will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
     - Click the invite link, and choose a user name and a password.
 - Make sure you have an account on the DataRefuge slack (or other slack team recommended by your event organizers) This is where people share expertise and answer each other's questions.
     - Ask your event organizer to send you an invite
 - If you need any assistance:
     - Talk to your DataRescue Guide if you are at an in-person event
-    - Or post questions on Slack in the #Researchers/Harvesters channel (or other channel recommended by your event organizers).
+    - Or post questions on Slack in the `#general` channel (or other channel recommended by your event organizers).
 
 ## Researchers and Harvesters
 
@@ -29,9 +33,10 @@ Researchers inspect the "uncrawlable" list to confirm that seeders' assessments 
 - Select an available URL and click its UUID to get to the detailed view, then click `Check out this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.
 - While you go through the research process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.
 
-## Note: URL vs UUID
-
-The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.
+<div class = "note">
+  <strong>Note: URL vs UUID</strong> <br />  
+  The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.
+</div>
 
 ## Evaluating the data
 

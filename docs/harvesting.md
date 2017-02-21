@@ -2,6 +2,11 @@
 
 Harvesters take the "uncrawlable" data and try to figure out how to actually capture it based on the recommendations of the Researchers. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks.
 
+<div class = "note">
+  <strong>Recommended Skills</strong> <br />  
+  Consider this path if you're a skilled technologist with a programming language of your choice (e.g., Python, JavaScript, C, etc.), are comfortable with the command line (bash, shell, powershell), or experience working with structured data. Experience in front-end web development a plus.
+</div>
+
 ## Important notes
 
 - **Researchers and Harvesters**
@@ -39,9 +44,10 @@ For in-depth information on tools and techniques to harvest open data, please ch
 - Select an available URL and click its UUID to get to the detailed view, then click `Check out this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.
 - While you go through the harvesting process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.
 
-### Note: URL vs UUID
-
-The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.
+<div class = "note">
+  <strong>Note: URL vs UUID</strong> <br />  
+  The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.
+</div>
 
 ## 2a. Classify Source Type & archivability
 

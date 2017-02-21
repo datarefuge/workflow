@@ -2,6 +2,11 @@
 
 Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public
 
+<div class = "note">
+  <strong>Recommended Skills</strong> <br />  
+  Consider this path if you have experience working with scientific data (particularly climate or environmental data) or with creating metadata.
+</div>
+
 ## Getting set up as a Describer
 
 - Skills recommended for this role: in general, Describers need to have a good handle on metadata practices
@@ -28,9 +33,10 @@ Describers creates a descriptive record in the DataRefuge CKAN repository for ea
     - Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.
 - Select an available URL and click its UUID to get to the detailed view, then click `Check out this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.
 
-## Note: URL vs UUID
-
-The `URL` is the link to examine and harvest, and the `UUID` is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.
+<div class = "note">
+  <strong>Note: URL vs UUID</strong> <br />  
+  The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.
+</div>
 
 ## QA step
 
