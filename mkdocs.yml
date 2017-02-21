@@ -1,0 +1,11 @@
+site_name: DataRescue Workflow
+pages:
+    - Home: index.md
+    - Advance Work: advance-work.md
+    - Seeding: seednsort.md
+    - Researching: research.md
+    - Harvesting: harvesting.md
+    - Checking: checking.md
+    - Bagging: bagging.md
+    - Describing: metadata.md
+theme: readthedocs
