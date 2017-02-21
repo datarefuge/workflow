@@ -2,6 +2,11 @@
 
 This document describes the [DataRescue workflow](https://datarefuge.github.io/workflow/) we use for Data Rescue activites as developed by the [DataRefuge project](http://www.ppehlab.org/) and [EDGI](https://envirodatagov.org/), both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified, either by a [seeder & sorter](https://datarefuge.github.io/workflow/seednsort/) as "uncrawlable," or by other means, until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
 
+# Are you looking for the actual documentation?
+We are currently moving the documentation to a more user friendly format that will enable us to add screenshots, etc.
+
+While we are completing the move you can still find all the documentation in the original format [there](https://github.com/datarefuge/workflow/blob/master/docs/index.md)
+
 ## Contributing to this Guide
 
 Suggestions and improvements are welcome! All changes to the guide are managed through this GitHub repository.
