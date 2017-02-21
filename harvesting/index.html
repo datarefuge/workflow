@@ -91,25 +91,51 @@
             
                 <li class="toctree-l3"><a href="#harvesting-toolkit">Harvesting Toolkit</a></li>
                 
-                    <li><a class="toctree-l4" href="#1-claiming-a-dataset-to-harvest">1. Claiming a dataset to harvest</a></li>
+            
+                <li class="toctree-l3"><a href="#1-claiming-a-dataset-to-harvest">1. Claiming a dataset to harvest</a></li>
                 
                     <li><a class="toctree-l4" href="#note-url-vs-uuid">Note: URL vs UUID</a></li>
                 
-                    <li><a class="toctree-l4" href="#2a-classify-source-type-archivability">2a. Classify Source Type &amp; archivability</a></li>
+            
+                <li class="toctree-l3"><a href="#2a-classify-source-type-archivability">2a. Classify Source Type &amp; archivability</a></li>
                 
-                    <li><a class="toctree-l4" href="#2b-determine-scale-of-the-dataset">2b. Determine Scale of the Dataset</a></li>
+                    <li><a class="toctree-l4" href="#check-for-false-positives-content-that-is-in-fact-crawlable">Check for false-positives (content that is in fact crawlable)</a></li>
                 
-                    <li><a class="toctree-l4" href="#3-generate-html-json-directory">3. Generate HTML, JSON &amp; Directory</a></li>
+                    <li><a class="toctree-l4" href="#some-things-to-think-about-while-reviewing-a-url">Some things to think about while reviewing a url</a></li>
                 
-                    <li><a class="toctree-l4" href="#4-acquire-the-data">4. Acquire the Data</a></li>
+                    <li><a class="toctree-l4" href="#check-the-terms-of-service">Check the terms of service!!!</a></li>
                 
-                    <li><a class="toctree-l4" href="#5-write-idjson-metadata-add-tools">5. Write [id].json metadata, add /tools</a></li>
+            
+                <li class="toctree-l3"><a href="#2b-determine-scale-of-the-dataset">2b. Determine Scale of the Dataset</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#3-generate-html-json-directory">3. Generate HTML, JSON &amp; Directory</a></li>
+                
+                    <li><a class="toctree-l4" href="#uuid">UUID</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#4-acquire-the-data">4. Acquire the Data</a></li>
+                
+                    <li><a class="toctree-l4" href="#4a-identify-data-links-acquire-them-in-a-wget-loop">4a. Identify Data Links &amp; acquire them in a wget loop</a></li>
+                
+                    <li><a class="toctree-l4" href="#4b-identify-data-links-acquire-them-via-warcfactory">4b. Identify Data Links &amp; acquire them via WARCFactory</a></li>
+                
+                    <li><a class="toctree-l4" href="#4c-ftp-download">4c. FTP download</a></li>
+                
+                    <li><a class="toctree-l4" href="#4d-api-scrape-custom-solution">4d. API scrape / Custom Solution</a></li>
+                
+                    <li><a class="toctree-l4" href="#4e-automated-full-browser">4e. Automated Full Browser</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#5-write-idjson-metadata-add-tools">5. Write [id].json metadata, add /tools</a></li>
                 
                     <li><a class="toctree-l4" href="#tips">Tips</a></li>
                 
-                    <li><a class="toctree-l4" href="#6-uploading-the-data">6. Uploading the data</a></li>
+            
+                <li class="toctree-l3"><a href="#6-uploading-the-data">6. Uploading the data</a></li>
                 
-                    <li><a class="toctree-l4" href="#7-finishing-up">7. Finishing up</a></li>
+            
+                <li class="toctree-l3"><a href="#7-finishing-up">7. Finishing up</a></li>
                 
             
             </ul>
@@ -174,56 +200,62 @@
 <p>Harvesters take the "uncrawlable" data and try to figure out how to actually capture it based on the recommendations of the Researchers. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks.</p>
 <h2 id="important-notes">Important notes</h2>
 <ul>
-<li><strong>Researchers and Harvesters</strong></li>
-<li>Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.</li>
-<li>For instance they could work in pairs or in small groups. <ul>
-<li>In some cases, a single person might be both a Researcher and a Harvester.</li>
+<li>
+<p><strong>Researchers and Harvesters</strong></p>
+<ul>
+<li>Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles</li>
+<li>For instance they could work in pairs or in small groups<ul>
+<li>In some cases, a single person might be both a Researcher and a Harvester</li>
+</ul>
+</li>
+<li>As a Harvester, make sure to check out the <a href="https://github.com/datarefuge/workflow/blob/master/research.md">Researchers documentation</a> to familiarize yourself with their role</li>
 </ul>
 </li>
 <li>
-<p>As a Harvester, make sure to check out the <a href="https://github.com/datarefuge/workflow/blob/master/research.md">Researchers documentation</a> to familiarize yourself with their role.</p>
-</li>
-<li>
 <p><strong>The notion of "meaningful dataset"</strong></p>
-</li>
-<li>Your role is to harvest datasets that are complete and <em>meaningful</em>. By meaningful we mean: "will the bag make sense to a scientist"? </li>
+<ul>
+<li>Your role is to harvest datasets that are complete and <em>meaningful</em>. By meaningful we mean: "will the bag make sense to a scientist"?</li>
 <li>For instance, if a dataset is composed of a spreadsheet without any accompanying key or explanation of what the data represents, it might be completely impossible for a scientist to use it.</li>
+</ul>
+</li>
 </ul>
 <h2 id="getting-set-up-as-a-harvester">Getting set up as a Harvester</h2>
 <ul>
 <li>Skills recommended for this role: in general, Harvesters need to have some tech skills and a good understanding of harvesting goals.</li>
-<li>The organizers of the event (in-person or remote) will tell you how to volunteer for the Harvester role, either through slack or a form. <ul>
+<li>The organizers of the event (in-person or remote) will tell you how to volunteer for the Harvester role, either through slack or a form.<ul>
 <li>As a result, they will send you an invite to the <a href="http://www.archivers.space/">Archivers app</a>, which helps us coordinate all the data archiving work we do.</li>
 <li>Click the invite link, and choose a user name and a password.</li>
 </ul>
 </li>
 <li>Make sure you have an account on the DataRefuge slack (or other slack team recommended by your event organizers) This is where people share expertise and answer each other's questions.</li>
-<li>Ask your event organizer to send you an invite </li>
+<li>Ask your event organizer to send you an invite</li>
 <li>You might also need to have some other software and utilities set up on your computer, depending on the harvested methods you will use.</li>
-<li>Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on <em>semi-automated harvesting as part of a team</em>, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.</li>
+<li>Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on <em>semi-automated harvesting as part of a team</em>, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.<ul>
 <li>If you need any assistance:<ul>
 <li>Talk to your DataRescue Guide if you are at an in-person event</li>
-<li>Or post  questions on Slack in the #Researchers/Harvesters channel (or other channel recommended by your event organizers).</li>
+<li>Or post questions on Slack in the #Researchers/Harvesters channel (or other channel recommended by your event organizers).</li>
 </ul>
 </li>
 </ul>
-<h1 id="harvesting-toolkit">Harvesting Toolkit</h1>
+</li>
+</ul>
+<h2 id="harvesting-toolkit">Harvesting Toolkit</h2>
 <p>For in-depth information on tools and techniques to harvest open data, please check EDGI's extensive <a href="https://github.com/edgi-govdata-archiving/harvesting-tools">toolkit</a>.</p>
 <h2 id="1-claiming-a-dataset-to-harvest">1. Claiming a dataset to harvest</h2>
 <ul>
 <li>You will work on datasets that were confirmed as unscrawlable by Researchers.</li>
 <li>Go to the <a href="http://www.archivers.space/">Archivers app</a>, click <code>URLS</code> and then <code>HARVEST</code>: all the URLs listed are ready to be harvested</li>
 <li>Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.</li>
-<li>Select an available URL and click its UUID to get to the detailed view, then click <code>Check out this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out. </li>
+<li>Select an available URL and click its UUID to get to the detailed view, then click <code>Check out this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.</li>
 <li>While you go through the harvesting process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.</li>
 </ul>
-<h2 id="note-url-vs-uuid">Note: URL vs UUID</h2>
-<p>The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier. </p>
+<h3 id="note-url-vs-uuid">Note: URL vs UUID</h3>
+<p>The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.</p>
 <h2 id="2a-classify-source-type-archivability">2a. Classify Source Type &amp; archivability</h2>
 <p>Before doing anything, take a minute to understand what you're looking at. It's usually best to have a quick check of the url to confirm that this data in fact not crawlable. Often as part of the harvesting team, you'll be the first person with a higher level of technical knowledge to review the url in question.</p>
-<h4 id="check-for-false-positives-content-that-is-in-fact-crawlable">Check for false-positives (content that is in fact crawlable)</h4>
+<h3 id="check-for-false-positives-content-that-is-in-fact-crawlable">Check for false-positives (content that is in fact crawlable)</h3>
 <p>Generally, any url that returns standard HTML, links to more <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">HTML mimetype pages</a>, and contains little-to-no non-html content, it's crawlable. "View source" from your browser of choice will help see what the crawler itself is seeing. If in fact the data can be crawled, make a note as such in the Google sheet, remove your name from the "checkout" column, notify the seeding / crawling team and they will make sure the link is crawled, and move on to another url.</p>
-<h4 id="some-things-to-think-about-while-reviewing-a-url">Some things to think about while reviewing a url</h4>
+<h3 id="some-things-to-think-about-while-reviewing-a-url">Some things to think about while reviewing a url</h3>
 <ul>
 <li>Does this page use javascript to render its content, especially to <em>generate links</em> or <em>dynamically pull up images and pdf content</em>? Crawlers generally cannot parse dynamically-generated content.</li>
 <li>Does this url contain links to non-html content? (For example, zip files, pdfs, excel files, etc...)</li>
@@ -245,17 +277,19 @@ The structure looks like this:</p>
     ├── /tools
     └── /data
 </code></pre>
+
 <p>Each row in the above is:</p>
 <pre><code>A directory named by the UUID
-    ├── a .html "web archive" file of the url for future reference, named with the ID
+    ├── a .html &quot;web archive&quot; file of the url for future reference, named with the ID
     ├── a .json metadata file that contains relevant metadata, named with the ID
     ├── a /tools directory to include any scripts, notes &amp; files used to acquire the data
     └── a /data directory that contains the data in question
 </code></pre>
+
 <h3 id="uuid">UUID</h3>
 <p>The goal is to pass this finalized folder off for <a href="../bagging/">"bagging"</a>. We repeatedly use the UUID so that we can programmatically work through this data later. It is important that the ID be copied <em>exactly</em> wherever it appears, with no leading or trailing spaces, and honoring case-sensitivity.</p>
 <h4 id="idhtml-file">[id].html file</h4>
-<p>The zip starter archive will automatically include a copy of the page corresponding to the URL. The html file gives the archive a snapshot of the page at the time of archiving which we can use to monitor for changing data in the future, and corrobrate the provenance of the archive itself. We can also use the .html in conjunction with the scripts you'll include in the tools directory to replicate the archive in the future. </p>
+<p>The zip starter archive will automatically include a copy of the page corresponding to the URL. The html file gives the archive a snapshot of the page at the time of archiving which we can use to monitor for changing data in the future, and corroborate the provenance of the archive itself. We can also use the <code>.html</code> in conjunction with the scripts you'll include in the tools directory to replicate the archive in the future.</p>
 <!--To generate the html file, navigate to your new folder in a terminal window and run the following command:
 
     wget -O DAFD2E80-965F-4989-8A77-843DE716D899.html  http://www.eia.gov/electricity/data/eia412/
@@ -283,49 +317,51 @@ You'll replace ```DAFD2E80-965F-4989-8A77-843DE716D899.html``` with the ID + .ht
 <ul>
 <li>The json should match the information from the Harvester and use the following format:</li>
 </ul>
-<p><code>{
-   "Individual source or seed URL": "http://www.eia.gov/renewable/data.cfm",
-   "UUID" : "E30FA3CA-C5CB-41D5-8608-0650D1B6F105",
-   "id_agency" : 2,
-   "id_subagency": ,
-   "id_org":,
-   "id_suborg":,
-   "Institution facilitating the data capture creation and packaging": "Penn Data Refuge",
-   "Date of capture": "2017-01-17",
-   "Federal agency data acquired from": "Department of Energy/U.S. Energy Information Administration",
-   "Name of resource": "Renewable and Alternative Fuels",
-   "File formats contained in package": ".pdf, .zip",
-   "Type(s) of content in package": "datasets, codebooks",
-   "Free text description of capture process": "Metadata was generated by viewing page and using spreadsheet descriptions where necessary, data was bulk downloaded from the page using wget -r on the seed URL and then bagged.",
-   "Name of package creator": "Mallick Hossain and Ben Goldman"
-   }</code>
- - Make sure to save this as a .json file.</p>
+<pre><code>{
+ &quot;Individual source or seed URL&quot;: &quot;http://www.eia.gov/renewable/data.cfm&quot;,
+ &quot;UUID&quot; : &quot;E30FA3CA-C5CB-41D5-8608-0650D1B6F105&quot;,
+ &quot;id_agency&quot; : 2,
+ &quot;id_subagency&quot;: ,
+ &quot;id_org&quot;:,
+ &quot;id_suborg&quot;:,
+ &quot;Institution facilitating the data capture creation and packaging&quot;: &quot;Penn Data Refuge&quot;,
+ &quot;Date of capture&quot;: &quot;2017-01-17&quot;,
+ &quot;Federal agency data acquired from&quot;: &quot;Department of Energy/U.S. Energy Information Administration&quot;,
+ &quot;Name of resource&quot;: &quot;Renewable and Alternative Fuels&quot;,
+ &quot;File formats contained in package&quot;: &quot;.pdf, .zip&quot;,
+ &quot;Type(s) of content in package&quot;: &quot;datasets, codebooks&quot;,
+ &quot;Free text description of capture process&quot;: &quot;Metadata was generated by viewing page and using spreadsheet descriptions where necessary, data was bulk downloaded from the page using wget -r on the seed URL and then bagged.&quot;,
+ &quot;Name of package creator&quot;: &quot;Mallick Hossain and Ben Goldman&quot;
+ }
+</code></pre>
+
+<ul>
+<li>Make sure to save this as a .json file.</li>
+</ul>
 <p>In addition, copy any scripts and tools you used into the /tools directory. It may seem strange to copy code multiple times, but this can help later to reconstruct the archiving process for further refinement later on.</p>
 <p>It's worth using some judgement here. If a "script" you used includes an entire copy of JAVA, or some suite beyond a simple script, it may be better to document your process in a file and leave that in the tools directory instead.</p>
-<h2 id="tips">Tips</h2>
+<h3 id="tips">Tips</h3>
 <ul>
 <li>If you encounter a Search bar, try entering "*" to check to see if that returns "all results".</li>
-<li>Leave the data unmodified
-During the process you may feel inclined to clean things up, add structure to the data, etc. Avoid temptation. Your finished archive will be hashed so we can compare it later for changes, and it's important that we archive original, unmodified content.</li>
+<li>Leave the data unmodified<br />
+  During the process you may feel inclined to clean things up, add structure to the data, etc. Avoid temptation. Your finished archive will be hashed so we can compare it later for changes, and it's important that we archive original, unmodified content.</li>
 </ul>
 <h2 id="6-uploading-the-data">6. Uploading the data</h2>
 <ul>
 <li>Zip the all the files pertaining to your dataset within the zip started archive structure and confirm that it is named with the original UUID</li>
 <li>Upload the zip file by clicking <code>Upload</code> in the Archivers app, and selecting <code>Choose File</code></li>
-<li>Note that files beyond 5 Gigs must be uploaded through the more advanced <code>Generate Upload Token</code> option. This will require using the aws command line interface.</li>
+<li>Note that files beyond 5 Gigs must be uploaded through the more advanced <code>Generate Upload Token</code> option. This will require using the aws command line interface.<ul>
 <li>Please talk to your DataRescue guide/post on Slack in Baggers channel, if you are having issues with this more advanced method.</li>
+</ul>
+</li>
 </ul>
 <h2 id="7-finishing-up">7. Finishing up</h2>
 <ul>
 <li>In the Archivers app, make sure to fill out as much information as possible to document your work.</li>
-<li>Check the Harvest checkbox (on the right-hand side) to mark that step as completed. </li>
+<li>Check the Harvest checkbox (on the right-hand side) to mark that step as completed.</li>
 <li>Click <code>Save</code>.</li>
-<li>
-<p>Click <code>Check in URL</code>, to release it and allow someone else to work on the next step. </p>
-</li>
-<li>
-<p>You're done! Move on to the next URL!</p>
-</li>
+<li>Click <code>Check in URL</code>, to release it and allow someone else to work on the next step.</li>
+<li>You're done! Move on to the next URL!</li>
 </ul>
               
             </div>

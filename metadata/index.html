@@ -101,27 +101,34 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#describers-ckanmetadata">Describers: CKAN/Metadata</a></li>
+                <li class="toctree-l3"><a href="#what-do-describers-do">What do Describers do?</a></li>
                 
-                    <li><a class="toctree-l4" href="#what-do-describers-do">What do Describers do?</a></li>
+            
+                <li class="toctree-l3"><a href="#getting-set-up-as-a-describer">Getting set up as a Describer</a></li>
                 
-                    <li><a class="toctree-l4" href="#getting-set-up-as-a-describer">Getting set up as a Describer</a></li>
+            
+                <li class="toctree-l3"><a href="#claiming-a-bag">Claiming a bag</a></li>
                 
-                    <li><a class="toctree-l4" href="#claiming-a-bag">Claiming a bag</a></li>
+            
+                <li class="toctree-l3"><a href="#note-url-vs-uuid">Note: URL vs UUID</a></li>
                 
-                    <li><a class="toctree-l4" href="#note-url-vs-uuid">Note: URL vs UUID</a></li>
+            
+                <li class="toctree-l3"><a href="#qa-step">QA step</a></li>
                 
-                    <li><a class="toctree-l4" href="#qa-step">QA step</a></li>
+            
+                <li class="toctree-l3"><a href="#create-new-record-in-ckan">Create new record in CKAN</a></li>
                 
-                    <li><a class="toctree-l4" href="#create-new-record-in-ckan">Create new record in CKAN</a></li>
+            
+                <li class="toctree-l3"><a href="#enhancing-existing-metadata">Enhancing Existing Metadata</a></li>
                 
-                    <li><a class="toctree-l4" href="#enhancing-existing-metadata">Enhancing Existing Metadata</a></li>
+            
+                <li class="toctree-l3"><a href="#linking-the-ckan-record-to-the-bag">Linking the CKAN record to the bag</a></li>
                 
-                    <li><a class="toctree-l4" href="#linking-the-ckan-record-to-the-bag">Linking the CKAN record to the bag:</a></li>
+            
+                <li class="toctree-l3"><a href="#finishing-up">Finishing up</a></li>
                 
-                    <li><a class="toctree-l4" href="#finishing-up">Finishing up</a></li>
-                
-                    <li><a class="toctree-l4" href="#tools-possibly-of-use-json-viewers">Tools possibly of use: JSON Viewers</a></li>
+            
+                <li class="toctree-l3"><a href="#possible-tools-json-viewers">Possible Tools: JSON Viewers</a></li>
                 
             
             </ul>
@@ -161,70 +168,79 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="describers-ckanmetadata">Describers: CKAN/Metadata</h1>
-<h2 id="what-do-describers-do">What do Describers do?</h2>
+                <h2 id="what-do-describers-do">What do Describers do?</h2>
 <p>Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public</p>
 <h2 id="getting-set-up-as-a-describer">Getting set up as a Describer</h2>
 <ul>
-<li>Skills recommended for this role: in general, Describers need to have a good handle on metadata practices </li>
-<li>Apply to become a Describer <ul>
+<li>Skills recommended for this role: in general, Describers need to have a good handle on metadata practices</li>
+<li>Apply to become a Describer<ul>
 <li>By asking your DataRescue guide or by filling out <a href="https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform">this form</a></li>
 <li>Note that an email address is required to apply.</li>
 <li>Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see <a href="http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody">guidelines on archival best practices for Data Refuge</a> for more information).</li>
 </ul>
 </li>
 <li>The organizers of the event (in-person or remote) will send you an invite to the <a href="http://www.archivers.space/">Archivers app</a>, which helps us coordinate all the data archiving work we do.<ul>
-<li>Click the invite link, and choose a user name and a password.    </li>
+<li>Click the invite link, and choose a user name and a password.</li>
 </ul>
 </li>
 <li>Make sure you have an account on the DataRefuge slack (or other slack team recommended by your event organizers) This is where people share expertise and answer each other's questions.<ul>
-<li>Ask your event organizer to send you an invite </li>
+<li>Ask your event organizer to send you an invite</li>
 </ul>
 </li>
-<li>The organizers will also create an account for you in the CKAN instance at https://www.datarefuge.org/ </li>
+<li>The organizers will also create an account for you in the CKAN instance at https://www.datarefuge.org/<ul>
 <li>Test that you can log in successfully</li>
+</ul>
+</li>
 <li>Get set up with Python and the Python script to make a bag at the command line https://github.com/LibraryOfCongress/bagit-python</li>
-<li>If you need any assistance:</li>
+<li>If you need any assistance:<ul>
 <li>Talk to your DataRescue Guide if you are at an in-person event</li>
-<li>Or post questions on Slack in the #Describers channel (or other channel recommended by your event organizers).     </li>
+<li>Or post questions on Slack in the #Describers channel (or other channel recommended by your event organizers).</li>
+</ul>
+</li>
 </ul>
 <h2 id="claiming-a-bag">Claiming a bag</h2>
 <p><strong>Note: these features have not yet been implemented in the Archivers app. It should be there shortly.</strong>
-  - You will work on datasets that were bagged by Baggers. 
-  - Go to the <a href="http://www.archivers.space/">Archivers app</a>, click <code>URLS</code> and then <code>DESCRIBE</code> [currently called <code>Done</code>, this needs to be changed]: all the URLs listed are ready to be added to the CKAN instance
+- You will work on datasets that were bagged by Baggers.
+- Go to the <a href="http://www.archivers.space/">Archivers app</a>, click <code>URLS</code> and then <code>DESCRIBE</code> [currently called <code>Done</code>, this needs to be changed]: all the URLs listed are ready to be added to the CKAN instance
     - Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.
-- Select an available URL and click its UUID to get to the detailed view, then click <code>Check out this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out. </p>
+- Select an available URL and click its UUID to get to the detailed view, then click <code>Check out this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.</p>
 <h2 id="note-url-vs-uuid">Note: URL vs UUID</h2>
-<p>The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier. </p>
+<p>The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.</p>
 <h2 id="qa-step">QA step</h2>
 <ul>
-<li>In the Archivers app click on the <code>Bag URL</code> in the Bag section of your dataset.   </li>
+<li>In the Archivers app click on the <code>Bag URL</code> in the Bag section of your dataset.</li>
 <li>The file should start downloading</li>
-<li>When it is downloaded, unzip it </li>
+<li>When it is downloaded, unzip it</li>
 <li>Spot check some of the files (make sure they open and look normal, i.e., not garbled)</li>
-<li>If the file fails QA:</li>
-<li>Basically, it needs to go back to Bagging. </li>
+<li>If the file fails QA:<ul>
+<li>Basically, it needs to go back to Bagging.</li>
 <li>Uncheck the Bagging checkbox</li>
-<li>And make a note in the Bagging note field, explaining in what way the bag failed QA and could a bagger please fix the issue. </li>
+<li>And make a note in the Bagging note field, explaining in what way the bag failed QA and could a bagger please fix the issue.</li>
+</ul>
+</li>
 </ul>
 <h2 id="create-new-record-in-ckan">Create new record in CKAN</h2>
 <ul>
 <li>Go to <a href="https://www.datarefuge.org/">CKAN</a> and click Organizations in the top menu</li>
-<li>Choose the organization (i.e., federal agency) that your dataset belongs to, for instance: <code>NOAA</code>, and click it.</li>
+<li>Choose the organization (i.e., federal agency) that your dataset belongs to, for instance: <code>NOAA</code>, and click it.<ul>
 <li>If the Organization you need does not exist yet, create it by clicking <code>Add Organization</code></li>
+</ul>
+</li>
 <li>Click "Add Dataset"</li>
-<li>Start entering metadata in the new record, following the metadata template below.  </li>
+<li>Start entering metadata in the new record, following the metadata template below:<ul>
 <li>Title: title of dataset, e.g., "Form EIA-411 Data"</li>
 <li>Description: Usually copied and pasted description found on webpage</li>
 <li>Tags: basic descriptive keywords, e.g., "electric reliability", "electricity", "power systems"</li>
-<li>License:  choose value in dropdown. If there is no indicated license, select 'Other - Public Domain'</li>
+<li>License: choose value in dropdown. If there is no indicated license, select 'Other - Public Domain'</li>
 <li>Organization: choose value in dropdown, e.g., "United States Department of Energy"</li>
 <li>Visibility: select "Public"</li>
 <li>Source: URL where site is live, also in JSON, e.g., "http://www.eia.gov/electricity/data/eia411/"</li>
+</ul>
+</li>
 <li>To decide what value to enter in each field:<ul>
 <li>Open JSON file that is in the bag you have downloaded; it contains some of the metadata you need</li>
-<li>Go to the original location of the item on the federal agency website (found in the Json file), to find more more facts about the item such as description, title of the dataset, etc. <ul>
-<li>Alternatively, you can also open the html file that should be included in the bag and is a copy of that original main page. </li>
+<li>Go to the original location of the item on the federal agency website (found in the Json file), to find more more facts about the item such as description, title of the dataset, etc.<ul>
+<li>Alternatively, you can also open the html file that should be included in the bag and is a copy of that original main page.</li>
 </ul>
 </li>
 </ul>
@@ -236,37 +252,42 @@
     - https://www.epa.gov/enviro/facility-registry-service-frs
     - https://edg.epa.gov/metadata/catalog/main/home.page
 - (Add more organizations as we find their official metadata sources)</p>
-<p>These sites are sources of scientific metadata standards to review when choosing keywords:<br />
+<p>These sites are sources of scientific metadata standards to review when choosing keywords:
 - GCMD Keywords
-    - wiki.earthdata.nasa.gov/display/cmr/gcmd+keyword+access - downloadable CSV files of the GCMD taxonomies 
+    - wiki.earthdata.nasa.gov/display/cmr/gcmd+keyword+access - downloadable CSV files of the GCMD taxonomies
 - ATRAC
     - https://www.ncdc.noaa.gov/atrac/index.html - this is a free tool to give access to geographic metadata standards including autopopulating thesauri (GCMD and others commonly used with climate data)</p>
-<h2 id="linking-the-ckan-record-to-the-bag">Linking the CKAN record to the bag:</h2>
+<h2 id="linking-the-ckan-record-to-the-bag">Linking the CKAN record to the bag</h2>
 <ul>
 <li>Click "Next: Add Data" at the bottom of the CKAN form</li>
 <li>Enter the following information:<ul>
-<li>Link: Bag URL, e.g., "https://drp-upload-bagger.s3.amazonaws.com/remote/77DD634E-EBCE-412E-88B5-A02B0EF12AF6_2.zip"</li>
-<li>Name: filename, e.g., "77DD634E-EBCE-412E-88B5-A02B0EF12AF6_2.zip"</li>
+<li>Link: Bag URL, e.g., <code>https://drp-upload-bagger.s3.amazonaws.com/remote/77DD634E-EBCE-412E-88B5-A02B0EF12AF6_2.zip</code></li>
+<li>Name: filename, e.g., <code>77DD634E-EBCE-412E-88B5-A02B0EF12AF6_2.zip</code></li>
 <li>Format: select "Zip"</li>
 </ul>
 </li>
 <li>Click "Finish"</li>
-<li>Test that the link you just created work by clicking it, and verifying that the file begins to download. <ul>
+<li>Test that the link you just created work by clicking it, and verifying that the file begins to download.<ul>
 <li>Note that you don't need to finish downloading it again.</li>
 </ul>
 </li>
 </ul>
 <h2 id="finishing-up">Finishing up</h2>
-<p><strong>Note: these features have not yet been implemented in the Archivers app. It should be there shortly.</strong>
-- In the Archivers app, add URL to the CKAN record in cell "CKAN record URL"
-   - The syntax will be "https://www.datarefuge.org//dataset/[datasetNameGeneratedByCkan]"
-- Check the Describe checkbox (on the right-hand side) to mark that step as completed. 
-- Click <code>Save</code>.
-- Click <code>Check in URL</code>, to release it and allow someone else to work on the next step. </p>
-<h2 id="tools-possibly-of-use-json-viewers">Tools possibly of use: JSON Viewers</h2>
+<p><strong>Note: these features have not yet been implemented in the Archivers app. It should be there shortly.</strong></p>
 <ul>
-<li>http://www.jsoneditoronline.org/</li>
-<li>http://jsonviewer.stack.hu/</li>
+<li>In the Archivers app, add URL to the CKAN record in cell "CKAN record URL"<ul>
+<li>The syntax will be<br />
+<code>https://www.datarefuge.org//dataset/[datasetNameGeneratedByCkan]</code></li>
+</ul>
+</li>
+<li>Check the Describe checkbox (on the right-hand side) to mark that step as completed.</li>
+<li>Click <code>Save</code>.</li>
+<li>Click <code>Check in URL</code>, to release it and allow someone else to work on the next step.</li>
+</ul>
+<h2 id="possible-tools-json-viewers">Possible Tools: JSON Viewers</h2>
+<ul>
+<li><a href="http://www.jsoneditoronline.org/">jsoneditoronline.org</a></li>
+<li><a href="http://jsonviewer.stack.hu/">jsonviewer.stack.hu</a></li>
 </ul>
               
             </div>
