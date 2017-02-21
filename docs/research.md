@@ -39,10 +39,11 @@ Go to the URL, and start inspecting the content.
 
 ## Is the data actually crawlable?
 
-Again, see [here](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
-and [here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)
-for a mostly non-technical introduction to the crawler. Some additional
-technical notes for answering this:
+Again, see [EDGI's Guides](https://edgi-govdata-archiving.github.io/guides/) on for a mostly non-technical introduction to the crawler:
+    - [Understanding the Internet Archive Web Crawler](https://edgi-govdata-archiving.github.io/guides/internet-archive-crawler/)
+    - [Seeding the Internet Archive’s Web Crawler](https://edgi-govdata-archiving.github.io/guides/seeding-internet-archive/)
+
+Some additional technical notes for answering this:
 
 - There is no specific file size cutoff on what is crawlable, but large files should be manually captured anyway.
 - Files types like ZIP, PDF, Excel, etc. are crawlable if they are linked.
@@ -50,8 +51,6 @@ technical notes for answering this:
 If links are added by Javascript or require submitting a form, they are not crawlable.
 - The crawler does not tolerate web frames (but it straightforward to inspect a page to obtain the content in the frame directly, and then nominate *that*).
 - The crawler recently added the ability to crawl FTP, but we will not rely on this; we will treat resources served over FTP as uncrawlable.
-
-What to do in each case:
 
 ### YES
 
@@ -76,7 +75,7 @@ If it is confirmed not crawlable:
 - Add other information that could help the Harvester, such as the format (SQL, FTP, ZIP, PDF Collections, etc.), approximate size, details about what you found, etc.
 - Search for related URLS that might already have been listed in the Archivers app that might be covered by the same approach, so as not to duplicate work. You can search for them in the `Link URL` field.
 
-### YES AND NO
+### YES and NO
 
 For example, FTP address, mixed content, big data sets:
 <!--  - Fill out the cell "Can it be crawled?" = "yes & no" in Researcher section of the spreadsheet-->
