@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Bagging - DataRescue Workflow</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Bagging";
+    var mkdocs_page_input_path = "bagging.md";
+    var mkdocs_page_url = "/bagging/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> DataRescue Workflow</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../advance-work/">Advance Work</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../seednsort/">Seeding</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../research/">Researching</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../harvesting/">Harvesting</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../checking/">Checking</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Bagging</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#baggers">Baggers</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-do-baggers-do">What do Baggers do?</a></li>
+                
+                    <li><a class="toctree-l4" href="#getting-set-up-as-a-bagger">Getting set up as a Bagger</a></li>
+                
+                    <li><a class="toctree-l4" href="#claiming-a-dataset-for-bagging">Claiming a dataset for bagging</a></li>
+                
+                    <li><a class="toctree-l4" href="#note-url-vs-uuid">Note: URL vs UUID</a></li>
+                
+                    <li><a class="toctree-l4" href="#downloading-opening-the-dataset">Downloading &amp; opening the dataset</a></li>
+                
+                    <li><a class="toctree-l4" href="#quality-assurance">Quality Assurance</a></li>
+                
+                    <li><a class="toctree-l4" href="#creating-the-bag">Creating the bag</a></li>
+                
+                    <li><a class="toctree-l4" href="#creating-the-zip-file-and-uploading-it">Creating the Zip file and uploading it</a></li>
+                
+                    <li><a class="toctree-l4" href="#quality-assurance-and-finishing-up">Quality assurance and finishing up</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../metadata/">Describing</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">DataRescue Workflow</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Bagging</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="baggers">Baggers</h1>
+<h2 id="what-do-baggers-do">What do Baggers do?</h2>
+<p>Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.</p>
+<h2 id="getting-set-up-as-a-bagger">Getting set up as a Bagger</h2>
+<ul>
+<li>Skills recommended for this role: in general, Baggers need to have some tech skills and a good understanding of harvesting goals.</li>
+<li>Apply to become a Bagger </li>
+<li>By filling out <a href="https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform">this form</a> <ul>
+<li>Note that an email address is required to apply.</li>
+<li>Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see <a href="http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody">guidelines on archival best practices for Data Refuge</a> for more information).</li>
+</ul>
+</li>
+<li>The organizers of the event (in-person or remote) will send you an invite to the <a href="http://www.archivers.space/">Archivers app</a>, which helps us coordinate all the data archiving work we do.<ul>
+<li>Click the invite link, and choose a user name and a password.    </li>
+</ul>
+</li>
+<li>Make sure you have an account on the DataRefuge slack (or other slack team recommended by your event organizers) This is where people share expertise and answer each other's questions.</li>
+<li>Ask your event organizer to send you an invite </li>
+<li>Get set up with Python and the Python script to make a bag at the command line https://github.com/LibraryOfCongress/bagit-python</li>
+<li>If you need any assistance:</li>
+<li>Talk to your DataRescue Guide if you are at an in-person event</li>
+<li>Or post questions on Slack in the #Baggers channel(or other channel recommended by your event organizers).</li>
+</ul>
+<h2 id="claiming-a-dataset-for-bagging">Claiming a dataset for bagging</h2>
+<ul>
+<li>You will work on datasets that were harvested by Harvesters.</li>
+<li>Go to the <a href="http://www.archivers.space/">Archivers app</a>, click <code>URLS</code> and then <code>BAG</code>: all the URLs listed are ready to be bagged<ul>
+<li>Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.</li>
+</ul>
+</li>
+<li>Select an available URL and click its UUID to get to the detailed view, then click <code>Check out this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out. </li>
+<li>While you go through the bagging process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.</li>
+</ul>
+<h2 id="note-url-vs-uuid">Note: URL vs UUID</h2>
+<p>The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier. </p>
+<h2 id="downloading-opening-the-dataset">Downloading &amp; opening the dataset</h2>
+<ul>
+<li>The zipped dataset that is ready to be bagged is under <code>Harvest Url / Location</code> in the the Archivers app. Download it to your laptop, and unzip it.</li>
+<li>Extra check: Is this URL truly ready to bag? </li>
+<li>While everybody is doing their best to provide accurate information, occasionally a URL will be presented as "ready to bag", but, in fact, is not. Symptoms include:<ul>
+<li>There is no value in the "Harvest Url / Location" field</li>
+<li>There is a note in the Harvest section that seem to indicate that the harvest was only partially performed.
+   -&gt; In either case, uncheck the "Harvest" checkbox, and add a note in the Harvest note, indicating that the URL does not seem ready for bagging and needs to be reviewed by a Harvester.</li>
+</ul>
+</li>
+</ul>
+<h2 id="quality-assurance">Quality Assurance</h2>
+<ul>
+<li>Confirm the harvested files: </li>
+<li>Go to the original URL and check that the dataset is complete and accurate.</li>
+<li>You also need to check that the dataset is meaningful, that is: "will the bag make sense to a scientist"?
+For instance, if a dataset is composed of a spreadsheet without any accompanying key or explanation of what the data represents, it might be completely impossible for a scientist to use it.</li>
+<li>Spot check to make sure the files open properly and are not faulty in any way.</li>
+<li>Confirm content of Json file</li>
+<li>The json should match the information from the Harvester and use the following format:</li>
+</ul>
+<p><code>{
+    "Individual source or seed URL": "http://www.eia.gov/renewable/data.cfm",
+    "UUID" : "E30FA3CA-C5CB-41D5-8608-0650D1B6F105",
+    "id_agency" : 2,
+    "id_subagency": ,
+    "id_org":,
+    "id_suborg":,
+    "Institution facilitating the data capture creation and packaging": "Penn Data Refuge",
+    "Date of capture": "2017-01-17",
+    "Federal agency data acquired from": "Department of Energy/U.S. Energy Information Administration",
+    "Name of resource": "Renewable and Alternative Fuels",
+    "File formats contained in package": ".pdf, .zip",
+    "Type(s) of content in package": "datasets, codebooks",
+    "Free text description of capture process": "Metadata was generated by viewing page and using spreadsheet descriptions where necessary, data was bulk downloaded from the page using wget -r on the seed URL and then bagged.",
+    "Name of package creator": "Mallick Hossain and Ben Goldman"
+    }</code>
+  - If you make any changes, make sure to save this as a .json file.
+  - Confirm that the json file is within the package with the dataset(s)</p>
+<h2 id="creating-the-bag">Creating the bag</h2>
+<ul>
+<li>Run python command line script which creates the bag</li>
+</ul>
+<p><code>bagit.py --contact-name '[your name]' /directory/to/bag</code></p>
+<ul>
+<li>You should be left with a 'data' folder (which contains the downloaded content and metadata file) and four separate bagit files<ul>
+<li>bag-info.txt</li>
+<li>bagit.txt</li>
+<li>manifest-md5.txt</li>
+<li>tagmanifest-md5.txt</li>
+</ul>
+</li>
+<li><strong>IMPORTANT: It's crucial that you do not move or open the bag once you have created it. This may create hidden files that could make the bag invalid later.</strong></li>
+<li>Run the following python command lind script to do an initial validation of a bag.</li>
+</ul>
+<p><code>bagit.py --validate [directory/of/bag/to/validate]</code></p>
+<ul>
+<li>If it comes back as valid, proceed to the next step of creating the zip file and uploading it. If it does not, make a note of the error, review your steps, and re-bag the file. If you continue to get invalid bags, please see a DataRescue guide or reach out to the #bagging Slack channel. </li>
+</ul>
+<h2 id="creating-the-zip-file-and-uploading-it">Creating the Zip file and uploading it</h2>
+<ul>
+<li>Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID. </li>
+<li><strong>Without moving the file</strong>, upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/ using the user ID and password provided</li>
+<li>Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)</li>
+<li>The application will return the location URL for your zip file. </li>
+<li>The syntax will be "[UrlStub]/[UUID].zip</li>
+<li>Cut and paste that URL to the <code>Bag URL</code> field in the Archivers app.</li>
+<li>Note that files beyond 5 Gigs must be uploaded through the more advanced <code>Generate Upload Token</code> option. This will require using the aws command line interface.</li>
+<li>Please talk to your DataRescue guide/post on Slack in Baggers channel, if you are having issues with this more advanced method.</li>
+</ul>
+<h2 id="quality-assurance-and-finishing-up">Quality assurance and finishing up</h2>
+<ul>
+<li>Once the zip file has been fully uploaded, download the bag back to your computer (use the URL provided by the Archiver App) and run the following python command line script for validation</li>
+</ul>
+<p><code>bagit.py --validate [directory/of/bag/to/validate]</code></p>
+<ul>
+<li>If it comes back as valid, open the bag and spot-check to make sure everything looks the same as when you uploaded it. (This will not affect the validity of the bags already uploaded). If all seems right, proceed to the rest of the quality assurance steps. If it does not come back as valid, make a note of the error, review your steps, and re-bag the file. If you continue to get invalid bags, please see a DataRescue guide or reach out to the #bagging Slack channel. </li>
+<li>Fill out as much information as possible in the <code>Notes From Bagging</code> field in the Archivers app to document your work.</li>
+<li>Check the checkbox that certifies this is a "well-checked bag"</li>
+<li>Check the Bag checkbox (on the right-hand side) to mark that step as completed. </li>
+<li>Click <code>Save</code>.</li>
+<li>Click <code>Check in URL</code> to release it and allow someone else to work on the next step. </li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../metadata/" class="btn btn-neutral float-right" title="Describing">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../checking/" class="btn btn-neutral" title="Checking"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../checking/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../metadata/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

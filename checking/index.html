@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Checking - DataRescue Workflow</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Checking";
+    var mkdocs_page_input_path = "checking.md";
+    var mkdocs_page_url = "/checking/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> DataRescue Workflow</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../advance-work/">Advance Work</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../seednsort/">Seeding</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../research/">Researching</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../harvesting/">Harvesting</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Checking</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#checkers">Checkers</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-do-checkers-do">What do Checkers do?</a></li>
+                
+                    <li><a class="toctree-l4" href="#getting-set-up-as-a-checker">Getting set up as a Checker</a></li>
+                
+                    <li><a class="toctree-l4" href="#claiming-a-dataset-for-the-checking-step">Claiming a dataset for the checking step</a></li>
+                
+                    <li><a class="toctree-l4" href="#note-url-vs-uuid">Note: URL vs UUID</a></li>
+                
+                    <li><a class="toctree-l4" href="#downloading-opening-the-dataset">Downloading &amp; opening the dataset</a></li>
+                
+                    <li><a class="toctree-l4" href="#checking-for-completeness-and-meaningfulness">Checking for completeness and meaningfulness</a></li>
+                
+                    <li><a class="toctree-l4" href="#adding-missing-items">Adding missing items</a></li>
+                
+                    <li><a class="toctree-l4" href="#re-uploading">Re-uploading</a></li>
+                
+                    <li><a class="toctree-l4" href="#finishing-up">Finishing up</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../bagging/">Bagging</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../metadata/">Describing</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">DataRescue Workflow</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Checking</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="checkers">Checkers</h1>
+<h2 id="what-do-checkers-do">What do Checkers do?</h2>
+<p>Checkers inspect a harvested dataset and make sure that it is complete. The main question the checkers need to answer is "will the bag make sense to a scientist"? </p>
+<h2 id="getting-set-up-as-a-checker">Getting set up as a Checker</h2>
+<ul>
+<li>Skills recommended for this role: in general, Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.</li>
+<li>Apply to become a Checker </li>
+<li>By filling out <a href="https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform">this form</a> <ul>
+<li>Note that an email address is required to apply.</li>
+<li>Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see <a href="http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody">guidelines on archival best practices for Data Refuge</a> for more information).</li>
+</ul>
+</li>
+<li>The organizers of the event (in-person or remote) will send you an invite to the <a href="http://www.archivers.space/">Archivers app</a>, which helps us coordinate all the data archiving work we do.<ul>
+<li>Click the invite link, and choose a user name and a password.    </li>
+</ul>
+</li>
+<li>Make sure you have an account on the DataRefuge slack where people share expertise and answer each other's questions.<ul>
+<li>Ask your event organizer to send you an invite </li>
+</ul>
+</li>
+<li>You might also need to have some other software and utilities set up on your computer, depending methods you will use, when needing to harvest supplemental materials to add to a dataset.</li>
+<li>If you need any assistance:</li>
+<li>Talk to your DataRescue Guide if you are at an in-person event</li>
+<li>Or post  questions on Slack in the #Checkers channel.</li>
+</ul>
+<h2 id="claiming-a-dataset-for-the-checking-step">Claiming a dataset for the checking step</h2>
+<ul>
+<li>You will work on datasets that were harvested by Harvesters. </li>
+<li>Go to the <a href="http://www.archivers.space/">Archivers app</a>, click <code>URLS</code> and then <code>FINALIZE</code>: all the URLs listed are ready to be checked<ul>
+<li>Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.</li>
+</ul>
+</li>
+<li>Select an available URL and click its UUID to get to the detailed view, then click <code>Check out this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out. </li>
+<li>While you go through the checking process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.</li>
+</ul>
+<h2 id="note-url-vs-uuid">Note: URL vs UUID</h2>
+<p>The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier. </p>
+<p><strong>Note: the next few steps below need to be reviewed in light of the new app-driven workflow</strong> </p>
+<h2 id="downloading-opening-the-dataset">Downloading &amp; opening the dataset</h2>
+<ul>
+<li>Go to the URL containing the zipped dataset (provided in cell "URL from upload of zip") </li>
+<li>Download the zip file to your laptop, and unzip it.</li>
+</ul>
+<h2 id="checking-for-completeness-and-meaningfulness">Checking for completeness and meaningfulness</h2>
+<ul>
+<li>Your role is to inspect the dataset and make sure that it is complete.</li>
+<li>You also need to check that the dataset is <em>meaningful</em>, that is: "will the bag make sense to a scientist"? <ul>
+<li>For instance, if a dataset is composed of a spreadsheet without any accompanying key or explanation of what the data represents, it might be completely impossible for a scientist to use it.</li>
+</ul>
+</li>
+</ul>
+<h2 id="adding-missing-items">Adding missing items</h2>
+<ul>
+<li>You should add any missing file or metadata information to the dataset</li>
+<li>Please refer to the <a href="https://github.com/datarefugephilly/workflow/tree/FinalizeRemote-Delphine/harvesting-toolkit">Harvesting Tookit</a> for more details</li>
+</ul>
+<h2 id="re-uploading">Re-uploading</h2>
+<ul>
+<li>If you have made any changes to the dataset, zip the all the files and upload the new resulting zip file, using the application http://drp-upload.herokuapp.com/<ul>
+<li>Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)</li>
+<li>Note that files beyond 5 Gigs cannot be uploaded through this method</li>
+<li>Please talk to your DataRescue guide/post on Slack in Checkers channel, if you have a larger file</li>
+<li>The file you uploaded has now replaced the old version, and it is available at the same url (in cell "URL from upload of zip")</li>
+</ul>
+</li>
+<li>Quality assurance: <ul>
+<li>To ensure that the zip file was uploaded successfully, go to the URL and download it back to your laptop. </li>
+<li>Unzip it, open it and spot check to make sure that all the files are there and seem valid.</li>
+</ul>
+</li>
+</ul>
+<h2 id="finishing-up">Finishing up</h2>
+<ul>
+<li>In the Archivers app, make sure to fill out as much information as possible to document your work.</li>
+<li>Check the Finalize checkbox (on the right-hand side) to mark that step as completed. </li>
+<li>Click <code>Save</code>.</li>
+<li>
+<p>Click <code>Check in URL</code>, to release it and allow someone else to work on the next step. </p>
+</li>
+<li>
+<p>You're done! Move on to the next URL! </p>
+</li>
+</ul>
+<!-- - In the Uncrawlable spreadsheet, briefly describe any change you have made in cell "Any Changes?", and answer yes or no in cell "Files in  UUID.zip are all good?" -->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../bagging/" class="btn btn-neutral float-right" title="Bagging">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../harvesting/" class="btn btn-neutral" title="Harvesting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../harvesting/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../bagging/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
