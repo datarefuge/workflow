@@ -85,9 +85,6 @@
                 <li class="toctree-l3"><a href="#claiming-a-dataset-to-research">Claiming a dataset to Research</a></li>
                 
             
-                <li class="toctree-l3"><a href="#note-url-vs-uuid">Note: URL vs UUID</a></li>
-                
-            
                 <li class="toctree-l3"><a href="#evaluating-the-data">Evaluating the data</a></li>
                 
             
@@ -97,7 +94,7 @@
                 
                     <li><a class="toctree-l4" href="#no">NO</a></li>
                 
-                    <li><a class="toctree-l4" href="#yes-and-no">YES AND NO</a></li>
+                    <li><a class="toctree-l4" href="#yes-and-no">YES and NO</a></li>
                 
             
                 <li class="toctree-l3"><a href="#finishing-up">Finishing Up</a></li>
@@ -169,11 +166,15 @@
             <div class="section">
               
                 <h2 id="what-do-researchers-do">What do Researchers do?</h2>
-<p>Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested.</p>
+<p>Researchers review "uncrawlables" identified during <a href="../seednsort/">Seeding</a>, confirm the URL/dataset is indeed uncrawlable, and investigate how the dataset could be best harvested. Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets.</p>
+<div class = "note">
+  <strong>Recommended Skills</strong> <br />  
+  Consider this path if you have a strong front end web experience and enjoy research. An understanding how federal data is organized (e.g. where "master" datasets are) would be valuable.
+</div>
+
 <h2 id="getting-set-up-as-a-researcher">Getting set up as a Researcher</h2>
 <ul>
-<li>Skills recommended for this role: in general, Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets. Ideally they would understand how federal data is organized (e.g. where the "master" datasets are vs. the derived partial views of those datasets.</li>
-<li>The organizers of the event (in-person or remote) will tell you how to volunteer for the Researcher role, either through slack or a form.<ul>
+<li>Event organizers (in-person or remote) will tell you how to volunteer for the Researcher role, either through slack or a form.<ul>
 <li>As a result, they will send you an invite to the <a href="http://www.archivers.space/">Archivers app</a>, which helps us coordinate all the data archiving work we do.</li>
 <li>Click the invite link, and choose a user name and a password.</li>
 </ul>
@@ -184,7 +185,7 @@
 </li>
 <li>If you need any assistance:<ul>
 <li>Talk to your DataRescue Guide if you are at an in-person event</li>
-<li>Or post questions on Slack in the #Researchers/Harvesters channel (or other channel recommended by your event organizers).</li>
+<li>Or post questions on Slack in the <code>#general</code> channel (or other channel recommended by your event organizers).</li>
 </ul>
 </li>
 </ul>
@@ -207,15 +208,18 @@
 <li>Select an available URL and click its UUID to get to the detailed view, then click <code>Check out this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.</li>
 <li>While you go through the research process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.</li>
 </ul>
-<h2 id="note-url-vs-uuid">Note: URL vs UUID</h2>
-<p>The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.</p>
+<div class = "note">
+  <strong>Note: URL vs UUID</strong> <br />  
+  The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.
+</div>
+
 <h2 id="evaluating-the-data">Evaluating the data</h2>
 <p>Go to the URL, and start inspecting the content.</p>
 <h2 id="is-the-data-actually-crawlable">Is the data actually crawlable?</h2>
-<p>Again, see <a href="https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit">here</a>
-and <a href="https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit">here</a>
-for a mostly non-technical introduction to the crawler. Some additional
-technical notes for answering this:</p>
+<p>Again, see <a href="https://edgi-govdata-archiving.github.io/guides/">EDGI's Guides</a> on for a mostly non-technical introduction to the crawler:
+    - <a href="https://edgi-govdata-archiving.github.io/guides/internet-archive-crawler/">Understanding the Internet Archive Web Crawler</a>
+    - <a href="https://edgi-govdata-archiving.github.io/guides/seeding-internet-archive/">Seeding the Internet Archive’s Web Crawler</a></p>
+<p>Some additional technical notes for answering this:</p>
 <ul>
 <li>There is no specific file size cutoff on what is crawlable, but large files should be manually captured anyway.</li>
 <li>Files types like ZIP, PDF, Excel, etc. are crawlable if they are linked.</li>
@@ -224,7 +228,6 @@ If links are added by Javascript or require submitting a form, they are not craw
 <li>The crawler does not tolerate web frames (but it straightforward to inspect a page to obtain the content in the frame directly, and then nominate <em>that</em>).</li>
 <li>The crawler recently added the ability to crawl FTP, but we will not rely on this; we will treat resources served over FTP as uncrawlable.</li>
 </ul>
-<p>What to do in each case:</p>
 <h3 id="yes">YES</h3>
 <p>If the URL is crawlable or you locate a crawlable URL that accesses the underlying dataset:</p>
 <ul>
@@ -248,7 +251,7 @@ If links are added by Javascript or require submitting a form, they are not craw
 <li>Add other information that could help the Harvester, such as the format (SQL, FTP, ZIP, PDF Collections, etc.), approximate size, details about what you found, etc.</li>
 <li>Search for related URLS that might already have been listed in the Archivers app that might be covered by the same approach, so as not to duplicate work. You can search for them in the <code>Link URL</code> field.</li>
 </ul>
-<h3 id="yes-and-no">YES AND NO</h3>
+<h3 id="yes-and-no">YES and NO</h3>
 <p>For example, FTP address, mixed content, big data sets:
 <!--  - Fill out the cell "Can it be crawled?" = "yes & no" in Researcher section of the spreadsheet--></p>
 <ul>
