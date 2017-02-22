@@ -15,10 +15,9 @@ The Seeders/Sorters use the [EDGI Archiving Primers](https://envirodatagov.org/a
 
 - Start exploring the website assigned, identifying important URLs.
 - Decide whether the data on a page or website subsection can be automatically captured by the Internet Archive web crawler.
-
-- The best source of information about the seeding and sorting process is represented at [envirodatagov.org](https://envirodatagov.org/), see:
-      - [Understanding What the Internet Archive Web Crawler Does](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
-    - [Seeding the Internet Archive’s Web Crawler](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)
+- [EDGI's Guides](https://edgi-govdata-archiving.github.io/guides/) have information critical to the seeding and sorting process:
+    - [Understanding the Internet Archive Web Crawler](https://edgi-govdata-archiving.github.io/guides/internet-archive-crawler/)
+    - [Seeding the Internet Archive’s Web Crawler](https://edgi-govdata-archiving.github.io/guides/seeding-internet-archive/)
 
 
 ### Crawlable URLs

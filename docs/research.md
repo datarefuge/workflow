@@ -45,8 +45,9 @@ Go to the URL, and start inspecting the content.
 ## Is the data actually crawlable?
 
 Again, see [EDGI's Guides](https://edgi-govdata-archiving.github.io/guides/) on for a mostly non-technical introduction to the crawler:
-    - [Understanding the Internet Archive Web Crawler](https://edgi-govdata-archiving.github.io/guides/internet-archive-crawler/)
-    - [Seeding the Internet Archive’s Web Crawler](https://edgi-govdata-archiving.github.io/guides/seeding-internet-archive/)
+
+- [Understanding the Internet Archive Web Crawler](https://edgi-govdata-archiving.github.io/guides/internet-archive-crawler/)
+- [Seeding the Internet Archive’s Web Crawler](https://edgi-govdata-archiving.github.io/guides/seeding-internet-archive/)
 
 Some additional technical notes for answering this:
 
