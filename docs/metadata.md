@@ -27,7 +27,6 @@ Describers creates a descriptive record in the DataRefuge CKAN repository for ea
 
 ## Claiming a bag
 
-**Note: these features have not yet been implemented in the Archivers app. It should be there shortly.**
 - You will work on datasets that were bagged by Baggers.
 - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `DESCRIBE` [currently called `Done`, this needs to be changed]: all the URLs listed are ready to be added to the CKAN instance
     - Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.
@@ -40,8 +39,9 @@ Describers creates a descriptive record in the DataRefuge CKAN repository for ea
 
 ## QA step
 
-- In the Archivers app click on the `Bag URL` in the Bag section of your dataset.
-- The file should start downloading
+- In the Archivers app, scrall down to the `Describe` section.
+- The URL of the zipped bag is in field `Bag Url / Location`
+- Cut and past that URL into your browser and downloading it. 
 - When it is downloaded, unzip it
 - Spot check some of the files (make sure they open and look normal, i.e., not garbled)
 - If the file fails QA:
@@ -95,11 +95,10 @@ These sites are sources of scientific metadata standards to review when choosing
 
 ## Finishing up
 
-**Note: these features have not yet been implemented in the Archivers app. It should be there shortly.**
-
-- In the Archivers app, add URL to the CKAN record in cell "CKAN record URL"
+- In the Archivers app, add URL to the CKAN record in field `CKAN URL`
     - The syntax will be  
      `https://www.datarefuge.org//dataset/[datasetNameGeneratedByCkan]`
+- Add any useful notes to document your work.
 - Check the Describe checkbox (on the right-hand side) to mark that step as completed.
 - Click `Save`.
 - Click `Check in URL`, to release it and allow someone else to work on the next step.
