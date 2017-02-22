@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/extra.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -201,11 +202,14 @@
 </li>
 </ul>
 <h2 id="claiming-a-bag">Claiming a bag</h2>
-<p><strong>Note: these features have not yet been implemented in the Archivers app. It should be there shortly.</strong>
-- You will work on datasets that were bagged by Baggers.
-- Go to the <a href="http://www.archivers.space/">Archivers app</a>, click <code>URLS</code> and then <code>DESCRIBE</code> [currently called <code>Done</code>, this needs to be changed]: all the URLs listed are ready to be added to the CKAN instance
-    - Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.
-- Select an available URL and click its UUID to get to the detailed view, then click <code>Check out this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.</p>
+<ul>
+<li>You will work on datasets that were bagged by Baggers.</li>
+<li>Go to the <a href="http://www.archivers.space/">Archivers app</a>, click <code>URLS</code> and then <code>DESCRIBE</code> [currently called <code>Done</code>, this needs to be changed]: all the URLs listed are ready to be added to the CKAN instance<ul>
+<li>Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.</li>
+</ul>
+</li>
+<li>Select an available URL and click its UUID to get to the detailed view, then click <code>Check out this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.</li>
+</ul>
 <div class = "note">
   <strong>Note: URL vs UUID</strong> <br />  
   The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.
@@ -213,8 +217,9 @@
 
 <h2 id="qa-step">QA step</h2>
 <ul>
-<li>In the Archivers app click on the <code>Bag URL</code> in the Bag section of your dataset.</li>
-<li>The file should start downloading</li>
+<li>In the Archivers app, scrall down to the <code>Describe</code> section.</li>
+<li>The URL of the zipped bag is in field <code>Bag Url / Location</code></li>
+<li>Cut and past that URL into your browser and downloading it. </li>
 <li>When it is downloaded, unzip it</li>
 <li>Spot check some of the files (make sure they open and look normal, i.e., not garbled)</li>
 <li>If the file fails QA:<ul>
@@ -278,13 +283,13 @@
 </li>
 </ul>
 <h2 id="finishing-up">Finishing up</h2>
-<p><strong>Note: these features have not yet been implemented in the Archivers app. It should be there shortly.</strong></p>
 <ul>
-<li>In the Archivers app, add URL to the CKAN record in cell "CKAN record URL"<ul>
+<li>In the Archivers app, add URL to the CKAN record in field <code>CKAN URL</code><ul>
 <li>The syntax will be<br />
 <code>https://www.datarefuge.org//dataset/[datasetNameGeneratedByCkan]</code></li>
 </ul>
 </li>
+<li>Add any useful notes to document your work.</li>
 <li>Check the Describe checkbox (on the right-hand side) to mark that step as completed.</li>
 <li>Click <code>Save</code>.</li>
 <li>Click <code>Check in URL</code>, to release it and allow someone else to work on the next step.</li>
