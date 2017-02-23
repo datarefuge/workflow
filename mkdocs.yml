@@ -9,3 +9,4 @@ pages:
     - Bagging: bagging.md
     - Describing: metadata.md
 theme: readthedocs
+theme_dir: custom_theme
