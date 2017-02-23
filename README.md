@@ -14,4 +14,4 @@ Please check our [contribution guidelines](CONTRIBUTING.md) for details.
 
 **********************
 ## Partners
-Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. [DateRefuge](http://www.ppehlab.org/datarefuge/) and [EDGI](https://envirodatagov.org/) partner with local organizers in supporting these events. See more of our institutional partners on the [Data Refuge home page](http://www.ppehlab.org/datarefuge#partners).
+Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. [DataRefuge](http://www.ppehlab.org/datarefuge/) and [EDGI](https://envirodatagov.org/) partner with local organizers in supporting these events. See more of our institutional partners on the [Data Refuge home page](http://www.ppehlab.org/datarefuge#partners).

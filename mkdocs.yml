@@ -8,5 +8,6 @@ pages:
     - Checking: checking.md
     - Bagging: bagging.md
     - Describing: metadata.md
+    - Archivers App FAQ: faq.md
 theme: readthedocs
 theme_dir: custom_theme
