@@ -1,6 +1,14 @@
 # Contributing Guidelines
 
-We love improvements to our documentation! Our process for accepting changes has a few steps:
+We love improvements to our documentation! 
+
+## Submitting an issue
+
+The simplest way to tell us about a possible improvement is to open a new issue in the [Workflow repo](https://github.com/datarefuge/workflow/issues).
+
+## Submitting a change through a pull request
+
+Our process for accepting changes has a few steps.
 
 1. If you haven't submitted anything before, and you aren't (yet!) a member of our organization, **fork and clone** the repo:
 
@@ -18,7 +26,7 @@ We love improvements to our documentation! Our process for accepting changes has
 
         https://github.com/datarefuge/workflow/pull/new/master
 
-4. Once your changes are ready for final review, commit your changes then modify or **create your pull request (PR)**, assign as a reviewer or ping (using "`@<username>`"). For instance: @khdelphine or @liblaurie.
+4. Once your changes are ready for final review, commit your changes then modify or **create your pull request (PR)**, assign as a reviewer or ping (using "`@<username>`"). For instance: @khdelphine, @dcwalk, @liblaurie or @titaniumbones.
 
 5. Allow others sufficient **time for review and comments** before merging. We make use of GitHub's review feature to to comment in-line one PRs when possible. There may be some fixes or adjustments you'll have to make based on feedback.
 
