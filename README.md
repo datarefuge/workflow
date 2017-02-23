@@ -1,35 +1,16 @@
 # DataRescue Workflow
 
-This document describes the [DataRescue workflow](https://datarefuge.github.io/workflow/) we use for Data Rescue activites as developed by the [DataRefuge project](http://www.ppehlab.org/) and [EDGI](https://envirodatagov.org/), both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified, either by a [seeder](https://datarefuge.github.io/workflow/seeding/) as "uncrawlable," or by other means, until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
+This guide describes the [DataRescue workflow](https://datarefuge.github.io/workflow/) we use for Data Rescue activities as developed by the [DataRefuge project](http://www.ppehlab.org/) and [EDGI](https://envirodatagov.org/), both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified, either by a [seeder](https://datarefuge.github.io/workflow/seeding/) as "uncrawlable," or by other means, until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
 
 ## Are you looking for the actual documentation?
-We have moved the documentation to a more user friendly format. You can now find it [there](https://datarefuge.github.io/workflow/).
+We have moved the documentation to a more user-friendly format. You can now find the guide at [datarefuge.github.io/workflow](https://datarefuge.github.io/workflow/).
 
 Note that we are still working on it, and will shortly add screenshots, etc.
 
-## Contributing to this Guide
+## Contributing to this guide
 
-Suggestions and improvements are welcome! All changes to the guide are managed through this GitHub repository.
-
-## Development
-
-Documentation is built with [MkDocs](http://www.mkdocs.org/), a static site generator tailored to writing documentation. [Install Mkdocs](http://www.mkdocs.org/#installation) with a package manager or python/pip:
-
-```sh
-$ brew install mkdocs
-```
-or
-```sh
-$ pip install mkdocs
-```
-
-Clone this repo and navigate to it, make changes to the `.md` files and...
-
-```sh
-$ mkdocs serve
-```
-
-You can view changes via your browser at `http://127.0.0.1:8000`
+Suggestions and improvements are welcome! All changes to the guide are managed through this GitHub repository. 
+Please check our [contribution guidelines](CONTRIBUTING.md) for details.
 
 **********************
 ## Partners

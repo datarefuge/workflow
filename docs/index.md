@@ -48,7 +48,6 @@ Baggers perform some quality assurance on the dataset to make sure the content i
 
 ### 6. [Describers](metadata.md)
 
-**Note: This role is still being fine-tuned.**
 Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public.
 
 **********************
