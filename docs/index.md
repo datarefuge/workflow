@@ -15,38 +15,39 @@ We are so glad that you are participating in this project!
 ### If you are a regular participant
 
 - Get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and make sure you have access to the key documents and app needed to do the work. The Event/Remote organizers will tell you how proceed to do all this.
+- Create an account on the DataRefuge slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) (or use the slack team recommended by your event organizers). This is where people share expertise and answer each other's questions.   
 - Go over the workflow documentation below, in particular the pages corresponding to your role.
+
 
 **********************
 
 ## Plan Overview
 
-### 1. [Seeders](seeding.md)
+### 1. [Seeding](seeding.md)
 
 Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders nominate them to the End-of-Term (EOT) project, otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
 
-### 2. [Researchers](research.md)
+### 2. [Researching](researching.md)
 
 Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested. [Research.md](research.md) describes this process in more detail.
 
 *We recommend that a Researchers and Harvesters (see below) work together in pairs, as much communication is needed between the two roles. In some case, one same person will fulfill both roles.*
 
-### 3. [Harvesters](harvesting.md)
+### 3. [Harvesting](harvesting.md)
 
 Harvesters take the "uncrawlable" data and try to figure out how to actully capture it based on the recommendations of the Researchers. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks. Harvesters should see the included [Harvesting Toolkit](harvesting.md) for more details and tools.
 
-### 4. Checkers
+### 4. Checking
 
-<!--### 4. [Checkers](checking.md)-->
 **Note: This role is currently performed by the Baggers, and does not exist separately.**
 
 Checkers inspect a harvested dataset and make sure that it is complete. The main question the checkers need to answer is "will the bag make sense to a scientist"? Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.
 
-### 5. [Baggers](bagging.md)
+### 5. [Bagging](bagging.md)
 
 Baggers perform some quality assurance on the dataset to make sure the content is correct and corresponds to the original URL. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.
 
-### 6. [Describers](metadata.md)
+### 6. [Describing](describing.md)
 
 Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public.
 

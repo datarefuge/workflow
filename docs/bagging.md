@@ -16,7 +16,7 @@ Baggers do some quality assurance on the dataset to make sure the content is cor
         - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [guidelines on archival best practices for Data Refuge](http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody) for more information).
 - The organizers of the event (in-person or remote) will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
   	- Click the invite link, and choose a user name and a password.
-- Make sure you have an account on the DataRefuge slack (or other slack team recommended by your event organizers) This is where people share expertise and answer each other's questions.
+- Create an account on the DataRefuge slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) (or use the slack team recommended by your event organizers). This is where people share expertise and answer each other's questions.   
 - Ask your event organizer to send you an invite
 - Get set up with Python and the Python script to make a bag at the command line  
 [https://github.com/LibraryOfCongress/bagit-python](https://github.com/LibraryOfCongress/bagit-python)
