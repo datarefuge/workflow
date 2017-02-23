@@ -74,15 +74,13 @@ pre code {
  * https://github.com/mkdocs/mkdocs/issues/718
  */
 a code {
-/*    color: #2980B9;*/
- color: #111111;
+    color: #2980B9;
 }
 a:hover code {
     color: #3091d1;
 }
 a:visited code {
- /*   color: #9B59B6;*/
-  color: #222222;
+    color: #9B59B6;
 }
 
 /*
