@@ -1,6 +1,6 @@
-## What do Seeders/Sorters do?
+## What do Seeders do?
 
-Seeders and Sorters canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's web crawler. If the URLs are crawlable, the Seeders/Sorters nominate them to the [End of Term (EOT) Web Archive](http://eotarchive.cdlib.org/2016.html), otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
+Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's web crawler. If the URLs are crawlable, the Seeders nominate them to the [End of Term (EOT) Web Archive](http://eotarchive.cdlib.org/2016.html), otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
 
 <div class = "note">
   <strong>Recommended Skills</strong> <br />  
@@ -9,7 +9,7 @@ Seeders and Sorters canvass the resources of a given government agency, identify
 
 ## Choosing the website
 
-The Seeders/Sorters use the [EDGI Archiving Primers](https://envirodatagov.org/archiving/), or a similar set of resources, to identify important and at-risk data. Talk to the DataRescue organizers to learn more.
+The Seeders use the [EDGI Archiving Primers](https://envirodatagov.org/archiving/), or a similar set of resources, to identify important and at-risk data. Talk to the DataRescue organizers to learn more.
 
 ## Canvassing the website and evaluating content
 
@@ -18,7 +18,6 @@ The Seeders/Sorters use the [EDGI Archiving Primers](https://envirodatagov.org/a
 - [EDGI's Guides](https://edgi-govdata-archiving.github.io/guides/) have information critical to the seeding and sorting process:
     - [Understanding the Internet Archive Web Crawler](https://edgi-govdata-archiving.github.io/guides/internet-archive-crawler/)
     - [Seeding the Internet Archive’s Web Crawler](https://edgi-govdata-archiving.github.io/guides/seeding-internet-archive/)
-
 
 ### Crawlable URLs
 

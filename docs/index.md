@@ -1,6 +1,6 @@
 # DataRescue Workflow -- Overview
 
-This document describes the workflow we use for Data Rescue activites as developed by the [DataRefuge project](http://www.ppehlab.org/) and [EDGI](https://envirodatagov.org/), both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified, either by a [seeder & sorter](seednsort.md) as "uncrawlable," or by other means, until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
+This document describes the workflow we use for Data Rescue activites as developed by the [DataRefuge project](http://www.ppehlab.org/) and [EDGI](https://envirodatagov.org/), both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified, either by a [seeder](seeding.md) as "uncrawlable," or by other means, until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
 
 ## Before you begin
 We are so glad that you are participating in this project!
@@ -21,9 +21,9 @@ We are so glad that you are participating in this project!
 
 ## Plan Overview
 
-### 1. [Seeders/Sorters](seednsort.md)
+### 1. [Seeders](seeding.md)
 
-Seeders and Sorters canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders/Sorters nominate them to the End-of-Term (EOT) project, otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
+Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders nominate them to the End-of-Term (EOT) project, otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
 
 ### 2. [Researchers](research.md)
 

@@ -1,6 +1,6 @@
 ## What do Researchers do?
 
-Researchers review "uncrawlables" identified during [Seeding](seednsort.md), confirm the URL/dataset is indeed uncrawlable, and investigate how the dataset could be best harvested. Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets.
+Researchers review "uncrawlables" identified during [Seeding](seeding.md), confirm the URL/dataset is indeed uncrawlable, and investigate how the dataset could be best harvested. Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets.
 
 <div class = "note">
   <strong>Recommended Skills</strong> <br />  

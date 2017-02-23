@@ -1,11 +1,11 @@
 # DataRescue Workflow
 
-This document describes the [DataRescue workflow](https://datarefuge.github.io/workflow/) we use for Data Rescue activites as developed by the [DataRefuge project](http://www.ppehlab.org/) and [EDGI](https://envirodatagov.org/), both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified, either by a [seeder & sorter](https://datarefuge.github.io/workflow/seednsort/) as "uncrawlable," or by other means, until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
+This document describes the [DataRescue workflow](https://datarefuge.github.io/workflow/) we use for Data Rescue activites as developed by the [DataRefuge project](http://www.ppehlab.org/) and [EDGI](https://envirodatagov.org/), both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified, either by a [seeder](https://datarefuge.github.io/workflow/seeding/) as "uncrawlable," or by other means, until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
 
 ## Are you looking for the actual documentation?
 We have moved the documentation to a more user friendly format. You can now find it [there](https://datarefuge.github.io/workflow/).
 
-Note that we are still working on it, and will shortly add screenshots, etc. 
+Note that we are still working on it, and will shortly add screenshots, etc.
 
 ## Contributing to this Guide
 

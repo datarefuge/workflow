@@ -10,18 +10,18 @@ Before starting, your team should go through the following steps.
 
 - Read through the entire workflow documentation
 - Sign up for the datarefuge slack and make sure there's a channel for your event
-- Define your teams. They are usually: Seeders/Sorters, Researchers, Harvesters, Checkers, Baggers, and Describers. Although in some cases, some of the roles can be conflated
+- Define your teams. They are usually: Seeders, Researchers, Harvesters, Checkers, Baggers, and Describers. Although in some cases, some of the roles can be conflated
     - In particular, we recommend that Researchers and Harvesters work very closely with each other, for instance in pairs or in small groups. In some cases, a single person might be both a Researcher and a Harvester.
     - Each team should have team leaders, aka "guides".
 - The event organizers and team leaders should schedule a call with DataRefuge to go over the process.
-- The event organizers and team leaders for the Seeders and Sorters should also check in with EDGI folks for info about how to make sure that you're seeding and sorting effectively.
+- The event organizers and team leaders for the Seeders should also check in with EDGI folks for info about how to make sure that you're seeding and sorting effectively.
 
 **Note that the Describers role is being redeveloped at the moment, so it is currently not enabled.**
 
 ## Primer and sub-primer documents
 
 - Make sure your event has its designated primer and sub-primer documents
-- Those are documents that will inform the work of the Seeders/Sorters at your event. They will tell them which website or website sections they should be focusing on for URL discovery.
+- Those are documents that will inform the work of the Seeders at your event. They will tell them which website or website sections they should be focusing on for URL discovery.
 - An EDGI coordinator will setup these documents for you.
 
 ## Archivers app
@@ -38,7 +38,7 @@ Before starting, your team should go through the following steps.
 ## Crawl vs. Harvest: storage location
 
 - The main triage point of the workflow is whether a URL can be automatically crawled, for instance by the Internet Archive, or whether it needs to be manually harvested.
-- The crawling process does not require any separate storage management, as the crawlable URLs are nominated to the Internet Archive, who will take care of the actual file storage after they have crawled the pages. See the [Seeders/Sorters documentation](seednsort.md) for more information on this process.
+- The crawling process does not require any separate storage management, as the crawlable URLs are nominated to the Internet Archive, who will take care of the actual file storage after they have crawled the pages. See the [Seeders documentation](seeding.md) for more information on this process.
 - The datasets harvested through the harvest process and uploaded through are the Archivers app are stored on S3 storage managed by DataRefuge.
 - At this time there is no direct access to the files stored on S3 for security reason.
 
@@ -64,7 +64,7 @@ Before starting, your team should go through the following steps.
     - You will need to generate invites for each one [within the app](http://www.archivers.space/invites/new), and paste the URL generated in a slack Direct Message or an email
     - Each participant invited will automatically "belongs" to your event in the app
 - Checkers and Baggers need to be given explicit privileges in the app to have access to the Checking (i.e. "Finalize") and Bagging sections
-- Seeders/Sorters do not need access to the Archivers app
+- Seeders do not need access to the Archivers app
 <!--- The Describers (Ckan/Metadata folks) need **credentials for [ckan](https://www.datarefuge.org/)**. -->
 <!--- The S3 System Administrator needs credentials for s3. -->
 

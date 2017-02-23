@@ -3,7 +3,7 @@ While DataRefuge/DataRescue strives to be a distributed effort, there is need fo
 # EDGI Coordinators
 
 [Add a paragraph on EDGI and links to other relevant documents/sites --> Could someone from EDGI please do that?]
-EDGI focuses particularly on helping Seeders/Sorters teams get set up. They also provide advanced recommendations and know-how on the harvesting process.
+EDGI focuses particularly on helping Seeders teams get set up. They also provide advanced recommendations and know-how on the harvesting process.
 
 # DataRefuge Coordinators
 
