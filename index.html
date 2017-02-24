@@ -54,7 +54,7 @@
             
                 <li class="toctree-l3"><a href="#datarescue-workflow-overview">DataRescue Workflow -- Overview</a></li>
                 
-                    <li><a class="toctree-l4" href="#before-you-begin">Before you begin</a></li>
+                    <li><a class="toctree-l4" href="#before-you-begin">Before You Begin</a></li>
                 
                     <li><a class="toctree-l4" href="#plan-overview">Plan Overview</a></li>
                 
@@ -82,7 +82,7 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="research/">Researching</a>
+        <a class="" href="researching/">Researching</a>
         
     </li>
 <li>
@@ -96,13 +96,6 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="checking/">Checking</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
         <a class="" href="bagging/">Bagging</a>
         
     </li>
@@ -110,7 +103,7 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="metadata/">Describing</a>
+        <a class="" href="describing/">Describing</a>
         
     </li>
 <li>
@@ -155,42 +148,59 @@
             <div class="section">
               
                 <h1 id="datarescue-workflow-overview">DataRescue Workflow -- Overview</h1>
-<p>This document describes the workflow we use for Data Rescue activites as developed by the <a href="http://www.ppehlab.org/">DataRefuge project</a> and <a href="https://envirodatagov.org/">EDGI</a>, both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified, either by a <a href="seeding/">seeder</a> as "uncrawlable," or by other means, until it is made available as a record in the <a href="http://www.datarefuge.org">datarefuge.org</a> ckan data catalog. The process involves several stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.</p>
-<h2 id="before-you-begin">Before you begin</h2>
+<p>This document describes the workflow we use for DataRescue activities as developed by the <a href="http://www.ppehlab.org/">DataRefuge project</a> and <a href="https://envirodatagov.org/">EDGI</a>, both at in-person events and when people work remotely. It explains the process that a URL/dataset goes through from the time it has been identified, either by a <a href="seeding/">Seeder</a> as "uncrawlable," or by other means, until it is made available as a record in the <a href="http://www.datarefuge.org">datarefuge.org</a> ckan data catalog. The process involves several stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.</p>
+<h2 id="before-you-begin">Before You Begin</h2>
 <p>We are so glad that you are participating in this project!</p>
 <!--**[If you are an overall Coordinator](coordinator-work.md)**:
 - See the description of some of the work overall coordinators do [here](coordinator-work.md)-->
 
-<h3 id="if-you-are-an-event-organizer"><a href="advance-work/">If you are an Event Organizer</a></h3>
+<h3 id="if-you-are-an-event-organizer"><a href="advance-work/">If You Are an Event Organizer</a></h3>
 <ul>
 <li>Learn about what you need to do to prepare the event <a href="advance-work/">here</a>.</li>
 </ul>
-<h3 id="if-you-are-a-regular-participant">If you are a regular participant</h3>
+<h3 id="if-you-are-a-regular-participant">If You Are a Regular Participant</h3>
 <ul>
-<li>Get a role assignment (e.g., Seeder, or Harvester), get account credentials needed for your role, and make sure you have access to the key documents and app needed to do the work. The Event/Remote organizers will tell you how proceed to do all this.</li>
-<li>Go over the workflow documentation below, in particular the pages corresponding to your role.</li>
+<li>Get a role assignment (e.g. Seeder or Harvester), get account credentials needed for your role, and make sure you have access to the key documents and app needed to do the work. The organizers will instruct you on these steps.</li>
+<li>Create an account on the DataRefuge Slack using this <a href="https://rauchg-slackin-qonsfhhvxs.now.sh/">slack-in</a> (or use the Slack team recommended by your event organizers). This is where people share expertise and answer each other's questions.   </li>
+<li>Go over the workflow documentation below and read the detailed page(s) corresponding to your role.</li>
 </ul>
 <hr />
 <h2 id="plan-overview">Plan Overview</h2>
-<h3 id="1-seeders">1. <a href="seeding/">Seeders</a></h3>
-<p>Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders nominate them to the End-of-Term (EOT) project, otherwise they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.</p>
-<h3 id="2-researchers">2. <a href="research/">Researchers</a></h3>
-<p>Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested. <a href="research/">Research.md</a> describes this process in more detail.</p>
-<p><em>We recommend that a Researchers and Harvesters (see below) work together in pairs, as much communication is needed between the two roles. In some case, one same person will fulfill both roles.</em></p>
-<h3 id="3-harvesters">3. <a href="harvesting/">Harvesters</a></h3>
-<p>Harvesters take the "uncrawlable" data and try to figure out how to actully capture it based on the recommendations of the Researchers. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks. Harvesters should see the included <a href="harvesting/">Harvesting Toolkit</a> for more details and tools.</p>
-<h3 id="4-checkers">4. Checkers</h3>
-<!--### 4. [Checkers](checking.md)-->
-
+<h3 id="1-seeding">1. <a href="seeding/">Seeding</a></h3>
+<p>Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders nominate them to the End-of-Term (EOT) project. Otherwise, they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.</p>
+<h3 id="2-researching">2. <a href="researching/">Researching</a></h3>
+<p>Researchers inspect the "uncrawlable" list to confirm that Seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested. <a href="research.md">Research.md</a> describes this process in more detail.</p>
+<p><em>We recommend that Researchers and Harvesters (see below) work together in pairs, as much communication is needed between the two roles. In some cases, one person will fulfill both roles.</em></p>
+<h3 id="3-harvesting">3. <a href="harvesting/">Harvesting</a></h3>
+<p>Harvesters take the "uncrawlable" data and try to figure out how to actually capture it based on the recommendations of the Researchers. This is a complex task which can require substantial technical expertise, and which requires different techniques for different tasks. Harvesters should see the included <a href="harvesting/">Harvesting Toolkit</a> for more details and tools.</p>
+<h3 id="4-checking">4. Checking</h3>
 <p><strong>Note: This role is currently performed by the Baggers, and does not exist separately.</strong></p>
 <p>Checkers inspect a harvested dataset and make sure that it is complete. The main question the checkers need to answer is "will the bag make sense to a scientist"? Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.</p>
-<h3 id="5-baggers">5. <a href="bagging/">Baggers</a></h3>
-<p>Baggers perform some quality assurance on the dataset to make sure the content is correct and corresponds to the original URL. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.</p>
-<h3 id="6-describers">6. <a href="metadata/">Describers</a></h3>
-<p>Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public.</p>
+<h3 id="5-bagging">5. <a href="bagging/">Bagging</a></h3>
+<p>Baggers perform some quality assurance on the dataset to make sure the content is correct and corresponds to the original URL. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata, and upload it to the final DataRefuge destination.</p>
+<h3 id="6-describing">6. <a href="describing/">Describing</a></h3>
+<p>Describers create a descriptive record in the DataRefuge CKAN repository for each bag. Then they link the record to the bag and make the record public.</p>
 <hr />
 <h2 id="partners">Partners</h2>
-<p>Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. <a href="http://www.ppehlab.org/datarefuge/">DataRefuge</a> and <a href="https://envirodatagov.org/">EDGI</a> partner with local organizers in supporting these events. See more of our institutional partners on the <a href="http://www.ppehlab.org/datarefuge#partners">Data Refuge home page</a>.</p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+DataRescue is a broad, grassroots effort with support from numerous local and nationwide networks. <a href="http://www.ppehlab.org/datarefuge/">DataRefuge</a> and <a href="https://envirodatagov.org/">EDGI</a> partner with local organizers in supporting these events. See more of our institutional partners on the <a href="http://www.ppehlab.org/datarefuge#partners">DataRefuge home page</a>.
+=======
+Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. <a href="http://www.ppehlab.org/datarefuge/">DataRefuge</a> and <a href="https://envirodatagov.org/">EDGI</a> partner with local organizers in supporting these events. See more of our institutional partners on the <a href="http://www.ppehlab.org/datarefuge#partners">Data Refuge home page</a>.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>master</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
               
             </div>
           </div>
@@ -237,5 +247,5 @@
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-02-23 12:21:43
+Build Date UTC : 2017-02-24 17:32:32
 -->

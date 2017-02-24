@@ -69,7 +69,7 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../research/">Researching</a>
+        <a class="" href="../researching/">Researching</a>
         
     </li>
 <li>
@@ -82,25 +82,18 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../checking/">Checking</a>
-        
-    </li>
-<li>
-          
-            <li>
     <li class="toctree-l1 current">
         <a class="current" href="./">Bagging</a>
         
             <ul>
             
-                <li class="toctree-l3"><a href="#what-do-baggers-do">What do Baggers do?</a></li>
+                <li class="toctree-l3"><a href="#what-do-baggers-do">What Do Baggers Do?</a></li>
                 
             
-                <li class="toctree-l3"><a href="#getting-set-up-as-a-bagger">Getting set up as a Bagger</a></li>
+                <li class="toctree-l3"><a href="#getting-set-up-as-a-bagger">Getting Set up as a Bagger</a></li>
                 
             
-                <li class="toctree-l3"><a href="#claiming-a-dataset-for-bagging">Claiming a dataset for bagging</a></li>
+                <li class="toctree-l3"><a href="#claiming-a-dataset-for-bagging">Claiming a Dataset for Bagging</a></li>
                 
             
                 <li class="toctree-l3"><a href="#downloading-opening-the-dataset">Downloading &amp; Opening the Dataset</a></li>
@@ -109,13 +102,13 @@
                 <li class="toctree-l3"><a href="#quality-assurance">Quality Assurance</a></li>
                 
             
-                <li class="toctree-l3"><a href="#creating-the-bag">Creating the bag</a></li>
+                <li class="toctree-l3"><a href="#creating-the-bag">Creating the Bag</a></li>
                 
             
-                <li class="toctree-l3"><a href="#creating-the-zip-file-and-uploading-it">Creating the Zip file and uploading it</a></li>
+                <li class="toctree-l3"><a href="#creating-the-zip-file-and-uploading-it">Creating the Zip File and Uploading It</a></li>
                 
             
-                <li class="toctree-l3"><a href="#quality-assurance-and-finishing-up">Quality assurance and finishing up</a></li>
+                <li class="toctree-l3"><a href="#quality-assurance-and-finishing-up">Quality Assurance and Finishing Up</a></li>
                 
             
             </ul>
@@ -125,7 +118,7 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../metadata/">Describing</a>
+        <a class="" href="../describing/">Describing</a>
         
     </li>
 <li>
@@ -169,59 +162,56 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="what-do-baggers-do">What do Baggers do?</h2>
-<p>Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata and upload it to final DataRefuge destination.</p>
+                <h2 id="what-do-baggers-do">What Do Baggers Do?</h2>
+<p>Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata, and upload it to the final DataRefuge destination.</p>
 <div class = "note">
   <strong>Recommended Skills</strong> <br />  
   Consider this path if you have data or web archiving experience, or have strong tech skills and an attention to detail.
 </div>
 
-<h2 id="getting-set-up-as-a-bagger">Getting set up as a Bagger</h2>
+<h2 id="getting-set-up-as-a-bagger">Getting Set up as a Bagger</h2>
 <ul>
-<li>Skills recommended for this role: in general, Baggers need to have some tech skills and a good understanding of harvesting goals.</li>
-<li>Apply to become a Bagger:<ul>
-<li>By filling out <a href="https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform">this form</a><ul>
+<li>Skills recommended for this role: in general, Baggers need to have strong tech skills and a good understanding of harvesting goals.</li>
+<li>Apply to become a Bagger by filling out <a href="https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform">this form</a><ul>
 <li>Note that an email address is required to apply.</li>
 <li>Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see <a href="http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody">guidelines on archival best practices for Data Refuge</a> for more information).</li>
-</ul>
-</li>
 </ul>
 </li>
 <li>The organizers of the event (in-person or remote) will send you an invite to the <a href="http://www.archivers.space/">Archivers app</a>, which helps us coordinate all the data archiving work we do.<ul>
 <li>Click the invite link, and choose a user name and a password.</li>
 </ul>
 </li>
-<li>Make sure you have an account on the DataRefuge slack (or other slack team recommended by your event organizers) This is where people share expertise and answer each other's questions.</li>
-<li>Ask your event organizer to send you an invite</li>
-<li>Get set up with Python and the Python script to make a bag at the command line<br />
-<a href="https://github.com/LibraryOfCongress/bagit-python">https://github.com/LibraryOfCongress/bagit-python</a></li>
-<li>If you need any assistance:</li>
-<li>Talk to your DataRescue Guide if you are at an in-person event</li>
-<li>Or post questions on Slack in the #Baggers channel(or other channel recommended by your event organizers).</li>
+<li>Create an account on the DataRefuge Slack using this <a href="https://rauchg-slackin-qonsfhhvxs.now.sh/">slack-in</a> (or use the Slack team recommended by your event organizers). This is where people share expertise and answer each other's questions.   </li>
+<li>Get set up with Python and the Python script to make a bag at the command line: <a href="https://github.com/LibraryOfCongress/bagit-python">https://github.com/LibraryOfCongress/bagit-python</a></li>
+<li>If you need any assistance:<ul>
+<li>Talk to your DataRescue guide if you are at an in-person event.</li>
+<li>Or post questions on Slack in the #Baggers channel (or other channel recommended by your event organizers).</li>
 </ul>
-<h2 id="claiming-a-dataset-for-bagging">Claiming a dataset for bagging</h2>
+</li>
+</ul>
+<h2 id="claiming-a-dataset-for-bagging">Claiming a Dataset for Bagging</h2>
 <ul>
 <li>You will work on datasets that were harvested by Harvesters.</li>
-<li>Go to the <a href="http://www.archivers.space/">Archivers app</a>, click <code>URLS</code> and then <code>BAG</code>: all the URLs listed are ready to be bagged<ul>
-<li>Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.</li>
+<li>Go to the <a href="http://www.archivers.space/">Archivers app</a>, click <code>URLS</code> and then <code>BAG</code>: all the URLs listed are ready to be bagged.<ul>
+<li>Available URLs are the ones that have not been checked out by someone else, i.e. that do not have someone's name in the User column.</li>
 </ul>
 </li>
 <li>Select an available URL and click its UUID to get to the detailed view, then click <code>Check out this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.</li>
-<li>While you go through the bagging process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.</li>
+<li>While you go through the bagging process, make sure to report as much information as possible in the Archivers app, as this is the place where we collectively keep track of all the work done.</li>
 </ul>
 <div class = "note">
   <strong>Note: URL vs UUID</strong> <br />  
-  The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.
+  The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the URL with the data in question. The UUID will have been generated earlier in the process. UUID stands for Universal Unique Identifier.
 </div>
 
 <h2 id="downloading-opening-the-dataset">Downloading &amp; Opening the Dataset</h2>
 <ul>
-<li>The zipped dataset that is ready to be bagged is under <code>Harvest Url / Location</code> in the the Archivers app. Download it to your laptop, and unzip it.</li>
+<li>The zipped dataset that is ready to be bagged is under <code>Harvest Url / Location</code> in the the Archivers app. Download it to your laptop and unzip it.</li>
 <li>Extra check: Is this URL truly ready to bag?<ul>
-<li>While everybody is doing their best to provide accurate information, occasionally a URL will be presented as "ready to bag", but, in fact, is not. Symptoms include:</li>
-<li>There is no value in the "Harvest Url / Location" field</li>
-<li>There is a note in the Harvest section that seem to indicate that the harvest was only partially performed.  <ul>
-<li>In either case, uncheck the "Harvest" checkbox, and add a note in the Harvest note, indicating that the URL does not seem ready for bagging and needs to be reviewed by a Harvester.</li>
+<li>While everybody is doing their best to provide accurate information, occasionally a URL will be presented as "ready to bag" but, in fact, is not. Symptoms include:<ul>
+<li>There is no value in the "Harvest Url / Location" field.</li>
+<li>There is a note in the Harvest section that seems to indicate that the harvest was only partially performed.  </li>
+<li>In either case, uncheck the "Harvest" checkbox, and add a note in the <code>Notes From Harvest</code> field indicating that the URL does not seem ready for bagging and needs to be reviewed by a Harvester.</li>
 </ul>
 </li>
 </ul>
@@ -233,11 +223,11 @@
 <li>Go to the original URL and check that the dataset is complete and accurate.</li>
 <li>You also need to check that the dataset is meaningful, that is: "will the bag make sense to a scientist"?
 For instance, if a dataset is composed of a spreadsheet without any accompanying key or explanation of what the data represents, it might be completely impossible for a scientist to use it.</li>
-<li>Spot check to make sure the files open properly and are not faulty in any way.</li>
+<li>Spot-check to make sure the files open properly and are not faulty in any way.</li>
 </ul>
 </li>
-<li>Confirm contents of Json file:<ul>
-<li>The json should match the information from the Harvester and use the following format:  </li>
+<li>Confirm contents of JSON file:<ul>
+<li>The JSON should match the information from the Harvester and use the following format:  </li>
 </ul>
 </li>
 </ul>
@@ -261,17 +251,17 @@ For instance, if a dataset is composed of a spreadsheet without any accompanying
 
 <ul>
 <li>If you make any changes, make sure to save this as a .json file.</li>
-<li>Confirm that the json file is within the package with the dataset(s)</li>
+<li>Confirm that the JSON file is within the package with the dataset(s).</li>
 </ul>
-<h2 id="creating-the-bag">Creating the bag</h2>
+<h2 id="creating-the-bag">Creating the Bag</h2>
 <ul>
-<li>Run python command line script which creates the bag  </li>
+<li>Run the python command line script that creates the bag:</li>
 </ul>
 <pre><code>bagit.py --contact-name '[your name]' /directory/to/bag
 </code></pre>
 
 <ul>
-<li>You should be left with a 'data' folder (which contains the downloaded content and metadata file) and four separate bagit files<ul>
+<li>You should be left with a 'data' folder (which contains the downloaded content and metadata file) and four separate bagit files:<ul>
 <li>bag-info.txt</li>
 <li>bagit.txt</li>
 <li>manifest-md5.txt</li>
@@ -279,36 +269,36 @@ For instance, if a dataset is composed of a spreadsheet without any accompanying
 </ul>
 </li>
 <li><strong>IMPORTANT: It's crucial that you do not move or open the bag once you have created it. This may create hidden files that could make the bag invalid later.</strong></li>
-<li>Run the following python command line script to do an initial validation of a bag  </li>
+<li>Run the following python command line script to do an initial validation of a bag:</li>
 </ul>
 <pre><code>bagit.py --validate [directory/of/bag/to/validate]
 </code></pre>
 
 <ul>
-<li>If it comes back as valid, proceed to the next step of creating the zip file and uploading it. If it does not, make a note of the error, review your steps, and re-bag the file. If you continue to get invalid bags, please see a DataRescue guide or reach out to the #bagging Slack channel.</li>
+<li>If it comes back as valid, proceed to the next step of creating the zip file and uploading it. If it does not, make a note of the error, review your steps, and re-bag the file. If you continue to get invalid bags, please see a DataRescue guide or reach out in the Baggers Slack channel.</li>
 </ul>
-<h2 id="creating-the-zip-file-and-uploading-it">Creating the Zip file and uploading it</h2>
+<h2 id="creating-the-zip-file-and-uploading-it">Creating the Zip File and Uploading It</h2>
 <ul>
 <li>Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID.</li>
-<li><strong>Without moving the file</strong>, upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/ using the user ID and password provided</li>
+<li><strong>Without moving the file</strong>, upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/ using the user ID and password provided in the Archivers App</li>
 <li>Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)</li>
 <li>The application will return the location URL for your zip file.</li>
 <li>The syntax will be <code>[UrlStub]/[UUID].zip</code></li>
 <li>Cut and paste that URL to the <code>Bag URL</code> field in the Archivers app.</li>
 <li>Note that files beyond 5 Gigs must be uploaded through the more advanced <code>Generate Upload Token</code> option. This will require using the aws command line interface.</li>
-<li>Please talk to your DataRescue guide/post on Slack in Baggers channel, if you are having issues with this more advanced method.</li>
+<li>Please talk to your DataRescue guide or post on Slack in the Baggers channel, if you are having issues with this more advanced method.</li>
 </ul>
-<h2 id="quality-assurance-and-finishing-up">Quality assurance and finishing up</h2>
+<h2 id="quality-assurance-and-finishing-up">Quality Assurance and Finishing Up</h2>
 <ul>
-<li>Once the zip file has been fully uploaded, download the bag back to your computer (use the URL provided by the Archiver App) and run the following python command line script for validation</li>
+<li>Once the zip file has been fully uploaded, download the bag back to your computer (use the URL provided by the Archiver App) and run the following python command line script for validation:</li>
 </ul>
 <pre><code>bagit.py --validate [directory/of/bag/to/validate]
 </code></pre>
 
 <ul>
-<li>If it comes back as valid, open the bag and spot-check to make sure everything looks the same as when you uploaded it. (This will not affect the validity of the bags already uploaded). If all seems right, proceed to the rest of the quality assurance steps. If it does not come back as valid, make a note of the error, review your steps, and re-bag the file. If you continue to get invalid bags, please see a DataRescue guide or reach out to the #bagging Slack channel.</li>
+<li>If it comes back as valid, open the bag and spot-check to make sure everything looks the same as when you uploaded it (this will not affect the validity of the bags already uploaded). If all seems right, proceed to the rest of the quality assurance steps. If it does not come back as valid, make a note of the error, review your steps, and re-bag the file. If you continue to get invalid bags, please see a DataRescue guide or reach out in the Baggers Slack channel.</li>
 <li>Fill out as much information as possible in the <code>Notes From Bagging</code> field in the Archivers app to document your work.</li>
-<li>Check the checkbox that certifies this is a "well-checked bag"</li>
+<li>Check the checkbox that certifies this is a "well-checked bag".</li>
 <li>Check the Bag checkbox (on the right-hand side) to mark that step as completed.</li>
 <li>Click <code>Save</code>.</li>
 <li>Click <code>Check in URL</code> to release it and allow someone else to work on the next step.</li>
@@ -320,10 +310,10 @@ For instance, if a dataset is composed of a spreadsheet without any accompanying
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../metadata/" class="btn btn-neutral float-right" title="Describing">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../describing/" class="btn btn-neutral float-right" title="Describing">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../checking/" class="btn btn-neutral" title="Checking"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../harvesting/" class="btn btn-neutral" title="Harvesting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -349,10 +339,10 @@ For instance, if a dataset is composed of a spreadsheet without any accompanying
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../checking/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../harvesting/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../metadata/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../describing/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
