@@ -63,7 +63,7 @@ $ mkdocs serve
 
 Once a pull request has been merged into master, the gh-pages need to be regenerated. To do that, go to your local master branch at the command line and run: 
 ```
-mkdocs gh-deploy
+$ mkdocs gh-deploy
 ```
 
 _These guidelines are based on [Toronto Mesh](https://github.com/tomeshnet) and [EDGI's](https://github.com/edgi-govdata-archiving)._

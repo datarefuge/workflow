@@ -3,11 +3,10 @@ pages:
     - Home: index.md
     - Advance Work: advance-work.md
     - Seeding: seeding.md
-    - Researching: research.md
+    - Researching: researching.md
     - Harvesting: harvesting.md
-    - Checking: checking.md
     - Bagging: bagging.md
-    - Describing: metadata.md
+    - Describing: describing.md
     - Archivers App FAQ: faq.md
 theme: readthedocs
 theme_dir: custom_theme

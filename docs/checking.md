@@ -1,3 +1,5 @@
+**This document is currently unused, as the Archivers app does not have a separate Checking phase at this time. Instead we have added Checking instructions in the Bagging documentation.
+
 ## What Do Checkers Do?
 
 Checkers inspect a harvested dataset and make sure that it is complete. The main question Checkers need to answer is "will the bag make sense to a scientist"?

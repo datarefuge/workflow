@@ -89,7 +89,7 @@ Please read the DataRescue Workflow documentation for more info!
 
 ## 15) I have a process improvement that would make this go better!
 
-Great! Open an issue in your event's GitHub reposiory, or report it in the appropriate channel in your Slack team.
+Great! Open an issue in your event's GitHub repository, or report it in the appropriate channel in your Slack team.
 
 
 ## 16) How do I add a new event?
