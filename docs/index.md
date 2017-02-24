@@ -55,8 +55,5 @@ Describers create a descriptive record in the DataRefuge CKAN repository for eac
 
 ## Partners
 
-<<<<<<< HEAD
 DataRescue is a broad, grassroots effort with support from numerous local and nationwide networks. [DataRefuge](http://www.ppehlab.org/datarefuge/) and [EDGI](https://envirodatagov.org/) partner with local organizers in supporting these events. See more of our institutional partners on the [DataRefuge home page](http://www.ppehlab.org/datarefuge#partners).
-=======
-Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. [DataRefuge](http://www.ppehlab.org/datarefuge/) and [EDGI](https://envirodatagov.org/) partner with local organizers in supporting these events. See more of our institutional partners on the [Data Refuge home page](http://www.ppehlab.org/datarefuge#partners).
->>>>>>> master
+

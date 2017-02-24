@@ -5,7 +5,7 @@ pages:
     - Seeding: seeding.md
     - Researching: researching.md
     - Harvesting: harvesting.md
-    - Bagging: bagging.md
+    - Checking/Bagging: bagging.md
     - Describing: describing.md
     - Archivers App FAQ: faq.md
 theme: readthedocs

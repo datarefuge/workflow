@@ -7,6 +7,8 @@ Baggers do some quality assurance on the dataset to make sure the content is cor
   Consider this path if you have data or web archiving experience, or have strong tech skills and an attention to detail.
 </div>
 
+**Note that the Checker role is currently performed by Baggers (See Quality Assurance step below). Eventually we would like the two to be separate, but the Archivers app does not offer that capability at this time.** 
+
 ## Getting Set up as a Bagger
 
 - Skills recommended for this role: in general, Baggers need to have strong tech skills and a good understanding of harvesting goals.
