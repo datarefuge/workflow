@@ -1,39 +1,38 @@
-## What do Checkers do?
+## What Do Checkers Do?
 
-Checkers inspect a harvested dataset and make sure that it is complete. The main question the checkers need to answer is "will the bag make sense to a scientist"?
+Checkers inspect a harvested dataset and make sure that it is complete. The main question Checkers need to answer is "will the bag make sense to a scientist"?
 
 <div class = "note">
   <strong>Recommended Skills</strong> <br />  
   Consider this path if you have data or web archiving experience, or have strong tech skills and an attention to detail.
 </div>
 
-## Getting set up as a Checker
+## Getting Set up as a Checker
 
 - Skills recommended for this role: in general, Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.
-- Apply to become a Checker
-    - By filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform)
+- Apply to become a Checker by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform).
     - Note that an email address is required to apply.
     - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [guidelines on archival best practices for Data Refuge](http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody) for more information).
 - The organizers of the event (in-person or remote) will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
     - Click the invite link, and choose a user name and a password.
-- Make sure you have an account on the DataRefuge slack where people share expertise and answer each other's questions.
-    - Ask your event organizer to send you an invite
-- You might also need to have some other software and utilities set up on your computer, depending methods you will use, when needing to harvest supplemental materials to add to a dataset.
+- Make sure you have an account on the DataRefuge Slack where people share expertise and answer each other's questions.
+    - Ask your event organizer to send you an invite.
+- You may also need some other software and utilities set up on your computer, depending on the methods you will use, if you need to harvest supplemental materials to add to a dataset.
 - If you need any assistance:
-    - Talk to your DataRescue Guide if you are at an in-person event
+    - Talk to your DataRescue guide if you are at an in-person event.
     - Or post questions on Slack in the #Checkers channel.
 
-## Claiming a dataset for the checking step
+## Claiming a Dataset for the Checking Step
 
 - You will work on datasets that were harvested by Harvesters.
-- Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `FINALIZE`: all the URLs listed are ready to be checked
-    - Available URLs are the ones that have not been checked out by someone else, that is, that do not have someone's name in the User column.
+- Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `FINALIZE`: all the URLs listed are ready to be checked.
+    - Available URLs are ones that have not been checked out by someone else, i.e. that do not have someone's name in the User column.
 - Select an available URL and click its UUID to get to the detailed view, then click `Check out this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.
-- While you go through the checking process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.
+- While you go through the checking process, make sure to report as much information as possible in the Archivers app, as this is the place where we collectively keep track of all the work done.
 
 <div class = "note">
   <strong>Note: URL vs UUID</strong> <br />  
-  The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the url with the data in question. The UUID will have been generated earlier earlier in the process. UUID stands for Universal Unique Identifier.
+  The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the URL with the data in question. The UUID will have been generated earlier in the process. UUID stands for Universal Unique Identifier.
 </div>
 
 **Note: the next few steps below need to be reviewed in light of the new app-driven workflow**
