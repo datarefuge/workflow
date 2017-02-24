@@ -96,7 +96,7 @@ bagit.py --validate [directory/of/bag/to/validate]
 ## Creating the Zip File and Uploading It
 
 - Zip this entire collection (data folder and bagit files) and confirm that it is named with the row's UUID.
-- **Without moving the file**, upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/ using the user ID and password provided
+- **Without moving the file**, upload the zipped bag using the application http://drp-upload-bagger.herokuapp.com/ using the user ID and password provided in the Archivers App
   - Make sure to select the name of your event in the dropdown (and "remote" if you are working remotely)
 - The application will return the location URL for your zip file.
   - The syntax will be `[UrlStub]/[UUID].zip`
