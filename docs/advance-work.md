@@ -9,18 +9,19 @@ Before starting, your team should go through the following steps.
 ## The Basics
 
 - Read through the entire workflow documentation.
-- Sign up for the DataRefuge Slack and make sure there's a channel for your event.
-- Define your teams. They are usually: Seeders, Researchers, Harvesters, Checkers, Baggers, and Describers. Although in some cases, some of the roles can be conflated
+- Join the [DataRefuge Slack team](https://rauchg-slackin-qonsfhhvxs.now.sh/) and make sure there's a channel for your event.
+- Define your teams. They are usually: Seeders, Researchers, Harvesters, Checkers, Baggers, and Describers. Although in some cases, some of the roles can be conflated.
     - In particular, we recommend that Researchers and Harvesters work very closely with each other, e.g. in pairs or small groups. In some cases, a single person might be both a Researcher and a Harvester.
-    - Each team should have team leaders, aka "guides".
+    - Note that the Checker role is currently performed by Baggers. Eventually we would like the two to be separate, but the Archivers app does not offer that capability at this time.
+    - Each team should have team leaders, aka "guides". Talk to DataRefuge or EDGI organizers about the number of guides recommended for each team.
 - The event organizers and team leaders should schedule a call with DataRefuge to go over the process.
-- The event organizers and team leaders for the Seeders should also check in with EDGI folks for info about how to make sure that you're seeding and sorting effectively.
+- The event organizers and team leaders for the Seeders should also check in with EDGI folks for information about the primer and sub-primer documents and how to make sure that you're seeding and sorting effectively.
 
 **Note that the Describers role is being redeveloped at the moment, so it is currently not enabled.**
 
 ## Primer and Sub-Primer Documents
 
-- Make sure your event has its designated primer and sub-primer documents.
+- Make sure your event has its designated primer and sub-primer documents, as well as a seed progress spreadsheet.
 - Those documents will inform the work of the Seeders at your event. They will tell them which website or website sections they should be focusing on for URL discovery.
 - An EDGI coordinator will set up these documents for you.
 
@@ -70,7 +71,7 @@ Before starting, your team should go through the following steps.
 
 ## Other Supplies
 
-Make sure you have a few thumb drives to handle very large data sets (above 5 Gigs).
+Make sure you have a few thumb drives or other storage solution to handle very large data sets (above 5 Gigs).
 
 ## After the Event
 

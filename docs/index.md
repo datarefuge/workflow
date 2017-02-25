@@ -25,11 +25,11 @@ We are so glad that you are participating in this project!
 
 ### 1. [Seeding](seeding.md)
 
-Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders nominate them to the End-of-Term (EOT) project. Otherwise, they add them to the Uncrawlable spreadsheet using the project's Chrome Extension.
+Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders nominate them to the End-of-Term (EOT) project. Otherwise, they add them to the Archivers app using the project's Chrome Extension.
 
 ### 2. [Researching](researching.md)
 
-Researchers inspect the "uncrawlable" list to confirm that Seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested. [Research.md](research.md) describes this process in more detail.
+Researchers inspect the "uncrawlable" list to confirm that Seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested. [Researching.md](researching.md) describes this process in more detail.
 
 *We recommend that Researchers and Harvesters (see below) work together in pairs, as much communication is needed between the two roles. In some cases, one person will fulfill both roles.*
 

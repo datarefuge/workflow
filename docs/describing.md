@@ -1,6 +1,6 @@
 ## What Do Describers Do?
 
-Describers create a descriptive record in the DataRefuge CKAN repository for each bag. Then they link the record to the bag, and make the record public.
+Describers create a descriptive record in the DataRefuge CKAN repository for each bag. Then they link the record to the bag and make the record public.
 
 <div class = "note">
   <strong>Recommended Skills</strong> <br />  
@@ -29,7 +29,7 @@ Describers create a descriptive record in the DataRefuge CKAN repository for eac
 - You will work on datasets that were bagged by Baggers.
 - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `DESCRIBE`: all the URLs listed are ready to be added to the CKAN instance.
     - Available URLs are ones that have not been checked out by someone else, i.e. that do not have someone's name in the User column.
-- Select an available URL and click its UUID to get to the detailed view, then click `Check out this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.
+- Select an available URL and click its UUID to get to the detailed view, then click `Checkout this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.
 
 <div class = "note">
   <strong>Note: URL vs UUID</strong> <br />  
@@ -98,9 +98,9 @@ These sites are sources of scientific metadata standards to review when choosing
     - The syntax will be:
      `https://www.datarefuge.org//dataset/[datasetNameGeneratedByCkan]`
 - Add any useful notes to document your work.
-- Check the Describe checkbox (on the right-hand side) to mark that step as completed.
+- Check the Describe checkbox (far right on the same line as the "Describe" section heading) to mark that step as completed.
 - Click `Save`.
-- Click `Check in URL`, to release it.
+- Click `Checkin this URL`, to release it.
 
 ## Possible Tools: JSON Viewers
 

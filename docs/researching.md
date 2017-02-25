@@ -10,8 +10,8 @@ Researchers review "uncrawlables" identified during [Seeding](seeding.md), confi
 ## Getting Set up as a Researcher
 
 - Event organizers (in-person or remote) will tell you how to volunteer for the Researcher role, either through Slack or a form.
-    - As a result, they will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
-    - Click the invite link, and choose a user name and a password.
+    - They will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
+    - Click the invite link, and choose a username and a password. It is helpful to use the same username on the app and Slack.
 - Create an account on the DataRefuge Slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) or use the Slack team recommended by your event organizers. This is where people share expertise and answer each other's questions. 
 - If you need any assistance:
     - Talk to your DataRescue guide if you are at an in-person event
@@ -28,7 +28,8 @@ Researchers review "uncrawlables" identified during [Seeding](seeding.md), confi
 - Researchers work on datasets that were listed as uncrawlable by Seeders.
 - Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `RESEARCH`: all the URLs listed are ready to be researched.
     - Available URLs are ones that have not been checked out by someone else, i.e. that do not have someone's name in the User column.
-- Select an available URL and click its UUID to get to the detailed view, then click `Check out this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.
+    - Priority is indicated by the “!” field.  The range is from 0 to 10, with 10 being highest priority.
+- Select an available URL (you may decide to select a URL relevant to your area of expertise or assigned a high priority) and click its UUID to get to the detailed view, then click `Checkout this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.
 - While you go through the research process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.
 
 <div class = "note">
@@ -38,7 +39,7 @@ Researchers review "uncrawlables" identified during [Seeding](seeding.md), confi
 
 ## Evaluating the Data
 
-Go to the URL, and start inspecting the content.
+Go to the URL and start inspecting the content.
 
 ### Is the data actually crawlable?
 
@@ -50,7 +51,7 @@ Again, see [EDGI's Guides](https://edgi-govdata-archiving.github.io/guides/) for
 Some additional technical notes for answering this:
 
 - There is no specific file size cutoff for what is crawlable, but large files should be manually captured anyway.
-- File types like ZIP, PDF, Excel, etc. are crawlable if they are linked.
+- File types like ZIP, PDF, Excel, etc. are crawlable if they are linked, but it may be useful to archive them if they represent a meaningful dataset, or if there are many of them on a page.
 - The crawler can only follow HTTP links that appear directly in the DOM at load time. (That is, they should appear as `<a href ...>` tags in the page source.)
 If links are added by JavaScript or require submitting a form, they are not crawlable.
 - The crawler does not tolerate web frames (but it is straightforward to inspect a page to obtain the content in the frame directly, and then nominate *that*).
@@ -60,10 +61,9 @@ If links are added by JavaScript or require submitting a form, they are not craw
 
 If the URL is crawlable or you locate a crawlable URL that accesses the underlying dataset:
 
-- Nominate it using our
-  [Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok) or the [bookmarklet](http://digital2.library.unt.edu/nomination/eth2016/about/).
-- Click the `Do not harvest` checkbox in the Archivers app.
-<!-- why don't we ask that any more?  - Fill out cell "Seeded?" = "yes" and tell what URL you seeded. -->
+- Nominate it using the [EDGI Nomination Chrome Extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok).
+- Click the `Do not harvest` checkbox in the Research section in the Archivers app.
+- Click `Checkin this URL` and move on to another URL.
 
 **NO:**
 
@@ -72,10 +72,9 @@ If it is confirmed not crawlable:
 
 - Search agency websites and data.gov for dataset entry points for your dataset collection.
     - Tips: Try to understand what datasets are underlying the web pages. Look for related entries in the Archivers app, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.
-    - Make note of any better entry point in the `Recommended Approach`field, along with any other recommendations on how to proceed with this harvest.
-<!-- - Add your suggested url for harvesting the data to spreadsheet (in cell "Harvestable Data"), REALLY IMPORTANT!-->
-- Add other information that could help the Harvester, such as the format (SQL, FTP, ZIP, PDF collections, etc.), approximate size, details about what you found, etc.
-- Search for related URLs that might already have been listed in the Archivers app that might be covered by the same approach, so as not to duplicate work. You can search for them in the `Link URL` field.
+    - Make note of any better entry point in the `Recommended Approach for Harvesting Data` field, along with any other recommendations on how to proceed with this harvest.
+- Fill out all of the fields in the Research section to the best of your ability.
+- Occasionally, URL's will have been nominated separately, but are actually different interfaces built on the same dataset. We want to scrape all of this data and do it exactly one time. The `Link URL` field lets you search for associated URLs; add any URLs that should be grouped into a single record.
 
 **YES and NO:**
 
@@ -88,9 +87,9 @@ For example, FTP address, mixed content, big data sets:
 ## Finishing Up
 
 - In the Archivers app, make sure to fill out as much information as possible to document your work.
-- Check the Research checkbox (on the right-hand side) to mark that step as completed.
+- Check the Research checkbox (far right on the same line as the "Research" section heading) to mark that step as completed.
 - Click `Save`.
-- Click `Check in URL`, to release it and allow someone else to work on the next step.
+- Click `Checkin this URL`, to release it and allow someone else to work on the next step.
 - You're done! Move on to the next URL!
 
 <!-- HOW DOES THIS PROCESS WORK NOW:    - If ever a day or more passed  since you originally claimed the item, update the date to today's date.
