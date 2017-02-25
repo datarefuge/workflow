@@ -168,8 +168,8 @@
 <h2 id="getting-set-up-as-a-researcher">Getting Set up as a Researcher</h2>
 <ul>
 <li>Event organizers (in-person or remote) will tell you how to volunteer for the Researcher role, either through Slack or a form.<ul>
-<li>As a result, they will send you an invite to the <a href="http://www.archivers.space/">Archivers app</a>, which helps us coordinate all the data archiving work we do.</li>
-<li>Click the invite link, and choose a user name and a password.</li>
+<li>They will send you an invite to the <a href="http://www.archivers.space/">Archivers app</a>, which helps us coordinate all the data archiving work we do.</li>
+<li>Click the invite link, and choose a username and a password. It is helpful to use the same username on the app and Slack.</li>
 </ul>
 </li>
 <li>Create an account on the DataRefuge Slack using this <a href="https://rauchg-slackin-qonsfhhvxs.now.sh/">slack-in</a> or use the Slack team recommended by your event organizers. This is where people share expertise and answer each other's questions. </li>
@@ -190,9 +190,10 @@
 <li>Researchers work on datasets that were listed as uncrawlable by Seeders.</li>
 <li>Go to the <a href="http://www.archivers.space/">Archivers app</a>, click <code>URLS</code> and then <code>RESEARCH</code>: all the URLs listed are ready to be researched.<ul>
 <li>Available URLs are ones that have not been checked out by someone else, i.e. that do not have someone's name in the User column.</li>
+<li>Priority is indicated by the “!” field.  The range is from 0 to 10, with 10 being highest priority.</li>
 </ul>
 </li>
-<li>Select an available URL and click its UUID to get to the detailed view, then click <code>Check out this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.</li>
+<li>Select an available URL (you may decide to select a URL relevant to your area of expertise or assigned a high priority) and click its UUID to get to the detailed view, then click <code>Checkout this URL</code>. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.</li>
 <li>While you go through the research process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.</li>
 </ul>
 <div class = "note">
@@ -201,7 +202,7 @@
 </div>
 
 <h2 id="evaluating-the-data">Evaluating the Data</h2>
-<p>Go to the URL, and start inspecting the content.</p>
+<p>Go to the URL and start inspecting the content.</p>
 <h3 id="is-the-data-actually-crawlable">Is the data actually crawlable?</h3>
 <p>Again, see <a href="https://edgi-govdata-archiving.github.io/guides/">EDGI's Guides</a> for a mostly non-technical introduction to the crawler:</p>
 <ul>
@@ -211,7 +212,7 @@
 <p>Some additional technical notes for answering this:</p>
 <ul>
 <li>There is no specific file size cutoff for what is crawlable, but large files should be manually captured anyway.</li>
-<li>File types like ZIP, PDF, Excel, etc. are crawlable if they are linked.</li>
+<li>File types like ZIP, PDF, Excel, etc. are crawlable if they are linked, but it may be useful to archive them if they represent a meaningful dataset, or if there are many of them on a page.</li>
 <li>The crawler can only follow HTTP links that appear directly in the DOM at load time. (That is, they should appear as <code>&lt;a href ...&gt;</code> tags in the page source.)
 If links are added by JavaScript or require submitting a form, they are not crawlable.</li>
 <li>The crawler does not tolerate web frames (but it is straightforward to inspect a page to obtain the content in the frame directly, and then nominate <em>that</em>).</li>
@@ -220,10 +221,9 @@ If links are added by JavaScript or require submitting a form, they are not craw
 <p><strong>YES:</strong></p>
 <p>If the URL is crawlable or you locate a crawlable URL that accesses the underlying dataset:</p>
 <ul>
-<li>Nominate it using our
-  <a href="https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok">Chrome extension</a> or the <a href="http://digital2.library.unt.edu/nomination/eth2016/about/">bookmarklet</a>.</li>
-<li>Click the <code>Do not harvest</code> checkbox in the Archivers app.
-<!-- why don't we ask that any more?  - Fill out cell "Seeded?" = "yes" and tell what URL you seeded. --></li>
+<li>Nominate it using the <a href="https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok">EDGI Nomination Chrome Extension</a>.</li>
+<li>Click the <code>Do not harvest</code> checkbox in the Research section in the Archivers app.</li>
+<li>Click <code>Checkin this URL</code> and move on to another URL.</li>
 </ul>
 <p><strong>NO:</strong></p>
 <p>If it is confirmed not crawlable:
@@ -231,12 +231,11 @@ If links are added by JavaScript or require submitting a form, they are not craw
 <ul>
 <li>Search agency websites and data.gov for dataset entry points for your dataset collection.<ul>
 <li>Tips: Try to understand what datasets are underlying the web pages. Look for related entries in the Archivers app, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.</li>
-<li>Make note of any better entry point in the <code>Recommended Approach</code>field, along with any other recommendations on how to proceed with this harvest.
-<!-- - Add your suggested url for harvesting the data to spreadsheet (in cell "Harvestable Data"), REALLY IMPORTANT!--></li>
+<li>Make note of any better entry point in the <code>Recommended Approach for Harvesting Data</code> field, along with any other recommendations on how to proceed with this harvest.</li>
 </ul>
 </li>
-<li>Add other information that could help the Harvester, such as the format (SQL, FTP, ZIP, PDF collections, etc.), approximate size, details about what you found, etc.</li>
-<li>Search for related URLs that might already have been listed in the Archivers app that might be covered by the same approach, so as not to duplicate work. You can search for them in the <code>Link URL</code> field.</li>
+<li>Fill out all of the fields in the Research section to the best of your ability.</li>
+<li>Occasionally, URL's will have been nominated separately, but are actually different interfaces built on the same dataset. We want to scrape all of this data and do it exactly one time. The <code>Link URL</code> field lets you search for associated URLs; add any URLs that should be grouped into a single record.</li>
 </ul>
 <p><strong>YES and NO:</strong></p>
 <p>For example, FTP address, mixed content, big data sets:
@@ -248,9 +247,9 @@ If links are added by JavaScript or require submitting a form, they are not craw
 <h2 id="finishing-up">Finishing Up</h2>
 <ul>
 <li>In the Archivers app, make sure to fill out as much information as possible to document your work.</li>
-<li>Check the Research checkbox (on the right-hand side) to mark that step as completed.</li>
+<li>Check the Research checkbox (far right on the same line as the "Research" section heading) to mark that step as completed.</li>
 <li>Click <code>Save</code>.</li>
-<li>Click <code>Check in URL</code>, to release it and allow someone else to work on the next step.</li>
+<li>Click <code>Checkin this URL</code>, to release it and allow someone else to work on the next step.</li>
 <li>You're done! Move on to the next URL!</li>
 </ul>
 <!-- HOW DOES THIS PROCESS WORK NOW:    - If ever a day or more passed  since you originally claimed the item, update the date to today's date.
