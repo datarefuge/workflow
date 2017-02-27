@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../extra.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -113,6 +114,9 @@
                 
             
                 <li class="toctree-l3"><a href="#linking-the-ckan-record-to-the-bag">Linking the CKAN Record to the Bag</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#adding-the-ckan-record-to-the-data-rescue-events-group">Adding the CKAN record to the "Data Rescue Events" group</a></li>
                 
             
                 <li class="toctree-l3"><a href="#finishing-up">Finishing Up</a></li>
@@ -236,6 +240,7 @@
 <li>Click "Add Dataset".</li>
 <li>Start entering metadata in the new record, following the metadata template below:<ul>
 <li><strong>Title:</strong> Title of dataset, e.g., "Form EIA-411 Data".</li>
+<li><strong>Custom Text: DO NOT Fill OUT (this field does not function properly at this time)</strong></li>
 <li><strong>Description:</strong> Usually copied and pasted description found on webpage.</li>
 <li><strong>Tags:</strong> Basic descriptive keywords, e.g., "electric reliability", "electricity", "power systems".</li>
 <li><strong>License:</strong> Choose value in dropdown. If there is no indicated license, select "Other - Public Domain".</li>
@@ -285,8 +290,15 @@
 <li>Click "Finish".</li>
 <li>Test that the link you just created works by clicking it, and verifying that the file begins to download.<ul>
 <li>Note that you don't need to finish downloading it again.</li>
+<li>Alternatively, use WGET to test without downloading: <code>wget --spider [BAG URL]</code></li>
 </ul>
 </li>
+</ul>
+<h2 id="adding-the-ckan-record-to-the-data-rescue-events-group">Adding the CKAN record to the "Data Rescue Events" group</h2>
+<ul>
+<li>Once the record is created, click the tab <code>Groups</code>  </li>
+<li>Select <code>Data Rescue Events</code> in the dropdown and click <code>Add to Group</code>. </li>
+<li>In the future, it will be useful to be able to differentiate that among different groups of records based on how they were generated. </li>
 </ul>
 <h2 id="finishing-up">Finishing Up</h2>
 <ul>
