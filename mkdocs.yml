@@ -10,3 +10,5 @@ pages:
     - Archivers App FAQ: faq.md
 theme: readthedocs
 theme_dir: custom_theme
+extra_css:
+    - css/extra.css
