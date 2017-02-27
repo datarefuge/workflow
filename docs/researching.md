@@ -12,10 +12,17 @@ Researchers review "uncrawlables" identified during [Seeding](seeding.md), confi
 - Event organizers (in-person or remote) will tell you how to volunteer for the Researcher role, either through Slack or a form.
     - They will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
     - Click the invite link, and choose a username and a password. It is helpful to use the same username on the app and Slack.
-- Create an account on the DataRefuge Slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) or use the Slack team recommended by your event organizers. This is where people share expertise and answer each other's questions. 
+- Create an account on the DataRefuge Slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) or use the Slack team recommended by your event organizers. This is where people share expertise and answer each other's questions.
 - If you need any assistance:
     - Talk to your DataRescue guide if you are at an in-person event
     - Or post questions on Slack in the `#general` channel (or other channel recommended by your event organizers).
+
+<div class = "note">
+  <strong>Using Archivers App</strong> <br />  
+  Review our walkthrough video below and refer to the <a href="/faq/">FAQ</a> for any additional questions about the <a href="http://www.archivers.space" target="_blank">Archivers app</a><!---_--->. <br />
+  &nbsp;<br />
+  <p style="text-align:center"><iframe width="520" height="315" src="https://www.youtube.com/embed/tvSSILnHnpA" frameborder="0" allowfullscreen></iframe></p>
+</div>
 
 ## Researchers and Harvesters
 

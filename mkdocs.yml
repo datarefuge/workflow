@@ -7,7 +7,8 @@ pages:
     - Harvesting: harvesting.md
     - Checking/Bagging: bagging.md
     - Describing: describing.md
-    - Archivers App FAQ: faq.md
+    - Additional Resources:
+      - Archivers App FAQ: faq.md
 theme: readthedocs
 theme_dir: custom_theme
 extra_css:

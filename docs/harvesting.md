@@ -24,12 +24,19 @@ Harvesters take the "uncrawlable" data and try to figure out how to actually cap
 - The organizers of the event (in-person or remote) will tell you how to volunteer for the Harvester role, either through Slack or a form.
     - They will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
     - Click the invite link, and choose a username and a password. It is helpful to use the same username on the app and Slack.
-- Create an account on the DataRefuge Slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) (or use the Slack team recommended by your event organizers). This is where people share expertise and answer each other's questions. 
+- Create an account on the DataRefuge Slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) (or use the Slack team recommended by your event organizers). This is where people share expertise and answer each other's questions.
 - You might also need other software and utilities set up on your computer, depending on the harvesting methods you use.
 - Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
     - If you need any assistance:
         - Talk to your DataRescue guide if you are at an in-person event
         - Or post questions on Slack in the #Researchers/Harvesters channel (or other channel recommended by your event organizers).
+
+<div class = "note">
+  <strong>Using Archivers App</strong> <br />  
+  Review our walkthrough video below and refer to the <a href="/faq/">FAQ</a> for any additional questions about the <a href="http://www.archivers.space" target="_blank">Archivers app</a><!---_--->. <br />
+  &nbsp;<br />
+  <p style="text-align:center"><iframe width="520" height="315" src="https://www.youtube.com/embed/tvSSILnHnpA" frameborder="0" allowfullscreen></iframe></p>
+</div>
 
 ## Harvesting Toolkit
 
