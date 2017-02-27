@@ -89,8 +89,9 @@ These sites are sources of scientific metadata standards to review when choosing
     - **Name:** filename, e.g., `77DD634E-EBCE-412E-88B5-A02B0EF12AF6_2.zip`.
     - **Format:** select "Zip".
 - Click "Finish".
-- Test that the link you just created works by clicking it, and verifying that the file begins to download.
-    - Note that you don't need to finish downloading it again.
+- Test that the link you just created works:
+    - Click it and verify that the file begins to download (Note that you don't need to finish downloading it again)
+    - Alternatively, use WGET to test without downloading: `wget --spider [BAG URL]`
 
 ## Finishing Up
 
