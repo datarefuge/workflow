@@ -55,6 +55,7 @@ Describers create a descriptive record in the DataRefuge CKAN repository for eac
 - Click "Add Dataset".
 - Start entering metadata in the new record, following the metadata template below:
     - **Title:** Title of dataset, e.g., "Form EIA-411 Data".
+    - __Custom Text: DO NOT Fill OUT (this field does not function properly at this time)__
     - **Description:** Usually copied and pasted description found on webpage.
     - **Tags:** Basic descriptive keywords, e.g., "electric reliability", "electricity", "power systems".
     - **License:** Choose value in dropdown. If there is no indicated license, select "Other - Public Domain".
@@ -89,9 +90,15 @@ These sites are sources of scientific metadata standards to review when choosing
     - **Name:** filename, e.g., `77DD634E-EBCE-412E-88B5-A02B0EF12AF6_2.zip`.
     - **Format:** select "Zip".
 - Click "Finish".
-- Test that the link you just created works:
-    - Click it and verify that the file begins to download (Note that you don't need to finish downloading it again)
+- Test that the link you just created works by clicking it, and verifying that the file begins to download.
+    - Note that you don't need to finish downloading it again.
     - Alternatively, use WGET to test without downloading: `wget --spider [BAG URL]`
+   
+## Adding the CKAN record to the "Data Rescue Events" group
+
+- Once the record is created, click the tab `Groups`  
+- Select `Data Rescue Events` in the dropdown and click `Add to Group`. 
+- In the future, it will be useful to be able to differentiate that among different groups of records based on how they were generated. 
 
 ## Finishing Up
 
