@@ -7,11 +7,10 @@ Baggers do some quality assurance on the dataset to make sure the content is cor
   Consider this path if you have data or web archiving experience, or have strong tech skills and an attention to detail.
 </div>
 
-**Note that the Checker role is currently performed by Baggers (See Quality Assurance step below). Eventually we would like the two to be separate, but the Archivers app does not offer that capability at this time.** 
+**Note that the Checker role is currently performed by Baggers (See Quality Assurance step below). Eventually we would like the two to be separate, but the Archivers app does not offer that capability at this time.**
 
 ## Getting Set up as a Bagger
 
-- Skills recommended for this role: in general, Baggers need to have strong tech skills and a good understanding of harvesting goals.
 - Apply to become a Bagger by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform)
   	- Note that an email address is required to apply.
 	- Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [guidelines on archival best practices for Data Refuge](http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody) for more information).

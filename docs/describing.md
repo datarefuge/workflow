@@ -4,12 +4,11 @@ Describers create a descriptive record in the DataRefuge CKAN repository for eac
 
 <div class = "note">
   <strong>Recommended Skills</strong> <br />  
-  Consider this path if you have experience working with scientific data (particularly climate or environmental data) or with creating metadata.
+  Consider this path if you have experience working with scientific data (particularly climate or environmental data) or with metadata practices.
 </div>
 
 ## Getting Set up as a Describer
 
-- Skills recommended for this role: in general, Describers need to have a good handle on metadata practices.
 - Apply to become a Describer by asking your DataRescue guide or by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform).
     - Note that an email address is required to apply.
     - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [guidelines on archival best practices for Data Refuge](http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody) for more information).
@@ -40,7 +39,7 @@ Describers create a descriptive record in the DataRefuge CKAN repository for eac
 
 - In the Archivers app, scroll down to the `Describe` section.
 - The URL of the zipped bag is in the `Bag Url / Location` field.
-- Cut and paste that URL into your browser and download it. 
+- Cut and paste that URL into your browser and download it.
 - After downloading, unzip it.
 - Spot-check some of the files (make sure they open and look normal, i.e., not garbled).
 - If the file fails QA:
@@ -93,12 +92,12 @@ These sites are sources of scientific metadata standards to review when choosing
 - Test that the link you just created works by clicking it, and verifying that the file begins to download.
     - Note that you don't need to finish downloading it again.
     - Alternatively, use WGET to test without downloading: `wget --spider [BAG URL]`
-   
+
 ## Adding the CKAN record to the "Data Rescue Events" group
 
 - Once the record is created, click the tab `Groups`  
-- Select `Data Rescue Events` in the dropdown and click `Add to Group`. 
-- In the future, it will be useful to be able to differentiate that among different groups of records based on how they were generated. 
+- Select `Data Rescue Events` in the dropdown and click `Add to Group`.
+- In the future, it will be useful to be able to differentiate that among different groups of records based on how they were generated.
 
 ## Finishing Up
 

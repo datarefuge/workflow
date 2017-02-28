@@ -1,4 +1,4 @@
-**This document is currently unused, as the Archivers app does not have a separate Checking phase at this time. Instead we have added Checking instructions in the Bagging documentation.
+**This document is currently unused, as the Archivers app does not have a separate Checking phase at this time. Instead we have added Checking instructions in the Bagging documentation.**
 
 ## What Do Checkers Do?
 
@@ -11,7 +11,6 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
 
 ## Getting Set up as a Checker
 
-- Skills recommended for this role: in general, Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.
 - Apply to become a Checker by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform).
     - Note that an email address is required to apply.
     - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [guidelines on archival best practices for Data Refuge](http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody) for more information).
