@@ -40,7 +40,7 @@ Baggers do some quality assurance on the dataset to make sure the content is cor
 - The zipped dataset that is ready to be bagged is under `Harvest Url / Location` in the the Archivers app. Download it to your laptop and unzip it.
 - Extra check: Is this URL truly ready to bag?
     - While everybody is doing their best to provide accurate information, occasionally a URL will be presented as "ready to bag" but, in fact, is not. Symptoms include:
-	    - There is no value in the "Harvest Url / Location" field.
+	    - There is no value in the "Harvest Url / Location" field.  _Please note that even though the Archivers app field is not populated, in some case you might still be able to locate the file on our cloud storage. Check for the file presence by using the following URL structure: `https://drp-upload.s3.amazonaws.com/remote/ + [UUID] + .zip`, so for instance: `https://drp-upload.s3.amazonaws.com/remote/13E0A60E-2324-4321-927D-8496F136B2B5.zip`
 	    - There is a note in the Harvest section that seems to indicate that the harvest was only partially performed.  
 	    - In either case, uncheck the "Harvest" checkbox, and add a note in the `Notes From Harvest` field indicating that the URL does not seem ready for bagging and needs to be reviewed by a Harvester.
 
