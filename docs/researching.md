@@ -64,7 +64,7 @@ If links are added by JavaScript or require submitting a form, they are not craw
 - The crawler does not tolerate web frames (but it is straightforward to inspect a page to obtain the content in the frame directly, and then nominate *that*).
 - The crawler recently added the ability to crawl FTP, but we will not rely on this; we will treat resources served over FTP as uncrawlable.
 
-**YES:**
+#### YES
 
 If the URL is crawlable or you locate a crawlable URL that accesses the underlying dataset:
 
@@ -72,10 +72,9 @@ If the URL is crawlable or you locate a crawlable URL that accesses the underlyi
 - Click the `Do not harvest` checkbox in the Research section in the Archivers app.
 - Click `Checkin this URL` and move on to another URL.
 
-**NO:**
+#### NO
 
 If it is confirmed not crawlable:
-<!-- Why don't we ask that any more? - Fill out the cell "Can it be crawled?" = "no" in Researcher section of the spreadsheet-->
 
 - Search agency websites and data.gov for dataset entry points for your dataset collection.
     - Tips: Try to understand what datasets are underlying the web pages. Look for related entries in the Archivers app, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.
@@ -83,7 +82,7 @@ If it is confirmed not crawlable:
 - Fill out all of the fields in the Research section to the best of your ability.
 - Occasionally, URL's will have been nominated separately, but are actually different interfaces built on the same dataset. We want to scrape all of this data and do it exactly one time. The `Link URL` field lets you search for associated URLs; add any URLs that should be grouped into a single record.
 
-**YES and NO:**
+#### YES and NO
 
 For example, FTP address, mixed content, big data sets:
 <!--  - Fill out the cell "Can it be crawled?" = "yes & no" in Researcher section of the spreadsheet-->
