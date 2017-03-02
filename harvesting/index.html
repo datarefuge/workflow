@@ -90,35 +90,22 @@
                 <li class="toctree-l3"><a href="#getting-set-up-as-a-harvester">Getting Set up as a Harvester</a></li>
                 
             
-                <li class="toctree-l3"><a href="#harvesting-toolkit">Harvesting Toolkit</a></li>
+                <li class="toctree-l3"><a href="#harvesting-tools">Harvesting Tools</a></li>
                 
             
                 <li class="toctree-l3"><a href="#1-claiming-a-dataset-to-harvest">1. Claiming a Dataset to Harvest</a></li>
                 
             
-                <li class="toctree-l3"><a href="#2a-classify-source-type-archivability">2a. Classify Source Type &amp; Archivability</a></li>
+                <li class="toctree-l3"><a href="#2-investigate-the-dataset">2. Investigate the Dataset</a></li>
                 
-                    <li><a class="toctree-l4" href="#check-for-false-positives-content-that-is-in-fact-crawlable">Check for False-Positives (Content That Is in Fact Crawlable)</a></li>
+                    <li><a class="toctree-l4" href="#2a-classify-source-type-archivability">2a. Classify Source Type &amp; Archivability</a></li>
                 
-                    <li><a class="toctree-l4" href="#some-things-to-think-about-while-reviewing-a-url">Some Things to Think About While Reviewing a URL</a></li>
-                
-                    <li><a class="toctree-l4" href="#check-the-terms-of-service">Check the Terms of Service!!!</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#2b-determine-scale-of-the-dataset">2b. Determine Scale of the Dataset</a></li>
+                    <li><a class="toctree-l4" href="#2b-determine-scale-of-the-dataset">2b. Determine Scale of the Dataset</a></li>
                 
             
                 <li class="toctree-l3"><a href="#3-generate-html-json-directory">3. Generate HTML, JSON &amp; Directory</a></li>
                 
-                    <li><a class="toctree-l4" href="#uuid">UUID</a></li>
-                
-                    <li><a class="toctree-l4" href="#uuidhtml-file">[UUID].html file</a></li>
-                
-                    <li><a class="toctree-l4" href="#uuidjson-file">[UUID].json file</a></li>
-                
-                    <li><a class="toctree-l4" href="#uuidtools">[UUID]/tools/</a></li>
-                
-                    <li><a class="toctree-l4" href="#uuiddata">[UUID]/data/</a></li>
+                    <li><a class="toctree-l4" href="#folder-structure">Folder Structure</a></li>
                 
             
                 <li class="toctree-l3"><a href="#4-acquire-the-data">4. Acquire the Data</a></li>
@@ -133,7 +120,8 @@
                 
                     <li><a class="toctree-l4" href="#4e-automated-full-browser">4e. Automated Full Browser</a></li>
                 
-                    <li><a class="toctree-l4" href="#tips">Tips</a></li>
+            
+                <li class="toctree-l3"><a href="#tips">Tips</a></li>
                 
             
                 <li class="toctree-l3"><a href="#5-complete-uuidjson-add-tools">5. Complete [UUID].json &amp; Add /tools</a></li>
@@ -268,8 +256,8 @@
   <p style="text-align:center"><iframe width="520" height="315" src="https://www.youtube.com/embed/tvSSILnHnpA" frameborder="0" allowfullscreen></iframe></p>
 </div>
 
-<h2 id="harvesting-toolkit">Harvesting Toolkit</h2>
-<p>For in-depth information on tools and techniques to harvest open data, please check EDGI's extensive <a href="https://github.com/edgi-govdata-archiving/harvesting-tools">toolkit</a>.</p>
+<h2 id="harvesting-tools">Harvesting Tools</h2>
+<p>For in-depth information on tools and techniques to harvest open data, please check EDGI's extensive <a href="https://github.com/edgi-govdata-archiving/harvesting-tools">harvesting tools</a>.</p>
 <h2 id="1-claiming-a-dataset-to-harvest">1. Claiming a Dataset to Harvest</h2>
 <ul>
 <li>You will work on datasets that were confirmed as uncrawlable by Researchers.</li>
@@ -285,27 +273,26 @@
   The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the URL with the data in question. The UUID will have been generated earlier in the process. UUID stands for Universal Unique Identifier.
 </div>
 
-<h2 id="2a-classify-source-type-archivability">2a. Classify Source Type &amp; Archivability</h2>
+<h2 id="2-investigate-the-dataset">2. Investigate the Dataset</h2>
+<h3 id="2a-classify-source-type-archivability">2a. Classify Source Type &amp; Archivability</h3>
 <p>Before doing anything, take a minute to understand what you're looking at. It's usually best to do a quick check of the URL to confirm that this data in fact not crawlable. Often as part of the harvesting team, you'll be the first person with a higher level of technical knowledge to review the URL in question.</p>
-<h3 id="check-for-false-positives-content-that-is-in-fact-crawlable">Check for False-Positives (Content That Is in Fact Crawlable)</h3>
+<h4 id="check-for-false-positives-content-that-is-in-fact-crawlable">Check for False-Positives (Content That Is in Fact Crawlable)</h4>
 <p>Generally, any URL that returns standard HTML, links to more <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">HTML mimetype pages</a>, and contains little-to-no non-HTML content, is crawlable. "View source" from your browser of choice will help see what the crawler itself is seeing. If in fact the data can be crawled, nominate it to the Internet Archive using the <a href="https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok">EDGI Nomination Chrome Extension</a>, click the <code>Do not harvest</code> checkbox in the Research section of the Archivers app, click <code>Checkin this URL</code>, and move on to another URL.</p>
-<h3 id="some-things-to-think-about-while-reviewing-a-url">Some Things to Think About While Reviewing a URL</h3>
+<h4 id="some-things-to-think-about-while-reviewing-a-url">Some Things to Think About While Reviewing a URL</h4>
 <ul>
 <li>Does this page use JavaScript to render its content, especially to <em>generate links</em> or <em>dynamically pull up images and PDF content</em>? Crawlers generally cannot parse dynamically generated content.</li>
 <li>Does this URL contain links to non-HTML content? (For example, zip files, PDFs, Excel files, etc...)</li>
 <li>Is this URL some sort of interface for a large database or service? (For example, an interactive map, API gateway, etc.)</li>
 <li>Does this URL contain instructions for connecting to a server, database, or other special source of data?</li>
 </ul>
-<h3 id="check-the-terms-of-service">Check the Terms of Service!!!</h3>
+<h4 id="check-the-terms-of-service">Check the Terms of Service!</h4>
 <p>Before you go any further, it is <em>always</em> worth confirming that the data in question is in fact open for archiving. If the terms of service explicitly prohibit archiving, <em>make a note of it</em>. Generally archive-a-thons are purposely only aimed at publically available data, but it is easy to follow a link away from a publically available source onto a site that has different terms of service.</p>
 <p><em><strong>Data acquired outside terms of service is not usable.</strong></em></p>
-<h2 id="2b-determine-scale-of-the-dataset">2b. Determine Scale of the Dataset</h2>
+<h3 id="2b-determine-scale-of-the-dataset">2b. Determine Scale of the Dataset</h3>
 <p>If the dataset you're looking at is quite large -- say, more than 1000 documents -- capturing it may require more elaborate programming than is described here, and it may be difficult to complete in the timeframe of the event. In that case, you may want to look outside the scope of this document and read the documentation of tools such as the <a href="https://github.com/edgi-govdata-archiving/eis-WARC-archiver">EIS WARC archiver</a>, which shows how to initiate a larger, fully automated harvest on a web-based virtual machine. Talk to your DataRescue guide to determine how to best proceed.</p>
 <h2 id="3-generate-html-json-directory">3. Generate HTML, JSON &amp; Directory</h2>
 <p>To get started, click <code>Download Zip Starter</code>, which will download an empty zip archive structure for the data you are about to harvest.
 The structure looks like this:</p>
-<!-- turning off syntax highlighting in these blocks, as it's producing non-sensical coloring here - suchthis -->
-
 <pre><code class="no-highlight">DAFD2E80-965F-4989-8A77-843DE716D899
     ├── DAFD2E80-965F-4989-8A77-843DE716D899.html
     ├── DAFD2E80-965F-4989-8A77-843DE716D899.json
@@ -321,11 +308,12 @@ The structure looks like this:</p>
     └── a /data directory that contains the data in question
 </code></pre>
 
-<h3 id="uuid">UUID</h3>
+<h3 id="folder-structure">Folder Structure</h3>
+<h4 id="uuid">UUID</h4>
 <p>The goal is to pass this finalized folder off for <a href="../bagging/">"bagging"</a>. We repeatedly use the UUID so that we can programmatically work through this data later. It is important that the ID be copied <em>exactly</em> wherever it appears, with no leading or trailing spaces, and honoring case-sensitivity.</p>
-<h3 id="uuidhtml-file">[UUID].html file</h3>
+<h4 id="uuidhtml-file">[UUID].html file</h4>
 <p>The zip starter archive will automatically include a copy of the page corresponding to the URL. The HTML file gives the archive a snapshot of the page at the time of archiving which we can use to monitor for changing data in the future, and corroborate the provenance of the archive itself. We can also use the <code>.html</code> in conjunction with the scripts you'll include in the tools directory to replicate the archive in the future.</p>
-<h3 id="uuidjson-file">[UUID].json file</h3>
+<h4 id="uuidjson-file">[UUID].json file</h4>
 <p>You'll need to inspect the .json manifest to be sure all fields are correct. This file contains vital data, including the url that was archived and date of archiving. The manifest should contain the following fields:</p>
 <pre><code>{
     &quot;Date of capture&quot;: &quot;&quot;,
@@ -343,26 +331,9 @@ The structure looks like this:</p>
 }
 </code></pre>
 
-<!--
-This appears to be out of date, as it no longer matches the JSON created by the zip starter 2/24/17 - suchthis
-{
-    "Individual source or seed URL": "",
-    "UUID": "",
-    "Institution facilitating the data capture creation and packaging": "",
-    "Date of capture": "",
-    "Federal agency data acquired from": "",
-    "Name of resource": "",
-    "File formats contained in package": "",
-    "Type(s) of content in package": "",
-    "Free text description of capture process": "",
-    "Name of package creator": ""
-}
-The [id.json readme](https://github.com/edgi-govdata-archiving/workflow/blob/master/id-json.md) gives an example of a completed JSON file.
--->
-
-<h3 id="uuidtools">[UUID]/tools/</h3>
+<h4 id="uuidtools">[UUID]/tools/</h4>
 <p>Directory containing any scripts, notes &amp; files used to acquire the data. Put any scripts you write or tools you use into this directory. This is useful in case new data needs to be archived from the same site again at a later date.</p>
-<h3 id="uuiddata">[UUID]/data/</h3>
+<h4 id="uuiddata">[UUID]/data/</h4>
 <p>Directory containing the data in question.</p>
 <h2 id="4-acquire-the-data">4. Acquire the Data</h2>
 <p>Your method for doing this will depend on the shape and size of the data you're dealing with. A few methods are described below.</p>
@@ -378,7 +349,7 @@ The [id.json readme](https://github.com/edgi-govdata-archiving/workflow/blob/mas
 <p>If you encounter an API, chances are you'll have to build some sort of custom solution, or investigate a social angle. For example: asking someone with greater access for a database dump.</p>
 <h3 id="4e-automated-full-browser">4e. Automated Full Browser</h3>
 <p>The last resort of harvesting should be to drive it with a full web browser. It is slower than other approaches such as <code>wget</code>, <code>cURL</code>, or a headless browser. Additionally, this implementation is prone to issues where the resulting page is saved before it's done loading. There is a <a href="https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/ruby-watir-collect">ruby example</a>.</p>
-<h3 id="tips">Tips</h3>
+<h2 id="tips">Tips</h2>
 <ul>
 <li>If you encounter a search bar, try entering "*" to see if that returns "all results".</li>
 <li>Leave the data unmodified. During the process, you may feel inclined to clean things up, add structure to the data, etc. Avoid temptation. Your finished archive will be hashed so we can compare it later for changes, and it's important that we archive original, unmodified content.</li>
@@ -405,25 +376,6 @@ The [id.json readme](https://github.com/edgi-govdata-archiving/workflow/blob/mas
 }
 </code></pre>
 
-<!-- This appears to be out of date, as it does not match what is generated by the zip starter - 2/24/17 - suchthis
-{
- "Individual source or seed URL": "http://www.eia.gov/renewable/data.cfm",
- "UUID" : "E30FA3CA-C5CB-41D5-8608-0650D1B6F105",
- "id_agency" : 2,
- "id_subagency": ,
- "id_org":,
- "id_suborg":,
- "Institution facilitating the data capture creation and packaging": "Penn Data Refuge",
- "Date of capture": "2017-01-17",
- "Federal agency data acquired from": "Department of Energy/U.S. Energy Information Administration",
- "Name of resource": "Renewable and Alternative Fuels",
- "File formats contained in package": ".pdf, .zip",
- "Type(s) of content in package": "datasets, codebooks",
- "Free text description of capture process": "Metadata was generated by viewing page and using spreadsheet descriptions where necessary, data was bulk downloaded from the page using wget -r on the seed URL and then bagged.",
- "Name of package creator": "Mallick Hossain and Ben Goldman"
- }
--->
-
 <ul>
 <li>Make sure to save this as a .json file.</li>
 </ul>
@@ -438,6 +390,10 @@ The [id.json readme](https://github.com/edgi-govdata-archiving/workflow/blob/mas
 </ul>
 </li>
 </ul>
+<div class = "attention">
+  <strong>See FAQ <a href="faq/#17-what-is-the-difference-between-crawlable-and-harvested">"What is the difference between Crawlable and Harvested in Archivers.space?"</a></strong>
+</div>
+
 <h2 id="7-finishing-up">7. Finishing up</h2>
 <ul>
 <li>In the Archivers app, make sure to fill out as much information as possible to document your work.</li>

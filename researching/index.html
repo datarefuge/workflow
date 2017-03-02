@@ -241,16 +241,15 @@ If links are added by JavaScript or require submitting a form, they are not craw
 <li>The crawler does not tolerate web frames (but it is straightforward to inspect a page to obtain the content in the frame directly, and then nominate <em>that</em>).</li>
 <li>The crawler recently added the ability to crawl FTP, but we will not rely on this; we will treat resources served over FTP as uncrawlable.</li>
 </ul>
-<p><strong>YES:</strong></p>
+<h4 id="yes">YES</h4>
 <p>If the URL is crawlable or you locate a crawlable URL that accesses the underlying dataset:</p>
 <ul>
 <li>Nominate it using the <a href="https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok">EDGI Nomination Chrome Extension</a>.</li>
 <li>Click the <code>Do not harvest</code> checkbox in the Research section in the Archivers app.</li>
 <li>Click <code>Checkin this URL</code> and move on to another URL.</li>
 </ul>
-<p><strong>NO:</strong></p>
-<p>If it is confirmed not crawlable:
-<!-- Why don't we ask that any more? - Fill out the cell "Can it be crawled?" = "no" in Researcher section of the spreadsheet--></p>
+<h4 id="no">NO</h4>
+<p>If it is confirmed not crawlable:</p>
 <ul>
 <li>Search agency websites and data.gov for dataset entry points for your dataset collection.<ul>
 <li>Tips: Try to understand what datasets are underlying the web pages. Look for related entries in the Archivers app, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.</li>
@@ -260,13 +259,17 @@ If links are added by JavaScript or require submitting a form, they are not craw
 <li>Fill out all of the fields in the Research section to the best of your ability.</li>
 <li>Occasionally, URL's will have been nominated separately, but are actually different interfaces built on the same dataset. We want to scrape all of this data and do it exactly one time. The <code>Link URL</code> field lets you search for associated URLs; add any URLs that should be grouped into a single record.</li>
 </ul>
-<p><strong>YES and NO:</strong></p>
+<h4 id="yes-and-no">YES and NO</h4>
 <p>For example, FTP address, mixed content, big data sets:
 <!--  - Fill out the cell "Can it be crawled?" = "yes & no" in Researcher section of the spreadsheet--></p>
 <ul>
 <li>Nominate it anyway, but also follow the steps for uncrawlable content above.</li>
 <li><em>While we understand that this may result in some dataset duplication, this is not a concern. We are ensuring that the data is fully preserved and accessible.</em></li>
 </ul>
+<div class = "attention">
+  <strong>See FAQ <a href="faq/#17-what-is-the-difference-between-crawlable-and-harvested">"What is the difference between Crawlable and Harvested in Archivers.space?"</a></strong>
+</div>
+
 <h2 id="finishing-up">Finishing Up</h2>
 <ul>
 <li>In the Archivers app, make sure to fill out as much information as possible to document your work.</li>
