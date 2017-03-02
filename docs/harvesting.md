@@ -37,9 +37,9 @@ Harvesters take the "uncrawlable" data and try to figure out how to actually cap
   <p style="text-align:center"><iframe width="520" height="315" src="https://www.youtube.com/embed/tvSSILnHnpA" frameborder="0" allowfullscreen></iframe></p>
 </div>
 
-## Harvesting Toolkit
+## Harvesting Tools
 
-For in-depth information on tools and techniques to harvest open data, please check EDGI's extensive [toolkit](https://github.com/edgi-govdata-archiving/harvesting-tools).
+For in-depth information on tools and techniques to harvest open data, please check EDGI's extensive [harvesting tools](https://github.com/edgi-govdata-archiving/harvesting-tools).
 
 ## 1. Claiming a Dataset to Harvest
 - You will work on datasets that were confirmed as uncrawlable by Researchers.
@@ -53,28 +53,30 @@ For in-depth information on tools and techniques to harvest open data, please ch
   The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the URL with the data in question. The UUID will have been generated earlier in the process. UUID stands for Universal Unique Identifier.
 </div>
 
-## 2a. Classify Source Type & Archivability
+## 2. Investigate the Dataset
+
+### 2a. Classify Source Type & Archivability
 
 Before doing anything, take a minute to understand what you're looking at. It's usually best to do a quick check of the URL to confirm that this data in fact not crawlable. Often as part of the harvesting team, you'll be the first person with a higher level of technical knowledge to review the URL in question.
 
-### Check for False-Positives (Content That Is in Fact Crawlable)
+#### Check for False-Positives (Content That Is in Fact Crawlable)
 
 Generally, any URL that returns standard HTML, links to more [HTML mimetype pages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types), and contains little-to-no non-HTML content, is crawlable. "View source" from your browser of choice will help see what the crawler itself is seeing. If in fact the data can be crawled, nominate it to the Internet Archive using the [EDGI Nomination Chrome Extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok), click the `Do not harvest` checkbox in the Research section of the Archivers app, click `Checkin this URL`, and move on to another URL.
 
-### Some Things to Think About While Reviewing a URL
+#### Some Things to Think About While Reviewing a URL
 
 * Does this page use JavaScript to render its content, especially to _generate links_ or _dynamically pull up images and PDF content_? Crawlers generally cannot parse dynamically generated content.
 * Does this URL contain links to non-HTML content? (For example, zip files, PDFs, Excel files, etc...)
 * Is this URL some sort of interface for a large database or service? (For example, an interactive map, API gateway, etc.)
 * Does this URL contain instructions for connecting to a server, database, or other special source of data?
 
-### Check the Terms of Service!!!
+#### Check the Terms of Service!
 
 Before you go any further, it is *always* worth confirming that the data in question is in fact open for archiving. If the terms of service explicitly prohibit archiving, *make a note of it*. Generally archive-a-thons are purposely only aimed at publically available data, but it is easy to follow a link away from a publically available source onto a site that has different terms of service.
 
 _**Data acquired outside terms of service is not usable.**_
 
-## 2b. Determine Scale of the Dataset
+### 2b. Determine Scale of the Dataset
 
 If the dataset you're looking at is quite large -- say, more than 1000 documents -- capturing it may require more elaborate programming than is described here, and it may be difficult to complete in the timeframe of the event. In that case, you may want to look outside the scope of this document and read the documentation of tools such as the [EIS WARC archiver](https://github.com/edgi-govdata-archiving/eis-WARC-archiver), which shows how to initiate a larger, fully automated harvest on a web-based virtual machine. Talk to your DataRescue guide to determine how to best proceed.
 
@@ -83,7 +85,6 @@ If the dataset you're looking at is quite large -- say, more than 1000 documents
 To get started, click `Download Zip Starter`, which will download an empty zip archive structure for the data you are about to harvest.
 The structure looks like this:
 
-<!-- turning off syntax highlighting in these blocks, as it's producing non-sensical coloring here - suchthis -->
 ```no-highlight
 DAFD2E80-965F-4989-8A77-843DE716D899
 	├── DAFD2E80-965F-4989-8A77-843DE716D899.html
@@ -102,15 +103,17 @@ A directory named by the UUID
 	└── a /data directory that contains the data in question
 ```
 
-### UUID
+### Folder Structure
+
+#### UUID
 
 The goal is to pass this finalized folder off for ["bagging"](bagging.md). We repeatedly use the UUID so that we can programmatically work through this data later. It is important that the ID be copied *exactly* wherever it appears, with no leading or trailing spaces, and honoring case-sensitivity.
 
-### [UUID].html file
+#### [UUID].html file
 
 The zip starter archive will automatically include a copy of the page corresponding to the URL. The HTML file gives the archive a snapshot of the page at the time of archiving which we can use to monitor for changing data in the future, and corroborate the provenance of the archive itself. We can also use the `.html` in conjunction with the scripts you'll include in the tools directory to replicate the archive in the future.
 
-### [UUID].json file
+#### [UUID].json file
 
 You'll need to inspect the .json manifest to be sure all fields are correct. This file contains vital data, including the url that was archived and date of archiving. The manifest should contain the following fields:
 
@@ -131,31 +134,13 @@ You'll need to inspect the .json manifest to be sure all fields are correct. Thi
 }
 ```
 
-<!--
-This appears to be out of date, as it no longer matches the JSON created by the zip starter 2/24/17 - suchthis
-{
-    "Individual source or seed URL": "",
-    "UUID": "",
-    "Institution facilitating the data capture creation and packaging": "",
-    "Date of capture": "",
-    "Federal agency data acquired from": "",
-    "Name of resource": "",
-    "File formats contained in package": "",
-    "Type(s) of content in package": "",
-    "Free text description of capture process": "",
-    "Name of package creator": ""
-}
-The [id.json readme](https://github.com/edgi-govdata-archiving/workflow/blob/master/id-json.md) gives an example of a completed JSON file.
--->
-
-### [UUID]/tools/
+#### [UUID]/tools/
 
 Directory containing any scripts, notes & files used to acquire the data. Put any scripts you write or tools you use into this directory. This is useful in case new data needs to be archived from the same site again at a later date.
 
-### [UUID]/data/
+#### [UUID]/data/
 
 Directory containing the data in question.
-
 
 ## 4. Acquire the Data
 
@@ -185,7 +170,7 @@ If you encounter an API, chances are you'll have to build some sort of custom so
 
 The last resort of harvesting should be to drive it with a full web browser. It is slower than other approaches such as `wget`, `cURL`, or a headless browser. Additionally, this implementation is prone to issues where the resulting page is saved before it's done loading. There is a [ruby example](https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/ruby-watir-collect).
 
-### Tips
+## Tips
 
 - If you encounter a search bar, try entering "*" to see if that returns "all results".
 - Leave the data unmodified. During the process, you may feel inclined to clean things up, add structure to the data, etc. Avoid temptation. Your finished archive will be hashed so we can compare it later for changes, and it's important that we archive original, unmodified content.
@@ -213,25 +198,6 @@ From there you'll want to complete the [UUID].json. Use the template below as a 
 	"url": "ftp://podaac-ftp.jpl.nasa.gov/allData/nimbus7"
 }
 ```
-
-<!-- This appears to be out of date, as it does not match what is generated by the zip starter - 2/24/17 - suchthis
-{
- "Individual source or seed URL": "http://www.eia.gov/renewable/data.cfm",
- "UUID" : "E30FA3CA-C5CB-41D5-8608-0650D1B6F105",
- "id_agency" : 2,
- "id_subagency": ,
- "id_org":,
- "id_suborg":,
- "Institution facilitating the data capture creation and packaging": "Penn Data Refuge",
- "Date of capture": "2017-01-17",
- "Federal agency data acquired from": "Department of Energy/U.S. Energy Information Administration",
- "Name of resource": "Renewable and Alternative Fuels",
- "File formats contained in package": ".pdf, .zip",
- "Type(s) of content in package": "datasets, codebooks",
- "Free text description of capture process": "Metadata was generated by viewing page and using spreadsheet descriptions where necessary, data was bulk downloaded from the page using wget -r on the seed URL and then bagged.",
- "Name of package creator": "Mallick Hossain and Ben Goldman"
- }
--->
 
  - Make sure to save this as a .json file.
 
