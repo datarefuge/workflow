@@ -246,6 +246,10 @@ It's worth using some judgement here. If a "script" you used includes an entire 
 - Note that files beyond 5 Gigs must be uploaded through the more advanced `Generate Upload Token` option. This will require using the aws command line interface.
     - Please talk to your DataRescue guide or post on Slack in the Harvesters channel, if you are having issues with this more advanced method.
 
+<div class = "attention">
+  <strong>See FAQ <a href="faq/#17-what-is-the-difference-between-crawlable-and-harvested">"What is the difference between Crawlable and Harvested in Archivers.space?"</a></strong>
+</div>
+
 ## 7. Finishing up
 
 - In the Archivers app, make sure to fill out as much information as possible to document your work.

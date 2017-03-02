@@ -89,9 +89,14 @@ Please read the DataRescue Workflow documentation for more info!
 
 ## 15) I have a process improvement that would make this go better!
 
-Great! Open an issue in your event's GitHub repository, or report it in the appropriate channel in your Slack team.
-
+Great! Open an issue in the [archivers.space GitHub repository](https://github.com/edgi-govdata-archiving/archivers.space/), or report it in the appropriate channel in your Slack team.
 
 ## 16) How do I add a new event?
 
 Admins can add events under the "Events" tab. Regular users will have to ask an admin for help!
+
+## 17) What is the difference between Crawlable and Harvested?
+
+[Researchers](researching.md) investigate whether URLs listed in the [Archivers app](http://www.archivers.space/urls) need to be manually downloaded (harvested) or if they can be automatically saved (crawled) by the Internet Archive. The URLs listed as [Crawlable](http://www.archivers.space/urls?phase=crawlable) were determined as such during that research phase and are submitted to the Internet Archive, they do not need to be harvested. 
+
+These URLs represent only a small portion of those submitted to the Internet Archive from DataRescue events. Most crawlable URLs are identified by [Seeders](seeding.md) at the beginning of the workflow and completely bypass the Archivers app.

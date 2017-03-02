@@ -91,6 +91,10 @@ For example, FTP address, mixed content, big data sets:
 - Nominate it anyway, but also follow the steps for uncrawlable content above.
 - *While we understand that this may result in some dataset duplication, this is not a concern. We are ensuring that the data is fully preserved and accessible.*
 
+<div class = "attention">
+  <strong>See FAQ <a href="faq/#17-what-is-the-difference-between-crawlable-and-harvested">"What is the difference between Crawlable and Harvested in Archivers.space?"</a></strong>
+</div>
+
 ## Finishing Up
 
 - In the Archivers app, make sure to fill out as much information as possible to document your work.
