@@ -26,9 +26,9 @@ Harvesters take the "uncrawlable" data and try to figure out how to actually cap
 - Create an account on the DataRefuge Slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) (or use the Slack team recommended by your event organizers). This is where people share expertise and answer each other's questions.
 - You might also need other software and utilities set up on your computer, depending on the harvesting methods you use.
 - Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
-    - If you need any assistance:
-        - Talk to your DataRescue guide if you are at an in-person event
-        - Or post questions on Slack in the #Researchers/Harvesters channel (or other channel recommended by your event organizers).
+- If you need any assistance:
+    - Talk to your DataRescue guide if you are at an in-person event
+    - Or post questions in the DataRefuge Slack `#harvesters` channel (or other channel recommended by your event organizers).
 
 <div class = "note">
   <strong>Using Archivers App</strong> <br />  
@@ -150,9 +150,9 @@ Your method for doing this will depend on the shape and size of the data you're 
 
 If you encounter a page that links to lots of data (for example a "downloads" page), this approach may work well. It's important to only use this approach when you encounter *data*, for example PDF's, .zip archives, .csv datasets, etc.
 
-The tricky part of this approach is generating a list of URLs to download from the page. If you're skilled with using scripts in combination with html-parsers (for example python's wonderful [beautiful-soup package](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start)), go for it. Otherwise, we've included the [jquery-URL-extraction guide](thttps://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/jquery-URL-extraction)], which has the advantage of working within a browser and can operate on a page that has been modified by JavaScript.
+The tricky part of this approach is generating a list of URLs to download from the page. If you're skilled with using scripts in combination with html-parsers (for example python's wonderful [beautiful-soup package](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start)), go for it. Otherwise, we've included the [jquery-url-extraction guide](https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/jquery-url-extraction), which has the advantage of working within a browser and can operate on a page that has been modified by JavaScript.
 
-Our example dataset uses jquery-URL, [leveraging that tool to generate a list of URLs to feed the wget loop](https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/jquery-URL-extraction/README.md).
+Our example dataset uses jquery-URL, [leveraging that tool to generate a list of URLs to feed the wget loop](https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/jquery-url-extraction/README.md).
 
 ### 4b. Identify Data Links & Acquire Them via WARCFactory
 

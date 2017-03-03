@@ -15,7 +15,7 @@ Researchers review "uncrawlables" identified during [Seeding](seeding.md), confi
 - Create an account on the DataRefuge Slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) or use the Slack team recommended by your event organizers. This is where people share expertise and answer each other's questions.
 - If you need any assistance:
     - Talk to your DataRescue guide if you are at an in-person event
-    - Or post questions on Slack in the `#general` channel (or other channel recommended by your event organizers).
+    - Or post questions in the DataRefuge Slack `#researchers` channel (or other channel recommended by your event organizers).
 
 <div class = "note">
   <strong>Using Archivers App</strong> <br />  

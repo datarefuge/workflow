@@ -11,17 +11,17 @@ Describers create a descriptive record in the DataRefuge CKAN repository for eac
 
 - Apply to become a Describer by asking your DataRescue guide or by filling out [this form](https://docs.google.com/a/temple.edu/forms/d/e/1FAIpQLSfh9YIFnDrc-Cuc0hTd-U37J3D8xw8K7VXmzWkPs6Y5Q0wfVg/viewform).
     - Note that an email address is required to apply.
-    - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [guidelines on archival best practices for Data Refuge](http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody) for more information).
+    - Note also that you should be willing to have your real name be associated with the datasets, to follow archival best practices (see [guidelines on archival best practices for DataRefuge](http://www.ppehlab.org/blogposts/2017/2/1/data-refuge-rests-on-a-clear-chain-of-custody) for more information).
 - The organizers of the event (in-person or remote) will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
   	- Click the invite link, and choose a user name and a password.
 - Create an account on the DataRefuge Slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) (or use the Slack team recommended by your event organizers). This is where people share expertise and answer each other's questions.
 	- Ask your event organizer to send you an invite.
-- The organizers will also create an account for you in the CKAN instance at https://www.datarefuge.org/.
+- The organizers will also create an account for you in the [datarefuge.org](https://www.datarefuge.org/) CKAN instance.
     - Test that you can log in successfully.
-- Get set up with Python and the Python script to make a bag at the command line: https://github.com/LibraryOfCongress/bagit-python
+- Get set up with Python and the [`bagit-python`](https://github.com/LibraryOfCongress/bagit-python) script to make a bag at the command line
 - If you need any assistance:
     - Talk to your DataRescue guide if you are at an in-person event.
-    - Or post questions on Slack in the Describers channel (or other channel recommended by your event organizers).
+    - Or post questions in the DataRefuge Slack `#describers` channel (or other channel recommended by your event organizers).
 
 ## Claiming a Bag
 
@@ -68,18 +68,18 @@ Describers create a descriptive record in the DataRefuge CKAN repository for eac
 
 ## Enhancing Existing Metadata
 
-These sites will help you obtain federally-sourced metadata that can be added to the CKAN record for more accurate metadata:
+These sites have federally-sourced metadata that can be added to the CKAN record for more accurate metadata:
 
 - EPA:
-	- [https://www.epa.gov/enviro/facility-registry-service-frs](https://www.epa.gov/enviro/facility-registry-service-frs)
-	- [https://edg.epa.gov/metadata/catalog/main/home.page](https://edg.epa.gov/metadata/catalog/main/home.page)
+    - [https://www.epa.gov/enviro/facility-registry-service-frs](https://www.epa.gov/enviro/facility-registry-service-frs)
+    - [https://edg.epa.gov/metadata/catalog/main/home.page](https://edg.epa.gov/metadata/catalog/main/home.page)
 
 These sites are sources of scientific metadata standards to review when choosing keywords:
 
-- GCMD Keywords:
-       - [https://wiki.earthdata.nasa.gov/display/cmr/gcmd+keyword+access](https://wiki.earthdata.nasa.gov/display/cmr/gcmd+keyword+access) - Downloadable CSV files of the GCMD taxonomies.
-- ATRAC:
-	- [https://www.ncdc.noaa.gov/atrac/index.html](https://www.ncdc.noaa.gov/atrac/index.html) - This is a free tool to give access to geographic metadata standards including autopopulating thesauri (GCMD and others commonly used with climate data).
+- GCMD Keywords, downloadable CSV files of the GCMD taxonomies:
+    - [https://wiki.earthdata.nasa.gov/display/cmr/gcmd+keyword+access](https://wiki.earthdata.nasa.gov/display/cmr/gcmd+keyword+access)
+- ATRAC, a free tool for accessing geographic metadata standards including auto-populating thesauri (GCMD and others commonly used with climate data):
+    - [https://www.ncdc.noaa.gov/atrac/index.html](https://www.ncdc.noaa.gov/atrac/index.html)
 
 ## Linking the CKAN Record to the Bag
 

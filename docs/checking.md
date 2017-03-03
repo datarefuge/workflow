@@ -21,7 +21,8 @@ Checkers inspect a harvested dataset and make sure that it is complete. The main
 - You may also need some other software and utilities set up on your computer, depending on the methods you will use, if you need to harvest supplemental materials to add to a dataset.
 - If you need any assistance:
     - Talk to your DataRescue guide if you are at an in-person event.
-    - Or post questions on Slack in the #Checkers channel.
+    - Or post questions in the DataRefuge Slack `#checkers` channel (or other channel recommended by your event organizers).
+
 
 ## Claiming a Dataset for the Checking Step
 
