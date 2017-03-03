@@ -5,13 +5,14 @@
         {% for nav_item in nav_item.children %}
             {% include 'toc.html' %}
         {% endfor %}
-
-        <li class="toctree-l1">
-            <a class="{% if nav_item.active%}current{%endif%}" href="https://youtu.be/tvSSILnHnpA" target="_blank">Archivers App Walkthrough</a>
-        </li>
-        <li class="toctree-l1">
-            <a class="{% if nav_item.active%}current{%endif%}" href="https://drive.google.com/file/d/0B8Gv3Zy5ceY3X0xiSlV2dnhMYWc/view" target="_blank">Crawlable or Uncrawlable Poster</a>
-        </li>
+        {% if nav_item.title == 'Additional Resources' %}
+          <li class="toctree-l1">
+              <a class="{% if nav_item.active%}current{%endif%}" href="https://youtu.be/tvSSILnHnpA" target="_blank">Archivers App Walkthrough</a>
+          </li>
+          <li class="toctree-l1">
+              <a class="{% if nav_item.active%}current{%endif%}" href="https://drive.google.com/file/d/0B8Gv3Zy5ceY3X0xiSlV2dnhMYWc/view" target="_blank">Crawlable or Uncrawlable Poster</a>
+          </li>
+        {% endif %}
     </ul>
 {% else %}
     <li class="toctree-l1 {% if nav_item.active%}current{%endif%}">

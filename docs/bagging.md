@@ -2,12 +2,12 @@
 
 Baggers do some quality assurance on the dataset to make sure the content is correct and corresponds to what was described in the spreadsheet. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata, and upload it to the final DataRefuge destination.
 
+**Note: Checking is currently performed by Baggers and does not exist as a separate stage in the Archivers app.**
+
 <div class = "note">
   <strong>Recommended Skills</strong> <br />  
   Consider this path if you have data or web archiving experience, or have strong tech skills and an attention to detail.
 </div>
-
-**Note that the Checker role is currently performed by Baggers (See Quality Assurance step below). Eventually we would like the two to be separate, but the Archivers app does not offer that capability at this time.**
 
 ## Getting Set up as a Bagger
 
