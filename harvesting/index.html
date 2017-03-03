@@ -55,27 +55,34 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../advance-work/">Advance Work</a>
+    <ul class="subnav">
+    <li><span>Website Archiving</span></li>
+
         
-    </li>
-<li>
-          
-            <li>
+            
     <li class="toctree-l1 ">
         <a class="" href="../seeding/">Seeding</a>
         
     </li>
+
+        
+        
+    </ul>
 <li>
           
             <li>
+    <ul class="subnav">
+    <li><span>Archiving More Complex Datasets</span></li>
+
+        
+            
     <li class="toctree-l1 ">
         <a class="" href="../researching/">Researching</a>
         
     </li>
-<li>
-          
-            <li>
+
+        
+            
     <li class="toctree-l1 current">
         <a class="current" href="./">Harvesting</a>
         
@@ -136,20 +143,47 @@
             </ul>
         
     </li>
-<li>
-          
-            <li>
+
+        
+            
     <li class="toctree-l1 ">
         <a class="" href="../bagging/">Checking/Bagging</a>
         
     </li>
-<li>
-          
-            <li>
+
+        
+            
     <li class="toctree-l1 ">
         <a class="" href="../describing/">Describing</a>
         
     </li>
+
+        
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Event Organizing</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../organizing/pre-event/">Before an Event</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../organizing/post-event/">After an Event</a>
+        
+    </li>
+
+        
+        
+    </ul>
 <li>
           
             <li>
@@ -164,13 +198,14 @@
     </li>
 
         
-
-        <li class="toctree-l1">
-            <a class="" href="https://youtu.be/tvSSILnHnpA" target="_blank">Archivers App Walkthrough</a>
-        </li>
-        <li class="toctree-l1">
-            <a class="" href="https://drive.google.com/file/d/0B8Gv3Zy5ceY3X0xiSlV2dnhMYWc/view" target="_blank">Crawlable or Uncrawlable Poster</a>
-        </li>
+        
+          <li class="toctree-l1">
+              <a class="" href="https://youtu.be/tvSSILnHnpA" target="_blank">Archivers App Walkthrough</a>
+          </li>
+          <li class="toctree-l1">
+              <a class="" href="https://drive.google.com/file/d/0B8Gv3Zy5ceY3X0xiSlV2dnhMYWc/view" target="_blank">Crawlable or Uncrawlable Poster</a>
+          </li>
+        
     </ul>
 <li>
           
@@ -194,6 +229,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="..">Docs</a> &raquo;</li>
     
+      
+        
+          <li>Archiving More Complex Datasets &raquo;</li>
+        
       
     
     <li>Harvesting</li>
@@ -240,12 +279,10 @@
 </li>
 <li>Create an account on the DataRefuge Slack using this <a href="https://rauchg-slackin-qonsfhhvxs.now.sh/">slack-in</a> (or use the Slack team recommended by your event organizers). This is where people share expertise and answer each other's questions.</li>
 <li>You might also need other software and utilities set up on your computer, depending on the harvesting methods you use.</li>
-<li>Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on <em>semi-automated harvesting as part of a team</em>, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.<ul>
+<li>Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on <em>semi-automated harvesting as part of a team</em>, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.</li>
 <li>If you need any assistance:<ul>
 <li>Talk to your DataRescue guide if you are at an in-person event</li>
-<li>Or post questions on Slack in the #Researchers/Harvesters channel (or other channel recommended by your event organizers).</li>
-</ul>
-</li>
+<li>Or post questions in the DataRefuge Slack <code>#harvesters</code> channel (or other channel recommended by your event organizers).</li>
 </ul>
 </li>
 </ul>
@@ -339,8 +376,8 @@ The structure looks like this:</p>
 <p>Your method for doing this will depend on the shape and size of the data you're dealing with. A few methods are described below.</p>
 <h3 id="4a-identify-data-links-acquire-them-in-a-wget-loop">4a. Identify Data Links &amp; Acquire Them in a wget Loop</h3>
 <p>If you encounter a page that links to lots of data (for example a "downloads" page), this approach may work well. It's important to only use this approach when you encounter <em>data</em>, for example PDF's, .zip archives, .csv datasets, etc.</p>
-<p>The tricky part of this approach is generating a list of URLs to download from the page. If you're skilled with using scripts in combination with html-parsers (for example python's wonderful <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start">beautiful-soup package</a>), go for it. Otherwise, we've included the <a href="thttps://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/jquery-URL-extraction">jquery-URL-extraction guide</a>], which has the advantage of working within a browser and can operate on a page that has been modified by JavaScript.</p>
-<p>Our example dataset uses jquery-URL, <a href="https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/jquery-URL-extraction/README.md">leveraging that tool to generate a list of URLs to feed the wget loop</a>.</p>
+<p>The tricky part of this approach is generating a list of URLs to download from the page. If you're skilled with using scripts in combination with html-parsers (for example python's wonderful <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start">beautiful-soup package</a>), go for it. Otherwise, we've included the <a href="https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/jquery-url-extraction">jquery-url-extraction guide</a>, which has the advantage of working within a browser and can operate on a page that has been modified by JavaScript.</p>
+<p>Our example dataset uses jquery-URL, <a href="https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/jquery-url-extraction/README.md">leveraging that tool to generate a list of URLs to feed the wget loop</a>.</p>
 <h3 id="4b-identify-data-links-acquire-them-via-warcfactory">4b. Identify Data Links &amp; Acquire Them via WARCFactory</h3>
 <p>For search results from large document sets, you may need to do more sophisticated "scraping" and "crawling" -- again, check out tools built at previous events such as the <a href="https://github.com/edgi-govdata-archiving/eis-WARC-archiver">EIS WARC archiver</a> or the <a href="https://github.com/edgi-govdata-archiving/epa-search-utils">EPA Search Utils</a> for ideas on how to proceed.</p>
 <h3 id="4c-ftp-download">4c. FTP Download</h3>

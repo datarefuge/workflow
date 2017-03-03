@@ -59,8 +59,6 @@
                 
                     <li><a class="toctree-l4" href="#event-attendees">Event Attendees</a></li>
                 
-                    <li><a class="toctree-l4" href="#overview">Overview</a></li>
-                
                     <li><a class="toctree-l4" href="#partners">Partners</a></li>
                 
             
@@ -70,45 +68,79 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="advance-work/">Advance Work</a>
+    <ul class="subnav">
+    <li><span>Website Archiving</span></li>
+
         
-    </li>
-<li>
-          
-            <li>
+            
     <li class="toctree-l1 ">
         <a class="" href="seeding/">Seeding</a>
         
     </li>
+
+        
+        
+    </ul>
 <li>
           
             <li>
+    <ul class="subnav">
+    <li><span>Archiving More Complex Datasets</span></li>
+
+        
+            
     <li class="toctree-l1 ">
         <a class="" href="researching/">Researching</a>
         
     </li>
-<li>
-          
-            <li>
+
+        
+            
     <li class="toctree-l1 ">
         <a class="" href="harvesting/">Harvesting</a>
         
     </li>
-<li>
-          
-            <li>
+
+        
+            
     <li class="toctree-l1 ">
         <a class="" href="bagging/">Checking/Bagging</a>
         
     </li>
-<li>
-          
-            <li>
+
+        
+            
     <li class="toctree-l1 ">
         <a class="" href="describing/">Describing</a>
         
     </li>
+
+        
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Event Organizing</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="organizing/pre-event/">Before an Event</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="organizing/post-event/">After an Event</a>
+        
+    </li>
+
+        
+        
+    </ul>
 <li>
           
             <li>
@@ -123,13 +155,14 @@
     </li>
 
         
-
-        <li class="toctree-l1">
-            <a class="" href="https://youtu.be/tvSSILnHnpA" target="_blank">Archivers App Walkthrough</a>
-        </li>
-        <li class="toctree-l1">
-            <a class="" href="https://drive.google.com/file/d/0B8Gv3Zy5ceY3X0xiSlV2dnhMYWc/view" target="_blank">Crawlable or Uncrawlable Poster</a>
-        </li>
+        
+          <li class="toctree-l1">
+              <a class="" href="https://youtu.be/tvSSILnHnpA" target="_blank">Archivers App Walkthrough</a>
+          </li>
+          <li class="toctree-l1">
+              <a class="" href="https://drive.google.com/file/d/0B8Gv3Zy5ceY3X0xiSlV2dnhMYWc/view" target="_blank">Crawlable or Uncrawlable Poster</a>
+          </li>
+        
     </ul>
 <li>
           
@@ -167,31 +200,28 @@
               
                 <h1 id="datarescue-workflow">DataRescue Workflow</h1>
 <p>This document describes DataRescue activities both at in-person events and remotely, as developed by the <a href="http://www.ppehlab.org/">DataRefuge project</a> and <a href="https://envirodatagov.org/">EDGI</a>. It explains the process that a URL/dataset goes through from the time it has been identified, either by a <a href="seeding/">Seeder</a> as difficult to preserve, or  "uncrawlable," until it is made available as a record in the <a href="http://www.datarefuge.org">datarefuge.org</a> data catalog. The process involves several stages and is designed to maximize smooth hand-offs. At each step the data is with someone with distinct expertise and the data is always being tracked for security.</p>
-<h3 id="event-organizers">Event Organizers</h3>
-<ul>
-<li>Learn about what you need to do to <a href="advance-work/">before an event</a>.</li>
-</ul>
-<h3 id="event-attendees">Event Attendees</h3>
-<ul>
-<li>Create an account on the <a href="https://rauchg-slackin-qonsfhhvxs.now.sh/">DataRefuge Slack</a> or use the Slack team recommended by event organizers. This is where people share expertise and answer each other's questions.  </li>
-<li>Pick your role from below, get account credentials, and make sure you have access to the key documents and tools you need to work. Organizers will instruct you on these steps.</li>
-<li>Go over the workflow documentation below and read the relevant sections(s).</li>
-</ul>
 <hr />
-<h2 id="overview">Overview</h2>
-<h3 id="1-seeding">1. <a href="seeding/">Seeding</a></h3>
+<h2 id="event-organizers">Event Organizers</h2>
+<p>Learn about what you need to do to <a href="organizing/pre-event/">before</a> and <a href="organizing/post-event/">after</a> an event.</p>
+<h2 id="event-attendees">Event Attendees</h2>
+<ul>
+<li>Join the event Slack team recommended by event organizers, this is often the <a href="https://rauchg-slackin-qonsfhhvxs.now.sh/">DataRefuge Slack</a>. During the event people share expertise and answer each other's questions here.  </li>
+<li>Pick your role from the paths below, get account credentials, and make sure you have access to the key documents and tools you need to work. Organizers will instruct you on these steps.</li>
+<li>Review the relevant sections(s) of this workflow.</li>
+</ul>
+<h3 id="path-i-website-archiving">Path I. Website Archiving</h3>
+<h4 id="seeding"><a href="seeding/">Seeding</a></h4>
 <p>Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders nominate them to the End-of-Term (EOT) project. Otherwise, they add them to the Archivers app using the project's Chrome Extension.</p>
-<h3 id="2-researching">2. <a href="researching/">Researching</a></h3>
+<h3 id="path-ii-archiving-more-complex-datasets">Path II. Archiving More Complex Datasets</h3>
+<h3 id="a-researching">A. <a href="researching/">Researching</a></h3>
 <p>Researchers inspect the "uncrawlable" list to confirm that Seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested. <a href="researching/">Researching.md</a> describes this process in more detail.</p>
 <p><em>We recommend that Researchers and Harvesters (see below) work together in pairs, as much communication is needed between the two roles. In some cases, one person will fulfill both roles.</em></p>
-<h3 id="3-harvesting">3. <a href="harvesting/">Harvesting</a></h3>
+<h3 id="b-harvesting">B. <a href="harvesting/">Harvesting</a></h3>
 <p>Harvesters take the "uncrawlable" data and try to figure out how to actually capture it based on the recommendations of the Researchers. This is a complex task which can require substantial technical expertise and different techniques for different tasks. Harvesters should also review the <a href="https://github.com/edgi-govdata-archiving/harvesting-tools">Harvesting Toolkit</a> for tools.</p>
-<h3 id="4-checking">4. Checking</h3>
-<p><strong>Note: This role is currently performed by the Baggers, and does not exist separately.</strong></p>
-<p>Checkers inspect a harvested dataset and make sure that it is complete. The main question the checkers need to answer is "will the bag make sense to a scientist"? Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets.</p>
-<h3 id="5-bagging">5. <a href="bagging/">Bagging</a></h3>
+<h3 id="c-checkingbagging">C. <a href="bagging/">Checking/Bagging</a></h3>
+<p>Checkers inspect a harvested dataset and make sure that it is complete. The main question the checkers need to answer is "will the bag make sense to a scientist"? Checkers need to have an in-depth understanding of harvesting goals and potential content variations for datasets. <br /> <strong>Note: Checking is currently performed by Baggers and does not exist as a separate stage in the Archivers app.</strong></p>
 <p>Baggers perform some quality assurance on the dataset to make sure the content is correct and corresponds to the original URL. Then they package the data into a bagit file (or "bag"), which includes basic technical metadata, and upload it to the final DataRefuge destination.</p>
-<h3 id="6-describing">6. <a href="describing/">Describing</a></h3>
+<h3 id="d-describing">D. <a href="describing/">Describing</a></h3>
 <p>Describers create a descriptive record in the DataRefuge CKAN repository for each bag. Then they link the record to the bag and make the record public.</p>
 <hr />
 <h2 id="partners">Partners</h2>
@@ -203,7 +233,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="advance-work/" class="btn btn-neutral float-right" title="Advance Work">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="seeding/" class="btn btn-neutral float-right" title="Seeding">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -231,7 +261,7 @@
       
       
       
-        <span style="margin-left: 15px"><a href="advance-work/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="seeding/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -242,5 +272,5 @@
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-03-02 22:44:20
+Build Date UTC : 2017-03-03 17:47:23
 -->
