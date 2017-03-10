@@ -1,6 +1,6 @@
 ## What Do Seeders Do?
 
-Seeders canvass the resources of a given government agency, identifying important URLs and whether those URLs can be crawled by the Internet Archive's web crawler. They use the [EDGI Nomination Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok?hl=en) to nominate URLs to the [End of Term (EOT) Web Archive](http://eotarchive.cdlib.org/2016.html) if they are crawlable or to the Archivers app if they require manual archiving.
+Seeders canvass the resources of a given government agency, identifying important URLs and whether those URLs can be crawled by the Internet Archive's web crawler. They use the [EDGI Nomination Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok?hl=en) to nominate URLs to the [Internet Archive](http://www.archive.org) if they are crawlable or to the Archivers app if they require manual archiving.
 
 <div class = "note">
   <strong>Recommended Skills</strong> <br />  
@@ -21,7 +21,7 @@ Seeders use the [EDGI Archiving Primers](https://envirodatagov.org/archiving/), 
 
 ### Crawlable URLs
 
-- URLs judged to be crawlable are "nominated" (equivalently, "seeded") to the End of Term project (EOT), using the [EDGI Nomination Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok?hl=en).
+- URLs judged to be crawlable are nominated ("seeded") to the Internet Archive, using the [EDGI Nomination Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok?hl=en).
 
 **Wherever possible, add in the Agency Office Code from the sub-primer.** Talk to the DataRescue organizers to learn more.
 

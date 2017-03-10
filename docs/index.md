@@ -18,7 +18,7 @@ Learn about what you need to do to [before](/organizing/pre-event.md) and [after
 
 #### [Seeding](seeding.md)
 
-Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the Internet Archive's webcrawler. If the URLs are crawlable, the Seeders nominate them to the End-of-Term (EOT) project. Otherwise, they add them to the Archivers app using the project's Chrome Extension.
+Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the [Internet Archive's](http://archive.org) webcrawler. If the URLs are crawlable, the Seeders nominate them to the Internet Archive. Otherwise, they add them to the Archivers app using [the project's Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok?hl=en).
 
 ### Path II. Archiving More Complex Datasets
 ### A. [Researching](researching.md)
