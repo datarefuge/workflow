@@ -7,34 +7,25 @@ Harvesters take the "uncrawlable" data and try to figure out how to actually cap
   Consider this path if you're a skilled technologist with a programming language of your choice (e.g., Python, JavaScript, C, etc.), are comfortable with the command line (bash, shell, powershell), or experience working with structured data. Experience in front-end web development a plus.
 </div>
 
-## Important Notes
-
-- **Researchers and Harvesters**
-    - Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles. It may be most effective for Researchers and Harvesters to work together in pairs or small groups. In some cases, a single person might be both a Researcher and a Harvester.
-    - As a Harvester, make sure to check out the [Researchers documentation](https://github.com/datarefuge/workflow/blob/master/research.md) to familiarize yourself with their role.
-<br/><br/>
-
-- **The Notion of "Meaningful Dataset"**
-    - Your role is to harvest datasets that are complete and *meaningful*. By meaningful we mean: "will the bag make sense to a scientist"?
-    - For instance, if a dataset is composed of a spreadsheet without any accompanying key or explanation of what the data represents, it might be completely impossible for a scientist to use it.
-
 ## Getting Set up as a Harvester
 
-- The organizers of the event (in-person or remote) will tell you how to volunteer for the Harvester role, either through Slack or a form.
-    - They will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
-    - Click the invite link, and choose a username and a password. It is helpful to use the same username on the app and Slack.
-- Create an account on the DataRefuge Slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) (or use the Slack team recommended by your event organizers). This is where people share expertise and answer each other's questions.
-- You might also need other software and utilities set up on your computer, depending on the harvesting methods you use.
-- Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
-- If you need any assistance:
-    - Talk to your DataRescue guide if you are at an in-person event
-    - Or post questions in the DataRefuge Slack `#harvesters` channel (or other channel recommended by your event organizers).
+-   The organizers of the event (in-person or remote) will tell you how to volunteer for the Harvester role, either through Slack or a form.
+    -   They will send you an invite to the [Archivers app](http://www.archivers.space/), which helps us coordinate all the data archiving work we do.
+    -   Click the invite link, and choose a username and a password. It is helpful to use the same username on the app and Slack.
+-   Create an account on the DataRefuge Slack using this [slack-in](https://rauchg-slackin-qonsfhhvxs.now.sh/) (or use the Slack team recommended by your event organizers). This is where people share expertise and answer each other's questions.
+-   You might also need other software and utilities set up on your computer, depending on the harvesting methods you use.
+-   Harvesters should start by reading this document, which outlines the steps for constructing a proper data archive of the highest possible integrity. The primary focus of this document is on _semi-automated harvesting as part of a team_, and the workflow described is best-suited for volunteers working to preserve small and medium-sized collections. Where possible, we try to link out to other options appropriate to other circumstances.
+-   If you need any assistance:
+    -   Talk to your DataRescue guide if you are at an in-person event
+    -   Or post questions in the DataRefuge Slack `#harvesters` channel (or other channel recommended by your event organizers).
 
 <div class = "note">
-  <strong>Using Archivers App</strong> <br />  
-  Review our walkthrough video below and refer to the <a href="/faq/">FAQ</a> for any additional questions about the <a href="http://www.archivers.space" target="_blank">Archivers app</a><!---_--->. <br />
-  &nbsp;<br />
-  <p style="text-align:center"><iframe width="520" height="315" src="https://www.youtube.com/embed/tvSSILnHnpA" frameborder="0" allowfullscreen></iframe></p>
+  <strong>Researchers and Harvesters</strong> <br />  
+  <ul>
+    <li>Researchers and Harvesters should coordinate together as their work is closely related and benefits from close communication</li>
+    <li>It may be most effective to work together in pairs or small groups, or for a single person to both research and harvest</li>
+    <li>As a Harvester, make sure to check out the <a href="/researching/">Researching documentation</a> to familiarize yourself with their role</li>
+  </ul>
 </div>
 
 ## Harvesting Tools
@@ -42,18 +33,32 @@ Harvesters take the "uncrawlable" data and try to figure out how to actually cap
 For in-depth information on tools and techniques to harvest open data, please check EDGI's extensive [harvesting tools](https://github.com/edgi-govdata-archiving/harvesting-tools).
 
 ## 1. Claiming a Dataset to Harvest
-- You will work on datasets that were confirmed as uncrawlable by Researchers.
-- Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `HARVEST`: all the URLs listed are ready to be harvested.
-     - Available URLs are the ones that have not been checked out by someone else, i.e. that do not have someone's name in the User column.
-- Select an available URL and click its UUID to get to the detailed view, then click `Checkout this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.
-- While you go through the harvesting process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.
 
 <div class = "note">
-  <strong>Note: URL vs UUID</strong> <br />  
+  <strong>Using Archivers App</strong> <br />  
+  Review our walkthrough video below and refer to the <a href="/faq/">FAQ</a> for any additional questions about the <a href="http://www.archivers.space" target="_blank">Archivers app</a><!---_--->. <br />
+  &nbsp;<br />
+  <p style="text-align:center"><iframe width="80%" height="315" src="https://www.youtube.com/embed/tvSSILnHnpA" frameborder="0" allowfullscreen></iframe></p>
+</div>
+
+-   You will work on datasets that were confirmed as uncrawlable by Researchers.
+-   Go to the [Archivers app](http://www.archivers.space/), click `URLS` and then `HARVEST`: all the URLs listed are ready to be harvested.
+     - Available URLs are the ones that have not been checked out by someone else, i.e. that do not have someone's name in the User column.
+-   Select an available URL and click its UUID to get to the detailed view, then click `Checkout this URL`. It is now ready for you to work on, and no one else can do anything to it while you have it checked out.
+-   While you go through the harvesting process, make sure to report as much information as possible in the Archivers app, as this is the place were we collectively keep track of all the work done.
+
+<div class = "note">
+  <strong>URL vs UUID</strong> <br />  
   The <code>URL</code> is the link to examine and harvest, and the <code>UUID</code> is a canonical ID we use to connect the URL with the data in question. The UUID will have been generated earlier in the process. UUID stands for Universal Unique Identifier.
 </div>
 
 ## 2. Investigate the Dataset
+
+<div class = "note">
+  <strong>A "Meaningful Dataset"</strong> <br />  
+  Your role is to harvest datasets that are complete and <em>meaningful</em>, by which we mean: "will the dataset make sense to a scientist"? <br />
+  For instance, if a dataset is composed of a spreadsheet without any accompanying key or explanation of what the data represents, it might be completely impossible for a scientist to use it.
+</div>
 
 ### 2a. Classify Source Type & Archivability
 
@@ -65,14 +70,14 @@ Generally, any URL that returns standard HTML, links to more [HTML mimetype page
 
 #### Some Things to Think About While Reviewing a URL
 
-* Does this page use JavaScript to render its content, especially to _generate links_ or _dynamically pull up images and PDF content_? Crawlers generally cannot parse dynamically generated content.
-* Does this URL contain links to non-HTML content? (For example, zip files, PDFs, Excel files, etc...)
-* Is this URL some sort of interface for a large database or service? (For example, an interactive map, API gateway, etc.)
-* Does this URL contain instructions for connecting to a server, database, or other special source of data?
+-   Does this page use JavaScript to render its content, especially to _generate links_ or _dynamically pull up images and PDF content_? Crawlers generally cannot parse dynamically generated content.
+-   Does this URL contain links to non-HTML content? (For example, zip files, PDFs, Excel files, etc...)
+-   Is this URL some sort of interface for a large database or service? (For example, an interactive map, API gateway, etc.)
+-   Does this URL contain instructions for connecting to a server, database, or other special source of data?
 
 #### Check the Terms of Service!
 
-Before you go any further, it is *always* worth confirming that the data in question is in fact open for archiving. If the terms of service explicitly prohibit archiving, *make a note of it*. Generally archive-a-thons are purposely only aimed at publically available data, but it is easy to follow a link away from a publically available source onto a site that has different terms of service.
+Before you go any further, it is _always_ worth confirming that the data in question is in fact open for archiving. If the terms of service explicitly prohibit archiving, _make a note of it_. Generally archive-a-thons are purposely only aimed at publically available data, but it is easy to follow a link away from a publically available source onto a site that has different terms of service.
 
 _**Data acquired outside terms of service is not usable.**_
 
@@ -107,7 +112,7 @@ A directory named by the UUID
 
 #### UUID
 
-The goal is to pass this finalized folder off for ["bagging"](bagging.md). We repeatedly use the UUID so that we can programmatically work through this data later. It is important that the ID be copied *exactly* wherever it appears, with no leading or trailing spaces, and honoring case-sensitivity.
+The goal is to pass this finalized folder off for ["bagging"](bagging.md). We repeatedly use the UUID so that we can programmatically work through this data later. It is important that the ID be copied _exactly_ wherever it appears, with no leading or trailing spaces, and honoring case-sensitivity.
 
 #### [UUID].html file
 
@@ -148,7 +153,7 @@ Your method for doing this will depend on the shape and size of the data you're 
 
 ### 4a. Identify Data Links & Acquire Them in a wget Loop
 
-If you encounter a page that links to lots of data (for example a "downloads" page), this approach may work well. It's important to only use this approach when you encounter *data*, for example PDF's, .zip archives, .csv datasets, etc.
+If you encounter a page that links to lots of data (for example a "downloads" page), this approach may work well. It's important to only use this approach when you encounter _data_, for example PDF's, .zip archives, .csv datasets, etc.
 
 The tricky part of this approach is generating a list of URLs to download from the page. If you're skilled with using scripts in combination with html-parsers (for example python's wonderful [beautiful-soup package](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start)), go for it. Otherwise, we've included the [jquery-url-extraction guide](https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/jquery-url-extraction), which has the advantage of working within a browser and can operate on a page that has been modified by JavaScript.
 
@@ -168,18 +173,18 @@ If you encounter an API, chances are you'll have to build some sort of custom so
 
 ### 4e. Automated Full Browser
 
-The last resort of harvesting should be to drive it with a full web browser. It is slower than other approaches such as `wget`, `cURL`, or a headless browser. Additionally, this implementation is prone to issues where the resulting page is saved before it's done loading. There is a [ruby example](https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/ruby-watir-collect).
+The last resort of harvesting should be to drive it with a full web browser. It is slower than other approaches such as `wget`, `curl`, or a headless browser. Additionally, this implementation is prone to issues where the resulting page is saved before it's done loading. There is a [ruby example](https://github.com/edgi-govdata-archiving/harvesting-tools/tree/master/ruby-watir-collect).
 
-## Tips
+### Tips
 
-- If you encounter a search bar, try entering "*" to see if that returns "all results".
-- Leave the data unmodified. During the process, you may feel inclined to clean things up, add structure to the data, etc. Avoid temptation. Your finished archive will be hashed so we can compare it later for changes, and it's important that we archive original, unmodified content.
+-   If you encounter a search bar, try entering "*"<!--*--> to see if that returns "all results".
+-   Leave the data unmodified. During the process, you may feel inclined to clean things up, add structure to the data, etc. Avoid temptation. Your finished archive will be hashed so we can compare it later for changes, and it's important that we archive original, unmodified content.
 
 ## 5. Complete [UUID].json & Add /tools
 
 From there you'll want to complete the [UUID].json. Use the template below as a guide.
 
-- The json should match the information from the Researcher and use the following format:
+-   The json should match the information from the Researcher and use the following format:
 
 ```
 {
@@ -199,7 +204,7 @@ From there you'll want to complete the [UUID].json. Use the template below as a 
 }
 ```
 
- - Make sure to save this as a .json file.
+-   Make sure to save this as a .json file.
 
 In addition, copy any scripts and tools you used into the /tools directory. It may seem strange to copy code multiple times, but this can help later to reconstruct the archiving process for further refinement later on.
 
@@ -207,10 +212,10 @@ It's worth using some judgement here. If a "script" you used includes an entire 
 
 ## 6. Uploading the data
 
-- Zip all the files pertaining to your dataset within the zip started archive structure and confirm that it is named with the original UUID.
-- Upload the zip file by selecting `Choose File` and then clicking `Upload` in the Archivers app.
-- Note that files beyond 5 Gigs must be uploaded through the more advanced `Generate Upload Token` option. This will require using the aws command line interface.
-    - Please talk to your DataRescue guide or post on Slack in the Harvesters channel, if you are having issues with this more advanced method.
+-   Zip all the files pertaining to your dataset within the zip started archive structure and confirm that it is named with the original UUID.
+-   Upload the zip file by selecting `Choose File` and then clicking `Upload` in the Archivers app.
+-   Note that files beyond 5 Gigs must be uploaded through the more advanced `Generate Upload Token` option. This will require using the aws command line interface.
+    -   Please talk to your DataRescue guide or post on Slack in the Harvesters channel, if you are having issues with this more advanced method.
 
 <div class = "attention">
   <strong>See FAQ <a href="faq/#17-what-is-the-difference-between-crawlable-and-harvested">"What is the difference between Crawlable and Harvested in Archivers.space?"</a></strong>
@@ -218,8 +223,8 @@ It's worth using some judgement here. If a "script" you used includes an entire 
 
 ## 7. Finishing up
 
-- In the Archivers app, make sure to fill out as much information as possible to document your work.
-- Check the Harvest checkbox (far right on the same line as the "Harvest" section heading) to mark that step as completed.
-- Click `Save`.
-- Click `Checkin this URL`, to release it and allow someone else to work on the next step.
-- You're done! Move on to the next URL!
+-   In the Archivers app, make sure to fill out as much information as possible to document your work.
+-   Check the Harvest checkbox (far right on the same line as the "Harvest" section heading) to mark that step as completed.
+-   Click `Save`.
+-   Click `Checkin this URL`, to release it and allow someone else to work on the next step.
+-   You're done! Move on to the next URL!
