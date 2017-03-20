@@ -14,13 +14,19 @@ Learn about what you need to do to [before](/organizing/pre-event.md) and [after
 - Pick your role from the paths below, get account credentials, and make sure you have access to the key documents and tools you need to work. Organizers will instruct you on these steps.
 - Review the relevant sections(s) of this workflow.
 
-### Path I. Website Archiving
+### Path I. Surveying
+
+#### [Surveying](surveying.md)
+
+Surveyors identify key programs, datasets, and documents on Federal Agency websites that are vulnerable to change and loss. Using templates and how-to guides, they create Main Agency Primers in order to introduce a particular agency, and Sub-Agency Primers in order to guide web archiving efforts by laying out a list of URLs that cover the breadth of an office.
+
+### Path II. Website Archiving
 
 #### [Seeding](seeding.md)
 
-Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the [Internet Archive's](http://archive.org) webcrawler. If the URLs are crawlable, the Seeders nominate them to the Internet Archive. Otherwise, they add them to the Archivers app using [the project's Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok?hl=en).
+Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the [Internet Archive's](http://archive.org) web crawler. Using the [EDGI Nomination Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok?hl=en), Seeders nominate crawlable URLs to the Internet Archive or add them to the Archivers app if they require manual archiving.
 
-### Path II. Archiving More Complex Datasets
+### Path III. Archiving More Complex Datasets
 ### A. [Researching](researching.md)
 
 Researchers inspect the "uncrawlable" list to confirm that Seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested. [Researching.md](researching.md) describes this process in more detail.

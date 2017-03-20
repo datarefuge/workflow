@@ -1,6 +1,8 @@
 site_name: DataRescue Workflow
 pages:
     - Home: index.md
+    - Surveying:
+      - Surveying: surveying.md
     - Website Archiving:
       - Seeding: seeding.md
     - Archiving More Complex Datasets:

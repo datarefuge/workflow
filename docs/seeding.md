@@ -1,6 +1,6 @@
 ## What Do Seeders Do?
 
-Seeders canvass the resources of a given government agency, identifying important URLs and whether those URLs can be crawled by the Internet Archive's web crawler. They use the [EDGI Nomination Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok?hl=en) to nominate URLs to the [Internet Archive](http://www.archive.org) if they are crawlable or to the Archivers app if they require manual archiving.
+Seeders canvass the resources of a given government agency, identifying important URLs. They identify whether those URLs can be crawled by the [Internet Archive's](http://archive.org) web crawler. Using the [EDGI Nomination Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok?hl=en), Seeders nominate crawlable URLs to the Internet Archive or add them to the Archivers app if they require manual archiving.
 
 <div class = "note">
   <strong>Recommended Skills</strong> <br />  
