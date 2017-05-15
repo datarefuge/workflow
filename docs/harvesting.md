@@ -36,7 +36,7 @@ For in-depth information on tools and techniques to harvest open data, please ch
 
 <div class = "note">
   <strong>Using Archivers App</strong> <br />  
-  Review our walkthrough video below and refer to the <a href="/faq/">FAQ</a> for any additional questions about the <a href="http://www.archivers.space" target="_blank">Archivers app</a><!---_--->. <br />
+  Review our walkthrough video below and refer to the <a href="/faq/">FAQ</a> for any additional questions about the <a href="http://www.archivers.space" target="_blank">Archivers app</a><!--_-->. <br />
   &nbsp;<br />
   <p style="text-align:center"><iframe width="80%" height="315" src="https://www.youtube.com/embed/tvSSILnHnpA" frameborder="0" allowfullscreen></iframe></p>
 </div>
@@ -67,6 +67,8 @@ Before doing anything, take a minute to understand what you're looking at. It's 
 #### Check for False-Positives (Content That Is in Fact Crawlable)
 
 Generally, any URL that returns standard HTML, links to more [HTML mimetype pages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types), and contains little-to-no non-HTML content, is crawlable. "View source" from your browser of choice will help see what the crawler itself is seeing. If in fact the data can be crawled, nominate it to the Internet Archive using the [EDGI Nomination Chrome Extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok), click the `Do not harvest` checkbox in the Research section of the Archivers app, click `Checkin this URL`, and move on to another URL.
+
+A written guide on using the Chrome Nomination tool, the EDGI Primer Database, and a video tutorial are available [in Seeders' Documentation](seeding/#crawlable-urls). 
 
 #### Some Things to Think About While Reviewing a URL
 
