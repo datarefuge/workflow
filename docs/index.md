@@ -2,7 +2,7 @@
 
 # Note that this workflow is being retired and will no longer be supported as of May 21 2017
 
-This document describes DataRescue activities at both in-person events and remotely, as developed by the [DataRefuge project](http://www.ppehlab.org/) and [EDGI](https://envirodatagov.org/). It explains the process that a URL/dataset goes through from the time it has been identified, either by a [Seeder](seeding.md) as difficult to preserve, or  "uncrawlable," until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) data catalog. The process involves several stages and is designed to maximize smooth hand-offs. At each step the data is with someone with distinct expertise and the data is always being tracked for security.
+This document describes DataRescue activities at both in-person events and remotely, as developed by the [DataRefuge project](http://www.ppehlab.org/datarefuge) and [EDGI](https://envirodatagov.org/). It explains the process that a URL/dataset goes through from the time it has been identified, either by a [Seeder](seeding.md) as difficult to preserve, or  "uncrawlable," until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) data catalog. The process involves several stages and is designed to maximize smooth hand-offs. At each step the data is with someone with distinct expertise and the data is always being tracked for security.
 
 **********************
 
